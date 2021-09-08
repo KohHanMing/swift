@@ -3,7 +3,7 @@
 moving = false;
 curr_dir = dir;
 
-if (keyboard_check(ord("A"))) {
+if (keyboard_check(ord("A")) and !keyboard_check(ord("D"))) {
 	moving = true;
 	if (curr_dir != 180) {
 		if (dir < 180) {
@@ -14,7 +14,7 @@ if (keyboard_check(ord("A"))) {
 	}
 }
 
-if (keyboard_check(ord("D"))) {
+if (keyboard_check(ord("D")) and !keyboard_check(ord("A"))) {
 	moving = true;
 	if (curr_dir != 0) {
 		if (dir > 0 and dir < 180) {
@@ -25,7 +25,7 @@ if (keyboard_check(ord("D"))) {
 	}
 }
 
-if (keyboard_check(ord("W"))) {
+if (keyboard_check(ord("W")) and !keyboard_check(ord("S"))) {
 	moving = true;
 	if (curr_dir != 90) {
 		if (dir > 90 and dir < 270) {
@@ -36,7 +36,7 @@ if (keyboard_check(ord("W"))) {
 	}
 }
 
-if (keyboard_check(ord("S"))) {
+if (keyboard_check(ord("S")) and !keyboard_check(ord("W"))) {
 	moving = true;
 	if (curr_dir != 270) {
 		if (dir < 270 and dir >= 90) {
