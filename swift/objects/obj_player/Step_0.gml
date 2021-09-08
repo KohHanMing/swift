@@ -1,71 +1,83 @@
 /// @description Insert description here
 // You can write your code in this editor
-moving = false;
-curr_dir = dir;
 
-if (keyboard_check(ord("A")) and !keyboard_check(ord("D"))) {
-	moving = true;
-	if (curr_dir != 180) {
-		if (dir < 180) {
-			dir += turn_spd;
-		} else if (dir > 180) {
-			dir -= turn_spd;
-		}
-	}
-}
+// Check keyboard inputs once per frame
+w_key_pressed = keyboard_check(ord("W"));
+a_key_pressed = keyboard_check(ord("A"));
+s_key_pressed = keyboard_check(ord("S"));
+d_key_pressed = keyboard_check(ord("D"));
 
-if (keyboard_check(ord("D")) and !keyboard_check(ord("A"))) {
-	moving = true;
-	if (curr_dir != 0) {
-		if (dir > 0 and dir < 180) {
-			dir -= turn_spd;
-		} else if (dir >= 180) {
-			dir += turn_spd;
-		}
-	}
-}
-
-if (keyboard_check(ord("W")) and !keyboard_check(ord("S"))) {
-	moving = true;
-	if (curr_dir != 90) {
-		if (dir > 90 and dir < 270) {
-			dir -= turn_spd;
-		} else if (dir < 90 or dir >= 270) {
-			dir += turn_spd;
-		}
-	}
-}
-
-if (keyboard_check(ord("S")) and !keyboard_check(ord("W"))) {
-	moving = true;
-	if (curr_dir != 270) {
-		if (dir < 270 and dir >= 90) {
-			dir += turn_spd;
-		} else if (dir > 270 or dir < 90) {
-			dir -= turn_spd;
-		}
-	}
-}
-
-if (dir < 0) {
-	dir += 360
-}
-dir %= 360
-
-dashing = keyboard_check_pressed(vk_space);
-
-if (moving) {
-	if (dashing) {
-		hspd = DASH_SPEED_PER_PX*cos(dir*pi/180);
-		vspd = -DASH_SPEED_PER_PX*sin(dir*pi/180);
-	} else {
-		hspd = MOVEMENT_SPEED_PER_PX*cos(dir*pi/180);
-		vspd = -MOVEMENT_SPEED_PER_PX*sin(dir*pi/180);
-	}
+if (!w_key_pressed and !a_key_pressed and !s_key_pressed and !d_key_pressed) {
+	moving = false;
+	speed = 0; // Can do deceleration here instead of setting to 0
 } else {
-	hspd = 0
-	vspd = 0
+	moving = true; 
+	// Decide on goal direction based on keyboard inputs
+	if (w_key_pressed and !s_key_pressed) {
+		if (a_key_pressed and !d_key_pressed) {
+			goal_direction = 135;
+		} else if (d_key_pressed and !a_key_pressed) {
+			goal_direction = 45;
+		} else {
+			goal_direction = 90;
+		}
+	}
+	if (a_key_pressed and !d_key_pressed) {
+		if (w_key_pressed and !s_key_pressed) {
+			goal_direction = 135;
+		} else if (s_key_pressed and !w_key_pressed) {
+			goal_direction = 225;
+		} else {
+			goal_direction = 180;
+		}
+	}
+	if (s_key_pressed and !w_key_pressed) {
+		if (a_key_pressed and !d_key_pressed) {
+			goal_direction = 225;
+		} else if (d_key_pressed and !a_key_pressed) {
+			goal_direction = 315;
+		} else {
+			goal_direction = 270;
+		}
+	}
+	if (d_key_pressed and !a_key_pressed) {
+		if (w_key_pressed and !s_key_pressed) {
+			goal_direction = 45;
+		} else if (s_key_pressed and !w_key_pressed) {
+			goal_direction = 315;
+		} else {
+			goal_direction = 0;
+		}
+	}
+	
+	// After deciding on the goal direction, turn towards the direction. 
+	// Turning should result in the shortest possible transition time. 
+	curr_direction = direction;
+	if ((curr_direction < goal_direction and (goal_direction - curr_direction) < 180)
+	or (curr_direction > goal_direction and (curr_direction - goal_direction) > 180)) {
+		curr_direction += TURN_SPD;
+		if (curr_direction > 360) {
+			curr_direction %= 360;
+		}
+	} else if (curr_direction != goal_direction) {
+		curr_direction -= TURN_SPD;
+		if (curr_direction < 0) {
+			curr_direction += 360;
+		}
+	}
+	direction = curr_direction;
+
+	// Dashing effectively temporarily increases max speed.
+	// If not at max speed, accelerate. 
+	if (dashing) {
+		if (speed < MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE) {
+			speed += ACCELERATION_PX_PER_FRAME;
+		}
+	} else {
+		if (speed < MAX_SPEED_PX_PER_FRAME) {
+			speed += ACCELERATION_PX_PER_FRAME;
+		}
+	}
 }
 
-x += hspd;
-y += vspd;
+move_wrap(true, true, sprite_width/2);

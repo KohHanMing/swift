@@ -1,9 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
-//test
-MOVEMENT_SPEED_PER_PX = 5;
-DASH_SPEED_PER_PX = 30;
-hspd = 0;
-vspd = 0;
-turn_spd = 45;
-dir = 0;
+
+//Constants
+ACCELERATION_PX_PER_FRAME = 1;
+MAX_SPEED_PX_PER_FRAME = 10;
+DASH_SPEED_INCREASE = 10;
+TURN_SPD = 45;
+
+//Variables
+moving = false;
+dashing = false;
+w_key_pressed = false;
+a_key_pressed = false;
+s_key_pressed = false;
+d_key_pressed = false;
