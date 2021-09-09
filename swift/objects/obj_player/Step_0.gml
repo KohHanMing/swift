@@ -51,42 +51,16 @@ if (!w_key_pressed and !a_key_pressed and !s_key_pressed and !d_key_pressed) {
 		}
 	}
 	
-	// After deciding on the goal direction, turn towards the direction. 
-	// Turning should result in the shortest possible transition time. 
-	curr_direction = direction;
-	is_turn_around = false;
-	if (abs(curr_direction - goal_direction) = 180) {
-		is_turn_around = true;
-	}
-	
-	if (is_turn_around) {
-		curr_direction = goal_direction;
-	} else {
-	
-		if ((curr_direction < goal_direction and (goal_direction - curr_direction) < 180)
-		or (curr_direction > goal_direction and (curr_direction - goal_direction) > 180)) {
-			curr_direction += TURN_SPD;
-			if (curr_direction > 360) {
-				curr_direction %= 360;
-			}
-		} else if (curr_direction != goal_direction) {
-			curr_direction -= TURN_SPD;
-			if (curr_direction < 0) {
-				curr_direction += 360;
-			}
-		}
-	}
-	direction = curr_direction;
-
 	// Dashing effectively temporarily increases max speed.
 	// If not at max speed, accelerate. 
+	apply_vector(object_index, ACCELERATION_PX_PER_FRAME, goal_direction);
 	if (dashing) {
-		if (speed < MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE) {
-			speed += ACCELERATION_PX_PER_FRAME;
+		if (speed > MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE) {
+			speed = MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE;
 		}
 	} else {
-		if (speed < MAX_SPEED_PX_PER_FRAME) {
-			speed += ACCELERATION_PX_PER_FRAME;
+		if (speed > MAX_SPEED_PX_PER_FRAME) {
+			speed = MAX_SPEED_PX_PER_FRAME;
 		}
 	}
 }

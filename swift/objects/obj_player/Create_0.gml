@@ -5,7 +5,6 @@
 ACCELERATION_PX_PER_FRAME = 1;
 MAX_SPEED_PX_PER_FRAME = 10;
 DASH_SPEED_INCREASE = 20;
-TURN_SPD = 45;
 
 //Variables
 moving = false;
