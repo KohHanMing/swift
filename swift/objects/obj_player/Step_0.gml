@@ -7,9 +7,10 @@ a_key_pressed = keyboard_check(ord("A"));
 s_key_pressed = keyboard_check(ord("S"));
 d_key_pressed = keyboard_check(ord("D"));
 
+friction = 0 //Assume no deceleration
 if (!w_key_pressed and !a_key_pressed and !s_key_pressed and !d_key_pressed) {
 	moving = false;
-	speed = 0; // Can do deceleration here instead of setting to 0
+	friction = 2; // Probably needs to change depending on the tile you're on
 } else {
 	moving = true; 
 	// Decide on goal direction based on keyboard inputs
