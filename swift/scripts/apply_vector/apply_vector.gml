@@ -3,7 +3,7 @@
 ///@param {real} _speed
 ///@param {real} _direction
 
-function apply_vector (_object, _speed, _direction){
+function apply_vector (_object, _speed, _direction) {
 	curr_hspd = _object.speed*cos(_object.direction*pi/180);
 	curr_vspd = _object.speed*sin(_object.direction*pi/180);
 	d_hspd = _speed*cos(_direction*pi/180);

@@ -1,4 +1,4 @@
-/// @description Insert description here
+   /// @description Insert description here
 // You can write your code in this editor
 
 // Check keyboard inputs once per frame
@@ -66,3 +66,5 @@ if (!w_key_pressed and !a_key_pressed and !s_key_pressed and !d_key_pressed) {
 }
 
 move_wrap(true, true, sprite_width/2);
+
+wall_collision(object_index);
