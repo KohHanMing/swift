@@ -2,9 +2,10 @@
 // You can write your code in this editor
 
 //Constants
-ACCELERATION_PX_PER_FRAME = 1;
-MAX_SPEED_PX_PER_FRAME = 10;
+ACCELERATION_PX_PER_FRAME = 4;
+MAX_SPEED_PX_PER_FRAME = 8;
 DASH_SPEED_INCREASE = 20;
+DECELERATION_PX_PER_FRAME = 5;
 
 //Variables
 moving = false;

@@ -1,4 +1,4 @@
-/// @description Start Dash
+// @description Start Dash
 // Simple implementation
 if (moving and dashing = false) {
 	dashing = true;
