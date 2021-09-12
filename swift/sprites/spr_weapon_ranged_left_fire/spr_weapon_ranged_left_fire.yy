@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "weapon",
+    "path": "folders/Sprites/weapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_weapon_ranged_left_fire",
