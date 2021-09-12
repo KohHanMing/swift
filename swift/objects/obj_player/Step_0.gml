@@ -30,7 +30,7 @@ if (!w_key_pressed and !a_key_pressed and !s_key_pressed and !d_key_pressed) {
 	
 	// Dashing effectively temporarily increases max speed.
 	// If not at max speed, accelerate. 
-	apply_vector(object_index, ACCELERATION_PX_PER_FRAME, goal_direction);
+	apply_vector(object_index, ACCELERATION_PX_PER_FRAME, goal_direction, mass);
 	if (dashing) {
 		if (speed > MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE) {
 			speed = MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE;

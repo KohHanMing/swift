@@ -2,14 +2,15 @@
 ///@param {index} _object
 ///@param {real} _speed
 ///@param {real} _direction
+///@param {real} _mass
 
-function apply_vector (_object, _speed, _direction) {
-	curr_hspd = _object.speed*cos(_object.direction*pi/180);
-	curr_vspd = _object.speed*sin(_object.direction*pi/180);
-	d_hspd = _speed*cos(_direction*pi/180);
-	d_vspd = _speed*sin(_direction*pi/180);
-	new_hspd = curr_hspd + d_hspd;
-	new_vspd = curr_vspd + d_vspd;
-	_object.direction = arctan2(new_vspd, new_hspd)*180/pi;
-	_object.speed = sqrt(sqr(new_hspd) + sqr(new_vspd));
+function apply_vector (_object, _speed, _direction, _mass) {
+	curr_hmom = _object.speed*_object.mass*cos(_object.direction*pi/180);
+	curr_vmom = _object.speed*_object.mass*sin(_object.direction*pi/180);
+	d_hmom = _speed*_mass*cos(_direction*pi/180);
+	d_vmom = _speed*_mass*sin(_direction*pi/180);
+	new_hmom = curr_hmom + d_hmom;
+	new_vmom = curr_vmom + d_vmom;
+	_object.direction = arctan2(new_vmom, new_hmom)*180/pi;
+	_object.speed = sqrt(sqr(new_hmom/_object.mass) + sqr(new_vmom/_object.mass));
 }
