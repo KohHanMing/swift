@@ -7,3 +7,10 @@ draw_text_transformed(32, 48, dir, 1.5, 1.5, 0);
 
 var spd = "Player Speed: " + string(obj_player.speed);
 draw_text_transformed(32, 96, spd, 1.5, 1.5, 0);
+
+var weapon_ranged_angle = "Weapon (Ranged) Angle: " + string(obj_weapon_ranged.image_angle);
+draw_text_transformed(32, 144, weapon_ranged_angle, 1.5, 1.5, 0);
+
+var weapon_ranged_angle_firing = "Weapon is firing: " + string(obj_weapon_ranged.firing);
+draw_text_transformed(32, 192, weapon_ranged_angle_firing, 1.5, 1.5, 0);
+
