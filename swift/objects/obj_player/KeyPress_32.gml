@@ -1,11 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
-if (movement_direction == MOVEMENT_DIR_RIGHT) {
-	x = x + DASH_SPEED_PER_PX;	 
-} else if (movement_direction == MOVEMENT_DIR_LEFT) {
-	x = x - DASH_SPEED_PER_PX;
-} else if (movement_direction == MOVEMENT_DIR_UP) {
-	y = y - DASH_SPEED_PER_PX;
-} else if (movement_direction == MOVEMENT_DIR_DOWN) {
-	y = y + DASH_SPEED_PER_PX;
+// @description Start Dash
+// Simple implementation
+if (moving and dashing = false) {
+	dashing = true;
+	speed += DASH_SPEED_INCREASE;
+	alarm[0] = room_speed / 20; // Dash lasts 1/20 of a second
 }
+
+// Complex implementation would include checking 
+// keyboard inputs for intended dash direction 
+// to allow dash cancelling 

@@ -1,11 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
-//test
-MOVEMENT_SPEED_PER_PX = 5;
-DASH_SPEED_PER_PX = 15;
-MOVEMENT_DIR_RIGHT = "right";
-MOVEMENT_DIR_LEFT = "left";
-MOVEMENT_DIR_UP = "up";
-MOVEMENT_DIR_DOWN = "down";
 
-movement_direction = MOVEMENT_DIR_RIGHT;
+//Constants
+ACCELERATION_PX_PER_FRAME = 4;
+MAX_SPEED_PX_PER_FRAME = 8;
+DASH_SPEED_INCREASE = 20;
+DECELERATION_PX_PER_FRAME = 5;
+
+//Variables
+moving = false;
+dashing = false;
+w_key_pressed = false;
+a_key_pressed = false;
+s_key_pressed = false;
+d_key_pressed = false;
