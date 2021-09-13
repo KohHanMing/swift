@@ -3,14 +3,14 @@
   "collisionKind": 1,
   "type": 0,
   "origin": 0,
-  "preMultiplyAlpha": false,
+  "preMultiplyAlpha": true,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
+  "bbox_right": 0,
   "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_bottom": 0,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"24ca38bf-3326-43f6-a693-766e0f76d0d3","path":"sprites/spr_city_pavement/spr_city_pavement.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"24ca38bf-3326-43f6-a693-766e0f76d0d3","path":"sprites/spr_city_pavement/spr_city_pavement.yy",},"LayerId":{"name":"f6ee1d20-b135-41a1-ba35-29044ec0ab8a","path":"sprites/spr_city_pavement/spr_city_pavement.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_city_pavement","path":"sprites/spr_city_pavement/spr_city_pavement.yy",},"resourceVersion":"1.0","name":"24ca38bf-3326-43f6-a693-766e0f76d0d3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"45a558d8-0259-4a28-aca1-c2041ad3ac4b","path":"sprites/spr_city_pavement_mask/spr_city_pavement_mask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"45a558d8-0259-4a28-aca1-c2041ad3ac4b","path":"sprites/spr_city_pavement_mask/spr_city_pavement_mask.yy",},"LayerId":{"name":"c838f05e-a4bc-4afd-8d7d-6745926e524c","path":"sprites/spr_city_pavement_mask/spr_city_pavement_mask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_city_pavement_mask","path":"sprites/spr_city_pavement_mask/spr_city_pavement_mask.yy",},"resourceVersion":"1.0","name":"45a558d8-0259-4a28-aca1-c2041ad3ac4b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_city_pavement","path":"sprites/spr_city_pavement/spr_city_pavement.yy",},
+    "spriteId": {"name":"spr_city_pavement_mask","path":"sprites/spr_city_pavement_mask/spr_city_pavement_mask.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5d41add4-5384-4fb2-ba13-4e30e4920bb3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"24ca38bf-3326-43f6-a693-766e0f76d0d3","path":"sprites/spr_city_pavement/spr_city_pavement.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e9e36e6b-ea42-44b2-99c1-542d9f2e020f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"45a558d8-0259-4a28-aca1-c2041ad3ac4b","path":"sprites/spr_city_pavement_mask/spr_city_pavement_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_city_pavement","path":"sprites/spr_city_pavement/spr_city_pavement.yy",},
+    "parent": {"name":"spr_city_pavement_mask","path":"sprites/spr_city_pavement_mask/spr_city_pavement_mask.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_city_pavement",
+    "name": "spr_city_pavement_mask",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f6ee1d20-b135-41a1-ba35-29044ec0ab8a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":3,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c838f05e-a4bc-4afd-8d7d-6745926e524c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/tile/city.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_city_pavement",
+  "name": "spr_city_pavement_mask",
   "tags": [],
   "resourceType": "GMSprite",
 }
