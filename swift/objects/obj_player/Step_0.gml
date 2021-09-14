@@ -1,6 +1,9 @@
     /// @description Insert description here
 // You can write your code in this editor
 
+//for shadow rendering
+depth = -y;
+
 // Check keyboard inputs once per frame
 w_key_pressed = keyboard_check(ord("W"));
 a_key_pressed = keyboard_check(ord("A"));

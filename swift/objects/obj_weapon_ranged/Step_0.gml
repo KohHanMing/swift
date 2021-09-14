@@ -4,6 +4,7 @@
 //align to player
 x = obj_player.x + X_OFFSET_FROM_PLAYER_CENTRE;
 y = obj_player.y;
+depth = -(obj_player.y + 1); //always infront of player
 speed = obj_player.speed;
 direction = obj_player.direction;
 
