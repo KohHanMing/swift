@@ -1,4 +1,4 @@
-    /// @description Insert description here
+/// @description Insert description here
 // You can write your code in this editor
 
 // Check keyboard inputs once per frame
@@ -7,11 +7,8 @@ a_key_pressed = keyboard_check(ord("A"));
 s_key_pressed = keyboard_check(ord("S"));
 d_key_pressed = keyboard_check(ord("D"));
 
-friction = 0 //Assume no deceleration
 moving = false;
-if (!w_key_pressed and !a_key_pressed and !s_key_pressed and !d_key_pressed) {
-	friction = DECELERATION_PX_PER_FRAME; // Probably needs to change depending on the tile you're on
-} else {
+if (w_key_pressed or a_key_pressed or s_key_pressed or d_key_pressed) {
 	// Decide on goal direction based on keyboard inputs
 	var goal_direction_x = 0;
 	var goal_direction_y = 0;
@@ -25,23 +22,23 @@ if (!w_key_pressed and !a_key_pressed and !s_key_pressed and !d_key_pressed) {
 	if (goal_direction_y != 0 || goal_direction_x != 0) {
 		moving = true;
 		goal_direction = radtodeg(arctan2(goal_direction_y,goal_direction_x));
-	} else
-		friction = DECELERATION_PX_PER_FRAME;
+	}
 	
 	// Dashing effectively temporarily increases max speed.
 	// If not at max speed, accelerate. 
-	apply_vector(object_index, ACCELERATION_PX_PER_FRAME, goal_direction, mass);
+	apply_vector(object_index, ACCELERATION_PX_PER_FRAME, goal_direction);
 	if (dashing) {
-		if (speed > MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE) {
-			speed = MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE;
+		if (phy_speed > MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE) {
+			phy_speed_x = (MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE)*cos(direction*pi/180);
+			phy_speed_y = -(MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE)*sin(direction*pi/180);
 		}
 	} else {
-		if (speed > MAX_SPEED_PX_PER_FRAME) {
-			speed = MAX_SPEED_PX_PER_FRAME;
+		if (phy_speed > MAX_SPEED_PX_PER_FRAME) {
+			phy_speed_x = MAX_SPEED_PX_PER_FRAME*cos(direction*pi/180);
+			phy_speed_y = -MAX_SPEED_PX_PER_FRAME*sin(direction*pi/180);
 		}
 	}
 }
 
 move_wrap(true, true, sprite_width/2);
 
-wall_collision(object_index);

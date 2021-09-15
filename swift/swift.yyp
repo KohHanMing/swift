@@ -3,7 +3,6 @@
     {"id":{"name":"spr_weapon_ranged_left_idle","path":"sprites/spr_weapon_ranged_left_idle/spr_weapon_ranged_left_idle.yy",},"order":4,},
     {"id":{"name":"spr_weapon_ranged_left_fire","path":"sprites/spr_weapon_ranged_left_fire/spr_weapon_ranged_left_fire.yy",},"order":5,},
     {"id":{"name":"spr_pushable","path":"sprites/spr_pushable/spr_pushable.yy",},"order":6,},
-    {"id":{"name":"instance_collision","path":"scripts/instance_collision/instance_collision.yy",},"order":2,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":2,},
     {"id":{"name":"obj_pushable","path":"objects/obj_pushable/obj_pushable.yy",},"order":4,},
