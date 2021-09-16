@@ -22,7 +22,6 @@ WANDER_RADIUS = 0;
 WANDER_COOLDOWN_SECONDS = 0;
 
 // Boolean flags
-attacking = false;
 canAttack = true;
 wandering = false;
 
@@ -31,3 +30,6 @@ path = path_add();
 alarm[BEHAVIOUR_ALARM] = 1; // Start managing bihaviour from spawn. 
 wander_anchor_x = x; // Wander around spawn point
 wander_anchor_y = y;
+node_index = 1;
+
+phy_fixed_rotation = true;
