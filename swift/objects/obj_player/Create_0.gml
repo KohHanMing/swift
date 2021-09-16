@@ -6,6 +6,9 @@ ACCELERATION_PX_PER_FRAME = 4;
 MAX_SPEED_PX_PER_FRAME = 8;
 DASH_SPEED_INCREASE = 20;
 
+CURR_HEALTH = 10;
+MAX_HEALTH = 10;
+
 //Variables
 moving = false;
 dashing = false;
