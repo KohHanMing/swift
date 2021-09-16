@@ -2,7 +2,7 @@
 // Simple implementation
 if (moving and dashing = false) {
 	dashing = true;
-	speed += DASH_SPEED_INCREASE;
+	apply_vector(object_index, DASH_SPEED_INCREASE, direction);
 	alarm[0] = room_speed / 20; // Dash lasts 1/20 of a second
 }
 

@@ -1,9 +1,10 @@
 ///@function wall_collision(_object)
-///@param {index} _object
+///@param {index} _object 
 
 //this function must be run after all other movement code have been resolved
 //obj_wall should be the parent class of all other wall types
 function wall_collision (_object) {
+	instance_collision(_object.object_index);
 	hspd = _object.speed*cos(_object.direction*pi/180);
 	vspd = _object.speed*sin(_object.direction*pi/180);
 	collided = false;
