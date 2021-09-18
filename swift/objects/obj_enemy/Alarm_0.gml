@@ -20,7 +20,7 @@ if (dist_to_player <= RETREAT_RANGE) {
 	if (canAttack) {
 		canAttack = false;
 		// Do attack
-		spawn_projectile(ATTACK_HIT_BOX, ATTACK_OFFSET, dir_to_player);
+		spawn_projectile(ATTACK_HIT_BOX, ATTACK_OFFSET_FORWARD, ATTACK_OFFSET_SIDE, dir_to_player);
 		// Reset canAttack
 		alarm[ATTACK_ALARM] = room_speed * ATTACK_DELAY_SECONDS;
 	} // else, enemy is within Attack Range but waiting for cooldown, don't path

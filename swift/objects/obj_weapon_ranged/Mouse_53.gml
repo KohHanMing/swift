@@ -8,7 +8,7 @@ if (not firing) {
 		sprite_index = spr_weapon_ranged_left_fire;
 	}
 	
-	spawn_projectile(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, weapon_angle);
+	spawn_projectile(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, PROJECTILE_OFFSET_SIDE, weapon_angle);
 	
 	alarm[0] = room_speed / 4 //Fires 4 rounds per second
 }
