@@ -6,5 +6,8 @@ LIFETIME_SECONDS = 2;
 P_SPEED = 10;
 P_RANGE = 200;
 
+// Booleans
+P_BOUNCE = false
+
 // Inherit the parent event to set kill timer
 event_inherited();
