@@ -1,4 +1,4 @@
-///@function wall_collision(_object)
+///@function take_damage(_object, _damage)
 ///@param {index} _object
 ///@param {real} _damage
 

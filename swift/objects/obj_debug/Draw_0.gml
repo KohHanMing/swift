@@ -16,3 +16,7 @@ draw_text_transformed(32, 192, weapon_ranged_angle_firing, 1.5, 1.5, 0);
 
 var enemy_attacking = "Enemy is attacking: " + string(obj_enemy.attacking);
 draw_text_transformed(32, 240, enemy_attacking, 1.5, 1.5, 0);
+
+var player_health = "Player Health " + string(obj_player.HEALTH);
+draw_text_transformed(32, 288, player_health, 1.5, 1.5, 0);
+

@@ -12,3 +12,5 @@ if (not firing) {
 	
 	alarm[0] = room_speed / 4 //Fires 4 rounds per second
 }
+
+instance_create_layer(mouse_x, mouse_y, "Instances", obj_health);
