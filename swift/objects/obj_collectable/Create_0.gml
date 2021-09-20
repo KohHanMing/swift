@@ -7,4 +7,4 @@ COLLECTION_RANGE = 64;
 
 //When the item is close enough to player it 
 //is considered collected and item will be deleted
-DELETION_RANGE = 8;
+DELETION_RANGE = 16;
