@@ -14,7 +14,8 @@ WANDER_ALARM = 2;
 AGGRO_RANGE = 0;
 ATTACK_RANGE = 0;
 ATTACK_DELAY_SECONDS = 0;
-HEALTH = 0;
+CURR_HEALTH = 0;
+MAX_HEALTH = 0;
 PLAYER = obj_player;
 RETREAT_RANGE = 0;
 SPEED_PX_PER_FRAME = 0;
@@ -22,7 +23,6 @@ WANDER_RADIUS = 0;
 WANDER_COOLDOWN_SECONDS = 0;
 
 // Boolean flags
-attacking = false;
 canAttack = true;
 wandering = false;
 
@@ -31,3 +31,6 @@ path = path_add();
 alarm[BEHAVIOUR_ALARM] = 1; // Start managing bihaviour from spawn. 
 wander_anchor_x = x; // Wander around spawn point
 wander_anchor_y = y;
+node_index = 1;
+
+phy_fixed_rotation = true;

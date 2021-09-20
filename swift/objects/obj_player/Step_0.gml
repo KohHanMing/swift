@@ -45,3 +45,4 @@ if (w_key_pressed or a_key_pressed or s_key_pressed or d_key_pressed) {
 
 move_wrap(true, true, sprite_width/2);
 
+event_inherited();
