@@ -1,4 +1,4 @@
-/// @description Update Behaviour
+ /// @description Update Behaviour
 
 // Check path last to save path computation
 // Retreat, Attack, Aggro and Wander are to be abstracted to scripts eventually
