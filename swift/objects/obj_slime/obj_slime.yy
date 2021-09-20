@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Slime",
+    "path": "folders/Objects/Enemy/Slime.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_slime",
