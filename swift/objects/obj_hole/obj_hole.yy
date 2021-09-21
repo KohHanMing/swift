@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pushable",
-    "path": "sprites/spr_pushable/spr_pushable.yy",
+    "name": "spr_hole",
+    "path": "sprites/spr_hole/spr_hole.yy",
   },
   "solid": false,
   "visible": true,
@@ -11,10 +11,10 @@
   "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 1,
-  "physicsDensity": 0.2,
-  "physicsRestitution": 0.0,
-  "physicsLinearDamping": 6.0,
+  "physicsGroup": -1,
+  "physicsDensity": 0.0,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
   "physicsAngularDamping": 0.1,
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
@@ -35,7 +35,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_pushable",
+  "name": "obj_hole",
   "tags": [],
   "resourceType": "GMObject",
 }
