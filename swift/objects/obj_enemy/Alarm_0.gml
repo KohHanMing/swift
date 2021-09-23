@@ -3,8 +3,8 @@
 // Check path last to save path computation
 // Retreat, Attack, Aggro and Wander are to be abstracted to scripts eventually
 
-var dist_to_player = point_distance(x, y, PLAYER.x, PLAYER.y);
-var dir_to_player = point_direction(x, y, PLAYER.x, PLAYER.y);
+dist_to_player = point_distance(x, y, PLAYER.x, PLAYER.y);
+dir_to_player = point_direction(x, y, PLAYER.x, PLAYER.y);
 phy_speed_x = 0;
 phy_speed_y = 0;
 
@@ -13,14 +13,14 @@ if (dist_to_player <= RETREAT_RANGE) {
 	// Retreat
 	// Simple straight retreat, location seeking retreat to be implemented. 
 	var retreatDir = (dir_to_player + 180) % 360;
-	phy_set_vector(object_index, SPEED_PX_PER_FRAME, retreatDir);
+	phy_set_vector(id, SPEED_PX_PER_FRAME, retreatDir);
 	
 // else if within Attack Range
 } else if (dist_to_player <= ATTACK_RANGE) {
 	if (canAttack) {
 		canAttack = false;
 		// Do attack
-		spawn_projectile(ATTACK_HIT_BOX, ATTACK_OFFSET_FORWARD, ATTACK_OFFSET_SIDE, dir_to_player);
+		enemy_attack(id);
 		// Reset canAttack
 		alarm[ATTACK_ALARM] = room_speed * ATTACK_DELAY_SECONDS;
 	} // else, enemy is within Attack Range but waiting for cooldown, don't path
@@ -33,12 +33,8 @@ if (dist_to_player <= RETREAT_RANGE) {
 		alarm[WANDER_ALARM] = DISABLE_ALARM;
 	}
 	
-	// If path exists
-	if (mp_grid_path(global.grid, path, x, y, PLAYER.x, PLAYER.y, 1)) {
-		// Start pathing to the next node towards player
-		phy_follow_path(object_index, SPEED_PX_PER_FRAME, path);
-	}
-	
+	enemy_aggro(id);
+
 } else { // Neither within Attack nor Aggro Range
 	// Wander/idle
 	// if not already wandering
@@ -52,14 +48,14 @@ if (dist_to_player <= RETREAT_RANGE) {
 		// And try to path towards it
 		if (mp_grid_path(global.grid, path, x, y, goal_x, goal_y, 1)) {
 			wandering = true;
-			phy_follow_path(object_index, SPEED_PX_PER_FRAME, path);
+			phy_follow_path(id, SPEED_PX_PER_FRAME, path);
 			node_index++;
 			alarm[WANDER_ALARM] = room_speed * WANDER_COOLDOWN_SECONDS;
 		}
 	// else, a wander path has already been generated
 	} else if (path_get_point_x(path, node_index) != 0) { // Check if nodes in the path still exist
 		// Move to the next node on the same path
-		phy_follow_path(object_index, SPEED_PX_PER_FRAME, path, node_index);
+		phy_follow_path(id, SPEED_PX_PER_FRAME, path, node_index);
 		node_index++;
 	}
 }
