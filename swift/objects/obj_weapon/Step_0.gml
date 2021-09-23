@@ -3,7 +3,7 @@
 
 //align to player
 x = obj_player.x + X_OFFSET_FROM_PLAYER_CENTRE;
-y = obj_player.y;
+y = obj_player.y + Y_OFFSET_FROM_PLAYER_CENTRE;
 depth = -(obj_player.y + 1); //always infront of player
 speed = obj_player.speed;
 direction = obj_player.direction;
@@ -13,11 +13,11 @@ weapon_angle = point_direction(x, y, mouse_x, mouse_y);
 
 if (not firing) {
 	if (weapon_angle > 90 and weapon_angle < 270 
-	and sprite_index != spr_weapon_ranged_left_idle) {
-		sprite_index = spr_weapon_ranged_left_idle;
+	and sprite_index != SPR_WEAPON_LEFT_IDLE) {
+		sprite_index = SPR_WEAPON_LEFT_IDLE;
 	} else if (weapon_angle <= 90 or weapon_angle >= 270 
-	and sprite_index != spr_weapon_ranged_right_idle) {
-		sprite_index = spr_weapon_ranged_right_idle;
+	and sprite_index != SPR_WEAPON_RIGHT_IDLE) {
+		sprite_index = SPR_WEAPON_RIGHT_IDLE;
 	}
 } 
 
