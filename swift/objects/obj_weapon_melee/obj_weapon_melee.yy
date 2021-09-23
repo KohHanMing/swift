@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_weapon_ranged_right_idle",
-    "path": "sprites/spr_weapon_ranged_right_idle/spr_weapon_ranged_right_idle.yy",
+    "name": "spr_weapon_melee_idle",
+    "path": "sprites/spr_weapon_melee_idle/spr_weapon_melee_idle.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,6 +25,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":53,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":81,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -34,7 +35,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_weapon_ranged",
+  "name": "obj_weapon_melee",
   "tags": [],
   "resourceType": "GMObject",
 }
