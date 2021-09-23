@@ -31,7 +31,7 @@
     "path": "folders/Objects/Primitive.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_projetile",
+  "name": "obj_projectile",
   "tags": [],
   "resourceType": "GMObject",
 }

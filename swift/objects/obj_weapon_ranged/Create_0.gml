@@ -13,3 +13,6 @@ SPR_WEAPON_LEFT_IDLE = spr_weapon_ranged_left_idle;
 SPR_WEAPON_LEFT_FIRE = spr_weapon_ranged_left_fire;
 SPR_WEAPON_RIGHT_IDLE = spr_weapon_ranged_right_idle;
 SPR_WEAPON_RIGHT_FIRE = spr_weapon_ranged_right_fire;
+
+WEAPON_PROJECTILE = obj_weapon_ranged_projectile;
+PROJECTILE_OFFSET_FORWARD = 20;

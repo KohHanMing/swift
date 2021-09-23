@@ -31,7 +31,7 @@
     {"id":{"name":"spr_weapon_ranged_right_idle","path":"sprites/spr_weapon_ranged_right_idle/spr_weapon_ranged_right_idle.yy",},"order":3,},
     {"id":{"name":"heal","path":"scripts/heal/heal.yy",},"order":4,},
     {"id":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},"order":0,},
-    {"id":{"name":"obj_projetile","path":"objects/obj_projetile/obj_projetile.yy",},"order":4,},
+    {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"order":4,},
     {"id":{"name":"spr_slime","path":"sprites/spr_slime/spr_slime.yy",},"order":0,},
     {"id":{"name":"obj_slime_projectile","path":"objects/obj_slime_projectile/obj_slime_projectile.yy",},"order":1,},
     {"id":{"name":"take_damage","path":"scripts/take_damage/take_damage.yy",},"order":2,},
