@@ -1,13 +1,13 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_button",
+    "path": "sprites/spr_button/spr_button.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_damaging",
-    "path": "objects/obj_damaging/obj_damaging.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Primitive",
-    "path": "folders/Objects/Primitive.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_projetile",
+  "name": "obj_button",
   "tags": [],
   "resourceType": "GMObject",
 }
