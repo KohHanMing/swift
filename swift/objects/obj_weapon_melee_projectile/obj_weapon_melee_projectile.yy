@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_weapon_ranged_projectile",
-    "path": "sprites/spr_weapon_ranged_projectile/spr_weapon_ranged_projectile.yy",
+    "name": "spr_weapon_melee_projectile2",
+    "path": "sprites/spr_weapon_melee_projectile2/spr_weapon_melee_projectile2.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,14 +24,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
-    {"x":8.0,"y":0.0,},
-    {"x":8.0,"y":8.0,},
-    {"x":0.0,"y":8.0,},
+    {"x":32.0,"y":0.0,},
+    {"x":32.0,"y":16.0,},
+    {"x":0.0,"y":16.0,},
   ],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_pushable","path":"objects/obj_pushable/obj_pushable.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -40,7 +39,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_weapon_ranged_projectile",
+  "name": "obj_weapon_melee_projectile",
   "tags": [],
   "resourceType": "GMObject",
 }

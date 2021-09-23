@@ -2,13 +2,13 @@
 // You can write your code in this editor
 if (not firing) {
 	firing = true;
-	if (sprite_index == spr_weapon_ranged_right_idle) {
-		sprite_index = spr_weapon_ranged_right_fire;
+	if (sprite_index == SPR_WEAPON_RIGHT_IDLE) {
+		sprite_index = SPR_WEAPON_RIGHT_FIRE;
 	} else {
-		sprite_index = spr_weapon_ranged_left_fire;
+		sprite_index = SPR_WEAPON_LEFT_FIRE;
 	}
 	
 	spawn_projectile(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, PROJECTILE_OFFSET_SIDE, weapon_angle);
 	
-	alarm[0] = room_speed / 4 //Fires 4 rounds per second
+	alarm[0] = RATE_OF_ATTACK //Attacks 1 time per second
 }
