@@ -1,7 +1,11 @@
 /// @description Check and handle death
 // You can write your code in this editor
 
-if (HEALTH <= 0) {
+if (CURR_HEALTH <= 0) {
 	// Basic handle death
-	instance_destroy(object_index);
+	if (object_index == obj_player) {
+		room_restart();
+	} else {
+		instance_destroy(object_index);
+	}
 }

@@ -9,3 +9,6 @@ switch (state) {
 	case "falling": player_falling(); break;
 }
 
+move_wrap(true, true, sprite_width/2);
+
+event_inherited();
