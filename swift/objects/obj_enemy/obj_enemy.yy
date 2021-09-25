@@ -8,7 +8,7 @@
     "name": "obj_damageable",
     "path": "objects/obj_damageable/obj_damageable.yy",
   },
-  "physicsObject": true,
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 0,

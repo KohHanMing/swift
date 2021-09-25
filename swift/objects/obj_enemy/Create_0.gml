@@ -32,5 +32,7 @@ alarm[BEHAVIOUR_ALARM] = 1; // Start managing bihaviour from spawn.
 wander_anchor_x = x; // Wander around spawn point
 wander_anchor_y = y;
 node_index = 1;
+dist_to_player = 0;
+dir_to_player = 0;
 
 phy_fixed_rotation = true;
