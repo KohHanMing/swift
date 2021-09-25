@@ -11,6 +11,8 @@
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
+  "physicsGroup": 2,
+  "physicsDensity": 0.5,
   "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
