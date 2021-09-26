@@ -1,1 +1,1 @@
-if P_BOUNCE == false instance_destroy();
+instance_destroy();
