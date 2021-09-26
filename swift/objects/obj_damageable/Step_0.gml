@@ -6,6 +6,6 @@ if (CURR_HEALTH <= 0) {
 	if (object_index == obj_player) {
 		room_restart();
 	} else {
-		instance_destroy(object_index);
+		instance_destroy(id);
 	}
 }
