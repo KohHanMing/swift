@@ -76,6 +76,7 @@
     {"id":{"name":"spr_weapon_melee_projectile","path":"sprites/spr_weapon_melee_projectile/spr_weapon_melee_projectile.yy",},"order":8,},
     {"id":{"name":"phy_follow_path","path":"scripts/phy_follow_path/phy_follow_path.yy",},"order":4,},
     {"id":{"name":"spr_weapon_melee_fire","path":"sprites/spr_weapon_melee_fire/spr_weapon_melee_fire.yy",},"order":7,},
+    {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"order":10,},
     {"id":{"name":"obj_wall_shadow","path":"objects/obj_wall_shadow/obj_wall_shadow.yy",},"order":5,},
     {"id":{"name":"apply_vector","path":"scripts/apply_vector/apply_vector.yy",},"order":0,},
     {"id":{"name":"obj_collectable","path":"objects/obj_collectable/obj_collectable.yy",},"order":9,},
