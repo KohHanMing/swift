@@ -1,8 +1,10 @@
 /// @description Initiate constants before inheriting timer
 
-// Constants required
-// DAMAGE
-// LIFETIME_SECONDS
+// Declare default constants
 
-// Start kill timer
-alarm[0] = room_speed * LIFETIME_SECONDS;
+DAMAGE = 1;
+LIFETIME_SECONDS = 0.1;
+P_SPEED = 5;
+P_RANGE = 200;
+
+alarm[0] = 1;

@@ -1,2 +1,4 @@
-/// @description Lifetime kill timer
-instance_destroy();
+/// @description End Create
+
+// Start kill timer
+alarm[1] = room_speed * LIFETIME_SECONDS;
