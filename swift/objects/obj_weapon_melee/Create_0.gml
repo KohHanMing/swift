@@ -5,8 +5,7 @@
 event_inherited();
 
 //Weapon pivot point differs from player centre. Offset accordingly
-X_OFFSET_FROM_PLAYER_CENTRE = 0; 
-Y_OFFSET_FROM_PLAYER_CENTRE = 0; 
+Y_OFFSET_FROM_PLAYER_CENTRE = -14; 
 RATE_OF_ATTACK = room_speed //Attacks 1 time per second
 
 //Weapon presets 

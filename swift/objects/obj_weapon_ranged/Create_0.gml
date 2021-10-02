@@ -7,6 +7,7 @@ event_inherited();
 //weapon pivot point is -5 from player centre
 //this -5 ensures weapon centre is aligned to player
 X_OFFSET_FROM_PLAYER_CENTRE = -5; 
+Y_OFFSET_FROM_PLAYER_CENTRE = -14; 
 RATE_OF_ATTACK = room_speed / 4; //Fires 4 times per second
 
 SPR_WEAPON_LEFT_IDLE = spr_weapon_ranged_left_idle;
