@@ -21,7 +21,8 @@ if (not firing) {
 	}
 } 
 
-image_angle = weapon_angle;
+//Use weapon angle to rotate the weapon to suit its type in the child object
+
 
 
 

@@ -1,7 +1,7 @@
 //transparency
 
-if collision_circle(x,y-32,15,obj_player,false,false) {
-	image_alpha = 0.3;
+if place_meeting(x,y,obj_player) && obj_player.y < y {
+	if image_alpha >= 0.3 image_alpha -= 0.1; //fade out
 } else {
-	image_alpha = 1;
+	if image_alpha <= 1 image_alpha += 0.1; //fade in
 }

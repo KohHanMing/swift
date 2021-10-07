@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// for shadow rendering
+//Static Wall
 depth = -y;
 
 var shadow = instance_create_depth(x,y,-10000,obj_wall_shadow);
