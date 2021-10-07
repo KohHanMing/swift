@@ -31,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player_projetile",
+  "name": "obj_player_projectile",
   "tags": [],
   "resourceType": "GMObject",
 }
