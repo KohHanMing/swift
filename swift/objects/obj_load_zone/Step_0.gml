@@ -10,13 +10,23 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 			remaining[total_waves] = 0;
 		}
 		remaining[total_waves]++
+		
+		enemy_ids[i] = ds_list_create();
 	}
 } else if (triggered) {
 	for (var i = 0; i < ds_list_size(waves); i++) {
 		var next = ds_list_find_value(waves, i);
 		if (next[WAVE] == current_wave) && (next[DELAY] == timer) {
 			var spawnpoint = next[SPAWN];
-			instance_create_layer(spawn[spawnpoint,0], spawn[spawnpoint,1], "Instances", next[TYPE]);
+			
+			// Keep Track of enemy ids
+			ds_list_add(enemy_ids[current_wave], 
+				instance_create_layer(spawn[spawnpoint,0], 
+					spawn[spawnpoint,1], 
+					"Instances", 
+					next[TYPE]
+				)
+			);
 		}
 	}
 	
