@@ -14,7 +14,7 @@
   "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.0,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -24,8 +24,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":32.0,},
-    {"x":64.0,"y":32.0,},
-    {"x":64.0,"y":64.0,},
+    {"x":32.0,"y":32.0,},
+    {"x":32.0,"y":64.0,},
     {"x":0.0,"y":64.0,},
   ],
   "eventList": [

@@ -6,10 +6,24 @@ depth = -y;
 
 var shadow = instance_create_depth(x,y,-10000,obj_wall_shadow);
 
-//if there are adjacent walls, modify created shadows accordingly
-//note that it is done here because shadow has no sprite to check collisions with
-var has_wall_below = place_meeting(x, y + 1 , obj_wall);
-var has_wall_above = place_meeting(x, y - sprite_height - 1, obj_wall);
+var has_wall_below = 0;
+var has_wall_above = 0;
+
+with(obj_wall_static) {
+	if(id!=other.id) {
+		
+		// Apparently, physics_test_overlap returns true when objects are beside each other.
+		// Here, we make sure that the walls collide if placed leftwards and rightwards to make sure
+		// we are not detecting a wall beside.
+		
+		if (physics_test_overlap(x+1,y+1,0,other)&&physics_test_overlap(x-1,y+1,0,other)) has_wall_above = 1;
+		if (physics_test_overlap(x+1,y-1,0,other)&&physics_test_overlap(x-1,y-1,0,other)) has_wall_below = 1;
+		
+	}
+}
+
+show_debug_message(" ");
+
 
 shadow.wall_width = sprite_width;
 shadow.wall_height = sprite_height;
