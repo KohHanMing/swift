@@ -7,4 +7,5 @@ event_inherited();
 DAMAGE = 1;
 LIFETIME_SECONDS = 2;
 P_SPEED = 10;
-P_RANGE = 200;
+P_RANGE = 400;
+P_MASS = 0.5;
