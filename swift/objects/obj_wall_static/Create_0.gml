@@ -22,15 +22,16 @@ with(obj_wall_static) {
 	}
 }
 
-show_debug_message(" ");
-
-
 shadow.wall_width = sprite_width;
 shadow.wall_height = sprite_height;
 
 if (!has_wall_below) {
 	shadow.has_wall_shadow = true;
 	shadow.has_floor_shadow_below = true;
+	
+	// Secondary check for walls below but not touching to ensure we don't draw shadows wrongly.
+	shadow.has_floor_shadow_below = !place_meeting(x,y+1,obj_wall);
+	
 } else {
 	shadow.has_wall_shadow = false;
 	shadow.has_floor_shadow_below = false;
