@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_breakable",
-    "path": "sprites/spr_breakable/spr_breakable.yy",
+    "name": "spr_city_wall",
+    "path": "sprites/spr_city_wall/spr_city_wall.yy",
   },
   "solid": false,
   "visible": true,
@@ -14,7 +14,7 @@
   "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 1,
+  "physicsGroup": 0,
   "physicsDensity": 0.0,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -24,22 +24,22 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":32.0,},
-    {"x":32.0,"y":32.0,},
-    {"x":32.0,"y":64.0,},
+    {"x":64.0,"y":32.0,},
+    {"x":64.0,"y":64.0,},
     {"x":0.0,"y":64.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_damaging","path":"objects/obj_damaging/obj_damaging.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "city",
+    "path": "folders/Objects/tile/city.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_breakable",
+  "name": "obj_city_wall_static",
   "tags": [],
   "resourceType": "GMObject",
 }
