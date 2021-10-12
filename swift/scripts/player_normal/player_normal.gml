@@ -31,20 +31,21 @@ function player_normal(){
 	
 		if (keyboard_check_pressed(vk_space) and !dashing) {
 			dashing = true;
-			apply_vector(object_index, DASH_SPEED_INCREASE, goal_direction);
-			alarm[0] = room_speed / 20; // Dash lasts 1/20 of a second
+			alarm[0] = DASH_TIME
 		}
-	
-		// Dashing effectively temporarily increases max speed.
-		if (dashing) {
-			if (phy_speed > MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE) {
-				phy_speed_x = (MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE)*cos(direction*pi/180);
-				phy_speed_y = -(MAX_SPEED_PX_PER_FRAME + DASH_SPEED_INCREASE)*sin(direction*pi/180);
-			}
-		} else {
-			if (phy_speed > MAX_SPEED_PX_PER_FRAME) {
+		
+		// Dashing temporarily increases acceleration
+		if(dashing) {
+			apply_vector(object_index, DASH_ACCELERATION_INCREASE, goal_direction);
+		}
+		
+		// Dashing temporarily removes max speed
+		if (phy_speed > MAX_SPEED_PX_PER_FRAME) {	
+			if(!dashing) {
 				phy_speed_x = MAX_SPEED_PX_PER_FRAME*cos(direction*pi/180);
 				phy_speed_y = -MAX_SPEED_PX_PER_FRAME*sin(direction*pi/180);
+			} else if (alarm[0] <= DASH_TIME/2) {
+				apply_vector(object_index, -ACCELERATION_PX_PER_FRAME, goal_direction);				
 			}
 		}
 	}
