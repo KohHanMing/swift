@@ -6,9 +6,11 @@ event_inherited();
 HEALTH = 100;
 
 //Constants
-ACCELERATION_PX_PER_FRAME = 4;
-MAX_SPEED_PX_PER_FRAME = 8;
-DASH_SPEED_INCREASE = 20;
+ACCELERATION_PX_PER_FRAME = 2.5;
+MAX_SPEED_PX_PER_FRAME = 5;
+DASH_ACCELERATION_INCREASE = 0.5;
+DASH_TIME = room_speed/5; // Dash lasts 1/5 of a second
+
 phy_fixed_rotation = true;
 
 CURR_HEALTH = 10;
