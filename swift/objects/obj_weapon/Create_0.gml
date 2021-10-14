@@ -6,6 +6,9 @@ X_OFFSET_FROM_PLAYER_CENTRE = 0;
 Y_OFFSET_FROM_PLAYER_CENTRE = 0; 
 RATE_OF_ATTACK = room_speed //Attacks 1 time per second
 
+//Energy usage
+ENERGY_COST = 1;
+
 //Weapon presets 
 SPR_WEAPON_LEFT_IDLE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_LEFT_FIRE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
