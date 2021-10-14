@@ -13,6 +13,7 @@
     {"id":{"name":"spr_weapon_ranged_projectile","path":"sprites/spr_weapon_ranged_projectile/spr_weapon_ranged_projectile.yy",},"order":4,},
     {"id":{"name":"obj_pushable","path":"objects/obj_pushable/obj_pushable.yy",},"order":3,},
     {"id":{"name":"spr_ui_dash_end","path":"sprites/spr_ui_dash_end/spr_ui_dash_end.yy",},"order":8,},
+    {"id":{"name":"spr_ui_fullscreen","path":"sprites/spr_ui_fullscreen/spr_ui_fullscreen.yy",},"order":11,},
     {"id":{"name":"wall_collision","path":"scripts/wall_collision/wall_collision.yy",},"order":1,},
     {"id":{"name":"spr_weapon_ranged_left_idle","path":"sprites/spr_weapon_ranged_left_idle/spr_weapon_ranged_left_idle.yy",},"order":1,},
     {"id":{"name":"obj_soundtrack_manager","path":"objects/obj_soundtrack_manager/obj_soundtrack_manager.yy",},"order":15,},
@@ -74,7 +75,7 @@
     {"id":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},"order":0,},
     {"id":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},"order":16,},
     {"id":{"name":"rm_ranged_basic","path":"rooms/rm_ranged_basic/rm_ranged_basic.yy",},"order":5,},
-    {"id":{"name":"srp_ui_dash","path":"sprites/srp_ui_dash/srp_ui_dash.yy",},"order":9,},
+    {"id":{"name":"spr_ui_dash","path":"sprites/spr_ui_dash/spr_ui_dash.yy",},"order":9,},
     {"id":{"name":"obj_city_wall_static","path":"objects/obj_city_wall_static/obj_city_wall_static.yy",},"order":0,},
     {"id":{"name":"ranged_slime_aggro","path":"scripts/ranged_slime_aggro/ranged_slime_aggro.yy",},"order":3,},
     {"id":{"name":"obj_player_projectile","path":"objects/obj_player_projectile/obj_player_projectile.yy",},"order":11,},
@@ -111,6 +112,7 @@
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
+    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -171,7 +173,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.4.583",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "swift",
