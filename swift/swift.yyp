@@ -91,6 +91,7 @@
     {"id":{"name":"spr_weapon_default","path":"sprites/spr_weapon_default/spr_weapon_default.yy",},"order":5,},
     {"id":{"name":"spr_weapon_melee_projectile","path":"sprites/spr_weapon_melee_projectile/spr_weapon_melee_projectile.yy",},"order":8,},
     {"id":{"name":"phy_follow_path","path":"scripts/phy_follow_path/phy_follow_path.yy",},"order":4,},
+    {"id":{"name":"obj_hole_shadow","path":"objects/obj_hole_shadow/obj_hole_shadow.yy",},"order":16,},
     {"id":{"name":"spr_weapon_melee_fire","path":"sprites/spr_weapon_melee_fire/spr_weapon_melee_fire.yy",},"order":7,},
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"order":6,},
     {"id":{"name":"obj_wall_shadow","path":"objects/obj_wall_shadow/obj_wall_shadow.yy",},"order":5,},
@@ -102,7 +103,6 @@
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
-    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -112,10 +112,10 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_ranged_basic","path":"rooms/rm_ranged_basic/rm_ranged_basic.yy",},},
     {"roomId":{"name":"rm_melee_basic","path":"rooms/rm_melee_basic/rm_melee_basic.yy",},},
     {"roomId":{"name":"rm_jwong","path":"rooms/rm_jwong/rm_jwong.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_hanming","path":"rooms/rm_hanming/rm_hanming.yy",},},
   ],
   "Folders": [
@@ -162,7 +162,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.5.589",
+    "IDEVersion": "2.3.4.583",
   },
   "resourceVersion": "1.4",
   "name": "swift",
