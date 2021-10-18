@@ -13,6 +13,9 @@ function melee_slime_aggro(_instance){
 		if (mp_grid_path(global.grid, path, x, y, goal_x, goal_y, 1)) {
 			// Start pathing to the next node towards player
 			phy_follow_path(id, SPEED_PX_PER_FRAME, path);
+		} else if (mp_grid_path(global.grid, path, x, y, PLAYER.x, PLAYER.y, 1)) {
+			// Start pathing to the next node towards player
+			phy_follow_path(id, SPEED_PX_PER_FRAME, path);
 		}
 	}
 }
