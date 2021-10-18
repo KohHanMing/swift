@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fa9bd14c-2972-42e3-9bbb-a75b1f89d96e","path":"sprites/spr_city_road_line/spr_city_road_line.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fa9bd14c-2972-42e3-9bbb-a75b1f89d96e","path":"sprites/spr_city_road_line/spr_city_road_line.yy",},"LayerId":{"name":"5008cca0-ed72-4c0b-a428-51b18d086a1b","path":"sprites/spr_city_road_line/spr_city_road_line.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_city_road_line","path":"sprites/spr_city_road_line/spr_city_road_line.yy",},"resourceVersion":"1.0","name":"fa9bd14c-2972-42e3-9bbb-a75b1f89d96e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fa9bd14c-2972-42e3-9bbb-a75b1f89d96e","path":"sprites/spr_city_road/spr_city_road.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fa9bd14c-2972-42e3-9bbb-a75b1f89d96e","path":"sprites/spr_city_road/spr_city_road.yy",},"LayerId":{"name":"5008cca0-ed72-4c0b-a428-51b18d086a1b","path":"sprites/spr_city_road/spr_city_road.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_city_road","path":"sprites/spr_city_road/spr_city_road.yy",},"resourceVersion":"1.0","name":"fa9bd14c-2972-42e3-9bbb-a75b1f89d96e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_city_road_line","path":"sprites/spr_city_road_line/spr_city_road_line.yy",},
+    "spriteId": {"name":"spr_city_road","path":"sprites/spr_city_road/spr_city_road.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a7291ee6-6ff4-4c33-8a0f-3329e3b33a66","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa9bd14c-2972-42e3-9bbb-a75b1f89d96e","path":"sprites/spr_city_road_line/spr_city_road_line.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"168068de-d9c7-42b6-923a-14d66000a95a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa9bd14c-2972-42e3-9bbb-a75b1f89d96e","path":"sprites/spr_city_road/spr_city_road.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_city_road_line","path":"sprites/spr_city_road_line/spr_city_road_line.yy",},
+    "parent": {"name":"spr_city_road","path":"sprites/spr_city_road/spr_city_road.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_city_road_line",
+    "name": "spr_city_road",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/tile/city.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_city_road_line",
+  "name": "spr_city_road",
   "tags": [],
   "resourceType": "GMSprite",
 }
