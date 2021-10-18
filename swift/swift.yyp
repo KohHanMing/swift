@@ -112,8 +112,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_ranged_basic","path":"rooms/rm_ranged_basic/rm_ranged_basic.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_melee_basic","path":"rooms/rm_melee_basic/rm_melee_basic.yy",},},
     {"roomId":{"name":"rm_jwong","path":"rooms/rm_jwong/rm_jwong.yy",},},
     {"roomId":{"name":"rm_hanming","path":"rooms/rm_hanming/rm_hanming.yy",},},

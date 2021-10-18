@@ -28,3 +28,10 @@ if (!flying) {
 		}
 	}
 }
+
+if damage_tint_time > 0 {
+	image_blend = make_color_rgb(255-damage_tint_time/(room_speed/2)*255, 255, 255-damage_tint_time/(room_speed/2)*255);
+	if damage_tint_time = 1 image_blend = c_white;
+	draw_self();
+	damage_tint_time -= 1;
+}
