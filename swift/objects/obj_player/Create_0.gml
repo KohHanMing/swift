@@ -13,7 +13,7 @@ DASH_TIME = room_speed/5; // Dash lasts 1/5 of a second
 
 phy_fixed_rotation = true;
 
-CURR_HEALTH = 10;
+CURR_HEALTH = 100;
 MAX_HEALTH = 10;
 
 //Variables

@@ -27,6 +27,13 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 					next[TYPE]
 				)
 			);
+			
+			// Facilitate swarming behaviour
+			var counter = 0;
+			with (obj_melee_slime) {
+				sector_number = counter % 8;
+				counter += 5;
+			}
 		}
 	}
 	

@@ -102,7 +102,6 @@
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
-    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -112,8 +111,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_ranged_basic","path":"rooms/rm_ranged_basic/rm_ranged_basic.yy",},},
     {"roomId":{"name":"rm_melee_basic","path":"rooms/rm_melee_basic/rm_melee_basic.yy",},},
+    {"roomId":{"name":"rm_ranged_basic","path":"rooms/rm_ranged_basic/rm_ranged_basic.yy",},},
     {"roomId":{"name":"rm_jwong","path":"rooms/rm_jwong/rm_jwong.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_hanming","path":"rooms/rm_hanming/rm_hanming.yy",},},
@@ -162,7 +161,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.5.589",
+    "IDEVersion": "2.3.4.583",
   },
   "resourceVersion": "1.4",
   "name": "swift",
