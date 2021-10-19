@@ -9,6 +9,8 @@ switch (state) {
 
 move_wrap(true, true, sprite_width/2);
 
+recharge_dash();
+
 event_inherited();
 
 if damage_tint_time > 0 {

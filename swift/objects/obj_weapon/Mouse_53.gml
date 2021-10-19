@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (not firing) {
+if (not firing and obj_player.CURR_ENERGY >= ENERGY_COST) {
+	obj_player.CURR_ENERGY -= ENERGY_COST
 	firing = true;
 	if (sprite_index == SPR_WEAPON_RIGHT_IDLE) {
 		sprite_index = SPR_WEAPON_RIGHT_FIRE;

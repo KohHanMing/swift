@@ -27,11 +27,21 @@ function player_normal(){
 	
 		if (moving) {
 			apply_vector(object_index, ACCELERATION_PX_PER_FRAME, goal_direction);
+			
+			//Change sprite according to goal_direction
+			//Does not update when not moving
+			
+			if (goal_direction > -135 && goal_direction < -45) sprite_index = spr_player_walk_down;
+			else if (goal_direction > 45 && goal_direction < 135) sprite_index = spr_player_walk_up;
+			else if (goal_direction >= -45 && goal_direction <= 45) sprite_index = spr_player_walk_right;
+			else sprite_index = spr_player_walk_left;
+			
 		}
 	
-		if (keyboard_check_pressed(vk_space) and !dashing) {
+		if (keyboard_check_pressed(vk_space) and !dashing and CURR_DASH >= DASH_UNIT) {
 			dashing = true;
 			alarm[0] = DASH_TIME
+			CURR_DASH -= DASH_UNIT;
 		}
 		
 		// Dashing temporarily increases acceleration

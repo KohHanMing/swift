@@ -35,3 +35,11 @@ if damage_tint_time > 0 {
 	draw_self();
 	damage_tint_time -= 1;
 }
+
+// Prevent rubberbanding due to overshooting target coordinates
+if (variable_instance_exists(id, "goal_x")) {
+	if (x <= goal_x + 5 && x >= goal_x - 5 && y <= goal_y + 5 && y >= goal_y - 5) {
+		phy_speed_x = 0;
+		phy_speed_y = 0;
+	}
+}

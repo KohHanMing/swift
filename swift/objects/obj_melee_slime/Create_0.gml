@@ -17,5 +17,4 @@ SPEED_PX_PER_FRAME = 5;
 WANDER_RADIUS = 50;
 WANDER_COOLDOWN_SECONDS = 3;
 
-// Swarm Behaviour
-sector_counter = [0, 0, 0, 0, 0, 0, 0, 0]
+sector_number = irandom_range(0,7);
