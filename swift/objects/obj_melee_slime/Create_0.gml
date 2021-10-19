@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-AGGRO_RANGE = 300;
+AGGRO_RANGE = 250;
 ATTACK_DELAY_SECONDS = 2;
 ATTACK_HIT_BOX = obj_slime_melee_hitbox;
 ATTACK_OFFSET_FORWARD = 30;

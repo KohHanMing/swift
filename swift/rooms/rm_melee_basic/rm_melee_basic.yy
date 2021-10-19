@@ -422,8 +422,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Showcase Rooms",
+    "path": "folders/Rooms/Showcase Rooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_melee_basic",
