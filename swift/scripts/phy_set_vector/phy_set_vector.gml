@@ -1,4 +1,4 @@
-///@function phy_follow_path(_instance, _speed, _direction)
+///@function phy_set_vector(_instance, _speed, _direction)
 ///@param {index} _instance
 ///@param {real} _speed
 ///@param {real} _direction
