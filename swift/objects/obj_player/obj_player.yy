@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player_walk_right",
-    "path": "sprites/spr_player_walk_right/spr_player_walk_right.yy",
+    "name": "spr_player_move_right",
+    "path": "sprites/spr_player_move_right/spr_player_move_right.yy",
   },
   "solid": false,
   "visible": true,
