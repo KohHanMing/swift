@@ -73,7 +73,6 @@
     {"id":{"name":"spr_ui_energy","path":"sprites/spr_ui_energy/spr_ui_energy.yy",},"order":4,},
     {"id":{"name":"spr_ui_base","path":"sprites/spr_ui_base/spr_ui_base.yy",},"order":10,},
     {"id":{"name":"spr_shadow_on_wall","path":"sprites/spr_shadow_on_wall/spr_shadow_on_wall.yy",},"order":3,},
-    {"id":{"name":"spr_city_road_line","path":"sprites/spr_city_road_line/spr_city_road_line.yy",},"order":2,},
     {"id":{"name":"rm_melee_basic","path":"rooms/rm_melee_basic/rm_melee_basic.yy",},"order":1,},
     {"id":{"name":"spr_city_road_line_horizontal","path":"sprites/spr_city_road_line_horizontal/spr_city_road_line_horizontal.yy",},"order":2,},
     {"id":{"name":"spr_weapon_melee_idle","path":"sprites/spr_weapon_melee_idle/spr_weapon_melee_idle.yy",},"order":6,},
