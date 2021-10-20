@@ -32,6 +32,7 @@ function player_normal(){
 		if (keyboard_check_pressed(vk_space) and !dashing) {
 			dashing = true;
 			alarm[0] = DASH_TIME
+			audio_play_sound(sfx_player_dash, 99, false);
 		}
 		
 		// Dashing temporarily increases acceleration

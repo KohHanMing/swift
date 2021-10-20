@@ -11,5 +11,5 @@ if (not firing) {
 	spawn_melee_projectile(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, PROJECTILE_OFFSET_SIDE, weapon_angle);
 	alarm[0] = RATE_OF_ATTACK //Attacks 1 time per second
 	
-	audio_play_sound(SFX_WEAPON,99,false);
+	audio_play_sound(SFX_WEAPON, 99, false);
 }
