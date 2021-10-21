@@ -18,7 +18,7 @@ MAX_DASH = DASH_UNIT * 3;
 
 phy_fixed_rotation = true;
 
-CURR_HEALTH = 10;
+CURR_HEALTH = 100;
 MAX_HEALTH = 10;
 
 ENERGY_INCREMENT = 1;
