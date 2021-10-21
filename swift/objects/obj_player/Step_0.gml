@@ -14,7 +14,12 @@ move_wrap(true, true, sprite_width/2);
 //Change sprite according to goal_direction
 //Does not update when not moving
 
-var weapon_angle = obj_weapon.weapon_angle;
+var weapon_angle;
+if (instance_exists(obj_weapon_ranged)) {
+	weapon_angle = obj_weapon_ranged.weapon_angle;
+} else {
+	weapon_angle = obj_weapon_melee.weapon_angle;	
+}
 
 show_debug_message(weapon_angle);
 if (weapon_angle > 225 && weapon_angle < 315) sprite_index = spr_player_idle_down;

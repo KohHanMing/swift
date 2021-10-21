@@ -23,4 +23,5 @@ PROJECTILE_OFFSET_SIDE = 0; //Right is Positive
 
 firing = false;
 
+weapon_angle = point_direction(x, y, mouse_x, mouse_y);
 
