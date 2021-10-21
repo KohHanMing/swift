@@ -4,7 +4,7 @@
 //Inherit from parent
 event_inherited();
 
-X_OFFSET_FROM_PLAYER_CENTRE = 10; 
+X_OFFSET_FROM_PLAYER_CENTRE = 0; 
 Y_OFFSET_FROM_PLAYER_CENTRE = -15; 
 RATE_OF_ATTACK = room_speed / 4; //Fires 4 times per second
 
