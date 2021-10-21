@@ -4,7 +4,7 @@
 event_inherited();
 
 // Constants
-DAMAGE = 1;
+DAMAGE = 5;
 LIFETIME_SECONDS = 2;
 P_SPEED = 5;
 P_RANGE = 200;
