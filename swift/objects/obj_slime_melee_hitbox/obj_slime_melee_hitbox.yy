@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Ranged Slime",
-    "path": "folders/Objects/Enemy/Slime/Ranged Slime.yy",
+    "name": "Melee Slime",
+    "path": "folders/Objects/Enemy/Slime/Melee Slime.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_slime_melee_hitbox",
