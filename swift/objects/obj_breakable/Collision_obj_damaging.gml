@@ -10,3 +10,5 @@ if (image_index == image_number-1) {
 	with(obj_wall_static) {event_perform(ev_create,0)}
 }
 image_index += 1;
+
+audio_play_sound(sfx_wall_break, 99, false);
