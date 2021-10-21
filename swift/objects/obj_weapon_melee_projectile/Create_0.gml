@@ -11,8 +11,3 @@ P_RANGE = 200;
 
 OFFSET_X = -1;
 OFFSET_Y = -1;
-
-
-show_debug_message("X actual: " + string(OFFSET_X));
-show_debug_message("Y actual: " + string(OFFSET_Y));
-show_debug_message("instance " + string(id));

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_health",
-    "path": "sprites/spr_health/spr_health.yy",
+    "name": "spr_energy",
+    "path": "sprites/spr_energy/spr_energy.yy",
   },
   "solid": false,
   "visible": true,
@@ -40,7 +40,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_health",
+  "name": "obj_energy",
   "tags": [],
   "resourceType": "GMObject",
 }

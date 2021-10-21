@@ -7,12 +7,13 @@ var health_length = sprite_get_width(spr_ui_health)*(obj_player.CURR_HEALTH / ob
 draw_sprite_part(spr_ui_health,1,0,0,health_length,sprite_get_height(spr_ui_health),HEALTH_BAR_OFFSET_X,HEALTH_BAR_OFFSET_Y);
 
 var health_end_alpha = 0;
+/*
 if (obj_player.CURR_HEALTH < obj_player.MAX_HEALTH) {
 	health_end_alpha = 1;
 } else {
 	health_end_alpha = 0;
 }
-
+*/
 draw_sprite_ext(spr_ui_health_end, 1, HEALTH_BAR_OFFSET_X + health_length, HEALTH_BAR_OFFSET_Y,1,1,0,c_white,health_end_alpha);
 
 //Energy

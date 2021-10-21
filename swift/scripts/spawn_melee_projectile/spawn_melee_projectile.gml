@@ -9,7 +9,5 @@ function spawn_melee_projectile(_projectile, _offset_forward, _offset_side, _ang
 		phy_rotation = -_angle;
 		OFFSET_X = offset_x_from_player;
 		OFFSET_Y = offset_y_from_player;
-		show_debug_message("X assigned: " + string(OFFSET_X));
-		show_debug_message("Y assigned: " + string(OFFSET_Y));
 	}
 }
