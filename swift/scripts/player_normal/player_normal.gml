@@ -29,10 +29,11 @@ function player_normal(){
 			apply_vector(object_index, ACCELERATION_PX_PER_FRAME, goal_direction);
 		}
 	
-		if (keyboard_check_pressed(vk_space) and !dashing) {
+		if (keyboard_check_pressed(vk_space) and !dashing and CURR_DASH >= DASH_UNIT) {
 			dashing = true;
-			alarm[0] = DASH_TIME
-			audio_play_sound(sfx_player_dash, 99, false);
+			alarm[0] = DASH_TIME;
+			CURR_DASH -= DASH_UNIT;
+      audio_play_sound(sfx_player_dash, 99, false);
 		}
 		
 		// Dashing temporarily increases acceleration

@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (!triggered && place_meeting(x, y, obj_player)) {
+	if (trigger_doors) {
+		with (obj_hdoor) closed = true;
+		with (obj_vdoor) closed = true;
+	}
 	triggered = true;
 	
 	for (var i = 0; i < ds_list_size(waves); i++) {
@@ -27,6 +31,13 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 					next[TYPE]
 				)
 			);
+			
+			// Facilitate swarming behaviour
+			var counter = 0;
+			with (obj_melee_slime) {
+				sector_number = counter % 8;
+				counter += 5;
+			}
 		}
 	}
 	
@@ -34,6 +45,10 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 	
 	if (remaining[current_wave] <= 0) {
 		if (current_wave == total_waves) {
+			if (trigger_doors) {
+				with (obj_hdoor) closed = false;
+				with (obj_vdoor) closed = false;
+			}
 			instance_destroy();
 		} else {
 			current_wave++;
