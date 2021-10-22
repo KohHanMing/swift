@@ -9,4 +9,5 @@ LIFETIME_SECONDS = 1/3;
 P_SPEED = 0;
 P_RANGE = 200;
 
-
+OFFSET_X = -1;
+OFFSET_Y = -1;

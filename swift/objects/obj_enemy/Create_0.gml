@@ -22,6 +22,8 @@ RETREAT_RANGE = 0;
 SPEED_PX_PER_FRAME = 0;
 WANDER_RADIUS = 0;
 WANDER_COOLDOWN_SECONDS = 0;
+DEATH_SFX = sfx_slime_death;
+ATTACK_SFX = sfx_slime_melee;
 
 // Boolean flags
 canAttack = true;

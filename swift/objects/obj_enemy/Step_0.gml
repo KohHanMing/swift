@@ -28,3 +28,18 @@ if (!flying) {
 		}
 	}
 }
+
+if damage_tint_time > 0 {
+	image_blend = make_color_rgb(255-damage_tint_time/(room_speed/2)*255, 255, 255-damage_tint_time/(room_speed/2)*255);
+	if damage_tint_time = 1 image_blend = c_white;
+	draw_self();
+	damage_tint_time -= 1;
+}
+
+// Prevent rubberbanding due to overshooting target coordinates
+if (variable_instance_exists(id, "goal_x")) {
+	if (x <= goal_x + 5 && x >= goal_x - 5 && y <= goal_y + 5 && y >= goal_y - 5) {
+		phy_speed_x = 0;
+		phy_speed_y = 0;
+	}
+}

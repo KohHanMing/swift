@@ -13,8 +13,8 @@
   "soundFile": "ambient1.mp3",
   "duration": 120.02,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "soundtracks",
+    "path": "folders/Sounds/soundtracks.yy",
   },
   "resourceVersion": "1.0",
   "name": "ambient1",

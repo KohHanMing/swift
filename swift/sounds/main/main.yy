@@ -13,8 +13,8 @@
   "soundFile": "main.mp3",
   "duration": 165.838181,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "soundtracks",
+    "path": "folders/Sounds/soundtracks.yy",
   },
   "resourceVersion": "1.0",
   "name": "main",

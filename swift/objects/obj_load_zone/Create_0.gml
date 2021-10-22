@@ -12,3 +12,7 @@ current_wave = 0;
 total_waves = -1;
 waves = ds_list_create();
 enemy_ids = ds_list_create();
+
+trigger_doors = true;
+
+is_level_complete = false;

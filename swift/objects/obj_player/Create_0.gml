@@ -18,11 +18,11 @@ MAX_DASH = DASH_UNIT * 3;
 
 phy_fixed_rotation = true;
 
-CURR_HEALTH = 10;
-MAX_HEALTH = 10;
+CURR_HEALTH = 100;
+MAX_HEALTH = 100;
 
 ENERGY_INCREMENT = 1;
-ENERGY_RECHARGE_RATE = room_speed
+ENERGY_RECHARGE_RATE = room_speed * 1.5
 CURR_ENERGY = 10;
 MAX_ENERGY = 10;
 alarm[2] = ENERGY_RECHARGE_RATE; //Start recharging infinitely
