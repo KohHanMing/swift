@@ -10,10 +10,8 @@ RATE_OF_ATTACK = room_speed //Attacks 1 time per second
 ENERGY_COST = 1;
 
 //Weapon presets 
-SPR_WEAPON_LEFT_IDLE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
-SPR_WEAPON_LEFT_FIRE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
-SPR_WEAPON_RIGHT_IDLE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
-SPR_WEAPON_RIGHT_FIRE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
+SPR_WEAPON_IDLE_SIDE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
+SPR_WEAPON_FIRE_SIDE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
 SFX_WEAPON = sfx_ranged_default;
 
 //Projectile presets

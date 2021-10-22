@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_honey_badger_idle",
-    "path": "sprites/spr_honey_badger_idle/spr_honey_badger_idle.yy",
+    "name": "spr_honey_badger_idle_side",
+    "path": "sprites/spr_honey_badger_idle_side/spr_honey_badger_idle_side.yy",
   },
   "solid": false,
   "visible": true,

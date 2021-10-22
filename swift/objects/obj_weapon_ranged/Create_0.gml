@@ -10,10 +10,11 @@ X_OFFSET_FROM_PLAYER_CENTRE = -5;
 Y_OFFSET_FROM_PLAYER_CENTRE = -14; 
 RATE_OF_ATTACK = room_speed / 4; //Fires 4 times per second
 
-SPR_WEAPON_LEFT_IDLE = spr_weapon_ranged_left_idle;
-SPR_WEAPON_LEFT_FIRE = spr_weapon_ranged_left_fire;
-SPR_WEAPON_RIGHT_IDLE = spr_weapon_ranged_right_idle;
-SPR_WEAPON_RIGHT_FIRE = spr_weapon_ranged_right_fire;
+SPR_WEAPON_IDLE_SIDE = spr_weapon_ranged_idle_side;
+SPR_WEAPON_FIRE_SIDE = spr_weapon_ranged_fire_side;
+
+SPR_WEAPON_IDLE_FRONT = spr_weapon_ranged_idle_front;
+SPR_WEAPON_FIRE_FRONT =spr_weapon_ranged_fire_front;
 
 WEAPON_PROJECTILE = obj_weapon_ranged_projectile;
 PROJECTILE_OFFSET_FORWARD = 20;

@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 firing = true;
-if (sprite_index == SPR_WEAPON_RIGHT_IDLE) {
-	sprite_index = SPR_WEAPON_RIGHT_FIRE;
+if (sprite_index == SPR_WEAPON_IDLE_SIDE) {
+	sprite_index = SPR_WEAPON_FIRE_SIDE;
 } else {
-	sprite_index = SPR_WEAPON_LEFT_FIRE;
+	sprite_index = SPR_WEAPON_FIRE_FRONT;
 }
 		
 spawn_melee_projectile(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, PROJECTILE_OFFSET_SIDE, weapon_angle);
