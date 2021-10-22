@@ -5,5 +5,6 @@ function manual_projectile_collision(_inst){
 		instance_create_layer(x,y,"Instances", obj_health);
 		instance_create_layer(x,y,"Instances", obj_energy);
 	}
+	
     instance_destroy();
 }
