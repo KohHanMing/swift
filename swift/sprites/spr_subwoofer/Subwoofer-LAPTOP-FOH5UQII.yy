@@ -1,0 +1,175 @@
+{
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 0,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 6,
+  "bbox_right": 24,
+  "bbox_top": 3,
+  "bbox_bottom": 21,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 32,
+  "height": 32,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"692b4350-8c9c-4efb-8a7d-6280f4c9b4a9","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"692b4350-8c9c-4efb-8a7d-6280f4c9b4a9","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"692b4350-8c9c-4efb-8a7d-6280f4c9b4a9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e2e5f5bf-9efd-4c13-a9a8-5e1829bfe62e","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e2e5f5bf-9efd-4c13-a9a8-5e1829bfe62e","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"e2e5f5bf-9efd-4c13-a9a8-5e1829bfe62e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a2f9b847-632e-4c2e-9afd-073903dfd238","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a2f9b847-632e-4c2e-9afd-073903dfd238","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"a2f9b847-632e-4c2e-9afd-073903dfd238","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"34335c84-59b5-4249-9842-0e9ea2138d2f","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"34335c84-59b5-4249-9842-0e9ea2138d2f","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"34335c84-59b5-4249-9842-0e9ea2138d2f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"148f4a71-cc70-4504-9366-d418b1751e08","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"148f4a71-cc70-4504-9366-d418b1751e08","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"148f4a71-cc70-4504-9366-d418b1751e08","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b427d8dd-c4ff-43f9-983e-839c67379a50","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b427d8dd-c4ff-43f9-983e-839c67379a50","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"b427d8dd-c4ff-43f9-983e-839c67379a50","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8d0284f7-0ab9-407c-9848-221d56f28252","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8d0284f7-0ab9-407c-9848-221d56f28252","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"8d0284f7-0ab9-407c-9848-221d56f28252","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"055c7761-0ad6-4137-8f9d-3d8c837eaa7b","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"055c7761-0ad6-4137-8f9d-3d8c837eaa7b","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"055c7761-0ad6-4137-8f9d-3d8c837eaa7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6fd95eb8-2af8-4146-b020-02a40fad4697","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6fd95eb8-2af8-4146-b020-02a40fad4697","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"6fd95eb8-2af8-4146-b020-02a40fad4697","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4cd165cc-f5f3-4456-8a31-dba29025cb8c","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4cd165cc-f5f3-4456-8a31-dba29025cb8c","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"4cd165cc-f5f3-4456-8a31-dba29025cb8c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"efc37a10-b279-45e7-afca-d98a7bb6bf2f","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"efc37a10-b279-45e7-afca-d98a7bb6bf2f","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"efc37a10-b279-45e7-afca-d98a7bb6bf2f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"335bef52-a6df-45c0-8d97-0c13ff827b8a","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"335bef52-a6df-45c0-8d97-0c13ff827b8a","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"335bef52-a6df-45c0-8d97-0c13ff827b8a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f767e071-785e-47f4-b64a-fc4c9b73de51","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f767e071-785e-47f4-b64a-fc4c9b73de51","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"f767e071-785e-47f4-b64a-fc4c9b73de51","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a55838d2-0d96-4914-a479-35a2500aa0a7","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a55838d2-0d96-4914-a479-35a2500aa0a7","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"a55838d2-0d96-4914-a479-35a2500aa0a7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c7b3eac8-4f48-479d-b2a1-009d757fee99","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c7b3eac8-4f48-479d-b2a1-009d757fee99","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"c7b3eac8-4f48-479d-b2a1-009d757fee99","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"50eeab70-d09f-44ba-9b7e-2c4a9b15c016","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"50eeab70-d09f-44ba-9b7e-2c4a9b15c016","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"50eeab70-d09f-44ba-9b7e-2c4a9b15c016","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0a05d300-f9ca-4ee1-bd0a-7510a22f3c5b","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0a05d300-f9ca-4ee1-bd0a-7510a22f3c5b","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"0a05d300-f9ca-4ee1-bd0a-7510a22f3c5b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e77b1010-c521-4a4d-8773-264f6bfa0657","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e77b1010-c521-4a4d-8773-264f6bfa0657","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"e77b1010-c521-4a4d-8773-264f6bfa0657","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e06b416b-7f93-41b0-a212-4c22626f7e09","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e06b416b-7f93-41b0-a212-4c22626f7e09","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"e06b416b-7f93-41b0-a212-4c22626f7e09","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6f39c3e8-4297-452e-926d-e1a7c93a9e11","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6f39c3e8-4297-452e-926d-e1a7c93a9e11","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"6f39c3e8-4297-452e-926d-e1a7c93a9e11","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eed30188-e5cf-4038-a19d-b19c030c92dc","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eed30188-e5cf-4038-a19d-b19c030c92dc","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"eed30188-e5cf-4038-a19d-b19c030c92dc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4f696a91-dd8c-43fe-a88f-bf8653854ed2","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4f696a91-dd8c-43fe-a88f-bf8653854ed2","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"4f696a91-dd8c-43fe-a88f-bf8653854ed2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"515944b0-e4a8-46f8-be87-c011e24c8276","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"515944b0-e4a8-46f8-be87-c011e24c8276","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"515944b0-e4a8-46f8-be87-c011e24c8276","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c2253891-803c-42ce-8431-d561eeedf6b4","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c2253891-803c-42ce-8431-d561eeedf6b4","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"c2253891-803c-42ce-8431-d561eeedf6b4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"63da8c0a-0e47-4b1d-be83-5188784430b0","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"63da8c0a-0e47-4b1d-be83-5188784430b0","path":"sprites/Subwoofer/Subwoofer.yy",},"LayerId":{"name":"8df273af-b876-4d88-ba68-1061c85ca1cc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","name":"63da8c0a-0e47-4b1d-be83-5188784430b0","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 60.0,
+    "playbackSpeedType": 0,
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 25.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"01e6e2ce-3911-48ec-b1a7-6bb21f85a9c6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"692b4350-8c9c-4efb-8a7d-6280f4c9b4a9","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bed2eb55-436c-4f44-abc4-8fba075ad037","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2e5f5bf-9efd-4c13-a9a8-5e1829bfe62e","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"be31a290-4998-45b7-b84d-7664ca3435e2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a2f9b847-632e-4c2e-9afd-073903dfd238","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6c340bb1-bc33-4fb9-ac3c-66b221ecf1d7","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"34335c84-59b5-4249-9842-0e9ea2138d2f","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"64f68d67-e164-4021-a11b-b0aebe529975","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"148f4a71-cc70-4504-9366-d418b1751e08","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"24da1dae-acab-45a8-927a-4568d410591a","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b427d8dd-c4ff-43f9-983e-839c67379a50","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4247e300-cfbf-4a2f-b9a7-c9f5ed731188","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8d0284f7-0ab9-407c-9848-221d56f28252","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"44c2d9e1-07f0-44e3-8276-4a6ad3dbfcaf","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"055c7761-0ad6-4137-8f9d-3d8c837eaa7b","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"239d4297-5a3c-4185-8a83-e857670e0503","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6fd95eb8-2af8-4146-b020-02a40fad4697","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"08c60301-114b-4760-b8d8-ee10dca5f966","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4cd165cc-f5f3-4456-8a31-dba29025cb8c","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"44a50af5-7ba9-419c-967d-34db8fcb2429","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"efc37a10-b279-45e7-afca-d98a7bb6bf2f","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c5c6a3aa-45e5-483d-ace3-ef1ec27d017f","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"335bef52-a6df-45c0-8d97-0c13ff827b8a","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"27dd0187-5769-43f2-85c7-f691869b4c30","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f767e071-785e-47f4-b64a-fc4c9b73de51","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"16c0e2d0-5d19-47a6-9cd7-3a4ed8d1ca93","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a55838d2-0d96-4914-a479-35a2500aa0a7","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0d6749c6-8eab-4088-ab0b-f9dc480cd2a0","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c7b3eac8-4f48-479d-b2a1-009d757fee99","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2d704cc9-5f8d-4a69-8424-e1b296557e3a","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"50eeab70-d09f-44ba-9b7e-2c4a9b15c016","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d8dc74b2-a370-44e5-b6c7-ea9d59dc5014","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a05d300-f9ca-4ee1-bd0a-7510a22f3c5b","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7d5cc8ef-4fb4-4712-8a54-ee50f9a91085","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e77b1010-c521-4a4d-8773-264f6bfa0657","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"03c1e521-1283-49cf-a7f3-4714577cdc81","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e06b416b-7f93-41b0-a212-4c22626f7e09","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"662c89a5-0a21-40a5-82a1-67ee53990165","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f39c3e8-4297-452e-926d-e1a7c93a9e11","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ef14e41-8f56-4ae6-9b65-d3a0369ba048","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eed30188-e5cf-4038-a19d-b19c030c92dc","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a0c51707-fa72-44bd-ab9d-2f1948f6753f","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4f696a91-dd8c-43fe-a88f-bf8653854ed2","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"78279b65-64fa-41cc-94f2-760ca02be9f4","Key":22.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"515944b0-e4a8-46f8-be87-c011e24c8276","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"541fad55-3f97-462f-814a-848708a15e9a","Key":23.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2253891-803c-42ce-8431-d561eeedf6b4","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"646f6337-293d-4ec2-befd-f130c71a1246","Key":24.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63da8c0a-0e47-4b1d-be83-5188784430b0","path":"sprites/Subwoofer/Subwoofer.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 0,
+    "yorigin": 0,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"Subwoofer","path":"sprites/Subwoofer/Subwoofer.yy",},
+    "resourceVersion": "1.3",
+    "name": "Subwoofer",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8df273af-b876-4d88-ba68-1061c85ca1cc","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Melee",
+    "path": "folders/Sprites/Weapons/Melee.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Subwoofer",
+  "tags": [],
+  "resourceType": "GMSprite",
+}

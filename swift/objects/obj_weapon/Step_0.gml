@@ -11,17 +11,9 @@ direction = obj_player.direction;
 weapon_angle = point_direction(x, y, mouse_x, mouse_y);
 
 if (not firing) {
-	if (weapon_angle > 90 and weapon_angle < 270 
-	and sprite_index != SPR_WEAPON_LEFT_IDLE) {
-		sprite_index = SPR_WEAPON_LEFT_IDLE;
-	} else if (weapon_angle <= 90 or weapon_angle >= 270 
-	and sprite_index != SPR_WEAPON_RIGHT_IDLE) {
-		sprite_index = SPR_WEAPON_RIGHT_IDLE;
-	}
-} 
+	if (weapon_angle >= 45 && weapon_angle <= 135) || (weapon_angle >= 225 && weapon_angle <= 315) {
+		sprite_index = SPR_WEAPON_IDLE_FRONT;
+	} else sprite_index = SPR_WEAPON_IDLE_SIDE;
+}
 
 //Use weapon angle to rotate the weapon to suit its type in the child object
-
-
-
-
