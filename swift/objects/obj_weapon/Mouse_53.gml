@@ -3,11 +3,9 @@
 if (not firing and obj_player.CURR_ENERGY >= ENERGY_COST) {
 	obj_player.CURR_ENERGY -= ENERGY_COST
 	firing = true;
-	if (sprite_index == SPR_WEAPON_RIGHT_IDLE) {
-		sprite_index = SPR_WEAPON_RIGHT_FIRE;
-	} else {
-		sprite_index = SPR_WEAPON_LEFT_FIRE;
-	}
+	
+	if (sprite_index == SPR_WEAPON_IDLE_SIDE) sprite_index = SPR_WEAPON_FIRE_SIDE;
+	else sprite_index = SPR_WEAPON_FIRE_FRONT;
 	
 	spawn_projectile(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, PROJECTILE_OFFSET_SIDE, weapon_angle);
 	

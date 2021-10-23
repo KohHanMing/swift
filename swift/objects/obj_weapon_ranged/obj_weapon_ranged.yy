@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_weapon_ranged_right_idle",
-    "path": "sprites/spr_weapon_ranged_right_idle/spr_weapon_ranged_right_idle.yy",
+    "name": "spr_weapon_ranged_idle_side",
+    "path": "sprites/spr_weapon_ranged_idle_side/spr_weapon_ranged_idle_side.yy",
   },
   "solid": false,
   "visible": true,
