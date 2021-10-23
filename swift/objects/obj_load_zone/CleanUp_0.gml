@@ -7,5 +7,6 @@ for (var i = 0; i < array_length(enemy_ids); i++) {
 }
 
 if (is_level_complete) {
-	spawn_level_complete(obj_game.CURR_LEVEL);
+	toggle_obj(obj_level_manager.current_level_complete);
+	//spawn_level_complete(obj_level_manager.current_level);
 }

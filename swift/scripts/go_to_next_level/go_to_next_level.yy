@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "player",
-    "path": "folders/Scripts/player.yy",
+    "name": "level",
+    "path": "folders/Scripts/level.yy",
   },
   "resourceVersion": "1.0",
-  "name": "add_energy",
+  "name": "go_to_next_level",
   "tags": [],
   "resourceType": "GMScript",
 }
