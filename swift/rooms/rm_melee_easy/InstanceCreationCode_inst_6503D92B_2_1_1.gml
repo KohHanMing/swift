@@ -8,6 +8,6 @@ spawn[1,0] = 191;
 spawn[1,1] = 640;
 
 // Wave 1
-ds_list_add(waves, [0, obj_melee_slime, 0, 0]);
+ds_list_add(waves, [0, obj_basic_ranged, 0, 0]);
 // Wave 2
-ds_list_add(waves, [1, obj_melee_slime, 1, 2 * room_speed]);
+ds_list_add(waves, [1, obj_basic_melee, 1, 2 * room_speed]);
