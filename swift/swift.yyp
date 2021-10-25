@@ -80,6 +80,7 @@
     {"id":{"name":"rm_2types_slimes","path":"rooms/rm_2types_slimes/rm_2types_slimes.yy",},"order":9,},
     {"id":{"name":"spr_city_wall","path":"sprites/spr_city_wall/spr_city_wall.yy",},"order":6,},
     {"id":{"name":"spr_weapon_ranged_fire_front","path":"sprites/spr_weapon_ranged_fire_front/spr_weapon_ranged_fire_front.yy",},"order":5,},
+    {"id":{"name":"spr_honey_badger_power_down_front2","path":"sprites/spr_honey_badger_power_down_front2/spr_honey_badger_power_down_front2.yy",},"order":9,},
     {"id":{"name":"spr_ui_energy_end","path":"sprites/spr_ui_energy_end/spr_ui_energy_end.yy",},"order":7,},
     {"id":{"name":"obj_weapon_ranged","path":"objects/obj_weapon_ranged/obj_weapon_ranged.yy",},"order":2,},
     {"id":{"name":"obj_win","path":"objects/obj_win/obj_win.yy",},"order":23,},
@@ -271,7 +272,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.4.583",
+    "IDEVersion": "2.3.4.577",
   },
   "resourceVersion": "1.4",
   "name": "swift",
