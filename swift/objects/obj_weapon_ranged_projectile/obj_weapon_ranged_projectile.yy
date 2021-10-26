@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "weapon",
+    "path": "folders/Objects/weapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_weapon_ranged_projectile",

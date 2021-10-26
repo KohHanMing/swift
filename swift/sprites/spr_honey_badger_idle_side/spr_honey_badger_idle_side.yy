@@ -86,7 +86,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 0,
-    "yorigin": 5,
+    "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_honey_badger_idle_side","path":"sprites/spr_honey_badger_idle_side/spr_honey_badger_idle_side.yy",},
