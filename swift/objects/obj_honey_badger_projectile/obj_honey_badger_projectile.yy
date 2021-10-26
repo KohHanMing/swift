@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_honey_badger_projectile",
-    "path": "sprites/spr_honey_badger_projectile/spr_honey_badger_projectile.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
