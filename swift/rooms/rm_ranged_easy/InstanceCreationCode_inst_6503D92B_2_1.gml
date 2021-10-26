@@ -15,10 +15,10 @@ spawn[4,0] = 864;
 spawn[4,1] = 288;
 
 // Wave 1
-ds_list_add(waves, [0, obj_ranged_slime, 0, 0]);
+ds_list_add(waves, [0, obj_basic_ranged, 0, 0]);
 
 // Wave 2
-ds_list_add(waves, [1, obj_ranged_slime, 1, 2 * room_speed]);
-ds_list_add(waves, [1, obj_ranged_slime, 2, 2 * room_speed]);
-ds_list_add(waves, [1, obj_ranged_slime, 3, 4 * room_speed]);
-ds_list_add(waves, [1, obj_ranged_slime, 4, 4 * room_speed]);
+ds_list_add(waves, [1, obj_basic_ranged, 1, 2 * room_speed]);
+ds_list_add(waves, [1, obj_basic_ranged, 2, 2 * room_speed]);
+ds_list_add(waves, [1, obj_basic_ranged, 3, 4 * room_speed]);
+ds_list_add(waves, [1, obj_basic_ranged, 4, 4 * room_speed]);

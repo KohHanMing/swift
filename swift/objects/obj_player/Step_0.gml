@@ -21,7 +21,6 @@ if (instance_exists(obj_weapon_ranged)) {
 	weapon_angle = obj_weapon_melee.weapon_angle;	
 }
 
-show_debug_message(weapon_angle);
 if (weapon_angle > 225 && weapon_angle < 315) sprite_index = spr_player_idle_down;
 else if (weapon_angle > 45 && weapon_angle < 135) sprite_index = spr_player_idle_up;
 else if (weapon_angle >= 135 && weapon_angle <= 225) sprite_index = spr_player_idle_left;
