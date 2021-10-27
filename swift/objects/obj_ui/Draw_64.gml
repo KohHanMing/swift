@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_sprite(spr_ui_fullscreen,0 ,0, 0);
+
+gpu_set_blendmode_ext(bm_dest_colour, bm_zero);
+draw_sprite(spr_vignette, 0, 0, 0);
+gpu_set_blendmode(bm_normal);
+draw_sprite_ext(spr_vignette_red, 0, 0, 0, 1, 1, 0, c_white, obj_player.damage_tint_scale);
+
+draw_sprite(spr_ui_fullscreen, 0, 0, 0);
 
 //Health
 var health_length = sprite_get_width(spr_ui_health)*(obj_player.CURR_HEALTH / obj_player.MAX_HEALTH);
