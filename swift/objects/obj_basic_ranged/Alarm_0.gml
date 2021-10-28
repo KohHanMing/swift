@@ -5,9 +5,6 @@
 event_inherited();
 
 if (dist_to_player <= RETREAT_RANGE && canAttack) {
-	dist_to_wall = range_finder(x,y,dir_to_player,ATTACK_RANGE,obj_wall);
-	has_line_of_sight = dist_to_wall == -1 || (dist_to_wall > 0 && dist_to_player < dist_to_wall);
-
 	if (has_line_of_sight) {
 		canAttack = false;
 		// Do attack
