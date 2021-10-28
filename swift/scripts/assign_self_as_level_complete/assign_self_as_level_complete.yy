@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "level",
+    "path": "folders/Scripts/level.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spawn_level_complete",
+  "name": "assign_self_as_level_complete",
   "tags": [],
   "resourceType": "GMScript",
 }

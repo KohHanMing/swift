@@ -20,7 +20,10 @@ if (alarm[FALLING_ALARM] == -1) {
 	
 	// else if within Attack Range
 	} else if (dist_to_player <= ATTACK_RANGE) {
-		if (canAttack) {
+		dist_to_wall = range_finder(x,y,dir_to_player,ATTACK_RANGE,obj_wall);
+		has_line_of_sight = dist_to_wall == -1 || (dist_to_wall > 0 && dist_to_player < dist_to_wall);
+
+		if (canAttack && has_line_of_sight) {
 			canAttack = false;
 			// Do attack
 			enemy_attack(id);
