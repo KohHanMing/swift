@@ -39,6 +39,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
     {"id":{"name":"spr_win","path":"sprites/spr_win/spr_win.yy",},"order":9,},
     {"id":{"name":"spawn_melee_projectile","path":"scripts/spawn_melee_projectile/spawn_melee_projectile.yy",},"order":6,},
+    {"id":{"name":"obj_particle","path":"objects/obj_particle/obj_particle.yy",},"order":0,},
     {"id":{"name":"go_to_next_level","path":"scripts/go_to_next_level/go_to_next_level.yy",},"order":1,},
     {"id":{"name":"sfx_slime_death","path":"sounds/sfx_slime_death/sfx_slime_death.yy",},"order":2,},
     {"id":{"name":"main","path":"sounds/main/main.yy",},"order":2,},
@@ -52,6 +53,8 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
     {"id":{"name":"spr_player_idle_left","path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},"order":9,},
     {"id":{"name":"spr_melee_slime","path":"sprites/spr_melee_slime/spr_melee_slime.yy",},"order":1,},
+    {"id":{"name":"spr_particle_dash","path":"sprites/spr_particle_dash/spr_particle_dash.yy",},"order":0,},
+    {"id":{"name":"obj_particle_dash","path":"objects/obj_particle_dash/obj_particle_dash.yy",},"order":1,},
     {"id":{"name":"spr_harraser_move_left","path":"sprites/spr_harraser_move_left/spr_harraser_move_left.yy",},"order":3,},
     {"id":{"name":"spr_weapon_ranged_projectile","path":"sprites/spr_weapon_ranged_projectile/spr_weapon_ranged_projectile.yy",},"order":9,},
     {"id":{"name":"obj_pushable","path":"objects/obj_pushable/obj_pushable.yy",},"order":3,},
@@ -199,7 +202,6 @@
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
-    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -281,6 +283,8 @@
     {"folderPath":"folders/Scripts/level.yy","order":15,"resourceVersion":"1.0","name":"level","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/game_management.yy","order":26,"resourceVersion":"1.0","name":"game_management","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/menu.yy","order":27,"resourceVersion":"1.0","name":"menu","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/particle.yy","order":10,"resourceVersion":"1.0","name":"particle","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/particle.yy","order":28,"resourceVersion":"1.0","name":"particle","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -290,7 +294,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.5.589",
+    "IDEVersion": "2.3.4.583",
   },
   "resourceVersion": "1.4",
   "name": "swift",

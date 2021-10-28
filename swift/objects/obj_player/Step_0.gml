@@ -9,11 +9,6 @@ switch (state) {
 
 move_wrap(true, true, sprite_width/2);
 
-
-//facing direction
-//Change sprite according to goal_direction
-//Does not update when not moving
-
 var weapon_angle;
 if (instance_exists(obj_weapon_ranged)) {
 	weapon_angle = obj_weapon_ranged.weapon_angle;
@@ -27,11 +22,7 @@ else if (weapon_angle >= 135 && weapon_angle <= 225) sprite_index = spr_player_i
 else sprite_index = spr_player_idle_right;
 
 
-
-recharge_dash();
-
-event_inherited();
-
+//damage tint
 damage_tint_scale = 0;
 if damage_tint_time > 0 {
 	damage_tint_scale = damage_tint_time/damage_tint_time_start;
@@ -40,3 +31,7 @@ if damage_tint_time > 0 {
 	draw_self();
 	damage_tint_time -= 1;
 }
+
+recharge_dash();
+
+event_inherited();
