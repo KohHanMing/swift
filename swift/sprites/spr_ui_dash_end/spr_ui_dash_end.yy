@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "ui",
-    "path": "folders/Sprites/ui.yy",
+    "path": "folders/Sounds/Sprites/ui.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ui_dash_end",

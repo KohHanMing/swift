@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"034da232-ba97-49a7-933c-d094d3f7c3d7","path":"sprites/spr_energy/spr_energy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"034da232-ba97-49a7-933c-d094d3f7c3d7","path":"sprites/spr_energy/spr_energy.yy",},"LayerId":{"name":"68f57309-49e3-4ffc-9e12-2a4c7128ba5e","path":"sprites/spr_energy/spr_energy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"034da232-ba97-49a7-933c-d094d3f7c3d7","path":"sprites/spr_energy/spr_energy.yy",},"LayerId":{"name":"7c83a7a1-b386-417d-be4a-14574ccaa877","path":"sprites/spr_energy/spr_energy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"034da232-ba97-49a7-933c-d094d3f7c3d7","path":"sprites/spr_energy/spr_energy.yy",},"LayerId":{"name":"68f57309-49e3-4ffc-9e12-2a4c7128ba5e","path":"sprites/spr_energy/spr_energy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_energy","path":"sprites/spr_energy/spr_energy.yy",},"resourceVersion":"1.0","name":"034da232-ba97-49a7-933c-d094d3f7c3d7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -43,7 +43,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"25ea3926-cd3a-4673-8070-1e5e0738de00","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"034da232-ba97-49a7-933c-d094d3f7c3d7","path":"sprites/spr_energy/spr_energy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -72,7 +72,7 @@
   "nineSlice": null,
   "parent": {
     "name": "collectable",
-    "path": "folders/Sprites/collectable.yy",
+    "path": "folders/Sounds/Sprites/collectable.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_energy",

@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "axe",
-    "path": "folders/Sprites/weapon/axe.yy",
+    "path": "folders/Sounds/Sprites/weapon/axe.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_axe",

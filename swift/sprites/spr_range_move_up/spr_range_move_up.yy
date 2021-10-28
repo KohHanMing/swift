@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "range",
-    "path": "folders/Sprites/enemy/range.yy",
+    "path": "folders/Sounds/Sprites/enemy/range.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_range_move_up",

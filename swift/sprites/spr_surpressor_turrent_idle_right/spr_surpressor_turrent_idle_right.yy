@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "surpressor",
-    "path": "folders/Sprites/enemy/surpressor.yy",
+    "path": "folders/Sounds/Sprites/enemy/surpressor.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_surpressor_turrent_idle_right",

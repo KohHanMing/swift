@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "deadeye",
-    "path": "folders/Sprites/weapon/deadeye.yy",
+    "path": "folders/Sounds/Sprites/weapon/deadeye.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_deadeye_projectile",

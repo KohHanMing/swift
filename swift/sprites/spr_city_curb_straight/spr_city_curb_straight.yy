@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "city",
-    "path": "folders/Sprites/tile/city.yy",
+    "path": "folders/Sounds/Sprites/tile/city.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_city_curb_straight",

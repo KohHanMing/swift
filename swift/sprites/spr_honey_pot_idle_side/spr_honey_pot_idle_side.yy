@@ -10,7 +10,7 @@
   "bbox_left": 1,
   "bbox_right": 29,
   "bbox_top": 2,
-  "bbox_bottom": 15,
+  "bbox_bottom": 11,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "honey_pot",
-    "path": "folders/Sprites/weapon/honey_pot.yy",
+    "path": "folders/Sounds/Sprites/weapon/honey_pot.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_honey_pot_idle_side",

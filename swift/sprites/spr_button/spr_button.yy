@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "tile",
-    "path": "folders/Sprites/tile.yy",
+    "path": "folders/Sounds/Sprites/tile.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_button",

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "blade",
-    "path": "folders/Sprites/weapon/blade.yy",
+    "path": "folders/Sounds/Sprites/weapon/blade.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_blade",
