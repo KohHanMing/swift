@@ -75,6 +75,7 @@
     {"id":{"name":"sfx_ranged_default","path":"sounds/sfx_ranged_default/sfx_ranged_default.yy",},"order":1,},
     {"id":{"name":"sfx_melee_default","path":"sounds/sfx_melee_default/sfx_melee_default.yy",},"order":0,},
     {"id":{"name":"spr_hole","path":"sprites/spr_hole/spr_hole.yy",},"order":6,},
+    {"id":{"name":"spr_range_projectile","path":"sprites/spr_range_projectile/spr_range_projectile.yy",},"order":4,},
     {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"order":4,},
     {"id":{"name":"spr_city_curb_outer","path":"sprites/spr_city_curb_outer/spr_city_curb_outer.yy",},"order":5,},
     {"id":{"name":"spawn_hitbox","path":"scripts/spawn_hitbox/spawn_hitbox.yy",},"order":7,},
