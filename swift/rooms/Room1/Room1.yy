@@ -369,7 +369,6 @@
     {"name":"inst_1EC17900","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_73D21960","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_477D795","path":"rooms/Room1/Room1.yy",},
-    {"name":"Room1","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_6D60EF0A","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_49B6741D","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_8EFF1E6","path":"rooms/Room1/Room1.yy",},
