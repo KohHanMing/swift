@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_particle_dash",
-    "path": "sprites/spr_particle_dash/spr_particle_dash.yy",
+    "name": "spr_particle_enemy_hurt",
+    "path": "sprites/spr_particle_enemy_hurt/spr_particle_enemy_hurt.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,6 +27,8 @@
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -35,7 +37,7 @@
     "path": "folders/Objects/particle.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_particle_dash",
+  "name": "obj_particle_enemy_hurt",
   "tags": [],
   "resourceType": "GMObject",
 }
