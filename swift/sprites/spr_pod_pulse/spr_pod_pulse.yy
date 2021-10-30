@@ -97,7 +97,7 @@
   "nineSlice": null,
   "parent": {
     "name": "pod",
-    "path": "folders/Sounds/Sprites/enemy/pod.yy",
+    "path": "folders/Sprites/enemy/pod.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_pod_pulse",

@@ -192,7 +192,7 @@
   "nineSlice": null,
   "parent": {
     "name": "subwoofer",
-    "path": "folders/Sounds/Sprites/weapon/subwoofer.yy",
+    "path": "folders/Sprites/weapon/subwoofer.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_subwoofer",

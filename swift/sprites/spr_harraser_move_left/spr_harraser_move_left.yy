@@ -72,7 +72,7 @@
   "nineSlice": null,
   "parent": {
     "name": "harasser",
-    "path": "folders/Sounds/Sprites/enemy/harasser.yy",
+    "path": "folders/Sprites/enemy/harasser.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_harraser_move_left",

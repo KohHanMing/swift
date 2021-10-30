@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "player",
-    "path": "folders/Sounds/Sprites/player.yy",
+    "path": "folders/Sprites/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_move_right",

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "weapon",
-    "path": "folders/Sounds/Sprites/weapon.yy",
+    "path": "folders/Sprites/weapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_weapon_ranged_projectile",

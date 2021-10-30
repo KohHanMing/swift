@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "melee",
-    "path": "folders/Sounds/Sprites/enemy/melee.yy",
+    "path": "folders/Sprites/enemy/melee.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_melee_move_left",

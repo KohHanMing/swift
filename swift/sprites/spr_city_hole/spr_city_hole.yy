@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "tiles",
-    "path": "folders/Sounds/Sprites/tiles.yy",
+    "path": "folders/Sprites/tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_city_hole",

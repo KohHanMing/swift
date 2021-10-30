@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "honey_badger",
-    "path": "folders/Sounds/Sprites/weapon/honey_badger.yy",
+    "path": "folders/Sprites/weapon/honey_badger.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_honey_badger_projectile",

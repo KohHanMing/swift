@@ -72,7 +72,7 @@
   "nineSlice": null,
   "parent": {
     "name": "collectable",
-    "path": "folders/Sounds/Sprites/collectable.yy",
+    "path": "folders/Sprites/collectable.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_energy",

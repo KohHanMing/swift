@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "honey_pot",
-    "path": "folders/Sounds/Sprites/weapon/honey_pot.yy",
+    "path": "folders/Sprites/weapon/honey_pot.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_honey_pot_idle_side",

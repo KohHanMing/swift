@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "tile",
-    "path": "folders/Sounds/Sprites/tile.yy",
+    "path": "folders/Sprites/tile.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_shadow_on_floor_above",

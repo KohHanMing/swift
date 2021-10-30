@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "slime",
-    "path": "folders/Sounds/Sprites/enemy/slime.yy",
+    "path": "folders/Sprites/enemy/slime.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_melee_slime",

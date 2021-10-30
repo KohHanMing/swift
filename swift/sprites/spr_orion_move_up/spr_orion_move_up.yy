@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "orion",
-    "path": "folders/Sounds/Sprites/enemy/orion.yy",
+    "path": "folders/Sprites/enemy/orion.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_orion_move_up",
