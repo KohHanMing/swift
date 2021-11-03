@@ -8,6 +8,7 @@
     {"id":{"name":"spr_axe","path":"sprites/spr_axe/spr_axe.yy",},"order":0,},
     {"id":{"name":"range_finder","path":"scripts/range_finder/range_finder.yy",},"order":13,},
     {"id":{"name":"spr_pod_pulse","path":"sprites/spr_pod_pulse/spr_pod_pulse.yy",},"order":2,},
+    {"id":{"name":"spr_crosshair","path":"sprites/spr_crosshair/spr_crosshair.yy",},"order":11,},
     {"id":{"name":"spr_pod_opening","path":"sprites/spr_pod_opening/spr_pod_opening.yy",},"order":1,},
     {"id":{"name":"obj_level_complete","path":"objects/obj_level_complete/obj_level_complete.yy",},"order":0,},
     {"id":{"name":"spr_player_move_up","path":"sprites/spr_player_move_up/spr_player_move_up.yy",},"order":4,},
