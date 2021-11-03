@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_particle_dash",
-    "path": "sprites/spr_particle_dash/spr_particle_dash.yy",
+    "name": "spr_particle_honey_badger_trail",
+    "path": "sprites/spr_particle_honey_badger_trail/spr_particle_honey_badger_trail.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,6 +30,7 @@
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -38,7 +39,7 @@
     "path": "folders/Objects/particle.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_particle_dash",
+  "name": "obj_particle_honey_badger_trail",
   "tags": [],
   "resourceType": "GMObject",
 }
