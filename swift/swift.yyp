@@ -59,6 +59,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
     {"id":{"name":"obj_basic_ranged_projectile","path":"objects/obj_basic_ranged_projectile/obj_basic_ranged_projectile.yy",},"order":1,},
     {"id":{"name":"spr_player_idle_left","path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},"order":9,},
+    {"id":{"name":"ambient2","path":"sounds/ambient2/ambient2.yy",},"order":4,},
     {"id":{"name":"spr_melee_slime","path":"sprites/spr_melee_slime/spr_melee_slime.yy",},"order":1,},
     {"id":{"name":"spr_particle_dash","path":"sprites/spr_particle_dash/spr_particle_dash.yy",},"order":0,},
     {"id":{"name":"obj_particle_dash","path":"objects/obj_particle_dash/obj_particle_dash.yy",},"order":1,},
@@ -313,7 +314,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.4.583",
+    "IDEVersion": "2.3.4.580",
   },
   "resourceVersion": "1.4",
   "name": "swift",
