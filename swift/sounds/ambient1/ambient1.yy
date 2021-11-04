@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "ambient1.mp3",
-  "duration": 120.02,
+  "soundFile": "ambient1.wav",
+  "duration": 120.0,
   "parent": {
     "name": "soundtracks",
     "path": "folders/Sounds/soundtracks.yy",
