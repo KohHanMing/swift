@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto(rm_init);
+obj_tutorial_manager.is_visible = false;
+go_to_next_level();
