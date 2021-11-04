@@ -24,16 +24,16 @@ spawn[7,0] = 1169;
 spawn[7,1] = 625;
 
 // Wave 1
-ds_list_add(waves, [0, obj_melee_slime, 0, 0]);
+ds_list_add(waves, [0, obj_basic_melee, 0, 0]);
 
 // Wave 2
-ds_list_add(waves, [1, obj_melee_slime, 1, 0]);
-ds_list_add(waves, [1, obj_melee_slime, 2, 0]);
-ds_list_add(waves, [1, obj_melee_slime, 3, 0]);
-ds_list_add(waves, [1, obj_melee_slime, 3, 2 * room_speed]);
+ds_list_add(waves, [1, obj_basic_melee, 1, 0]);
+ds_list_add(waves, [1, obj_basic_melee, 2, 0]);
+ds_list_add(waves, [1, obj_basic_melee, 3, 0]);
+ds_list_add(waves, [1, obj_basic_melee, 3, 2 * room_speed]);
 
 // Wave 3
-ds_list_add(waves, [2, obj_melee_slime, 4, 0]);
-ds_list_add(waves, [2, obj_melee_slime, 5, 0]);
-ds_list_add(waves, [2, obj_melee_slime, 6, 0]);
-ds_list_add(waves, [2, obj_melee_slime, 7, 0]);
+ds_list_add(waves, [2, obj_basic_melee, 4, 0]);
+ds_list_add(waves, [2, obj_basic_melee, 5, 0]);
+ds_list_add(waves, [2, obj_basic_melee, 6, 0]);
+ds_list_add(waves, [2, obj_basic_melee, 7, 0]);
