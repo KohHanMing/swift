@@ -3,15 +3,6 @@
 function enemy_attack(_instance){
 	var obj_index = _instance.object_index;
 	
-	switch (obj_index) {
-		case obj_basic_melee:
-			basic_melee_attack();
-		break;
-		case obj_basic_ranged:
-			basic_ranged_attack();
-		break;
-	}
-	
 	if (object_is_ancestor(obj_index, obj_slime)) {
 		switch (obj_index) {
 			case obj_melee_slime:

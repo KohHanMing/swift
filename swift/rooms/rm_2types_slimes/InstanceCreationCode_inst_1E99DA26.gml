@@ -26,12 +26,12 @@ spawn[7,0] = 768;
 spawn[7,1] = 426;
 
 // Wave 1
-ds_list_add(waves, [0, obj_basic_melee, 0, 0]);
-//ds_list_add(waves, [0, obj_basic_melee, 1, 1 * room_speed]);
-//ds_list_add(waves, [0, obj_basic_melee, 2, 1 * room_speed]);
-ds_list_add(waves, [0, obj_basic_melee, 3, 0]);
+ds_list_add(waves, [0, obj_melee_slime, 0, 0]);
+//ds_list_add(waves, [0, obj_melee_slime, 1, 1 * room_speed]);
+//ds_list_add(waves, [0, obj_melee_slime, 2, 1 * room_speed]);
+ds_list_add(waves, [0, obj_melee_slime, 3, 0]);
 
-//ds_list_add(waves, [0, obj_basic_ranged, 4, 1 * room_speed]);
-ds_list_add(waves, [0, obj_basic_ranged, 5, 1 * room_speed]);
-ds_list_add(waves, [0, obj_basic_ranged, 6, 1 * room_speed]);
-//ds_list_add(waves, [0, obj_basic_ranged, 7, 1 * room_speed]);
+//ds_list_add(waves, [0, obj_ranged_slime, 4, 1 * room_speed]);
+ds_list_add(waves, [0, obj_ranged_slime, 5, 1 * room_speed]);
+ds_list_add(waves, [0, obj_ranged_slime, 6, 1 * room_speed]);
+//ds_list_add(waves, [0, obj_ranged_slime, 7, 1 * room_speed]);

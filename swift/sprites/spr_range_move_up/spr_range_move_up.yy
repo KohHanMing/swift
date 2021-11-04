@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 31,
-  "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_left": 1,
+  "bbox_right": 26,
+  "bbox_top": 2,
+  "bbox_bottom": 26,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7f7ff5b2-4fbe-42a8-8ca3-b0917210e3a9","path":"sprites/spr_melee_move_left/spr_melee_move_left.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7f7ff5b2-4fbe-42a8-8ca3-b0917210e3a9","path":"sprites/spr_melee_move_left/spr_melee_move_left.yy",},"LayerId":{"name":"c82ad6b9-7213-453f-997d-39ced6827739","path":"sprites/spr_melee_move_left/spr_melee_move_left.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_melee_move_left","path":"sprites/spr_melee_move_left/spr_melee_move_left.yy",},"resourceVersion":"1.0","name":"7f7ff5b2-4fbe-42a8-8ca3-b0917210e3a9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"07a0db7a-699d-4ae0-a284-9efacf5287b0","path":"sprites/spr_range_move_up/spr_range_move_up.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"07a0db7a-699d-4ae0-a284-9efacf5287b0","path":"sprites/spr_range_move_up/spr_range_move_up.yy",},"LayerId":{"name":"c82ad6b9-7213-453f-997d-39ced6827739","path":"sprites/spr_range_move_up/spr_range_move_up.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_range_move_up","path":"sprites/spr_range_move_up/spr_range_move_up.yy",},"resourceVersion":"1.0","name":"07a0db7a-699d-4ae0-a284-9efacf5287b0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_melee_move_left","path":"sprites/spr_melee_move_left/spr_melee_move_left.yy",},
+    "spriteId": {"name":"spr_range_move_up","path":"sprites/spr_range_move_up/spr_range_move_up.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 4.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"372f98a1-e0ff-483c-9aff-6c3628051aac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7f7ff5b2-4fbe-42a8-8ca3-b0917210e3a9","path":"sprites/spr_melee_move_left/spr_melee_move_left.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2a251a62-f2ac-4513-873b-7ba341a62342","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07a0db7a-699d-4ae0-a284-9efacf5287b0","path":"sprites/spr_range_move_up/spr_range_move_up.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_melee_move_left","path":"sprites/spr_melee_move_left/spr_melee_move_left.yy",},
+    "parent": {"name":"spr_range_move_up","path":"sprites/spr_range_move_up/spr_range_move_up.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_melee_move_left",
+    "name": "spr_range_move_up",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "melee",
-    "path": "folders/Sprites/enemy/melee.yy",
+    "name": "range",
+    "path": "folders/Sprites/enemy/range.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_melee_move_left",
+  "name": "spr_range_move_up",
   "tags": [],
   "resourceType": "GMSprite",
 }

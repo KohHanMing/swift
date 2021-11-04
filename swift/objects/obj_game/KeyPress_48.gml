@@ -12,9 +12,9 @@ if (obj_game.CURR_LEVEL == 1) {
 } else if (obj_game.CURR_LEVEL == 4) {
 	room_goto(rm_ranged_basic);
 	obj_game.CURR_LEVEL += 1;
-} else if (obj_game.CURR_LEVEL == 5) {
+}  else if (obj_game.CURR_LEVEL == 5) {
 	room_goto(rm_2types_slimes);
 	obj_game.CURR_LEVEL += 1;
 } else {
-	room_goto(rm_win);
+	room_goto(rm_win)	
 }

@@ -11,11 +11,8 @@ if (alarm[FALLING_ALARM] == -1) {
 	phy_speed_x = 0;
 	phy_speed_y = 0;
 
-	dist_to_wall = range_finder(x,y,dir_to_player,ATTACK_RANGE,obj_wall);
-	has_line_of_sight = dist_to_wall == -1 || (dist_to_wall > 0 && dist_to_player < dist_to_wall);
-
 	// If player is too close, i.e. within Retreat Range
-	if (dist_to_player <= RETREAT_RANGE && has_line_of_sight) {
+	if (dist_to_player <= RETREAT_RANGE) {
 		// Retreat
 		// Simple straight retreat, location seeking retreat to be implemented. 
 		var retreatDir = (dir_to_player + 180) % 360;
@@ -24,18 +21,14 @@ if (alarm[FALLING_ALARM] == -1) {
 	// else if within Attack Range
 	} else if (dist_to_player <= ATTACK_RANGE) {
 		if (canAttack) {
-			if (has_line_of_sight) {
-				canAttack = false;
-				// Do attack
-				enemy_attack(id);
-				audio_play_sound(ATTACK_SFX, 99, false);
-				// Reset canAttack
-				alarm[ATTACK_ALARM] = room_speed * ATTACK_DELAY_SECONDS;
-			} else { // no line of sight
-				enemy_aggro(id); // attempt to move to gain line of sight
-			}
-		}
-
+			canAttack = false;
+			// Do attack
+			enemy_attack(id);
+			audio_play_sound(ATTACK_SFX, 99, false);
+			// Reset canAttack
+			alarm[ATTACK_ALARM] = room_speed * ATTACK_DELAY_SECONDS;
+		} // else, enemy is within Attack Range but waiting for cooldown, don't path
+	
 	// else if within Aggro Range
 	} else if (dist_to_player <= AGGRO_RANGE) {
 		// End wandering and reset wander timer

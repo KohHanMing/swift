@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "add_energy",
+  "name": "spawn_level_complete",
   "tags": [],
   "resourceType": "GMScript",
 }

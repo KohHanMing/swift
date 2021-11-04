@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 // Swarm Behaviour
-function melee_slime_aggro(){
+function melee_slime_aggro(_instance){
 	var dir = sector_number * 45;
 
 	if (dir != -1) {

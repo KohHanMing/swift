@@ -15,4 +15,4 @@ enemy_ids = ds_list_create();
 
 trigger_doors = true;
 
-is_level_complete = true;
+is_level_complete = false;
