@@ -1,7 +1,5 @@
 trigger_doors = true;
 
-is_level_complete = true;
-
 // Spawn point 1
 spawn[0,0] = 768;
 spawn[0,1] = 384;
@@ -17,8 +15,8 @@ spawn[3,1] = 576;
 
 
 // Wave 1
-ds_list_add(waves, [0, obj_melee_slime, 0, 0]);
-ds_list_add(waves, [0, obj_melee_slime, 3, 0.5 * room_speed]);
-ds_list_add(waves, [0, obj_melee_slime, 2, 1 * room_speed]);
-ds_list_add(waves, [0, obj_melee_slime, 1, 1.5 * room_speed]);
+ds_list_add(waves, [0, obj_basic_melee, 0, 0]);
+ds_list_add(waves, [0, obj_basic_melee, 3, 0.5 * room_speed]);
+ds_list_add(waves, [0, obj_basic_melee, 2, 1 * room_speed]);
+ds_list_add(waves, [0, obj_basic_melee, 1, 1.5 * room_speed]);
 
