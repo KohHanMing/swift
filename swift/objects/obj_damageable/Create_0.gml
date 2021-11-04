@@ -4,4 +4,5 @@
 CURR_HEALTH = 0;
 MAX_HEALTH = 0;
 
-damage_tint_time = 0
+damage_tint_time = 0;
+damage_tint_scale = 0;

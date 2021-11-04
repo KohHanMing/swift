@@ -36,9 +36,13 @@ function player_normal(){
       audio_play_sound(sfx_player_dash, 99, false);
 		}
 		
-		// Dashing temporarily increases acceleration
 		if(dashing) {
+			// Dashing temporarily increases acceleration
 			apply_vector(object_index, DASH_ACCELERATION_INCREASE, goal_direction);
+			//Particles
+			instance_create_layer(x+random_range(-10,10),y-16+random_range(-10,10),"Instances",obj_particle_dash);
+			instance_create_layer(x+random_range(-10,10),y-16+random_range(-10,10),"Instances",obj_particle_dash);
+			
 		}
 		
 		// Dashing temporarily removes max speed

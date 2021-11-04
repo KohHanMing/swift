@@ -1,6 +1,4 @@
-is_level_complete = true;
-
-// Spawn point 1
+ // Spawn point 1
 spawn[0,0] = 671;
 spawn[0,1] = 191;
 // Spawn point 2

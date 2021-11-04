@@ -10,5 +10,5 @@ var vcells = room_height div cell_height;
 global.grid = mp_grid_create(0, 0, hcells, vcells, cell_width, cell_height);
 
 // Add walls to grid
-mp_grid_add_instances(global.grid, obj_wall, false);
-mp_grid_add_instances(global.grid, obj_hole, false);
+with obj_wall mp_grid_add_rectangle(global.grid, bbox_left, bbox_top, bbox_right, bbox_bottom);
+with obj_hole mp_grid_add_rectangle(global.grid, bbox_left, bbox_top, bbox_right, bbox_bottom);
