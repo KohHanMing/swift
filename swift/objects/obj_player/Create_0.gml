@@ -3,12 +3,16 @@
 
 //Inherit parent event
 event_inherited();
+
+//Create Weapon Object
+instance_create_layer(x, y, "Instances", obj_honey_badger);
+
 HEALTH = 100;
 
 //Constants
 ACCELERATION_PX_PER_FRAME = 2.5;
-MAX_SPEED_PX_PER_FRAME = 3;
-DASH_ACCELERATION_INCREASE = 0.25;
+MAX_SPEED_PX_PER_FRAME = 4;
+DASH_ACCELERATION_INCREASE = 0.4;
 DASH_TIME = room_speed/5; // Dash lasts 1/5 of a second
 
 DASH_UNIT = 100;
