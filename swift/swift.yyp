@@ -118,6 +118,7 @@
     {"id":{"name":"spr_player_idle_up","path":"sprites/spr_player_idle_up/spr_player_idle_up.yy",},"order":8,},
     {"id":{"name":"obj_tutorial_manager","path":"objects/obj_tutorial_manager/obj_tutorial_manager.yy",},"order":6,},
     {"id":{"name":"spr_done","path":"sprites/spr_done/spr_done.yy",},"order":14,},
+    {"id":{"name":"find_sprite_center","path":"scripts/find_sprite_center/find_sprite_center.yy",},"order":16,},
     {"id":{"name":"obj_honey_badger_projectile","path":"objects/obj_honey_badger_projectile/obj_honey_badger_projectile.yy",},"order":1,},
     {"id":{"name":"spr_health","path":"sprites/spr_health/spr_health.yy",},"order":0,},
     {"id":{"name":"spr_weapon_ranged_idle_front","path":"sprites/spr_weapon_ranged_idle_front/spr_weapon_ranged_idle_front.yy",},"order":7,},
