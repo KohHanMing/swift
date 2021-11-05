@@ -13,3 +13,8 @@ if (instance_exists(obj_load_zone)) {
 		}
 	}
 }
+
+center = find_sprite_center(id);
+for (var i=0;i<50;i++) {
+	instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_enemy_death);
+}
