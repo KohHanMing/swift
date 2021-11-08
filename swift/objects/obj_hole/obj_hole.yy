@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_hole",
-    "path": "sprites/spr_hole/spr_hole.yy",
+    "name": "spr_city_hole",
+    "path": "sprites/spr_city_hole/spr_city_hole.yy",
   },
   "solid": false,
   "visible": true,
