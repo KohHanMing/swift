@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_enemy_projetile",
-    "path": "objects/obj_enemy_projetile/obj_enemy_projetile.yy",
+    "name": "obj_enemy_projectile",
+    "path": "objects/obj_enemy_projectile/obj_enemy_projectile.yy",
   },
   "physicsObject": true,
   "physicsSensor": false,

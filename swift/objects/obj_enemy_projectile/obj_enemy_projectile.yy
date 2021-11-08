@@ -31,7 +31,7 @@
     "path": "folders/Objects/Enemy/Commons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_enemy_projetile",
+  "name": "obj_enemy_projectile",
   "tags": [],
   "resourceType": "GMObject",
 }
