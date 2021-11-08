@@ -316,7 +316,7 @@
     {"folderPath":"folders/Sprites/level/city.yy","order":2,"resourceVersion":"1.0","name":"city","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/ui.yy","order":7,"resourceVersion":"1.0","name":"ui","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/weapon/deadeye.yy","order":2,"resourceVersion":"1.0","name":"deadeye","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/collectable.yy","order":9,"resourceVersion":"1.0","name":"collectable","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/collectible.yy","order":9,"resourceVersion":"1.0","name":"collectible","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemy.yy","order":10,"resourceVersion":"1.0","name":"enemy","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemy/harasser.yy","order":0,"resourceVersion":"1.0","name":"harasser","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/weapon/honey_badger.yy","order":3,"resourceVersion":"1.0","name":"honey_badger","tags":[],"resourceType":"GMFolder",},
