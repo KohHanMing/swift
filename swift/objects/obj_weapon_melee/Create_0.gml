@@ -18,5 +18,5 @@ SPR_WEAPON_FIRE_FRONT = spr_weapon_melee_fire; //MUST INITIALISE IN CHILD WEAPON
 SFX_WEAPON = sfx_melee_default;
 
 //Projectile presets
-WEAPON_PROJECTILE = obj_weapon_melee_projectile; //MUST INITIALISE IN CHILD WEAPON
+WEAPON_PROJECTILE = obj_weapon_melee_melee_hitbox; //MUST INITIALISE IN CHILD WEAPON
 PROJECTILE_OFFSET_FORWARD = 20;

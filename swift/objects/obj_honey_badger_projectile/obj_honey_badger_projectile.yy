@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_weapon_ranged_projectile",
-    "path": "objects/obj_weapon_ranged_projectile/obj_weapon_ranged_projectile.yy",
+    "name": "obj_player_projectile",
+    "path": "objects/obj_player_projectile/obj_player_projectile.yy",
   },
   "physicsObject": true,
   "physicsSensor": false,

@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_player_projectile",
-    "path": "objects/obj_player_projectile/obj_player_projectile.yy",
+    "name": "obj_player_melee_hitbox",
+    "path": "objects/obj_player_melee_hitbox/obj_player_melee_hitbox.yy",
   },
   "physicsObject": true,
   "physicsSensor": false,
@@ -40,7 +40,7 @@
     "path": "folders/Objects/weapon.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_weapon_melee_projectile",
+  "name": "obj_weapon_melee_melee_hitbox",
   "tags": [],
   "resourceType": "GMObject",
 }
