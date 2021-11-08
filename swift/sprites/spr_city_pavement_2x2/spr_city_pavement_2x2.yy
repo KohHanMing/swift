@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "city",
-    "path": "folders/Sprites/tile/city.yy",
+    "path": "folders/Sprites/level/city.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_city_pavement_2x2",

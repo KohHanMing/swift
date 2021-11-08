@@ -35,7 +35,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "city",
-    "path": "folders/Objects/tile/city.yy",
+    "path": "folders/Objects/level/city.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_city_wall_static",

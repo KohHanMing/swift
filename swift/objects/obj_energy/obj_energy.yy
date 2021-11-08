@@ -36,8 +36,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "collectible",
+    "path": "folders/Objects/collectible.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_energy",

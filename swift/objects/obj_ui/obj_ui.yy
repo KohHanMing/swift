@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "primitive",
+    "path": "folders/Objects/primitive.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_ui",

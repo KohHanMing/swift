@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "level",
+    "path": "folders/Objects/level.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_button",
