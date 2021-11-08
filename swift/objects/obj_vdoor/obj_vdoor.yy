@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Doors",
-    "path": "folders/Objects/Doors.yy",
+    "name": "door",
+    "path": "folders/Objects/tile/door.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_vdoor",

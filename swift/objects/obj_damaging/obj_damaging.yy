@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Primitive",
-    "path": "folders/Objects/Primitive.yy",
+    "name": "primitive",
+    "path": "folders/Objects/primitive.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_damaging",
