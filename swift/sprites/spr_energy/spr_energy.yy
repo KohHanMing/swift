@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "collectable",
-    "path": "folders/Sprites/collectable.yy",
+    "name": "collectible",
+    "path": "folders/Sprites/collectible.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_energy",
