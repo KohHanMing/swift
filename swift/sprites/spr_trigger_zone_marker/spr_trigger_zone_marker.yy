@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"57574dd4-bc56-4175-bab9-7472ae7ee22f","path":"sprites/spr_trigger_zone_marker/spr_trigger_zone_marker.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"57574dd4-bc56-4175-bab9-7472ae7ee22f","path":"sprites/spr_trigger_zone_marker/spr_trigger_zone_marker.yy",},"LayerId":{"name":"8ca010c2-8360-49be-9da1-014ce01ac794","path":"sprites/spr_trigger_zone_marker/spr_trigger_zone_marker.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"57574dd4-bc56-4175-bab9-7472ae7ee22f","path":"sprites/spr_trigger_zone_marker/spr_trigger_zone_marker.yy",},"LayerId":{"name":"0cc4ef6c-2684-4646-8e41-50506800b938","path":"sprites/spr_trigger_zone_marker/spr_trigger_zone_marker.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"57574dd4-bc56-4175-bab9-7472ae7ee22f","path":"sprites/spr_trigger_zone_marker/spr_trigger_zone_marker.yy",},"LayerId":{"name":"8ca010c2-8360-49be-9da1-014ce01ac794","path":"sprites/spr_trigger_zone_marker/spr_trigger_zone_marker.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_trigger_zone_marker","path":"sprites/spr_trigger_zone_marker/spr_trigger_zone_marker.yy",},"resourceVersion":"1.0","name":"57574dd4-bc56-4175-bab9-7472ae7ee22f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -43,7 +43,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"ca010359-4200-494a-9607-ca669e911d2b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"57574dd4-bc56-4175-bab9-7472ae7ee22f","path":"sprites/spr_trigger_zone_marker/spr_trigger_zone_marker.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -71,8 +71,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "level",
+    "path": "folders/Sprites/level.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_trigger_zone_marker",
