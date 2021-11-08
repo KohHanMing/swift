@@ -5,7 +5,7 @@ function manual_projectile_collision(_inst){
 	
 	apply_vector(_inst,phy_speed*P_MASS/_inst.phy_mass,darctan2(-phy_speed_y,phy_speed_x));
     take_damage(_inst, DAMAGE);
-	if (_inst.CURR_HEALTH - DAMAGE < 0 and object_index == obj_weapon_melee_projectile) {
+	if (_inst.CURR_HEALTH - DAMAGE < 0 and object_index == obj_weapon_melee_melee_hitbox) {
 		instance_create_layer(x,y,"Instances", obj_health);
 		instance_create_layer(x,y,"Instances", obj_energy);
 	}
@@ -21,7 +21,7 @@ function manual_projectile_collision(_inst){
 
 // Event for projectile collision
 function manual_projectile_collision_event(_inst) {
-	if object_index == obj_weapon_melee_projectile {
+	if object_index == obj_weapon_melee_melee_hitbox {
 		center = find_sprite_center(_inst);
 		for (var i=0;i<50;i++) {
 			instance_create_layer(center[0]+random_range(-20,20),center[1]+random_range(-20,20),"Instances",obj_particle_weapon_melee_hit);

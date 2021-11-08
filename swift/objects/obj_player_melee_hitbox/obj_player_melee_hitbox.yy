@@ -5,13 +5,13 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_damaging",
-    "path": "objects/obj_damaging/obj_damaging.yy",
+    "name": "obj_player_damaging",
+    "path": "objects/obj_player_damaging/obj_player_damaging.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 1,
+  "physicsGroup": 0,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -20,9 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -30,7 +28,7 @@
     "path": "folders/Objects/player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player_damaging",
+  "name": "obj_player_melee_hitbox",
   "tags": [],
   "resourceType": "GMObject",
 }

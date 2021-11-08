@@ -1,4 +1,4 @@
-///// @description Check in P_RANGE
+/// @description Check in P_RANGE
 
 //Inherit Manual Collision Check
 event_inherited();
