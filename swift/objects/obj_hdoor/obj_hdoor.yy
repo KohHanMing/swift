@@ -35,7 +35,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "door",
-    "path": "folders/Objects/tile/door.yy",
+    "path": "folders/Objects/level/door.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_hdoor",

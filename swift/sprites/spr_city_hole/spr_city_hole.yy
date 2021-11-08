@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "tiles",
-    "path": "folders/Sprites/tiles.yy",
+    "name": "city",
+    "path": "folders/Sprites/level/city.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_city_hole",
