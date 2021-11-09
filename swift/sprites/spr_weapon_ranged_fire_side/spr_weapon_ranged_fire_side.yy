@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "default",
-    "path": "folders/Sprites/weapon/default.yy",
+    "name": "weapon_ranged",
+    "path": "folders/Sprites/weapon/weapon_ranged.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_weapon_ranged_fire_side",
