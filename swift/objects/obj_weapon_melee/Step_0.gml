@@ -1,13 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Rotate Weapon
 
-//Inherit from parent
-event_inherited()
+// Inherit Weapon Step
+event_inherited();
 
+// Use weapon angle to rotate the weapon to suit its type in the child object
+// Quadratic Curve
 
-if (weapon_angle < 30 or weapon_angle > 330) {
-	image_angle = weapon_angle;
-} else if ((weapon_angle < 180 and weapon_angle > 150) or 
-(weapon_angle > 180 and weapon_angle < 210)) {
-	image_angle = weapon_angle + 180;
-}
+// weapon_angle = 0, 360 -> image_angle = -45
+// weapon_angle = 180 -> image_angle = 45
+image_angle = 25/9000 * weapon_angle * (360 - weapon_angle) - 45;
