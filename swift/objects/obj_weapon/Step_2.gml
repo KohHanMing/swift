@@ -1,4 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Depth Updating
 
-depth = -(obj_player.y+1); //always infront of player
+//adjust depth accordingly
+
+if weapon_angle >= 45 and weapon_angle < 225 depth = -(obj_player.y-1);
+else depth = -(obj_player.y+1);

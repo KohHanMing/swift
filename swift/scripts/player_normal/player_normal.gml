@@ -40,8 +40,11 @@ function player_normal(){
 			// Dashing temporarily increases acceleration
 			apply_vector(object_index, DASH_ACCELERATION_INCREASE, goal_direction);
 			//Particles
-			instance_create_layer(x+random_range(-10,10),y-16+random_range(-10,10),"Instances",obj_particle_dash);
-			instance_create_layer(x+random_range(-10,10),y-16+random_range(-10,10),"Instances",obj_particle_dash);
+			
+			var center = find_sprite_center(id)
+			
+			instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_dash);
+			instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_dash);
 			
 		}
 		

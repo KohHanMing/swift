@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "combat1.mp3",
-  "duration": 87.29275,
+  "soundFile": "combat1.wav",
+  "duration": 87.27274,
   "parent": {
     "name": "soundtracks",
     "path": "folders/Sounds/soundtracks.yy",

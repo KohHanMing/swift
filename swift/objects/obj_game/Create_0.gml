@@ -3,4 +3,5 @@
 
 instance_create_layer(0,0,"Instances",obj_soundtrack_manager);
 instance_create_layer(0,0,"Instances",obj_level_manager);
-go_to_next_level();
+instance_create_layer(0,0,"Instances",obj_tutorial_manager);
+go_to_next_tutorial();

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_hole",
-    "path": "sprites/spr_hole/spr_hole.yy",
+    "name": "spr_city_hole",
+    "path": "sprites/spr_city_hole/spr_city_hole.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "level",
+    "path": "folders/Objects/level.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_hole",

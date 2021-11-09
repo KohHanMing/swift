@@ -18,6 +18,10 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 		enemy_ids[i] = ds_list_create();
 	}
 } else if (triggered) {
+	if (!has_destroyed_marker) {
+		has_destroyed_marker = true;
+		instance_destroy(marker.id);	
+	}
 	for (var i = 0; i < ds_list_size(waves); i++) {
 		var next = ds_list_find_value(waves, i);
 		if (next[WAVE] == current_wave) && (next[DELAY] == timer) {

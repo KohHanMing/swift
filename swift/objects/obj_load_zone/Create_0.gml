@@ -16,3 +16,6 @@ enemy_ids = ds_list_create();
 trigger_doors = true;
 
 is_level_complete = true;
+
+has_destroyed_marker = false; //hackyyyy change pls
+marker = instance_create_layer(x + sprite_width/2, y + sprite_height/2, "Instances", obj_checkpoint_marker);
