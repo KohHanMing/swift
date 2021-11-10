@@ -7,7 +7,7 @@ y = obj_player.y + Y_OFFSET_FROM_PLAYER_CENTRE;
 speed = obj_player.speed;
 direction = obj_player.direction;
 
-//rotate image with reference to mouse
+// Rotate image with reference to mouse
 weapon_angle = point_direction(x, y, mouse_x, mouse_y);
 
 if (not firing) {
@@ -15,5 +15,3 @@ if (not firing) {
 		sprite_index = SPR_WEAPON_IDLE_FRONT;
 	} else sprite_index = SPR_WEAPON_IDLE_SIDE;
 }
-
-//Use weapon angle to rotate the weapon to suit its type in the child object
