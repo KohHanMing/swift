@@ -39,7 +39,7 @@
     "path": "folders/Objects/weapon.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_weapon_melee_melee_hitbox",
+  "name": "obj_blade_melee_hitbox",
   "tags": [],
   "resourceType": "GMObject",
 }
