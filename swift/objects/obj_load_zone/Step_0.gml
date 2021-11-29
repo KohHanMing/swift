@@ -32,6 +32,7 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 					"Instances", 
 					next[TYPE]
 				)
+			instance_deactivate_object(curr_enemy);
 			
 			// Spawn pod above desired coord
 			spawn_pod(spawn[spawnpoint,0],spawn[spawnpoint,1], curr_enemy);
