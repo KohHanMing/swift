@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_weapon_melee_melee_hitbox_2",
-    "path": "sprites/spr_weapon_melee_melee_hitbox_2/spr_weapon_melee_melee_hitbox_2.yy",
+    "name": "spr_weapon_melee_projectile2",
+    "path": "sprites/spr_weapon_melee_projectile2/spr_weapon_melee_projectile2.yy",
   },
   "solid": false,
   "visible": true,
@@ -39,7 +39,7 @@
     "path": "folders/Objects/weapon.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_weapon_melee_melee_hitbox",
+  "name": "obj_blade_melee_hitbox",
   "tags": [],
   "resourceType": "GMObject",
 }

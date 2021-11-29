@@ -25,10 +25,21 @@ function manual_projectile_collision(_inst){
 
 // Event for projectile collision
 function manual_projectile_collision_event(_inst) {
+	
+	// weapon_melee
 	if object_index == obj_weapon_melee_melee_hitbox {
 		center = find_sprite_center(_inst);
 		for (var i=0;i<50;i++) {
 			instance_create_layer(center[0]+random_range(-20,20),center[1]+random_range(-20,20),"Instances",obj_particle_weapon_melee_hit);
 		}
 	}
+	
+	// blade
+	if object_index == obj_blade_melee_hitbox {
+		center = find_sprite_center(_inst);
+		for (var i=0;i<50;i++) {
+			instance_create_layer(center[0]+random_range(-20,20),center[1]+random_range(-20,20),"Instances",obj_particle_blade_hit);
+		}
+	}
+	
 }
