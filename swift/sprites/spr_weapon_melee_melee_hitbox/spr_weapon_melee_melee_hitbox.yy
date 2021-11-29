@@ -14,7 +14,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 16,
+  "width": 32,
   "height": 32,
   "textureGroupId": {
     "name": "Default",
@@ -24,18 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"69ac580d-6e98-48cd-9236-ea6ec0608d9f","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"69ac580d-6e98-48cd-9236-ea6ec0608d9f","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":{"name":"5c4140fa-e822-43fe-8b16-8a6a741fe803","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_weapon_melee_melee_hitbox","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"69ac580d-6e98-48cd-9236-ea6ec0608d9f","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"fe033640-4c29-4297-9c13-7ab0d2e0674d","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"fe033640-4c29-4297-9c13-7ab0d2e0674d","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":{"name":"5c4140fa-e822-43fe-8b16-8a6a741fe803","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_weapon_melee_melee_hitbox","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"fe033640-4c29-4297-9c13-7ab0d2e0674d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a5110d5b-96b7-4c20-8cb3-7603d1e34de2","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a5110d5b-96b7-4c20-8cb3-7603d1e34de2","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":{"name":"5c4140fa-e822-43fe-8b16-8a6a741fe803","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_weapon_melee_melee_hitbox","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"a5110d5b-96b7-4c20-8cb3-7603d1e34de2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5d02730b-7e09-4799-bbb4-04e7ebb39dbf","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5d02730b-7e09-4799-bbb4-04e7ebb39dbf","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":{"name":"5c4140fa-e822-43fe-8b16-8a6a741fe803","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_weapon_melee_melee_hitbox","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"5d02730b-7e09-4799-bbb4-04e7ebb39dbf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4cc71f5b-43de-40b0-a0ac-635de4dc8702","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4cc71f5b-43de-40b0-a0ac-635de4dc8702","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":{"name":"5c4140fa-e822-43fe-8b16-8a6a741fe803","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_weapon_melee_melee_hitbox","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"4cc71f5b-43de-40b0-a0ac-635de4dc8702","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ad2324ea-a735-422a-b3f3-a04535c4bc1b","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ad2324ea-a735-422a-b3f3-a04535c4bc1b","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"LayerId":{"name":"5c4140fa-e822-43fe-8b16-8a6a741fe803","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_weapon_melee_melee_hitbox","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","name":"ad2324ea-a735-422a-b3f3-a04535c4bc1b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_weapon_melee_melee_hitbox","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},
@@ -45,15 +42,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 4.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"201b01c3-2a58-439d-849e-6a80a05f35ec","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69ac580d-6e98-48cd-9236-ea6ec0608d9f","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"8fc028e8-8688-4425-82fc-9a06b10394a8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fe033640-4c29-4297-9c13-7ab0d2e0674d","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"62c33890-3201-4f46-83d2-7c37df975501","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a5110d5b-96b7-4c20-8cb3-7603d1e34de2","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"76ce4edc-ea11-4136-acd8-a633ca865c20","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5d02730b-7e09-4799-bbb4-04e7ebb39dbf","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"44473a24-2a06-44df-a1e8-94e228cd1692","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fe033640-4c29-4297-9c13-7ab0d2e0674d","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"012634b7-afa2-47d7-b10d-4febb71e6dde","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4cc71f5b-43de-40b0-a0ac-635de4dc8702","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e256df21-ecc7-418b-8098-03c9942f2f96","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad2324ea-a735-422a-b3f3-a04535c4bc1b","path":"sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
