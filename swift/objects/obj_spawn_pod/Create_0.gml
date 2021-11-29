@@ -3,4 +3,5 @@
 
 // Inherit the parent event
 event_inherited();
-LIFETIME = room_speed * 2;
+image_speed = 0;
+TARGET_Y = 0;

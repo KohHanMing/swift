@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-LIFETIME = room_speed/2;
+alarm[0] = room_speed;
