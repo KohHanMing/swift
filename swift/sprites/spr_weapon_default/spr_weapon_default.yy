@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "default",
-    "path": "folders/Sprites/weapon/default.yy",
+    "name": "weapon",
+    "path": "folders/Sprites/weapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_weapon_default",

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "weapon",
-    "path": "folders/Sprites/weapon.yy",
+    "name": "weapon_ranged",
+    "path": "folders/Sprites/weapon/weapon_ranged.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_weapon_ranged_projectile",
