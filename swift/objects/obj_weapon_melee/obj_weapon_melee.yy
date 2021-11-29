@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_weapon_melee_idle",
-    "path": "sprites/spr_weapon_melee_idle/spr_weapon_melee_idle.yy",
+    "name": "spr_blade",
+    "path": "sprites/spr_blade/spr_blade.yy",
   },
   "solid": false,
   "visible": true,

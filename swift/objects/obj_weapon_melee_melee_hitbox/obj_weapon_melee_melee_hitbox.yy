@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_weapon_melee_melee_hitbox",
-    "path": "sprites/spr_weapon_melee_melee_hitbox/spr_weapon_melee_melee_hitbox.yy",
+    "name": "spr_weapon_melee_melee_hitbox_2",
+    "path": "sprites/spr_weapon_melee_melee_hitbox_2/spr_weapon_melee_melee_hitbox_2.yy",
   },
   "solid": false,
   "visible": true,
