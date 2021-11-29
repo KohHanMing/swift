@@ -5,7 +5,8 @@ event_inherited();
 
 // Constants
 DAMAGE = 1;
-LIFETIME_SECONDS = 1/3;
+LIFETIME_SECONDS = 1/5;
+image_speed = LIFETIME_SECONDS;
 P_SPEED = 0;
 P_RANGE = 200;
 

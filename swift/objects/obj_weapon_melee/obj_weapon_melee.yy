@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_blade",
-    "path": "sprites/spr_blade/spr_blade.yy",
+    "name": "",
+    "path": "",
   },
   "solid": false,
   "visible": true,
