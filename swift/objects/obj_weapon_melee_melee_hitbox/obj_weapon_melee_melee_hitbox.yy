@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_weapon_melee_projectile2",
-    "path": "sprites/spr_weapon_melee_projectile2/spr_weapon_melee_projectile2.yy",
+    "name": "spr_weapon_melee_melee_hitbox_2",
+    "path": "sprites/spr_weapon_melee_melee_hitbox_2/spr_weapon_melee_melee_hitbox_2.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_enemy_projectile","path":"objects/obj_enemy_projectile/obj_enemy_projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -8,7 +8,7 @@ if (not firing) {
 		sprite_index = SPR_WEAPON_FIRE_FRONT;
 	}
 		
-	spawn_melee_projectile(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, PROJECTILE_OFFSET_SIDE, weapon_angle);
+	spawn_player_melee_hitbox(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, PROJECTILE_OFFSET_SIDE, weapon_angle);
 	alarm[0] = RATE_OF_ATTACK //Attacks 1 time per second
 
 	audio_play_sound(SFX_WEAPON,99,false);

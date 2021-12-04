@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "default",
-    "path": "folders/Sprites/weapon/default.yy",
+    "name": "weapon_melee",
+    "path": "folders/Sprites/weapon/weapon_melee.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_weapon_melee_fire",

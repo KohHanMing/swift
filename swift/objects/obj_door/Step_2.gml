@@ -1,1 +1,3 @@
-/// @description Do Not Inherit Depth Updating
+/// @description Doors Appear Above Walls
+
+depth = -y-1;
