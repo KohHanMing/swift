@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"font_extra_large","path":"fonts/font_extra_large/font_extra_large.yy",},"order":0,},
+    {"id":{"name":"spr_honey_badger_idle_back123","path":"sprites/spr_honey_badger_idle_back123/spr_honey_badger_idle_back123.yy",},"order":10,},
     {"id":{"name":"font_large","path":"fonts/font_large/font_large.yy",},"order":1,},
     {"id":{"name":"font_medium","path":"fonts/font_medium/font_medium.yy",},"order":2,},
     {"id":{"name":"font_small","path":"fonts/font_small/font_small.yy",},"order":3,},
@@ -204,6 +205,7 @@
     {"id":{"name":"recharge_dash","path":"scripts/recharge_dash/recharge_dash.yy",},"order":4,},
     {"id":{"name":"spawn_projectile","path":"scripts/spawn_projectile/spawn_projectile.yy",},"order":12,},
     {"id":{"name":"take_damage","path":"scripts/take_damage/take_damage.yy",},"order":13,},
+    {"id":{"name":"spr_honey_badger_fire_back","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"order":11,},
     {"id":{"name":"transition","path":"scripts/transition/transition.yy",},"order":0,},
     {"id":{"name":"sfx_basic_ranged","path":"sounds/sfx_basic_ranged/sfx_basic_ranged.yy",},"order":0,},
     {"id":{"name":"sfx_deflect","path":"sounds/sfx_deflect/sfx_deflect.yy",},"order":1,},
