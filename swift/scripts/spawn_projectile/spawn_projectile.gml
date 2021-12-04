@@ -5,5 +5,6 @@ function spawn_projectile(_projectile, _offset_forward, _offset_side, _angle){
 		phy_speed_x = (P_SPEED)*cos(degtorad(_angle));
 		phy_speed_y = -(P_SPEED)*sin(degtorad(_angle));
 		phy_rotation = -_angle;
+		owner = other.id;
 	}
 }

@@ -1,6 +1,18 @@
-/// @description Insert description here
-// You can write your code in this editor
-if (not firing and obj_player.CURR_ENERGY >= ENERGY_COST) {
+/// @description Attempt to Fire
+
+if (firing) {
+	// Cooldown not ready
+	
+}
+
+else if (obj_player.CURR_ENERGY < ENERGY_COST) {
+	// Not enough energy
+	
+}
+
+else {
+	// Otherwise, fire
+	
 	obj_player.CURR_ENERGY -= ENERGY_COST
 	firing = true;
 	

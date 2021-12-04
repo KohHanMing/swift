@@ -27,14 +27,18 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 		if (next[WAVE] == current_wave) && (next[DELAY] == timer) {
 			var spawnpoint = next[SPAWN];
 			
-			// Keep Track of enemy ids
-			ds_list_add(enemy_ids[current_wave], 
-				instance_create_layer(spawn[spawnpoint,0], 
+			var curr_enemy = instance_create_layer(spawn[spawnpoint,0], 
 					spawn[spawnpoint,1], 
 					"Instances", 
 					next[TYPE]
 				)
-			);
+			instance_deactivate_object(curr_enemy);
+			
+			// Spawn pod above desired coord
+			spawn_pod(spawn[spawnpoint,0],spawn[spawnpoint,1], curr_enemy);
+			
+			// Keep Track of enemy ids
+			ds_list_add(enemy_ids[current_wave], curr_enemy);
 			
 			// Facilitate swarming behaviour
 			var counter = 0;

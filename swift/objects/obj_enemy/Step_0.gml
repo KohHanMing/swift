@@ -29,7 +29,7 @@ if (!flying) {
 	}
 }
 
-//damage tints
+//Damage Tint
 if damage_tint_time > 0 {
 	image_blend = make_color_rgb(255-damage_tint_time/damage_tint_time_start*255, 255, 255-damage_tint_time/damage_tint_time_start*255);
 	if damage_tint_time = 1 image_blend = c_white;

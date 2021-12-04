@@ -5,6 +5,7 @@ gpu_set_blendmode_ext(bm_dest_colour, bm_zero);
 draw_sprite(spr_vignette, 0, 0, 0);
 gpu_set_blendmode(bm_normal);
 draw_sprite_ext(spr_vignette_red, 0, 0, 0, 1, 1, 0, c_white, obj_player.damage_tint_scale);
+draw_sprite_ext(spr_vignette_red, 0, 0, 0, 1, 1, 0, c_white, 1-2*(obj_player.CURR_HEALTH/obj_player.MAX_HEALTH));
 
 draw_sprite(spr_ui_fullscreen, 0, 0, 0);
 
