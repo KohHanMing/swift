@@ -219,7 +219,6 @@
     {"id":{"name":"spawn_projectile","path":"scripts/spawn_projectile/spawn_projectile.yy",},"order":12,},
     {"id":{"name":"take_damage","path":"scripts/take_damage/take_damage.yy",},"order":13,},
     {"id":{"name":"transition","path":"scripts/transition/transition.yy",},"order":0,},
-    {"id":{"name":"swap_weapon_event","path":"scripts/swap_weapon_event/swap_weapon_event.yy",},"order":5,},
     {"id":{"name":"spr_blade_melee_hitbox","path":"sprites/spr_blade_melee_hitbox/spr_blade_melee_hitbox.yy",},"order":2,},
     {"id":{"name":"sfx_basic_ranged","path":"sounds/sfx_basic_ranged/sfx_basic_ranged.yy",},"order":0,},
     {"id":{"name":"sfx_deflect","path":"sounds/sfx_deflect/sfx_deflect.yy",},"order":1,},
