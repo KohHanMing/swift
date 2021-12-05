@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 6,
-  "bbox_right": 29,
-  "bbox_top": 6,
-  "bbox_bottom": 9,
+  "bbox_left": 3,
+  "bbox_right": 30,
+  "bbox_top": 5,
+  "bbox_bottom": 10,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -27,9 +27,9 @@
     {"compositeImage":{"FrameId":{"name":"6557fefe-b74a-4b55-bb6e-781edffdc1fc","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"6557fefe-b74a-4b55-bb6e-781edffdc1fc","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"LayerId":{"name":"946fd7ff-f1db-4340-a0d4-f0d7df967699","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_honey_badger_fire_back","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","name":"6557fefe-b74a-4b55-bb6e-781edffdc1fc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"75c824c6-d601-45b4-a985-5ea6c8a81bfa","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"75c824c6-d601-45b4-a985-5ea6c8a81bfa","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"LayerId":{"name":"946fd7ff-f1db-4340-a0d4-f0d7df967699","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_honey_badger_fire_back","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","name":"75c824c6-d601-45b4-a985-5ea6c8a81bfa","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1944709c-0d9c-41f8-8127-20d3127da7bd","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1944709c-0d9c-41f8-8127-20d3127da7bd","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"LayerId":{"name":"946fd7ff-f1db-4340-a0d4-f0d7df967699","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_honey_badger_fire_back","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","name":"1944709c-0d9c-41f8-8127-20d3127da7bd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_honey_badger_fire_back","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"37231c84-544d-491c-a0ee-6ae73a97c445","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6557fefe-b74a-4b55-bb6e-781edffdc1fc","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"16fbd165-f363-45ba-8388-900add1e8db4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"75c824c6-d601-45b4-a985-5ea6c8a81bfa","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"453b28e0-b572-4eb5-8ec9-5f246eceb110","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6557fefe-b74a-4b55-bb6e-781edffdc1fc","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"205cf5a0-df9b-4543-9d72-effd3dce57fb","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1944709c-0d9c-41f8-8127-20d3127da7bd","path":"sprites/spr_honey_badger_fire_back/spr_honey_badger_fire_back.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
