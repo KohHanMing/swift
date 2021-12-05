@@ -6,7 +6,7 @@ event_inherited();
 
 X_OFFSET_FROM_PLAYER_CENTRE = 0; 
 Y_OFFSET_FROM_PLAYER_CENTRE = -15; 
-RATE_OF_ATTACK = room_speed / 4; //Fires 4 times per second
+ATTACK_COOLDOWN = room_speed/4; // Fires 4 times per second
 
 SPR_WEAPON_IDLE_SIDE = spr_honey_badger_idle_side;
 SPR_WEAPON_FIRE_SIDE = spr_honey_badger_fire_side;
@@ -19,3 +19,5 @@ SPR_WEAPON_FIRE_BACK = spr_honey_badger_fire_back;
 
 WEAPON_PROJECTILE = obj_honey_badger_projectile;
 PROJECTILE_OFFSET_FORWARD = 20;
+
+powering_down = false;

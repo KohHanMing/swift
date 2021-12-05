@@ -4,7 +4,7 @@
 //Weapon pivot point differs from player centre. Offset accordingly
 X_OFFSET_FROM_PLAYER_CENTRE = 0; 
 Y_OFFSET_FROM_PLAYER_CENTRE = 0; 
-RATE_OF_ATTACK = room_speed //Attacks 1 time per second
+ATTACK_COOLDOWN = room_speed //Attacks 1 time per second
 
 //Energy usage
 ENERGY_COST = 1;

@@ -8,7 +8,7 @@ event_inherited();
 //this -5 ensures weapon centre is aligned to player
 X_OFFSET_FROM_PLAYER_CENTRE = -5; 
 Y_OFFSET_FROM_PLAYER_CENTRE = -14; 
-RATE_OF_ATTACK = room_speed / 4; //Fires 4 times per second
+ATTACK_COOLDOWN = room_speed / 4; //Fires 4 times per second
 
 SPR_WEAPON_IDLE_SIDE = spr_weapon_ranged_idle_side;
 SPR_WEAPON_FIRE_SIDE = spr_weapon_ranged_fire_side;
