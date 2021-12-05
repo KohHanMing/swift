@@ -1,4 +1,6 @@
 /// @description Forcibly Remove Powering Down Sprite
+
+// This is necessary because FPS is fractional when scaled.
 if powering_down {
 	powering_down = false;
 	if sprite_index == spr_honey_badger_power_down_side sprite_index = spr_honey_badger_idle_side;
