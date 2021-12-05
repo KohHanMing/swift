@@ -2,16 +2,16 @@
 
 if (firing) {
 	// Cooldown not ready
-	event_perform(ev_other, ev_user0);
+	event_user(0);
 }
 
 else if (obj_player.CURR_ENERGY < ENERGY_COST) {
 	// Not enough energy
-	event_perform(ev_other, ev_user1);
+	event_user(1);
 	
 }
 
 else {
 	// Otherwise, attack
-	event_perform(ev_other, ev_user2);
+	event_user(2);
 }

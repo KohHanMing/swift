@@ -1,7 +1,8 @@
 /// @description Override Rotate Weapon
 
 // Inherit Weapon Step
-event_inherited();
+// Bypass obj_weapon_ranged to avoid sprite overrides
+event_perform_object(obj_weapon,ev_step,ev_step_normal);
 
 // Rotate Weapon, Adopt Sprites Accordingly
 if (weapon_angle >= 45 && weapon_angle <= 135) {
