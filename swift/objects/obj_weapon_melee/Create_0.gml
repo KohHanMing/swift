@@ -6,14 +6,12 @@ event_inherited();
 
 //Weapon pivot point differs from player centre. Offset accordingly
 Y_OFFSET_FROM_PLAYER_CENTRE = -14; 
-RATE_OF_ATTACK = room_speed //Attacks 1 time per second
+ATTACK_COOLDOWN = room_speed //Attacks 1 time per second
+ROTATION_OFFSET = 0;
 
 //Weapon presets 
-SPR_WEAPON_IDLE_SIDE = spr_weapon_melee_idle; //MUST INITIALISE IN CHILD WEAPON
-SPR_WEAPON_FIRE_SIDE = spr_weapon_melee_fire; //MUST INITIALISE IN CHILD WEAPON
-
-SPR_WEAPON_IDLE_FRONT = spr_weapon_melee_idle; //MUST INITIALISE IN CHILD WEAPON
-SPR_WEAPON_FIRE_FRONT = spr_weapon_melee_fire; //MUST INITIALISE IN CHILD WEAPON
+SPR_WEAPON_IDLE = spr_weapon_melee_idle;
+SPR_WEAPON_FIRE = spr_weapon_melee_fire;
 
 SFX_WEAPON = sfx_melee_default;
 
