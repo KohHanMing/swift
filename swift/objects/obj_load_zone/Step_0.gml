@@ -46,6 +46,10 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 				sector_number = counter % 8;
 				counter += 5;
 			}
+			with (obj_basic_melee) {
+				sector_number = counter % 8;
+				counter += 5;
+			}
 		}
 	}
 	

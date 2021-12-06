@@ -204,6 +204,7 @@
     {"id":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},"order":10,},
     {"id":{"name":"add_health","path":"scripts/add_health/add_health.yy",},"order":1,},
     {"id":{"name":"apply_vector","path":"scripts/apply_vector/apply_vector.yy",},"order":1,},
+    {"id":{"name":"rm_tutorial_3_enemy","path":"rooms/rm_tutorial_3_enemy/rm_tutorial_3_enemy.yy",},"order":2,},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},"order":2,},
     {"id":{"name":"basic_melee_aggro","path":"scripts/basic_melee_aggro/basic_melee_aggro.yy",},"order":0,},
     {"id":{"name":"enemy_attack","path":"scripts/enemy_attack/enemy_attack.yy",},"order":1,},
@@ -294,6 +295,7 @@
     {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
     {"roomId":{"name":"rm_tutorial_1_movement","path":"rooms/rm_tutorial_1_movement/rm_tutorial_1_movement.yy",},},
     {"roomId":{"name":"rm_tutorial_2_attack","path":"rooms/rm_tutorial_2_attack/rm_tutorial_2_attack.yy",},},
+    {"roomId":{"name":"rm_tutorial_3_enemy","path":"rooms/rm_tutorial_3_enemy/rm_tutorial_3_enemy.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Fonts.yy","order":0,"resourceVersion":"1.0","name":"Fonts","tags":[],"resourceType":"GMFolder",},

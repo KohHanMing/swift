@@ -31,6 +31,7 @@ ATTACK_SFX = sfx_slime_melee;
 canAttack = true;
 wandering = false;
 flying = false;
+has_line_of_sight = false;
 
 // Navigation
 path = path_add();
