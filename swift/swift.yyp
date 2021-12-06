@@ -111,7 +111,7 @@
     {"id":{"name":"spr_city_curb_outer","path":"sprites/spr_city_curb_outer/spr_city_curb_outer.yy",},"order":1,},
     {"id":{"name":"spawn_hitbox","path":"scripts/spawn_hitbox/spawn_hitbox.yy",},"order":10,},
     {"id":{"name":"obj_hdoor","path":"objects/obj_hdoor/obj_hdoor.yy",},"order":1,},
-    {"id":{"name":"rm_2types_slimes","path":"rooms/rm_2types_slimes/rm_2types_slimes.yy",},"order":0,},
+    {"id":{"name":"rm_melee_and_ranged","path":"rooms/rm_melee_and_ranged/rm_melee_and_ranged.yy",},"order":0,},
     {"id":{"name":"spr_city_wall","path":"sprites/spr_city_wall/spr_city_wall.yy",},"order":9,},
     {"id":{"name":"spr_controls","path":"sprites/spr_controls/spr_controls.yy",},"order":13,},
     {"id":{"name":"obj_level_manager","path":"objects/obj_level_manager/obj_level_manager.yy",},"order":5,},
@@ -283,7 +283,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
-    {"roomId":{"name":"rm_2types_slimes","path":"rooms/rm_2types_slimes/rm_2types_slimes.yy",},},
+    {"roomId":{"name":"rm_melee_and_ranged","path":"rooms/rm_melee_and_ranged/rm_melee_and_ranged.yy",},},
     {"roomId":{"name":"rm_controls","path":"rooms/rm_controls/rm_controls.yy",},},
     {"roomId":{"name":"rm_hanming","path":"rooms/rm_hanming/rm_hanming.yy",},},
     {"roomId":{"name":"rm_jwong","path":"rooms/rm_jwong/rm_jwong.yy",},},
