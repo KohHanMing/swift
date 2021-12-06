@@ -29,15 +29,6 @@ if (!flying) {
 	}
 }
 
-//Damage Tint
-if damage_tint_time > 0 {
-	var tint_factor = 128-damage_tint_time/damage_tint_time_start*128;
-	image_blend = make_color_rgb(128, tint_factor, tint_factor);
-	if damage_tint_time = 1 image_blend = c_white;
-	draw_self();
-	damage_tint_time -= 1;
-}
-
 // Prevent rubberbanding due to overshooting target coordinates
 if (variable_instance_exists(id, "goal_x")) {
 	if (x <= goal_x + 5 && x >= goal_x - 5 && y <= goal_y + 5 && y >= goal_y - 5) {
