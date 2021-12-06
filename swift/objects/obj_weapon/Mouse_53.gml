@@ -2,26 +2,16 @@
 
 if (firing) {
 	// Cooldown not ready
-	
+	event_user(0);
 }
 
 else if (obj_player.CURR_ENERGY < ENERGY_COST) {
 	// Not enough energy
+	event_user(1);
 	
 }
 
 else {
-	// Otherwise, fire
-	
-	obj_player.CURR_ENERGY -= ENERGY_COST
-	firing = true;
-	
-	if (sprite_index == SPR_WEAPON_IDLE_SIDE) sprite_index = SPR_WEAPON_FIRE_SIDE;
-	else sprite_index = SPR_WEAPON_FIRE_FRONT;
-	
-	spawn_projectile(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, PROJECTILE_OFFSET_SIDE, weapon_angle);
-	
-	alarm[0] = RATE_OF_ATTACK //Attacks 1 time per second
-	
-	audio_play_sound(SFX_WEAPON, 99, false);
+	// Otherwise, attack
+	event_user(2);
 }
