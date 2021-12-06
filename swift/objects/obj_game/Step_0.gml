@@ -4,6 +4,7 @@ if keyboard_check_pressed(vk_escape) {
 	paused = !paused;
 	if paused == false {
 		instance_activate_all();
+		if (!obj_level_manager.current_level_complete.is_visible) instance_deactivate_object(obj_level_manager.current_level_complete)
 		alarm[0] = 1;
 		surface_free(paused_surf);
         paused_surf = -1;
