@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_player_melee_hitbox",
-    "path": "objects/obj_player_melee_hitbox/obj_player_melee_hitbox.yy",
+    "name": "obj_weapon_melee_melee_hitbox",
+    "path": "objects/obj_weapon_melee_melee_hitbox/obj_weapon_melee_melee_hitbox.yy",
   },
   "physicsObject": true,
   "physicsSensor": false,
