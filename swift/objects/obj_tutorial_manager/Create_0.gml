@@ -14,3 +14,4 @@ ds_list_add(tutorial_sequence_list, spr_tutorial_one);
 ds_list_add(tutorial_sequence_list, spr_tutorial_two);
 
 // ------------- BLOCK ENDS ------------------
+
