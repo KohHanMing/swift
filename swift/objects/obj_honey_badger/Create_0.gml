@@ -8,6 +8,9 @@ X_OFFSET_FROM_PLAYER_CENTRE = 0;
 Y_OFFSET_FROM_PLAYER_CENTRE = -15; 
 ATTACK_COOLDOWN = room_speed/4; // Fires 4 times per second
 
+//Energy usage
+ENERGY_COST = 1;
+
 SPR_WEAPON_IDLE_SIDE = spr_honey_badger_idle_side;
 SPR_WEAPON_FIRE_SIDE = spr_honey_badger_fire_side;
 
