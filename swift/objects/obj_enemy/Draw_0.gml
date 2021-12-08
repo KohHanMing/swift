@@ -1,5 +1,3 @@
-/// @description Draw Event
-
 draw_self();
 
 var center = find_sprite_center(id);
