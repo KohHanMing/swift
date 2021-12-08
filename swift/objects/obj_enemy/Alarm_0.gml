@@ -28,9 +28,7 @@ if (alarm[FALLING_ALARM] == -1) {
 				canAttack = false;
 				// Do attack
 				enemy_attack(id);
-				audio_play_sound(ATTACK_SFX, 99, false);
-				// Reset canAttack
-				alarm[ATTACK_ALARM] = room_speed * ATTACK_DELAY_SECONDS;
+
 			} else { // no line of sight
 				enemy_aggro(id); // attempt to move to gain line of sight
 			}

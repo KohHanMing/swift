@@ -14,10 +14,6 @@ IDLE_SFX_ALARM = 4;
 
 // Constants
 AGGRO_RANGE = 0;
-ATTACK_RANGE = 0;
-ATTACK_DELAY_SECONDS = 0;
-ATTACK_OFFSET_FORWARD = 0;
-ATTACK_OFFSET_SIDE = 0;
 CURR_HEALTH = 0;
 MAX_HEALTH = 0;
 PLAYER = obj_player;
@@ -26,7 +22,26 @@ SPEED_PX_PER_FRAME = 0;
 WANDER_RADIUS = 0;
 WANDER_COOLDOWN_SECONDS = 0;
 DEATH_SFX = sfx_enemy_death;
+
+
+// Attack utilities
+// Attack state enums
+ATTACK_CAN_ATTACK = 0;
+ATTACK_WINDING_UP = 1;
+ATTACK_FOLLOW_THROUGH = 2;
+ATTACK_ON_COOLDOWN = 3;
+
+ATTACK_RANGE = 0;
+ATTACK_WINDUP_SECONDS = 0;
+ATTACK_FOLLOW_THROUGH_SECONDS = 0;
+ATTACK_COOLDOWN_SECONDS = 0;
+ATTACK_OFFSET_FORWARD = 0;
+ATTACK_OFFSET_SIDE = 0;
 ATTACK_SFX = -1;
+
+attack_state = ATTACK_CAN_ATTACK;
+attack_distance = 0;
+attack_direction = 0;
 
 // Sprite center
 sprite_center = find_sprite_center(id)

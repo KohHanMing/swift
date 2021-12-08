@@ -14,6 +14,6 @@ if (dist_to_player <= RETREAT_RANGE && canAttack) {
 		enemy_attack(id);
 		audio_play_sound(ATTACK_SFX, 99, false);
 		// Reset canAttack
-		alarm[ATTACK_ALARM] = room_speed * ATTACK_DELAY_SECONDS;
+		alarm[ATTACK_ALARM] = room_speed * ATTACK_COOLDOWN_SECONDS;
 	}
 }
