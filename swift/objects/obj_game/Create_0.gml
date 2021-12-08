@@ -17,5 +17,5 @@ paused = false;
 
 // Initialize Weapons
 equipped_melee_weapon = obj_blade;
-equipped_ranged_weapon = obj_honey_badger;
+equipped_ranged_weapon = obj_weapon_ranged;
 update_equipped_weapons(); // Run Update Equipped Weapons event.
