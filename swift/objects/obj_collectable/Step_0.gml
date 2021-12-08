@@ -31,7 +31,7 @@ if (has_finished_spawning) {
 
 				// Move towards player
 				// Move faster when closer
-				distance_factor = max(0.1,0.25*(1-distance_to_player/COLLECTION_RANGE))
+				distance_factor = max(0.2,0.25*(1-distance_to_player/COLLECTION_RANGE))
 				phy_position_x = lerp(phy_position_x,player_x,distance_factor);
 				phy_position_y = lerp(phy_position_y,player_y,distance_factor);
 		
