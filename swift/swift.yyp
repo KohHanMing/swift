@@ -102,6 +102,7 @@
     {"id":{"name":"spr_city_road","path":"sprites/spr_city_road/spr_city_road.yy",},"order":6,},
     {"id":{"name":"obj_enemy_melee_hitbox","path":"objects/obj_enemy_melee_hitbox/obj_enemy_melee_hitbox.yy",},"order":1,},
     {"id":{"name":"phy_set_vector","path":"scripts/phy_set_vector/phy_set_vector.yy",},"order":7,},
+    {"id":{"name":"update_equipped_weapons","path":"scripts/update_equipped_weapons/update_equipped_weapons.yy",},"order":5,},
     {"id":{"name":"spr_honey_badger_power_down_side","path":"sprites/spr_honey_badger_power_down_side/spr_honey_badger_power_down_side.yy",},"order":9,},
     {"id":{"name":"spr_ranged_move_down","path":"sprites/spr_ranged_move_down/spr_ranged_move_down.yy",},"order":0,},
     {"id":{"name":"spr_honey_badger_idle_front","path":"sprites/spr_honey_badger_idle_front/spr_honey_badger_idle_front.yy",},"order":13,},
