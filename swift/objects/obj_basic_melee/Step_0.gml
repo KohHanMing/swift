@@ -4,9 +4,11 @@
 // Inherit the parent event
 event_inherited();
 
-face_angle = point_direction(0, 0, phy_speed_x, phy_speed_y);
+if (attack_state != ATTACK_WINDING_UP && attack_state != ATTACK_FOLLOW_THROUGH) {
+	face_angle = point_direction(0, 0, phy_speed_x, phy_speed_y);
 
-if (face_angle > 315 || face_angle <= 45) sprite_index = spr_melee_move_right;
-else if (face_angle > 45 && face_angle <= 135) sprite_index = spr_melee_move_up;
-else if (face_angle > 135 && face_angle <= 225) sprite_index = spr_melee_move_left;
-else sprite_index = spr_melee_move_down;
+	if (face_angle > 315 || face_angle <= 45) sprite_index = spr_melee_move_right;
+	else if (face_angle > 45 && face_angle <= 135) sprite_index = spr_melee_move_up;
+	else if (face_angle > 135 && face_angle <= 225) sprite_index = spr_melee_move_left;
+	else sprite_index = spr_melee_move_down;
+}
