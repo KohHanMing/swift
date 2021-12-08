@@ -41,5 +41,11 @@ draw_sprite_ext(spr_ui_energy_end, 1, ENERGY_BAR_OFFSET_X + energy_length, ENERG
 draw_sprite_part(spr_ui_dash,1,0,0,sprite_get_width(spr_ui_dash)*(obj_player.CURR_DASH / obj_player.MAX_DASH),sprite_get_height(spr_ui_energy),DASH_BAR_OFFSET_X,DASH_BAR_OFFSET_Y)
 
 //Weapon
-draw_sprite(spr_weapon_display,0,20,684);
+
 draw_sprite(spr_weapon_display,0,20,610);
+var display_center = [84,642];
+weapon_display(obj_game.equipped_melee_weapon_display,display_center);
+
+draw_sprite(spr_weapon_display,0,20,684);
+var display_center = [84,716];
+weapon_display(obj_game.equipped_ranged_weapon_display,display_center);
