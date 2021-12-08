@@ -12,6 +12,7 @@
     {"id":{"name":"obj_checkpoint_marker","path":"objects/obj_checkpoint_marker/obj_checkpoint_marker.yy",},"order":9,},
     {"id":{"name":"obj_city_wall_static","path":"objects/obj_city_wall_static/obj_city_wall_static.yy",},"order":0,},
     {"id":{"name":"obj_collectable","path":"objects/obj_collectable/obj_collectable.yy",},"order":0,},
+    {"id":{"name":"spr_ranged_attack_right","path":"sprites/spr_ranged_attack_right/spr_ranged_attack_right.yy",},"order":8,},
     {"id":{"name":"spr_deadeye_projectile","path":"sprites/spr_deadeye_projectile/spr_deadeye_projectile.yy",},"order":1,},
     {"id":{"name":"spr_surpressor_turrent_idle_up","path":"sprites/spr_surpressor_turrent_idle_up/spr_surpressor_turrent_idle_up.yy",},"order":7,},
     {"id":{"name":"spr_deadeye_idle_side","path":"sprites/spr_deadeye_idle_side/spr_deadeye_idle_side.yy",},"order":0,},
