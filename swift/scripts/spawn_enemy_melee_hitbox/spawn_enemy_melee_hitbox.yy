@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Commons",
+    "path": "folders/Scripts/Enemy_Scripts/Commons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spawn_hitbox",
+  "name": "spawn_enemy_melee_hitbox",
   "tags": [],
   "resourceType": "GMScript",
 }

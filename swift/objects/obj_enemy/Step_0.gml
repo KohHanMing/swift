@@ -4,6 +4,16 @@
 // Inherit the parent event
 event_inherited();
 
+// End step if enemy is already dead
+if (CURR_HEALTH <= 0) {
+	exit;
+}
+
+// Update sprite center
+sprite_center = find_sprite_center(id)
+sprite_x = sprite_center[0]
+sprite_y = sprite_center[1]
+
 move_wrap(true, true, sprite_width/2);
 
 // if falling
@@ -39,7 +49,7 @@ if damage_tint_time > 0 {
 
 // Prevent rubberbanding due to overshooting target coordinates
 if (variable_instance_exists(id, "goal_x")) {
-	if (x <= goal_x + 5 && x >= goal_x - 5 && y <= goal_y + 5 && y >= goal_y - 5) {
+	if (sprite_x <= goal_x + 5 && sprite_x >= goal_x - 5 && sprite_y <= goal_y + 5 && sprite_y >= goal_y - 5) {
 		phy_speed_x = 0;
 		phy_speed_y = 0;
 	}
