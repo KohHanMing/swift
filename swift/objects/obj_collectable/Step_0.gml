@@ -1,8 +1,10 @@
-/// @description Movement
+/// @description Movement and Animation
 
 if (has_finished_spawning) {
 	
+	// Warning Flash
 	if alarm[1] < WARNING_TIME {
+		// Periodic Alpha Changing
 		var image_alpha_factor = (current_time%200)/200
 		image_alpha = image_alpha_factor;
 	}
@@ -10,6 +12,7 @@ if (has_finished_spawning) {
 	if (is_time_up) {
 		
 		// Despawn Animation
+		// Fade to 0
 		var image_alpha_factor = alarm[2]/DESPAWN_DURATION;
 		image_alpha = image_alpha_factor;
 		
@@ -27,6 +30,7 @@ if (has_finished_spawning) {
 			if distance_to_player > DELETION_RANGE {
 
 				// Move towards player
+				// Move faster when closer
 				distance_factor = max(0.1,0.25*(1-distance_to_player/COLLECTION_RANGE))
 				phy_position_x = lerp(phy_position_x,player_x,distance_factor);
 				phy_position_y = lerp(phy_position_y,player_y,distance_factor);
