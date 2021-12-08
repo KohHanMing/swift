@@ -14,7 +14,7 @@ if keyboard_check_pressed(vk_escape) {
 if paused == true {
 	if !surface_exists(paused_surf) {
 	    if paused_surf == -1 { 
-			paused_surf = surface_create(room_width, room_height);
+			paused_surf = surface_create(global.gui_width, global.gui_height);
 			surface_set_target(paused_surf);
 			draw_surface(application_surface, 0, 0);
 			surface_reset_target();

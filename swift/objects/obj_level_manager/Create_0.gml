@@ -14,11 +14,12 @@ ds_list_add(level_sequence_list, rm_init);
 
 // ------------- BLOCK STARTS ------------------
 
+// ds_list_add(level_sequence_list, rm_tutorial_3_enemy); for testing
 ds_list_add(level_sequence_list, rm_melee_easy);
 ds_list_add(level_sequence_list, rm_ranged_easy);
 ds_list_add(level_sequence_list, rm_melee_basic);
 ds_list_add(level_sequence_list, rm_ranged_basic);
-ds_list_add(level_sequence_list, rm_2types_slimes);
+ds_list_add(level_sequence_list, rm_melee_and_ranged);
 
 // ------------- BLOCK ENDS ------------------
 

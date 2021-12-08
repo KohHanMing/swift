@@ -7,7 +7,7 @@ Y_OFFSET_FROM_PLAYER_CENTRE = 0;
 ATTACK_COOLDOWN = room_speed //Attacks 1 time per second
 
 //Energy usage
-ENERGY_COST = 1;
+ENERGY_COST = 0; // Default is 0
 
 //Weapon presets
 SFX_WEAPON = sfx_ranged_default;
