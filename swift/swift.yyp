@@ -83,8 +83,6 @@
     {"id":{"name":"spr_weapon_ranged_projectile","path":"sprites/spr_weapon_ranged_projectile/spr_weapon_ranged_projectile.yy",},"order":4,},
     {"id":{"name":"obj_pushable","path":"objects/obj_pushable/obj_pushable.yy",},"order":6,},
     {"id":{"name":"spawn_enemy_projectile","path":"scripts/spawn_enemy_projectile/spawn_enemy_projectile.yy",},"order":5,},
-    {"id":{"name":"spr_ui_dash_end","path":"sprites/spr_ui_dash_end/spr_ui_dash_end.yy",},"order":4,},
-    {"id":{"name":"spr_ui_fullscreen","path":"sprites/spr_ui_fullscreen/spr_ui_fullscreen.yy",},"order":7,},
     {"id":{"name":"wall_collision","path":"scripts/wall_collision/wall_collision.yy",},"order":16,},
     {"id":{"name":"rm_ranged_easy","path":"rooms/rm_ranged_easy/rm_ranged_easy.yy",},"order":6,},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":7,},
