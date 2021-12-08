@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_swap_melee.wav",
-  "duration": 0.271746,
+  "soundFile": "sfx_player_ranged.wav",
+  "duration": 1.198027,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/sfx/player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_swap_melee",
+  "name": "sfx_player_ranged",
   "tags": [],
   "resourceType": "GMSound",
 }

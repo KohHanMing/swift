@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_melee_default.wav",
-  "duration": 0.479388,
+  "soundFile": "sfx_enemy_idle2.mp3",
+  "duration": 2.324898,
   "parent": {
-    "name": "sfx",
-    "path": "folders/Sounds/sfx.yy",
+    "name": "enemy",
+    "path": "folders/Sounds/sfx/enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_melee_default",
+  "name": "sfx_enemy_idle2",
   "tags": [],
   "resourceType": "GMSound",
 }

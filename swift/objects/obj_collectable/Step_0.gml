@@ -22,6 +22,7 @@ if (has_finished_spawning) {
 			} else {
 				//Collect item (meaning delete item obj)
 				//NOTE: Children obj will product effect on player in destroy event
+				audio_play_sound(sfx_pickup_collectible, 99, false);
 				instance_destroy(); 
 			} 
 		}

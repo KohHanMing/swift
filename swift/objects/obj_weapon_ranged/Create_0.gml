@@ -16,5 +16,7 @@ SPR_WEAPON_FIRE_SIDE = spr_weapon_ranged_fire_side;
 SPR_WEAPON_IDLE_FRONT = spr_weapon_ranged_idle_front;
 SPR_WEAPON_FIRE_FRONT =spr_weapon_ranged_fire_front;
 
+SFX_WEAPON = sfx_player_ranged;
+
 WEAPON_PROJECTILE = obj_weapon_ranged_projectile;
 PROJECTILE_OFFSET_FORWARD = 20;

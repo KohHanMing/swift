@@ -13,8 +13,8 @@
   "soundFile": "sfx_spawnpod_impact.wav",
   "duration": 7.978889,
   "parent": {
-    "name": "sfx",
-    "path": "folders/Sounds/sfx.yy",
+    "name": "enemy",
+    "path": "folders/Sounds/sfx/enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_spawnpod_impact",

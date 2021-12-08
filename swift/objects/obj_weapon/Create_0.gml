@@ -12,7 +12,7 @@ ENERGY_COST = 1;
 //Weapon presets 
 SPR_WEAPON_IDLE_SIDE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_FIRE_SIDE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
-SFX_WEAPON = sfx_ranged_default;
+SFX_WEAPON = -1;
 
 //Projectile presets
 WEAPON_PROJECTILE = obj_player_projectile; //MUST INITIALISE IN CHILD WEAPON

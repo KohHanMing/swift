@@ -6,3 +6,8 @@ MAX_HEALTH = 0;
 
 damage_tint_time = 0;
 damage_tint_scale = 0;
+
+//Play this sfx on getting hit
+//-1 if object has no hit sfx
+HIT_SFX = -1;
+curr_idle_sfx = -1;

@@ -13,8 +13,8 @@
   "soundFile": "sfx_noenergy.wav",
   "duration": 0.383764,
   "parent": {
-    "name": "sfx",
-    "path": "folders/Sounds/sfx.yy",
+    "name": "player",
+    "path": "folders/Sounds/sfx/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_noenergy",

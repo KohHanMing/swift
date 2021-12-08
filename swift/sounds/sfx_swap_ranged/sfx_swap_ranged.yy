@@ -13,8 +13,8 @@
   "soundFile": "sfx_swap_ranged.wav",
   "duration": 0.352381,
   "parent": {
-    "name": "sfx",
-    "path": "folders/Sounds/sfx.yy",
+    "name": "player",
+    "path": "folders/Sounds/sfx/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_swap_ranged",

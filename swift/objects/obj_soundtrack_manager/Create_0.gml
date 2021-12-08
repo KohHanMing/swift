@@ -8,3 +8,5 @@ prev_track = -1;
 is_mid_level = false;
 
 curr_volume = 1;
+
+audio_falloff_set_model(audio_falloff_exponent_distance);

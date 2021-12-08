@@ -29,6 +29,10 @@ if (!flying) {
 	}
 }
 
+if (alarm[IDLE_SFX_ALARM] == -1) {
+	alarm[IDLE_SFX_ALARM] = 200;
+}
+
 //Damage Tint
 if damage_tint_time > 0 {
 	image_blend = make_color_rgb(255-damage_tint_time/damage_tint_time_start*255, 255, 255-damage_tint_time/damage_tint_time_start*255);

@@ -16,7 +16,7 @@ SPR_WEAPON_FIRE_SIDE = spr_weapon_melee_fire; //MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_IDLE_FRONT = spr_weapon_melee_idle; //MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_FIRE_FRONT = spr_weapon_melee_fire; //MUST INITIALISE IN CHILD WEAPON
 
-SFX_WEAPON = sfx_melee_default;
+SFX_WEAPON = sfx_player_melee;
 
 //Projectile presets
 WEAPON_PROJECTILE = obj_weapon_melee_melee_hitbox; //MUST INITIALISE IN CHILD WEAPON
