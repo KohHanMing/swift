@@ -26,7 +26,7 @@ function player_normal(){
 		}
 	
 		if (moving) {
-			apply_vector(object_index, ACCELERATION_PX_PER_FRAME, goal_direction);
+			apply_vector(id, ACCELERATION_PX_PER_FRAME, goal_direction);
 		}
 	
 		if (keyboard_check_pressed(vk_space) and !dashing and CURR_DASH >= DASH_UNIT) {
@@ -38,7 +38,7 @@ function player_normal(){
 		
 		if(dashing) {
 			// Dashing temporarily increases acceleration
-			apply_vector(object_index, DASH_ACCELERATION_INCREASE, goal_direction);
+			apply_vector(id, DASH_ACCELERATION_INCREASE, goal_direction);
 			//Particles
 			
 			var center = find_sprite_center(id)
@@ -54,7 +54,7 @@ function player_normal(){
 				phy_speed_x = MAX_SPEED_PX_PER_FRAME*cos(direction*pi/180);
 				phy_speed_y = -MAX_SPEED_PX_PER_FRAME*sin(direction*pi/180);
 			} else if (alarm[0] <= DASH_TIME/2) {
-				apply_vector(object_index, -ACCELERATION_PX_PER_FRAME, goal_direction);				
+				apply_vector(id, -ACCELERATION_PX_PER_FRAME, goal_direction);				
 			}
 		}
 	}
@@ -63,16 +63,25 @@ function player_normal(){
 	
 	// alarm[1] == 0 when just respawning from hole
 	if (alarm[1] != 0) {
-		// check collision with hole objects
-		hole = collision_point(x, bbox_bottom, obj_hole, false, true);
-		if (hole != noone) {
-			res_x = phy_position_xprevious;
-			res_y = phy_position_yprevious;
-			state = "falling"
-			phy_speed_x = 0;
-			phy_speed_y = 0;
-			phy_active = false;
-			alarm[1] = 60; //player falls for 2 seconds
+		// if not dashing, ie enable dashing over holes
+		if(!dashing) {
+			// check collision with hole objects
+			hole = collision_point(x, bbox_bottom, obj_hole, false, true);
+			if (hole != noone) {
+				pos_prev_hole = collision_point(phy_position_xprevious, phy_position_yprevious, obj_hole, false, true);
+				if (pos_prev_hole == noone) {
+					res_x = phy_position_xprevious;
+					res_y = phy_position_yprevious;
+				}
+				state = "falling"
+				phy_speed_x = 0;
+				phy_speed_y = 0;
+				phy_active = false;
+				alarm[1] = 60; //player falls for 2 seconds
+			} else {
+				res_x = x;
+				res_y = y;
+			}
 		}
 	}
 }

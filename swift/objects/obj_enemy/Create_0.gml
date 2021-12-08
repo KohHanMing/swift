@@ -27,16 +27,21 @@ WANDER_COOLDOWN_SECONDS = 0;
 DEATH_SFX = sfx_slime_death;
 ATTACK_SFX = sfx_slime_melee;
 
+// Sprite center
+sprite_x = find_sprite_center(id)[0]
+sprite_y = find_sprite_center(id)[1]
+
 // Boolean flags
 canAttack = true;
 wandering = false;
 flying = false;
+has_line_of_sight = false;
 
 // Navigation
 path = path_add();
 alarm[BEHAVIOUR_ALARM] = 1; // Start managing bihaviour from spawn. 
-wander_anchor_x = x; // Wander around spawn point
-wander_anchor_y = y;
+wander_anchor_x = sprite_x; // Wander around spawn point
+wander_anchor_y = sprite_y;
 node_index = 1;
 dist_to_player = 0;
 dir_to_player = 0;

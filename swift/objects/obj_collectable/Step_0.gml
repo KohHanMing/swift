@@ -1,32 +1,54 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Movement and Animation
 
 if (has_finished_spawning) {
-	if (is_collectable) {
-		//creating player coord vars for quicker access
+	
+	// Warning Flash
+	if alarm[1] < WARNING_TIME {
+		// Periodic Alpha Changing
+		var image_alpha_factor = (current_time%200)/200
+		image_alpha = image_alpha_factor;
+	}
+	
+	if (is_time_up) {
+		
+		// Despawn Animation
+		// Fade to 0
+		var image_alpha_factor = alarm[2]/DESPAWN_DURATION;
+		image_alpha = image_alpha_factor;
+		
+	} else if (is_collectable) {
+		
+		// Creating player coord vars for quicker access
 		var player_x = obj_player.x;
 		var player_y = obj_player.y;
 
-		//if item is in collection range
-		if (point_in_rectangle(player_x, player_y, phy_position_x-COLLECTION_RANGE, phy_position_y-COLLECTION_RANGE, 
-		phy_position_x+COLLECTION_RANGE, phy_position_y+COLLECTION_RANGE)) {
+		// Distance to Player
+		var distance_to_player = point_distance(phy_position_x,phy_position_y,player_x,player_y)
+		if distance_to_player <= COLLECTION_RANGE {
 	
-			//if not close enough to be collected
-			if (!point_in_rectangle(player_x, player_y, phy_position_x-DELETION_RANGE, phy_position_y-DELETION_RANGE, 
-			phy_position_x+DELETION_RANGE, phy_position_y+DELETION_RANGE)) {
-		
-				//Move towards player
-				phy_position_x = lerp(phy_position_x, player_x, 0.3);
-				phy_position_y = lerp(phy_position_y, player_y, 0.3);
+			// If not close enough to be collected
+			if distance_to_player > DELETION_RANGE {
+
+				// Move towards player
+				// Move faster when closer
+				distance_factor = max(0.3,0.25*(1-distance_to_player/COLLECTION_RANGE))
+				phy_position_x = lerp(phy_position_x,player_x,distance_factor);
+				phy_position_y = lerp(phy_position_y,player_y,distance_factor);
 		
 			} else {
-				//Collect item (meaning delete item obj)
-				//NOTE: Children obj will product effect on player in destroy event
-				instance_destroy(); 
+				// Collect Item
+				event_user(0);
 			} 
 		}
+	} else {
+		phy_speed_x = 0;
+		phy_speed_y = 0;
 	}
-} else {
-	apply_vector(id, -VECTOR_SPEED / SPAWN_DURATION, VECTOR_DIRECTION);
 	
+} else {
+	// Spawn Animation
+	apply_vector(id, -VECTOR_SPEED / SPAWN_DURATION, VECTOR_DIRECTION);
+	var image_scale_factor = 1 - (0.5*alarm[0])/SPAWN_DURATION;
+	image_xscale = image_scale_factor;
+	image_yscale = image_scale_factor;
 }
