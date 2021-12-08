@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_ranged_default.wav",
-  "duration": 1.198027,
+  "soundFile": "sfx_swap_ranged.wav",
+  "duration": 0.352381,
   "parent": {
-    "name": "sfx",
-    "path": "folders/Sounds/sfx.yy",
+    "name": "player",
+    "path": "folders/Sounds/sfx/player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_ranged_default",
+  "name": "sfx_swap_ranged",
   "tags": [],
   "resourceType": "GMSound",
 }

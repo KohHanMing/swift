@@ -10,6 +10,7 @@ BEHAVIOUR_ALARM = 0;
 ATTACK_ALARM = 1;
 WANDER_ALARM = 2;
 FALLING_ALARM = 3;
+IDLE_SFX_ALARM = 4;
 
 // Constants
 AGGRO_RANGE = 0;
@@ -24,8 +25,8 @@ RETREAT_RANGE = 0;
 SPEED_PX_PER_FRAME = 0;
 WANDER_RADIUS = 0;
 WANDER_COOLDOWN_SECONDS = 0;
-DEATH_SFX = sfx_slime_death;
-ATTACK_SFX = sfx_slime_melee;
+DEATH_SFX = sfx_enemy_death;
+ATTACK_SFX = -1;
 
 // Sprite center
 sprite_x = find_sprite_center(id)[0]
@@ -49,3 +50,5 @@ res_x = 0;
 res_y = 0;
 
 phy_fixed_rotation = true;
+
+curr_idle_sfx = -1;

@@ -38,6 +38,7 @@ if (has_finished_spawning) {
 			} else {
 				// Collect Item
 				event_user(0);
+				audio_play_sound(sfx_pickup_collectible, 99, false);
 			} 
 		}
 	} else {

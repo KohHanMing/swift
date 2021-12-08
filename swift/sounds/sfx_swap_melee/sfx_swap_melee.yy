@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_slime_death.wav",
-  "duration": 1.026236,
+  "soundFile": "sfx_swap_melee.wav",
+  "duration": 0.271746,
   "parent": {
-    "name": "sfx",
-    "path": "folders/Sounds/sfx.yy",
+    "name": "player",
+    "path": "folders/Sounds/sfx/player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_slime_death",
+  "name": "sfx_swap_melee",
   "tags": [],
   "resourceType": "GMSound",
 }

@@ -16,3 +16,6 @@ WANDER_RADIUS = 50;
 WANDER_COOLDOWN_SECONDS = 3;
 
 sector_number = irandom_range(0,7);
+
+ATTACK_SFX = sfx_enemy_melee;
+HIT_SFX = sfx_enemy_hit;

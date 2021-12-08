@@ -13,8 +13,6 @@ ROTATION_OFFSET = 45;
 SPR_WEAPON_IDLE = spr_blade_idle;
 SPR_WEAPON_FIRE = spr_blade_fire;
 
-SFX_WEAPON = sfx_melee_default;
-
 //Projectile presets
 WEAPON_PROJECTILE = obj_blade_melee_hitbox;
 PROJECTILE_OFFSET_FORWARD = 20;
