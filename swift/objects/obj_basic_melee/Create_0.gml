@@ -6,7 +6,7 @@ event_inherited();
 
 AGGRO_RANGE = 250;
 ATTACK_DELAY_SECONDS = 2;
-ATTACK_HIT_BOX = obj_slime_melee_hitbox;
+ATTACK_HIT_BOX = obj_basic_melee_hitbox;
 ATTACK_RANGE = 50;
 CURR_HEALTH = 2;
 MAX_HEALTH = 2;

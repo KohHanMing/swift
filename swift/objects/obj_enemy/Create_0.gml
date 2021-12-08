@@ -29,8 +29,9 @@ DEATH_SFX = sfx_enemy_death;
 ATTACK_SFX = -1;
 
 // Sprite center
-sprite_x = find_sprite_center(id)[0]
-sprite_y = find_sprite_center(id)[1]
+sprite_center = find_sprite_center(id)
+sprite_x = sprite_center[0]
+sprite_y = sprite_center[1]
 
 // Boolean flags
 canAttack = true;
