@@ -273,7 +273,6 @@
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
-    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -337,7 +336,7 @@
     {"folderPath":"folders/Sprites/level/city.yy","order":2,"resourceVersion":"1.0","name":"city","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/ui.yy","order":7,"resourceVersion":"1.0","name":"ui","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/weapon/deadeye.yy","order":2,"resourceVersion":"1.0","name":"deadeye","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/collectible.yy","order":9,"resourceVersion":"1.0","name":"collectible","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/collectable.yy","order":9,"resourceVersion":"1.0","name":"collectable","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemy.yy","order":10,"resourceVersion":"1.0","name":"enemy","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemy/harasser.yy","order":0,"resourceVersion":"1.0","name":"harasser","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/weapon/honey_badger.yy","order":3,"resourceVersion":"1.0","name":"honey_badger","tags":[],"resourceType":"GMFolder",},
@@ -354,7 +353,7 @@
     {"folderPath":"folders/Sprites/enemy/surpressor.yy","order":7,"resourceVersion":"1.0","name":"surpressor","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/weapon/weapon_melee.yy","order":6,"resourceVersion":"1.0","name":"weapon_melee","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/player.yy","order":24,"resourceVersion":"1.0","name":"player","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Objects/collectible.yy","order":25,"resourceVersion":"1.0","name":"collectible","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/collectable.yy","order":25,"resourceVersion":"1.0","name":"collectable","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/weapon/weapon_ranged.yy","order":7,"resourceVersion":"1.0","name":"weapon_ranged","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
@@ -365,7 +364,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.5.589",
+    "IDEVersion": "2.3.4.583",
   },
   "resourceVersion": "1.4",
   "name": "swift",
