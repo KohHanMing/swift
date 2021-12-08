@@ -6,8 +6,8 @@ if (alarm[FALLING_ALARM] == -1) {
 	// Check path last to save path computation
 	// Retreat, Attack, Aggro and Wander are to be abstracted to scripts eventually
 
-	dist_to_player = point_distance(sprite_x, sprite_y, PLAYER.x, PLAYER.y);
-	dir_to_player = point_direction(sprite_x, sprite_y, PLAYER.x, PLAYER.y);
+	dist_to_player = point_distance(sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y);
+	dir_to_player = point_direction(sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y);
 	phy_speed_x = 0;
 	phy_speed_y = 0;
 

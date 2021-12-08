@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function basic_ranged_aggro(){
 	// If path exists
-	if (mp_grid_path(global.grid, path, sprite_x, sprite_y, PLAYER.x, PLAYER.y, 1)) {
+	if (mp_grid_path(global.grid, path, sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y, 1)) {
 		// Start pathing to the next node towards player
 		phy_follow_path(id, SPEED_PX_PER_FRAME, path);
 	} else if (id.has_line_of_sight) {
