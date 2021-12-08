@@ -35,3 +35,5 @@ if damage_tint_time > 0 {
 recharge_dash();
 
 event_inherited();
+
+audio_listener_position(x,y,0);
