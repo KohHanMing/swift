@@ -206,6 +206,7 @@
     {"id":{"name":"obj_particle_honey_badger_trail","path":"objects/obj_particle_honey_badger_trail/obj_particle_honey_badger_trail.yy",},"order":4,},
     {"id":{"name":"obj_basic_melee_hitbox","path":"objects/obj_basic_melee_hitbox/obj_basic_melee_hitbox.yy",},"order":1,},
     {"id":{"name":"obj_player_damaging","path":"objects/obj_player_damaging/obj_player_damaging.yy",},"order":1,},
+    {"id":{"name":"obj_basic_ranged_tutorial","path":"objects/obj_basic_ranged_tutorial/obj_basic_ranged_tutorial.yy",},"order":3,},
     {"id":{"name":"obj_player_projectile","path":"objects/obj_player_projectile/obj_player_projectile.yy",},"order":3,},
     {"id":{"name":"obj_ranged_slime","path":"objects/obj_ranged_slime/obj_ranged_slime.yy",},"order":0,},
     {"id":{"name":"obj_slime_melee_hitbox","path":"objects/obj_slime_melee_hitbox/obj_slime_melee_hitbox.yy",},"order":1,},
