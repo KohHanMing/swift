@@ -8,5 +8,5 @@ function take_damage(_object, _damage){
 	_object.damage_tint_time_start = room_speed/2
 	_object.damage_tint_time = _object.damage_tint_time_start;
 	audio_stop_sound(_object.curr_idle_sfx);
-	audio_play_sound_at(_object.HIT_SFX,x,y,0,50,100,1,false,99);
+	audio_play_sound_at(_object.HIT_SFX,x,y,0,falloff_ref_dist,falloff_max_dist,1,false,99);
 }
