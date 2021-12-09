@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "music",
+    "path": "audiogroups/music",
   },
   "soundFile": "ambient2.wav",
   "duration": 115.636375,
