@@ -23,6 +23,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_load_zone","path":"objects/obj_load_zone/obj_load_zone.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":192.0,"resourceVersion":"1.0","name":"inst_71F1D9BC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_level_complete","path":"objects/obj_level_complete/obj_level_complete.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1184.0,"y":192.0,"resourceVersion":"1.0","name":"inst_10934ADD","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_tooltip_trigger","path":"objects/obj_tooltip_trigger/obj_tooltip_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":640.0,"resourceVersion":"1.0","name":"inst_739A72FE","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_tooltip_trigger","path":"objects/obj_tooltip_trigger/obj_tooltip_trigger.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":640.0,"resourceVersion":"1.0","name":"inst_3DD84288","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_vdoor","path":"objects/obj_vdoor/obj_vdoor.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":768.0,"resourceVersion":"1.0","name":"inst_218F1583","tags":[],"resourceType":"GMRInstance",},
@@ -775,6 +776,7 @@
     {"name":"inst_3CBDB3BF","path":"rooms/rm_melee_easy/rm_melee_easy.yy",},
     {"name":"inst_3886DA80","path":"rooms/rm_melee_easy/rm_melee_easy.yy",},
     {"name":"inst_739A72FE","path":"rooms/rm_melee_easy/rm_melee_easy.yy",},
+    {"name":"inst_3DD84288","path":"rooms/rm_melee_easy/rm_melee_easy.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
