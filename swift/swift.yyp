@@ -57,6 +57,7 @@
     {"id":{"name":"projectile_step","path":"scripts/projectile_step/projectile_step.yy",},"order":17,},
     {"id":{"name":"spr_player_move_down","path":"sprites/spr_player_move_down/spr_player_move_down.yy",},"order":4,},
     {"id":{"name":"spr_orion_move_up","path":"sprites/spr_orion_move_up/spr_orion_move_up.yy",},"order":3,},
+    {"id":{"name":"spr_hole_black","path":"sprites/spr_hole_black/spr_hole_black.yy",},"order":16,},
     {"id":{"name":"old_spr_backup","path":"sprites/old_spr_backup/old_spr_backup.yy",},"order":4,},
     {"id":{"name":"spr_suppressor_move_left","path":"sprites/spr_suppressor_move_left/spr_suppressor_move_left.yy",},"order":1,},
     {"id":{"name":"basic_ranged_attack","path":"scripts/basic_ranged_attack/basic_ranged_attack.yy",},"order":1,},
