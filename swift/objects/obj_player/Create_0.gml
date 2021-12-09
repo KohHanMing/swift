@@ -8,6 +8,7 @@ event_inherited();
 instance_create_layer(x, y, "Instances", obj_game.equipped_ranged_weapon);
 
 HEALTH = 100;
+FALL_DAMAGE = 20;
 
 //Constants
 ACCELERATION_PX_PER_FRAME = 2.5;

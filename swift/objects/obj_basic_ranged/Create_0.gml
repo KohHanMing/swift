@@ -17,5 +17,7 @@ SPEED_PX_PER_FRAME = 2;
 WANDER_RADIUS = 50;
 WANDER_COOLDOWN_SECONDS = 3;
 
+flying = true;
+
 ATTACK_SFX = sfx_enemy_ranged;
 HIT_SFX = sfx_enemy_hit;
