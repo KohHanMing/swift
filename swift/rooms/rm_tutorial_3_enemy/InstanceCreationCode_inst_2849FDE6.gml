@@ -1,0 +1,1 @@
+TOOLTIP_CONTENT = "You can DASH over HOLES!";

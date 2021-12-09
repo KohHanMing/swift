@@ -5,7 +5,7 @@
 event_inherited();
 
 // Create Weapon Object
-instance_create_layer(x, y, "Instances", obj_game.equipped_ranged_weapon);
+instance_create_layer(x, y, "Instances", obj_game.equipped_melee_weapon);
 
 HEALTH = 100;
 
