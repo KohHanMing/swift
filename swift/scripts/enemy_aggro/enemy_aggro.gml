@@ -10,6 +10,9 @@ function enemy_aggro(_instance){
 		case obj_basic_ranged:
 			basic_ranged_aggro();
 		break;
+		case obj_basic_ranged_tutorial:
+			basic_ranged_aggro();
+		break;
 	}
 	
 	if (object_is_ancestor(obj_index, obj_slime)) {
