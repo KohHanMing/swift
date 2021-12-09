@@ -1,9 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Update Collectable
 
-if (obj_player.CURR_HEALTH < obj_player.MAX_HEALTH) {
-	is_collectable = true;
-} else {
-	is_collectable = false;	
-}
+is_collectable = (obj_player.CURR_HEALTH < obj_player.MAX_HEALTH)
 event_inherited();

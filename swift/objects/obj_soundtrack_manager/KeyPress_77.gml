@@ -1,6 +1,6 @@
 /// @description Toggle mute all
-if (audio_get_master_gain(0) != 0) {
-	audio_set_master_gain(0, 0);
+if (audio_sound_get_gain(curr_track_inst) != 0) {
+	audio_sound_gain(curr_track_inst, 0, 0);
 } else {
-	audio_set_master_gain(0, curr_volume);
+	audio_sound_gain(curr_track_inst, curr_volume, 0);
 }

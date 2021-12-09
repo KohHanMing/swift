@@ -1,7 +1,7 @@
 /// @description Rotate Weapon
 
 // Inherit Weapon Step
-event_perform_object(object_get_parent(object_get_parent(id)),ev_step,ev_step_normal);
+event_inherited();
 
 // Rotate Weapon, Adopt Sprites Accordingly
 if (not firing) {

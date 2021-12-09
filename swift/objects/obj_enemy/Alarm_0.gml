@@ -6,12 +6,12 @@ if (alarm[FALLING_ALARM] == -1) {
 	// Check path last to save path computation
 	// Retreat, Attack, Aggro and Wander are to be abstracted to scripts eventually
 
-	dist_to_player = point_distance(x, y, PLAYER.x, PLAYER.y);
-	dir_to_player = point_direction(x, y, PLAYER.x, PLAYER.y);
+	dist_to_player = point_distance(sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y);
+	dir_to_player = point_direction(sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y);
 	phy_speed_x = 0;
 	phy_speed_y = 0;
 
-	dist_to_wall = range_finder(x,y,dir_to_player,ATTACK_RANGE,obj_wall);
+	dist_to_wall = range_finder(sprite_x,sprite_y,dir_to_player,ATTACK_RANGE,obj_wall);
 	has_line_of_sight = dist_to_wall == -1 || (dist_to_wall > 0 && dist_to_player < dist_to_wall);
 
 	// If player is too close, i.e. within Retreat Range
@@ -28,9 +28,7 @@ if (alarm[FALLING_ALARM] == -1) {
 				canAttack = false;
 				// Do attack
 				enemy_attack(id);
-				audio_play_sound(ATTACK_SFX, 99, false);
-				// Reset canAttack
-				alarm[ATTACK_ALARM] = room_speed * ATTACK_DELAY_SECONDS;
+
 			} else { // no line of sight
 				enemy_aggro(id); // attempt to move to gain line of sight
 			}
@@ -57,7 +55,7 @@ if (alarm[FALLING_ALARM] == -1) {
 			goal_y = wander_anchor_y + random_range(-WANDER_RADIUS, WANDER_RADIUS);
 		
 			// And try to path towards it
-			if (mp_grid_path(global.grid, path, x, y, goal_x, goal_y, 1)) {
+			if (mp_grid_path(global.grid, path, sprite_x, sprite_y, goal_x, goal_y, 1)) {
 				wandering = true;
 				phy_follow_path(id, SPEED_PX_PER_FRAME, path);
 				node_index++;

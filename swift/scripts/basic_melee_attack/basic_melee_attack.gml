@@ -1,6 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function basic_melee_attack(){
-	dist = dist_to_player < ATTACK_RANGE ? dist_to_player : ATTACK_RANGE;
-	spawn_hitbox(ATTACK_HIT_BOX, dist, dir_to_player);
+	if (dir_to_player > 315 || dir_to_player <= 45) sprite_index = spr_melee_attack_right;
+	else if (dir_to_player > 45 && dir_to_player <= 135) sprite_index = spr_melee_attack_down; //change to up when it exists
+	else if (dir_to_player > 135 && dir_to_player <= 225) sprite_index = spr_melee_attack_left;
+	else sprite_index = spr_melee_attack_down;
+	
+	attack_distance = dist_to_player < ATTACK_RANGE ? dist_to_player : ATTACK_RANGE;
+	attack_direction = dir_to_player;
+	attack_state = ATTACK_WINDING_UP;
+	alarm[ATTACK_ALARM] = room_speed * ATTACK_WINDUP_SECONDS;
 }

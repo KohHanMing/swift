@@ -1,4 +1,5 @@
-/// @description Despawn
-// You can write your code in this editor
+/// @description Begin Despawn
+
 is_time_up = true;
-instance_destroy();
+// Start Despawn Animation
+alarm[2] = DESPAWN_DURATION;

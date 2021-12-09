@@ -1,10 +1,11 @@
 // Manual Projectile Collision
 function manual_projectile_collision(_inst){
 	
-	if ds_list_find_index(p_hit_list,_inst) != -1 return;
+	if ds_list_find_index(p_hit_list,_inst) != -1 return; // Exit if collision target has already been hit
 	
 	if object_is_ancestor(object_index,obj_player_melee_hitbox) {
 		if collision_line(owner.x,owner.y,_inst.x,_inst.y,obj_wall,false,true) return;
+		// Exit if line of sight is blocked by wall
 	}
 	
 	apply_vector(_inst,phy_speed*P_MASS/_inst.phy_mass,darctan2(-phy_speed_y,phy_speed_x));
@@ -14,32 +15,24 @@ function manual_projectile_collision(_inst){
 		instance_create_layer(x,y,"Instances", obj_energy);
 	}
 	
-	manual_projectile_collision_event(_inst);
+	collision_target = _inst; // Save _inst into collision_target of damaging if needed.
+	event_user(0); // Manual Projectile Collision Event
 	
 	if P_PIERCING {
-		ds_list_add(p_hit_list,_inst);
+		ds_list_add(p_hit_list,_inst); // Add collision target into hit list
 	}
     else instance_destroy();
 }
 
-
-// Event for projectile collision
-function manual_projectile_collision_event(_inst) {
+function manual_breakable_collision(_inst){
 	
-	// weapon_melee
-	if object_index == obj_weapon_melee_melee_hitbox {
-		center = find_sprite_center(_inst);
-		for (var i=0;i<50;i++) {
-			instance_create_layer(center[0]+random_range(-20,20),center[1]+random_range(-20,20),"Instances",obj_particle_weapon_melee_hit);
-		}
+	if ds_list_find_index(p_hit_list,_inst) != -1 return;
+	
+	with(_inst) event_user(0); // Make obj_breakable run breaking code
+	
+	if P_PIERCING {
+		ds_list_add(p_hit_list,_inst);
 	}
 	
-	// blade
-	if object_index == obj_blade_melee_hitbox {
-		center = find_sprite_center(_inst);
-		for (var i=0;i<50;i++) {
-			instance_create_layer(center[0]+random_range(-20,20),center[1]+random_range(-20,20),"Instances",obj_particle_blade_hit);
-		}
-	}
-	
+    else instance_destroy();
 }
