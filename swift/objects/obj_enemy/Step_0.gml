@@ -18,9 +18,7 @@ move_wrap(true, true, sprite_width/2);
 
 // if falling
 if (alarm[FALLING_ALARM] > -1) {
-	image_alpha *= 0.9
-	image_xscale *= 0.9
-	image_yscale *= 0.9
+	falling_animation();
 }
 
 if (!flying) {
@@ -35,6 +33,7 @@ if (!flying) {
 			phy_speed_y = 0;
 			phy_active = false;
 			alarm[FALLING_ALARM] = 60; // fall duration 1 second
+			falling_factor = 0; // Initialize falling_factor
 		}
 	}
 }

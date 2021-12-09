@@ -214,6 +214,7 @@
     {"id":{"name":"obj_start_button","path":"objects/obj_start_button/obj_start_button.yy",},"order":3,},
     {"id":{"name":"spr_tooltip_prompt","path":"sprites/spr_tooltip_prompt/spr_tooltip_prompt.yy",},"order":2,},
     {"id":{"name":"obj_particle_blade_hit","path":"objects/obj_particle_blade_hit/obj_particle_blade_hit.yy",},"order":7,},
+    {"id":{"name":"falling_animation","path":"scripts/falling_animation/falling_animation.yy",},"order":20,},
     {"id":{"name":"obj_tutorial_done_button","path":"objects/obj_tutorial_done_button/obj_tutorial_done_button.yy",},"order":4,},
     {"id":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},"order":6,},
     {"id":{"name":"obj_wall_shadow","path":"objects/obj_wall_shadow/obj_wall_shadow.yy",},"order":4,},
@@ -301,7 +302,6 @@
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
-    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
