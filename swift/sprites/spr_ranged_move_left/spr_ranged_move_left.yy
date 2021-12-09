@@ -32,7 +32,7 @@
     "spriteId": {"name":"spr_ranged_move_left","path":"sprites/spr_ranged_move_left/spr_ranged_move_left.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 4.0,
+    "playbackSpeed": 12.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
