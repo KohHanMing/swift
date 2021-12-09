@@ -14,7 +14,8 @@ ds_list_add(level_sequence_list, rm_init);
 
 // ------------- BLOCK STARTS ------------------
 
-ds_list_add(level_sequence_list, rm_tutorial_3_enemy); // for testing
+// ds_list_add(level_sequence_list, rm_tutorial_3_enemy); for testing
+//ds_list_add(level_sequence_list, rm_tutorial_2_attack)
 ds_list_add(level_sequence_list, rm_melee_easy);
 ds_list_add(level_sequence_list, rm_ranged_easy);
 ds_list_add(level_sequence_list, rm_melee_basic);
