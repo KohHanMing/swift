@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_tooltip_imgbox","path":"sprites/spr_tooltip_imgbox/spr_tooltip_imgbox.yy",},"order":3,},
     {"id":{"name":"font_extra_large","path":"fonts/font_extra_large/font_extra_large.yy",},"order":0,},
     {"id":{"name":"font_large","path":"fonts/font_large/font_large.yy",},"order":1,},
     {"id":{"name":"font_medium","path":"fonts/font_medium/font_medium.yy",},"order":2,},
@@ -414,7 +415,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.7.603",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "swift",
