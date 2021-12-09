@@ -1,4 +1,5 @@
 function projectile_step(){
+	
 	// Inherit Manual Collision Check
 	event_inherited();
 
@@ -8,5 +9,6 @@ function projectile_step(){
 	}
 
 	// Manual Wall Collision Check
-	if collision_point(x,y+16,obj_wall,0,1) instance_destroy();
+	// Allow projectile to partially clip into wall
+	if collision_point(x,y+8,obj_wall,0,1) instance_destroy();
 }

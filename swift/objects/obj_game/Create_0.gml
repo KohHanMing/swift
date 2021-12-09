@@ -9,6 +9,7 @@ surface_resize(application_surface, global.gui_width, global.gui_height)
 //instance_create_layer(0,0,"Instances",obj_soundtrack_manager);
 instance_create_layer(0,0,"Instances",obj_level_manager);
 instance_create_layer(0,0,"Instances",obj_tutorial_manager);
+instance_create_layer(200,200,"Instances",obj_camera);
 go_to_next_tutorial();
 
 // Pause Init

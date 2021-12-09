@@ -1,3 +1,4 @@
-/// @description Reset canAttack
+/// @description Attack related
 
+// Reset canAttack
 canAttack = true;

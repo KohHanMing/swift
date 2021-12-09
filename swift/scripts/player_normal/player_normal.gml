@@ -67,21 +67,23 @@ function player_normal(){
 	
 	// alarm[1] == 0 when just respawning from hole
 	if (alarm[1] != 0) {
-		// if not dashing, ie enable dashing over holes
+		// If not dashing, i.e. enable dashing over holes
 		if(!dashing) {
-			// check collision with hole objects
-			hole = collision_point(x, bbox_bottom, obj_hole, false, true);
+			// Check collision with hole objects
+			hole = collision_point(x, y, obj_hole, false, true);
 			if (hole != noone) {
 				pos_prev_hole = collision_point(phy_position_xprevious, phy_position_yprevious, obj_hole, false, true);
 				if (pos_prev_hole == noone) {
 					res_x = phy_position_xprevious;
 					res_y = phy_position_yprevious;
 				}
+				
 				state = "falling"
 				phy_speed_x = 0;
 				phy_speed_y = 0;
 				phy_active = false;
-				alarm[1] = 60; //player falls for 2 seconds
+				alarm[1] = 60; //player falls for 1 seconds
+				falling_factor = 0; // Initialize falling_factor
 			} else {
 				res_x = x;
 				res_y = y;

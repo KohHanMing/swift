@@ -1,7 +1,5 @@
 trigger_doors = true;
 
-is_level_complete = false;
-
 // Spawn point 1
 spawn[0,0] = 1087;
 spawn[0,1] = 254;

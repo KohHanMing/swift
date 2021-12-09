@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Update Behaviour
 // You can write your code in this editor
 
 // Inherit the parent event
@@ -10,5 +10,8 @@ if (dist_to_player <= ATTACK_RANGE && !canAttack) {
 		wandering = false;
 		alarm[WANDER_ALARM] = DISABLE_ALARM;
 	}
-	enemy_aggro(id);
+	var dir = sector_number * 45;
+	if (dir - 45 < dir_to_player && dir + 45 > dir_to_player) {
+		enemy_aggro(id);
+	}
 }
