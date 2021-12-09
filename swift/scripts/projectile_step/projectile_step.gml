@@ -1,4 +1,5 @@
 function projectile_step(){
+	
 	// Inherit Manual Collision Check
 	event_inherited();
 
