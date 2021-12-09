@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 draw_self();
 if (is_displaying_tooltip) {
 	draw_set_font(font_large);
@@ -15,3 +16,5 @@ if (is_displaying_tooltip) {
 		draw_sprite_ext(SPRITE_CONTENT, 0 , x + IMG_OFFSET_X, y + IMG_OFFSET_Y, IMG_SCALE, IMG_SCALE, 0, c_white, 1);	
 	}
 }
+
+depth = -y-32;
