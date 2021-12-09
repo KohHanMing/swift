@@ -4,7 +4,7 @@
 //Static Wall
 depth = -y;
 
-var shadow = instance_create_depth(x,y,-10000,obj_wall_shadow);
+var shadow = instance_create_depth(x,y,depth-1,obj_wall_shadow);
 
 var has_wall_above = false;
 var has_wall_below = false;
