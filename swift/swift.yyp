@@ -66,6 +66,7 @@
     {"id":{"name":"spawn_player_melee_hitbox","path":"scripts/spawn_player_melee_hitbox/spawn_player_melee_hitbox.yy",},"order":11,},
     {"id":{"name":"obj_particle","path":"objects/obj_particle/obj_particle.yy",},"order":0,},
     {"id":{"name":"obj_spawn_dummy","path":"objects/obj_spawn_dummy/obj_spawn_dummy.yy",},"order":4,},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":8,},
     {"id":{"name":"go_to_next_level","path":"scripts/go_to_next_level/go_to_next_level.yy",},"order":1,},
     {"id":{"name":"spr_health_low","path":"sprites/spr_health_low/spr_health_low.yy",},"order":20,},
     {"id":{"name":"sfx_enemy_death","path":"sounds/sfx_enemy_death/sfx_enemy_death.yy",},"order":0,},
@@ -401,7 +402,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.7.603",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "swift",
