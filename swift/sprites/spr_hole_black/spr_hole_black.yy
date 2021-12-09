@@ -15,7 +15,7 @@
   "VTile": false,
   "For3D": false,
   "width": 32,
-  "height": 64,
+  "height": 32,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b2a210be-b935-4e32-a659-75ef46d6dc2e","path":"sprites/spr_city_wall/spr_city_wall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b2a210be-b935-4e32-a659-75ef46d6dc2e","path":"sprites/spr_city_wall/spr_city_wall.yy",},"LayerId":{"name":"e8750113-7278-4ae5-b15b-cd6701088899","path":"sprites/spr_city_wall/spr_city_wall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_city_wall","path":"sprites/spr_city_wall/spr_city_wall.yy",},"resourceVersion":"1.0","name":"b2a210be-b935-4e32-a659-75ef46d6dc2e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4d34e495-2868-452b-8d37-3a2b37abeba2","path":"sprites/spr_hole_black/spr_hole_black.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4d34e495-2868-452b-8d37-3a2b37abeba2","path":"sprites/spr_hole_black/spr_hole_black.yy",},"LayerId":{"name":"1ea70e6a-5ed9-483d-991e-b4ec262f8636","path":"sprites/spr_hole_black/spr_hole_black.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_hole_black","path":"sprites/spr_hole_black/spr_hole_black.yy",},"resourceVersion":"1.0","name":"4d34e495-2868-452b-8d37-3a2b37abeba2","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_city_wall","path":"sprites/spr_city_wall/spr_city_wall.yy",},
+    "spriteId": {"name":"spr_hole_black","path":"sprites/spr_hole_black/spr_hole_black.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cbaf1a9e-93a1-48e2-bf81-961799a41555","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b2a210be-b935-4e32-a659-75ef46d6dc2e","path":"sprites/spr_city_wall/spr_city_wall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d8d2c4f9-4acc-487f-8829-592ae3c44a92","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4d34e495-2868-452b-8d37-3a2b37abeba2","path":"sprites/spr_hole_black/spr_hole_black.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -55,17 +55,17 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 0,
-    "yorigin": 64,
+    "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_city_wall","path":"sprites/spr_city_wall/spr_city_wall.yy",},
+    "parent": {"name":"spr_hole_black","path":"sprites/spr_hole_black/spr_hole_black.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_city_wall",
+    "name": "spr_hole_black",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e8750113-7278-4ae5-b15b-cd6701088899","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1ea70e6a-5ed9-483d-991e-b4ec262f8636","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": {
     "left": 0,
@@ -93,11 +93,11 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "city",
-    "path": "folders/Sprites/level/city.yy",
+    "name": "level",
+    "path": "folders/Sprites/level.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_city_wall",
+  "name": "spr_hole_black",
   "tags": [],
   "resourceType": "GMSprite",
 }
