@@ -14,5 +14,7 @@ shadow.hole_height = sprite_height;
 var has_hole_below = place_meeting(x,y+1,obj_hole);
 var has_hole_above = place_meeting(x,y-1,obj_hole);
 
+if has_hole_above sprite_index = spr_hole_black;
+
 shadow.has_shadow_top = !has_hole_above;
 shadow.has_shadow_bottom = !has_hole_below;
