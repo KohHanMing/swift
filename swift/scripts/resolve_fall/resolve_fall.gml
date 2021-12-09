@@ -7,5 +7,5 @@ function resolve_fall(){
 	phy_active = true;
 	phy_position_x = res_x;
 	phy_position_y = res_y;
-	take_damage(id, 2);
+	take_damage(id, FALL_DAMAGE);
 }
