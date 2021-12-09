@@ -77,11 +77,13 @@ function player_normal(){
 					res_x = phy_position_xprevious;
 					res_y = phy_position_yprevious;
 				}
+				
 				state = "falling"
 				phy_speed_x = 0;
 				phy_speed_y = 0;
 				phy_active = false;
-				alarm[1] = 60; //player falls for 2 seconds
+				alarm[1] = 60; //player falls for 1 seconds
+				falling_factor = 0; // Initialize falling_factor
 			} else {
 				res_x = x;
 				res_y = y;
