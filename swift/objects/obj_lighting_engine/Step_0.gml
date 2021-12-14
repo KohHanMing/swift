@@ -21,7 +21,7 @@ show_debug_message(" ");
 
 with(obj_wall) {
 	
-	show_debug_message(id);
+	if distance_to_object(obj_player) > 384 continue;
 	
 	quad(_vb,x,y,x+base_x,y);
 	quad(_vb,x,y-base_y,x+base_x,y-base_y);
