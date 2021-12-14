@@ -20,3 +20,7 @@ paused = false;
 equipped_melee_weapon = obj_blade;
 equipped_ranged_weapon = obj_honey_badger;
 update_equipped_weapons(); // Run Update Equipped Weapons event.
+
+// Create Lighting Engine
+var lighting_layer = layer_create(50,"lighting");
+instance_create_layer(0,0,lighting_layer,obj_lighting_engine);

@@ -7,6 +7,9 @@ event_inherited();
 // Create Weapon Object
 instance_create_layer(x, y, "Instances", obj_game.equipped_melee_weapon);
 
+// Create Light
+instance_create_layer(x, y, "Instances", obj_player_light);
+
 HEALTH = 100;
 
 // Constants
