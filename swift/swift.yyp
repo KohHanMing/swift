@@ -123,6 +123,7 @@
     {"id":{"name":"phy_set_vector","path":"scripts/phy_set_vector/phy_set_vector.yy",},"order":7,},
     {"id":{"name":"update_equipped_weapons","path":"scripts/update_equipped_weapons/update_equipped_weapons.yy",},"order":5,},
     {"id":{"name":"spr_honey_badger_power_down_side","path":"sprites/spr_honey_badger_power_down_side/spr_honey_badger_power_down_side.yy",},"order":9,},
+    {"id":{"name":"within_view","path":"scripts/within_view/within_view.yy",},"order":21,},
     {"id":{"name":"spr_ranged_move_down","path":"sprites/spr_ranged_move_down/spr_ranged_move_down.yy",},"order":0,},
     {"id":{"name":"spr_honey_badger_idle_front","path":"sprites/spr_honey_badger_idle_front/spr_honey_badger_idle_front.yy",},"order":13,},
     {"id":{"name":"sfx_enemy_idle2","path":"sounds/sfx_enemy_idle2/sfx_enemy_idle2.yy",},"order":3,},
