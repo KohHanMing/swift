@@ -25,7 +25,7 @@ with(obj_wall) {
 	
 	// Upper surface of wall
 	quad(_vb,x,y-sprite_height,x+base_x,y-sprite_height); // Top
-	quad(_vb,x,y-base_y,x+base_x,y-base_y); // Bottom
+	quad(_vb,x,y-sprite_height+base_y,x+base_x,y-sprite_height+base_y); // Bottom
 	quad(_vb,x,y-sprite_height,x,y-sprite_height+base_y); // Left
 	quad(_vb,x+base_x,y-sprite_height,x+base_x,y-sprite_height+base_y); // Right
 }
