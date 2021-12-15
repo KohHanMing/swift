@@ -6,7 +6,7 @@
 // P_SPEED
 // P_RANGE
 
-// Inherit the parent even to set kill timer
+// Inherit the default constant
 event_inherited();
 
 // Store its original location
