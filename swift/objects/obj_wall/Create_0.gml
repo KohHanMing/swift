@@ -1,4 +1,4 @@
 // Default Base Size
 
-base_x = 32;
-base_y = 32;
+base_x = bbox_right-x;
+base_y = y-bbox_top;
