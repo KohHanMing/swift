@@ -5,7 +5,6 @@ var _u_color_light = u_color_light;
 var _u_size_light = u_size_light;
 
 var _u_pos_shadow = u_pos_shadow;
-var _vb = vb;
 
 if !surface_exists(shadow_surface) {
 	shadow_surface = surface_create(view_wport[0],view_hport[0]);
@@ -20,7 +19,7 @@ with(obj_light) {
 	shader_set(shd_shadow);
 	shader_set_uniform_f(_u_pos_shadow, x, y);
 	
-	vertex_submit(_vb,pr_trianglelist,-1);
+	
 
 	gpu_set_blendmode_ext_sepalpha(bm_inv_dest_alpha,bm_one,bm_zero,bm_zero);
 	
