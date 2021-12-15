@@ -1,1 +1,0 @@
-depth = obj_player.y+1;
