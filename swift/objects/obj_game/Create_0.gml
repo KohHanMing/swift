@@ -7,9 +7,10 @@ global.gui_height = display_get_gui_height();
 surface_resize(application_surface, global.gui_width, global.gui_height)
 
 //instance_create_layer(0,0,"Instances",obj_soundtrack_manager);
-instance_create_layer(0,0,"Instances",obj_level_manager);
-instance_create_layer(0,0,"Instances",obj_tutorial_manager);
-instance_create_layer(200,200,"Instances",obj_camera);
+game_management_layer = layer_create(-100000,"Game Management");
+instance_create_layer(0,0,game_management_layer,obj_level_manager);
+instance_create_layer(0,0,game_management_layer,obj_tutorial_manager);
+instance_create_layer(200,200,game_management_layer,obj_camera);
 go_to_next_tutorial();
 
 // Pause Init
@@ -21,6 +22,9 @@ equipped_melee_weapon = obj_blade;
 equipped_ranged_weapon = obj_honey_badger;
 update_equipped_weapons(); // Run Update Equipped Weapons event.
 
+// Cursor Init
+cursor_surface = -1;
+
 // Create Lighting Engine
-var lighting_layer = layer_create(50,"lighting");
-instance_create_layer(0,0,lighting_layer,obj_lighting_engine);
+instance_create_depth(0,0,50,obj_lighting_engine_floor);
+instance_create_depth(0,0,-10000,obj_lighting_engine_wall);

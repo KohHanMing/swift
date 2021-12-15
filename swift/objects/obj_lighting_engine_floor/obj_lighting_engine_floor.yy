@@ -29,7 +29,7 @@
     "path": "folders/Objects/primitive.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_lighting_engine",
+  "name": "obj_lighting_engine_floor",
   "tags": [],
   "resourceType": "GMObject",
 }

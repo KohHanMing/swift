@@ -1,4 +1,4 @@
-/// @description Vertex
+/// @description Vertices
 
 function quad(_vb,_x1,_y1,_x2,_y2) {
 	
