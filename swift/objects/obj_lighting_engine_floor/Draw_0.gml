@@ -36,7 +36,7 @@ surface_reset_target();
 
 gpu_set_blendmode_ext(bm_zero,bm_src_color);
 shader_set(shd_shadow_surface);
-draw_surface_ext(shadow_surface,0,0,1,1,0,c_white,0.8);
+draw_surface_ext(shadow_surface,0,0,1,1,0,c_white,obj_game.ambient_darkness);
 gpu_set_blendmode(bm_normal);
 
 shader_reset();

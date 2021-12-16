@@ -25,3 +25,6 @@ update_equipped_weapons(); // Run Update Equipped Weapons event.
 // Create Lighting Engine
 instance_create_depth(0,0,50,obj_lighting_engine_floor);
 instance_create_depth(0,0,-10000,obj_lighting_engine_wall);
+
+// Set Ambient Darkness
+ambient_darkness = 0.5; // 0.0 (Full Bright) - 1.0 (Full Dark)
