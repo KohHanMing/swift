@@ -1,10 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+//show_debug_message(view_camera[0]);
+
 if (instance_exists(obj_player)) {
     x = lerp(obj_player.x, mouse_x, 0.1);
     y = lerp(obj_player.y, mouse_y, 0.1);
-	show_debug_message("x: " + string(x))
-	show_debug_message("y: " + string(y))
+	//show_debug_message("x: " + string(x))
+	//show_debug_message("y: " + string(y))
 	/*
     if(point_distance(obj_player.x,obj_player.y,x,y) > max_distance) {
         var dir = point_direction(obj_player.x,obj_player.y,x,y);
