@@ -9,7 +9,7 @@ function prepare_silhouette() {
 	// Draw Alpha Mask
 	surface_set_target(obj_silhouette.silhouette_surface);
 	draw_set_alpha(0);
-	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_white,0);
+	draw_sprite_ext(sprite_index,image_index,x-camera_get_view_x(view_camera[0]),y-camera_get_view_y(view_camera[0]),image_xscale,image_yscale,image_angle,c_white,0);
 	surface_reset_target();
 	draw_set_alpha(1);
 
