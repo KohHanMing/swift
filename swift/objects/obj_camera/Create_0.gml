@@ -4,6 +4,11 @@
 VIEW_W = 480;
 VIEW_H = 270;
 
+lerp_amt = 0.1;
+
+shaking = false;
+shake = 3;
+
 var i;
 var levels = obj_level_manager.level_sequence_list;
 
@@ -16,6 +21,7 @@ for (i = 0; i < ds_list_size(levels); i++) {
 }
 
 CAMERA = camera_create_view(0, 0, VIEW_W, VIEW_H);
+
 //camera_set_view_angle(CAMERA, 45);
 
 //CAMERA = camera_create();
