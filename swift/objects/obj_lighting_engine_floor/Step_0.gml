@@ -3,14 +3,14 @@
 function quad(_vb,_x1,_y1,_x2,_y2) {
 	
 	// Triangle 1
-	vertex_position_3d(_vb,_x1,_y1,0);
-	vertex_position_3d(_vb,_x1,_y1,1);
-	vertex_position_3d(_vb,_x2,_y2,0);
+	vertex_position_3d(_vb,_x1-camera_get_view_x(view_camera[0]),_y1-camera_get_view_y(view_camera[0]),0);
+	vertex_position_3d(_vb,_x1-camera_get_view_x(view_camera[0]),_y1-camera_get_view_y(view_camera[0]),1);
+	vertex_position_3d(_vb,_x2-camera_get_view_x(view_camera[0]),_y2-camera_get_view_y(view_camera[0]),0);
 	
 	//Triangle 2
-	vertex_position_3d(_vb,_x1,_y1,1);
-	vertex_position_3d(_vb,_x2,_y2,0);
-	vertex_position_3d(_vb,_x2,_y2,1);
+	vertex_position_3d(_vb,_x1-camera_get_view_x(view_camera[0]),_y1-camera_get_view_y(view_camera[0]),1);
+	vertex_position_3d(_vb,_x2-camera_get_view_x(view_camera[0]),_y2-camera_get_view_y(view_camera[0]),0);
+	vertex_position_3d(_vb,_x2-camera_get_view_x(view_camera[0]),_y2-camera_get_view_y(view_camera[0]),1);
 	
 }
 

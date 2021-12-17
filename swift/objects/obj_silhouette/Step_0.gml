@@ -1,5 +1,5 @@
 if !surface_exists(silhouette_surface) {
-	silhouette_surface = surface_create(view_wport[0],view_hport[0]);
+	silhouette_surface = surface_create(camera_get_view_width(view_camera[0]),camera_get_view_height(view_camera[0]));
 }
 
 surface_set_target(silhouette_surface);
