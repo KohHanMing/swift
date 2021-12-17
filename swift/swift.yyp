@@ -138,6 +138,7 @@
     {"id":{"name":"spr_city_curb_outer","path":"sprites/spr_city_curb_outer/spr_city_curb_outer.yy",},"order":1,},
     {"id":{"name":"spr_melee_attack_left","path":"sprites/spr_melee_attack_left/spr_melee_attack_left.yy",},"order":9,},
     {"id":{"name":"spawn_enemy_melee_hitbox","path":"scripts/spawn_enemy_melee_hitbox/spawn_enemy_melee_hitbox.yy",},"order":4,},
+    {"id":{"name":"prepare_silhouette","path":"scripts/prepare_silhouette/prepare_silhouette.yy",},"order":0,},
     {"id":{"name":"obj_hdoor","path":"objects/obj_hdoor/obj_hdoor.yy",},"order":1,},
     {"id":{"name":"rm_melee_and_ranged","path":"rooms/rm_melee_and_ranged/rm_melee_and_ranged.yy",},"order":2,},
     {"id":{"name":"spr_city_wall","path":"sprites/spr_city_wall/spr_city_wall.yy",},"order":9,},
@@ -200,6 +201,7 @@
     {"id":{"name":"rm_jwong","path":"rooms/rm_jwong/rm_jwong.yy",},"order":3,},
     {"id":{"name":"obj_vdoor","path":"objects/obj_vdoor/obj_vdoor.yy",},"order":2,},
     {"id":{"name":"add_energy","path":"scripts/add_energy/add_energy.yy",},"order":3,},
+    {"id":{"name":"obj_silhouette","path":"objects/obj_silhouette/obj_silhouette.yy",},"order":11,},
     {"id":{"name":"obj_weapon_melee","path":"objects/obj_weapon_melee/obj_weapon_melee.yy",},"order":5,},
     {"id":{"name":"spr_city_wall_1x3","path":"sprites/spr_city_wall_1x3/spr_city_wall_1x3.yy",},"order":12,},
     {"id":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"order":3,},
@@ -417,6 +419,7 @@
     {"folderPath":"folders/Sounds/sfx/misc.yy","order":19,"resourceVersion":"1.0","name":"misc","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Shaders.yy","order":6,"resourceVersion":"1.0","name":"Shaders","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/Levels.yy","order":16,"resourceVersion":"1.0","name":"Levels","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/graphics.yy","order":23,"resourceVersion":"1.0","name":"graphics","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -428,7 +431,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.4.580",
+    "IDEVersion": "2.3.4.583",
   },
   "resourceVersion": "1.4",
   "name": "swift",
