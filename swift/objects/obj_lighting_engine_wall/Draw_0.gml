@@ -5,11 +5,11 @@ var _u_color_light = u_color_light;
 var _u_size_light = u_size_light;
 
 if !surface_exists(shadow_surface) {
-	shadow_surface = surface_create(view_wport[0],view_hport[0]);
+	shadow_surface = surface_create(room_width,room_height);
 }
 
+surface_resize(shadow_surface,room_width,room_height);
 surface_set_target(shadow_surface);
-
 draw_clear_alpha(c_black,0);
 with(obj_light) {
 
@@ -22,6 +22,8 @@ with(obj_light) {
 	draw_rectangle(0,0,room_width,room_height,0);
 	
 }
+
+show_debug_message(surface_get_width(shadow_surface))
 
 surface_reset_target();
 

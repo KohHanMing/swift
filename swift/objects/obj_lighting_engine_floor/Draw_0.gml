@@ -8,11 +8,11 @@ var _u_pos_shadow = u_pos_shadow;
 var _vb = vb;
 
 if !surface_exists(shadow_surface) {
-	shadow_surface = surface_create(view_wport[0],view_hport[0]);
+	shadow_surface = surface_create(room_width,room_height);
 }
 
+surface_resize(shadow_surface,room_width,room_height);
 surface_set_target(shadow_surface);
-
 draw_clear_alpha(c_black,0);
 with(obj_light) {
 
