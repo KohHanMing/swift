@@ -1,5 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Initialize
+
+event_inherited();
 
 //Static Wall
 depth = -y;

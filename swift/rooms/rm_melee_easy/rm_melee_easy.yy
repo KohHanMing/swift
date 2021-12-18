@@ -3,7 +3,7 @@
   "volume": 1.0,
   "parentRoom": null,
   "views": [
-    {"inherit":false,"visible":true,"xview":0,"yview":0,"wview":480,"hview":270,"xport":0,"yport":0,"wport":1920,"hport":1080,"hborder":650,"vborder":350,"hspeed":64,"vspeed":64,"objectId":null,},
+    {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
@@ -22,6 +22,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_load_zone","path":"objects/obj_load_zone/obj_load_zone.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":160.0,"resourceVersion":"1.0","name":"inst_108CAB97","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_load_zone","path":"objects/obj_load_zone/obj_load_zone.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":192.0,"resourceVersion":"1.0","name":"inst_71F1D9BC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_level_complete","path":"objects/obj_level_complete/obj_level_complete.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":192.0,"resourceVersion":"1.0","name":"inst_10934ADD","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":608.0,"resourceVersion":"1.0","name":"inst_3D02C139","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_vdoor","path":"objects/obj_vdoor/obj_vdoor.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":768.0,"resourceVersion":"1.0","name":"inst_218F1583","tags":[],"resourceType":"GMRInstance",},
@@ -698,6 +699,7 @@
     {"name":"inst_55BC01F0","path":"rooms/rm_melee_easy/rm_melee_easy.yy",},
     {"name":"inst_57AD5357","path":"rooms/rm_melee_easy/rm_melee_easy.yy",},
     {"name":"inst_4BADB214","path":"rooms/rm_melee_easy/rm_melee_easy.yy",},
+    {"name":"inst_3D02C139","path":"rooms/rm_melee_easy/rm_melee_easy.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -709,7 +711,7 @@
   },
   "viewSettings": {
     "inheritViewSettings": false,
-    "enableViews": true,
+    "enableViews": false,
     "clearViewBackground": false,
     "clearDisplayBuffer": true,
   },
@@ -721,8 +723,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Levels",
+    "path": "folders/Rooms/Levels.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_melee_easy",
