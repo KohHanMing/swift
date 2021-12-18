@@ -8,7 +8,7 @@ current_level = 0;
 current_level_complete = pointer_null; 
 
 //ALWAYS AT THE START OF THE LIST
-ds_list_add(level_sequence_list, rm_init);
+ds_list_add(level_sequence_list, rm_init_game);
 
 //Insert or rearrange levels in the following code block
 

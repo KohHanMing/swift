@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 switch (room) {
-	case rm_start: 
+	case rm_init_swift: 
 		curr_track = "main";
 		break;
 	case rm_tutorial_1_movement:

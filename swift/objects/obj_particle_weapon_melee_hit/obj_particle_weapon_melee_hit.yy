@@ -35,8 +35,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "particle",
-    "path": "folders/Objects/particle.yy",
+    "name": "weapon_melee",
+    "path": "folders/Objects/weapon/weapon_melee.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_particle_weapon_melee_hit",

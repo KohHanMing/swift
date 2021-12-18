@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-NEXT_ROOM = rm_init;
+NEXT_ROOM = rm_init_game;

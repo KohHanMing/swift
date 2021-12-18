@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_ranged_projectile",
-    "path": "sprites/spr_ranged_projectile/spr_ranged_projectile.yy",
+    "name": "spr_floater_projectile",
+    "path": "sprites/spr_floater_projectile/spr_floater_projectile.yy",
   },
   "solid": false,
   "visible": true,

@@ -35,8 +35,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "particle",
-    "path": "folders/Objects/particle.yy",
+    "name": "honey_badger",
+    "path": "folders/Objects/weapon/honey_badger.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_particle_honey_badger_expire",

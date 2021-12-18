@@ -6,8 +6,8 @@ global.gui_width = display_get_gui_width();
 global.gui_height = display_get_gui_height();
 surface_resize(application_surface, global.gui_width, global.gui_height)
 
-//instance_create_layer(0,0,"Instances",obj_soundtrack_manager);
 game_management_layer = layer_create(-12000,"Game Management");
+instance_create_layer(0,0,game_management_layer,obj_ui);
 instance_create_layer(0,0,game_management_layer,obj_level_manager);
 instance_create_layer(0,0,game_management_layer,obj_tutorial_manager);
 instance_create_layer(200,200,game_management_layer,obj_camera);

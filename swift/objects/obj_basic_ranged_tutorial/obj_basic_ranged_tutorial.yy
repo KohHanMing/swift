@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_ranged_move_down",
-    "path": "sprites/spr_ranged_move_down/spr_ranged_move_down.yy",
+    "name": "spr_floater_move_down",
+    "path": "sprites/spr_floater_move_down/spr_floater_move_down.yy",
   },
   "solid": false,
   "visible": true,

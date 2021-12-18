@@ -1,1 +1,0 @@
-cursor_sprite = spr_crosshair;

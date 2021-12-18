@@ -35,8 +35,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "particle",
-    "path": "folders/Objects/particle.yy",
+    "name": "blade",
+    "path": "folders/Objects/weapon/blade.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_particle_blade_hit",

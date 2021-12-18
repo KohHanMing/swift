@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_melee_move_down",
-    "path": "sprites/spr_melee_move_down/spr_melee_move_down.yy",
+    "name": "spr_swarmer_move_down",
+    "path": "sprites/spr_swarmer_move_down/spr_swarmer_move_down.yy",
   },
   "solid": false,
   "visible": true,
