@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_melee_attack_hitbox",
-    "path": "sprites/spr_melee_attack_hitbox/spr_melee_attack_hitbox.yy",
+    "name": "spr_swarmer_attack_hitbox",
+    "path": "sprites/spr_swarmer_attack_hitbox/spr_swarmer_attack_hitbox.yy",
   },
   "solid": false,
   "visible": true,

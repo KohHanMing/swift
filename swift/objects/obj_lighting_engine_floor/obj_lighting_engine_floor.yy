@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "primitive",
-    "path": "folders/Objects/primitive.yy",
+    "name": "light",
+    "path": "folders/Objects/level/light.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_lighting_engine_floor",

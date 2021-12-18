@@ -37,8 +37,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "weapon",
-    "path": "folders/Objects/weapon.yy",
+    "name": "weapon_melee",
+    "path": "folders/Objects/weapon/weapon_melee.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_weapon_melee_melee_hitbox",

@@ -36,8 +36,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "weapon",
-    "path": "folders/Objects/weapon.yy",
+    "name": "blade",
+    "path": "folders/Objects/weapon/blade.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_blade",
