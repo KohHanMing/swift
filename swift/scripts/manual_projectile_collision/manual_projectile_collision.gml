@@ -11,8 +11,8 @@ function manual_projectile_collision(_inst){
 	apply_vector(_inst,phy_speed*P_MASS/_inst.phy_mass,darctan2(-phy_speed_y,phy_speed_x));
     take_damage(_inst, DAMAGE);
 	if (_inst.CURR_HEALTH - DAMAGE < 0 and object_is_ancestor(object_index,obj_player_melee_hitbox)) {
-		instance_create_layer(x,y,"Instances", obj_health);
-		instance_create_layer(x,y,"Instances", obj_energy);
+		instance_create_layer(x,y,"Instances", obj_collectable_health);
+		instance_create_layer(x,y,"Instances", obj_collectable_energy);
 	}
 	
 	collision_target = _inst; // Save _inst into collision_target of damaging if needed.

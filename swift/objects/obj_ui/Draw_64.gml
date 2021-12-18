@@ -1,5 +1,7 @@
 /// @description Draw GUI
 
+if !instance_exists(obj_player) exit;
+
 // Vignette
 gpu_set_blendmode_ext(bm_dest_colour, bm_zero); // Multiply Blend Mode
 draw_sprite_stretched(spr_vignette, 0, 0, 0, global.gui_width, global.gui_height); // Draw Vignette

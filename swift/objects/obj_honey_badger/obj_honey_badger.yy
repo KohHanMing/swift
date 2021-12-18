@@ -37,8 +37,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "weapon",
-    "path": "folders/Objects/weapon.yy",
+    "name": "honey_badger",
+    "path": "folders/Objects/weapon/honey_badger.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_honey_badger",

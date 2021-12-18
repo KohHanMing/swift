@@ -14,7 +14,7 @@ var levels = obj_level_manager.level_sequence_list;
 
 for (i = 0; i < ds_list_size(levels); i++) {
 	var rm = ds_list_find_value(levels, i);
-	if (rm != rm_init and rm != rm_win) {
+	if (rm != rm_win) {
 		room_set_view_enabled(rm, true);
 		room_set_viewport(rm, 0, true, 0, 0, window_get_width(), window_get_height());
 	}

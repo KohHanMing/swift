@@ -19,6 +19,6 @@ DASH_BAR_ANCHOR = [UI_BASE_ANCHOR[0]+48,UI_BASE_ANCHOR[1]+112];
 DASH_BAR_END_LENGTH = 12;
 DASH_BAR_LENGTH = sprite_get_width(spr_ui_dash) - ENERGY_BAR_END_LENGTH;
 
-health_display = obj_player.CURR_HEALTH;
-energy_display = obj_player.CURR_ENERGY;
-dash_display = obj_player.CURR_DASH;
+health_display = 0;
+energy_display = 0;
+dash_display = 0;
