@@ -1,15 +1,17 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Initialize
+
+event_inherited();
 
 //Static Wall
 depth = -y;
 
-var shadow = instance_create_depth(x,y,depth-1,obj_wall_shadow);
+shadow = instance_create_depth(x,y,depth-1,obj_wall_shadow);
 
 var has_wall_above = false;
 var has_wall_below = false;
 
 with obj_wall {
+
 	if !object_is_ancestor(object_index,obj_door) && id != other.id {
 		with other if place_meeting(x,y-1,other.id) has_wall_above = true;
 		with other if place_meeting(x,y+1,other.id) has_wall_below = true;

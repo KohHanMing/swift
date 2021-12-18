@@ -1,0 +1,1 @@
+TOOLTIP_CONTENT = "Use [WASD] to MOVE and [SPACE] to DASH";

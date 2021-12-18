@@ -4,6 +4,9 @@ function recharge_dash(){
 	if (CURR_DASH >= MAX_DASH) {
 		CURR_DASH = MAX_DASH;	
 	} else {
-		CURR_DASH += DASH_RECHARGE_RATE;	
+		CURR_DASH += DASH_RECHARGE_RATE;
+		if (CURR_DASH >= MAX_DASH) {
+			audio_play_sound(sfx_fullenergy,99,false);
+		}
 	}
 }

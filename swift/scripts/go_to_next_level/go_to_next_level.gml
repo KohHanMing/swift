@@ -2,12 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function go_to_next_level(){
 	var next_level = obj_level_manager.current_level + 1;
-	if (obj_soundtrack_manager.curr_env == "1" && next_level > 3) {
-		obj_soundtrack_manager.curr_env = "2";
-	}
-	if (next_level == ds_list_size(obj_level_manager.level_sequence_list)-1) {
-		obj_soundtrack_manager.curr_track = "main";
-	}
 	if (next_level < ds_list_size(obj_level_manager.level_sequence_list)) {
 		obj_level_manager.current_level = next_level;
 		obj_level_manager.current_level_complete = pointer_null;

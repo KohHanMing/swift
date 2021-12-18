@@ -9,6 +9,6 @@ function transition(track1, track2){
 	if (!audio_is_playing(track2)) {
 		obj_soundtrack_manager.curr_track_inst = audio_play_sound(track2, 100, true);
 	}
-	audio_sound_gain(track2, 0, 0);
-	audio_sound_gain(track2, 1, 3000);
+	audio_sound_gain(obj_soundtrack_manager.curr_track_inst, 0, 0);
+	audio_sound_gain(obj_soundtrack_manager.curr_track_inst, obj_soundtrack_manager.curr_volume, 3000);
 }

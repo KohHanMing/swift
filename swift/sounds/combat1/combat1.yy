@@ -7,8 +7,8 @@
   "type": 2,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "music",
+    "path": "audiogroups/music",
   },
   "soundFile": "combat1.wav",
   "duration": 87.27274,

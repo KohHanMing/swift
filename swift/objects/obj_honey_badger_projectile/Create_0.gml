@@ -9,3 +9,6 @@ LIFETIME_SECONDS = 2;
 P_SPEED = 10;
 P_RANGE = 200;
 P_MASS = 0.5;
+
+// Create Light
+create_following_light(id,[0,1,0],32);

@@ -1,0 +1,1 @@
+obj_soundtrack_manager.curr_track = "tutorial_combat";

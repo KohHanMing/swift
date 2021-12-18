@@ -5,7 +5,11 @@
 event_inherited();
 
 // Create Weapon Object
-instance_create_layer(x, y, "Instances", obj_game.equipped_ranged_weapon);
+instance_create_layer(x, y, "Instances", obj_game.equipped_melee_weapon);
+
+// Create Light
+create_following_light(id,[0,1,0],512);
+
 
 HEALTH = 100;
 
