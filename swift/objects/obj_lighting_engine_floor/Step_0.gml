@@ -17,8 +17,6 @@ function quad(_vb,_x1,_y1,_x2,_y2) {
 vertex_begin(vb,vf);
 var _vb = vb;
 
-show_debug_message(" ");
-
 with(obj_wall) {
 	
 	if !within_view(id) continue; // Exit if out of view
