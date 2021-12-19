@@ -1,7 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Depth
 
 // Inherit the parent event
 event_inherited();
+depth = -y;
 
-alarm[0] = room_speed;
