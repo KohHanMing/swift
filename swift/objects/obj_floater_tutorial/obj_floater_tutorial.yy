@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_swarmer_move_down",
-    "path": "sprites/spr_swarmer_move_down/spr_swarmer_move_down.yy",
+    "name": "spr_floater_move_down",
+    "path": "sprites/spr_floater_move_down/spr_floater_move_down.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_enemy",
-    "path": "objects/obj_enemy/obj_enemy.yy",
+    "name": "obj_floater",
+    "path": "objects/obj_floater/obj_floater.yy",
   },
   "physicsObject": true,
   "physicsSensor": false,
@@ -30,18 +30,15 @@
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Melee",
-    "path": "folders/Objects/Enemy/Melee.yy",
+    "name": "floater",
+    "path": "folders/Objects/enemy/floater.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_basic_melee",
+  "name": "obj_floater_tutorial",
   "tags": [],
   "resourceType": "GMObject",
 }

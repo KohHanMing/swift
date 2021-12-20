@@ -6,7 +6,7 @@ event_inherited();
 
 AGGRO_RANGE = 400;
 ATTACK_COOLDOWN_SECONDS = 2;
-ATTACK_HIT_BOX = obj_basic_ranged_projectile;
+ATTACK_HIT_BOX = obj_floater_projectile;
 ATTACK_OFFSET_FORWARD = 10;
 ATTACK_OFFSET_SIDE = 0;
 ATTACK_RANGE = 200;

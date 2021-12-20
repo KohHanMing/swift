@@ -35,8 +35,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Ranged Slime",
-    "path": "folders/Objects/Enemy/Slime/Ranged Slime.yy",
+    "name": "ranged_slime",
+    "path": "folders/Objects/enemy/slime/ranged_slime.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_ranged_slime",
