@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_floater_move_down",
-    "path": "sprites/spr_floater_move_down/spr_floater_move_down.yy",
+    "name": "spr_swarmer_move_down",
+    "path": "sprites/spr_swarmer_move_down/spr_swarmer_move_down.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,17 +30,18 @@
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Ranged",
-    "path": "folders/Objects/Enemy/Ranged.yy",
+    "name": "swarmer",
+    "path": "folders/Objects/enemy/swarmer.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_basic_ranged",
+  "name": "obj_swarmer",
   "tags": [],
   "resourceType": "GMObject",
 }

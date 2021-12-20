@@ -35,8 +35,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Melee Slime",
-    "path": "folders/Objects/Enemy/Slime/Melee Slime.yy",
+    "name": "melee_slime",
+    "path": "folders/Objects/enemy/slime/melee_slime.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_melee_slime",

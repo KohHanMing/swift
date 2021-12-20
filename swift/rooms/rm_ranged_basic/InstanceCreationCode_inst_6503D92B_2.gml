@@ -18,22 +18,22 @@ spawn[5,0] = 848;
 spawn[5,1] = 205;
 
 // Wave 1
-ds_list_add(waves, [0, obj_basic_ranged, 0, 0]);
-ds_list_add(waves, [0, obj_basic_ranged, 1, 0]);
-ds_list_add(waves, [0, obj_basic_ranged, 0, 2 * room_speed]);
-ds_list_add(waves, [0, obj_basic_ranged, 1, 2 * room_speed]);
+ds_list_add(waves, [0, obj_floater, 0, 0]);
+ds_list_add(waves, [0, obj_floater, 1, 0]);
+ds_list_add(waves, [0, obj_floater, 0, 2 * room_speed]);
+ds_list_add(waves, [0, obj_floater, 1, 2 * room_speed]);
 
 // Wave 2
-ds_list_add(waves, [1, obj_basic_ranged, 4, 0]);
-ds_list_add(waves, [1, obj_basic_ranged, 5, 0]);
-ds_list_add(waves, [1, obj_basic_ranged, 4, 1 * room_speed]);
-ds_list_add(waves, [1, obj_basic_ranged, 5, 1 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 4, 0]);
+ds_list_add(waves, [1, obj_floater, 5, 0]);
+ds_list_add(waves, [1, obj_floater, 4, 1 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 5, 1 * room_speed]);
 
-ds_list_add(waves, [1, obj_basic_ranged, 2, 5 * room_speed]);
-ds_list_add(waves, [1, obj_basic_ranged, 2, 5 * room_speed]);
-ds_list_add(waves, [1, obj_basic_ranged, 3, 10 * room_speed]);
-ds_list_add(waves, [1, obj_basic_ranged, 3, 10 * room_speed]);
-ds_list_add(waves, [1, obj_basic_ranged, 4, 15 * room_speed]);
-ds_list_add(waves, [1, obj_basic_ranged, 4, 15 * room_speed]);
-ds_list_add(waves, [1, obj_basic_ranged, 5, 20 * room_speed]);
-ds_list_add(waves, [1, obj_basic_ranged, 5, 20 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 2, 5 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 2, 5 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 3, 10 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 3, 10 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 4, 15 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 4, 15 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 5, 20 * room_speed]);
+ds_list_add(waves, [1, obj_floater, 5, 20 * room_speed]);

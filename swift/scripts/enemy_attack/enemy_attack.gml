@@ -4,14 +4,14 @@ function enemy_attack(_instance){
 	var obj_index = _instance.object_index;
 	
 	switch (obj_index) {
-		case obj_basic_melee:
-			basic_melee_attack();
+		case obj_swarmer:
+			swarmer_attack();
 		break;
-		case obj_basic_ranged:
-			basic_ranged_attack();
+		case obj_floater:
+			floater_attack();
 		break;
-		case obj_basic_ranged_tutorial:
-			basic_ranged_attack();
+		case obj_floater_tutorial:
+			floater_attack();
 		break;
 	}
 	

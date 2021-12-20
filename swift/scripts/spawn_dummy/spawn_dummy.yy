@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Commons",
-    "path": "folders/Scripts/Enemy_Scripts/Commons.yy",
+    "name": "commons",
+    "path": "folders/Scripts/enemy_scripts/commons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spawn_dummy",

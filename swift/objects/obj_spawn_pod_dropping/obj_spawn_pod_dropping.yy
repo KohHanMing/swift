@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Commons",
-    "path": "folders/Objects/Enemy/Commons.yy",
+    "name": "commons",
+    "path": "folders/Objects/enemy/commons.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_spawn_pod_dropping",
