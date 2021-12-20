@@ -1,4 +1,4 @@
-/// @description Set Image Speed
+// Inherit the parent event
+event_inherited();
 
-image_speed = 1;
-depth = -y;
+TARGET_Y = 0; // Dummy TARGET_Y
