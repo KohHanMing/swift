@@ -13,9 +13,13 @@ with(obj_player) draw_self_offset();
 with(obj_weapon) draw_self_offset();
 with(obj_player_damaging) draw_self_offset();
 
-gpu_set_fog(true,c_red,0,1); // Red is for Enemy
+gpu_set_fog(true,c_red,0,1); // Red is for Enemy + Collectable Health
 with(obj_enemy) draw_self_offset();
 with(obj_enemy_damaging) draw_self_offset();
+with(obj_collectable_health) draw_self_offset();
+
+gpu_set_fog(true,c_aqua,0,1); // Aqua is for Collectable Energy
+with(obj_collectable_energy) draw_self_offset();
 
 gpu_set_fog(false,c_white,0,0); // Reset
 
