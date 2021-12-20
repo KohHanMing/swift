@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_pod_dropping",
-    "path": "sprites/spr_pod_dropping/spr_pod_dropping.yy",
+    "name": "spr_pod_rising",
+    "path": "sprites/spr_pod_rising/spr_pod_rising.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_spawn",
-    "path": "objects/obj_spawn/obj_spawn.yy",
+    "name": "obj_spawn_pod",
+    "path": "objects/obj_spawn_pod/obj_spawn_pod.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,7 +24,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -34,7 +34,7 @@
     "path": "folders/Objects/Enemy/Commons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_spawn_pod",
+  "name": "obj_spawn_pod_rising",
   "tags": [],
   "resourceType": "GMObject",
 }

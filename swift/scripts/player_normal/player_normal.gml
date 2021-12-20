@@ -8,6 +8,7 @@ function player_normal(){
 	d_key_pressed = keyboard_check(ord("D"));
 
 	moving = false;
+	phy_linear_damping = 10;
 
 	if (w_key_pressed or a_key_pressed or s_key_pressed or d_key_pressed) {
 		// Decide on goal direction based on keyboard inputs
@@ -62,7 +63,7 @@ function player_normal(){
 			}
 		}
 	}
-
+	
 	move_wrap(true, true, sprite_width/2);
 	
 	// alarm[1] == 0 when just respawning from hole
