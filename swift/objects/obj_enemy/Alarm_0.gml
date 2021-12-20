@@ -54,8 +54,15 @@ if (alarm[FALLING_ALARM] == -1) {
 			goal_x = wander_anchor_x + random_range(-WANDER_RADIUS, WANDER_RADIUS);
 			goal_y = wander_anchor_y + random_range(-WANDER_RADIUS, WANDER_RADIUS);
 		
+			// Try to find a path to it
+			if (flying) {
+				path_found = mp_grid_path(global.grid_air, path, sprite_x, sprite_y, goal_x, goal_y, 1);
+			} else {
+				path_found = mp_grid_path(global.grid_ground, path, sprite_x, sprite_y, goal_x, goal_y, 1);
+			}
+			
 			// And try to path towards it
-			if (mp_grid_path(global.grid, path, sprite_x, sprite_y, goal_x, goal_y, 1)) {
+			if (path_found) {
 				wandering = true;
 				phy_follow_path(id, SPEED_PX_PER_FRAME, path);
 				node_index++;
