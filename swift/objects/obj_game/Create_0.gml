@@ -22,13 +22,10 @@ equipped_melee_weapon = obj_blade;
 equipped_ranged_weapon = obj_honey_badger;
 update_equipped_weapons(); // Run Update Equipped Weapons event.
 
-// Create Silhouette Drawer
-var silhouette = layer_create(10000,"Silhouette");
-instance_create_layer(0,0,silhouette,obj_silhouette);
-
-// Create Lighting Engine
-instance_create_depth(0,0,50,obj_lighting_engine_floor);
-instance_create_depth(0,0,-10000,obj_lighting_engine_wall);
+// Lighting Engine (in order of rendering)
+instance_create_depth(0,0,50,obj_lighting_engine_floor); // Floor Lighting
+instance_create_depth(0,0,-9000,obj_silhouette); // Create Silhouette Drawer
+instance_create_depth(0,0,-10000,obj_lighting_engine_wall); // Wall Lighting
 
 // Set Ambient Darkness
 ambient_darkness = 0.5; // 0.0 (Full Bright) - 1.0 (Full Dark)

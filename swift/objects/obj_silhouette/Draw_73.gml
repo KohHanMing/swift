@@ -25,9 +25,8 @@ gpu_set_fog(false,c_white,0,0); // Reset
 
 surface_reset_target();
 
-gpu_set_alphatestenable(false); // Reset
-
-gpu_set_blendmode(bm_add); // Silhouettes are drawn additively.
+gpu_set_blendmode(bm_max); // Silhouettes are drawn additively.
 draw_surface(silhouette_surface,camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]));
 
 gpu_set_blendmode(bm_normal); // Reset
+gpu_set_alphatestenable(false); // Reset
