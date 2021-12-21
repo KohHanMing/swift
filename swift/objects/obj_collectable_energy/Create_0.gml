@@ -6,4 +6,4 @@ event_inherited();
 ENERGY_AMT = 1;
 
 // Create Light
-create_following_light(id,$FFFFFF00,32);
+create_following_light(id,$FFFFFF00,4);

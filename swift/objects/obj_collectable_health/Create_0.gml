@@ -6,4 +6,4 @@ event_inherited();
 HEAL_AMT = 5;
 
 // Create Light
-create_following_light(id,$FF0000FF,32);
+create_following_light(id,$FF0000FF,4);

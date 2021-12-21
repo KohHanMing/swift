@@ -8,7 +8,7 @@ event_inherited();
 instance_create_layer(x, y, "Instances", obj_game.equipped_melee_weapon);
 
 // Create Light
-create_following_light(id,$FF00FF00,512);
+create_following_light(id,$FFAAFFAA,16);
 
 
 HEALTH = 100;

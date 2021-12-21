@@ -28,4 +28,4 @@ instance_create_depth(0,0,-9000,obj_silhouette); // Create Silhouette Drawer
 instance_create_depth(0,0,-10000,obj_lighting_engine_wall); // Wall Lighting
 
 // Set Ambient Darkness
-ambient_darkness = 1.0; // 0.0 (Full Bright) - 1.0 (Full Dark)
+ambient_darkness = 0.75; // 0.0 (Full Bright) - 1.0 (Full Dark)
