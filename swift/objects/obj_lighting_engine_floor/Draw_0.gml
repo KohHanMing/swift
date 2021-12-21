@@ -1,7 +1,6 @@
 /// @description Draw Light
 
 var _u_pos_light = u_pos_light;
-var _u_color_light = u_color_light;
 var _u_size_light = u_size_light;
 
 var _u_pos_shadow = u_pos_shadow;
@@ -30,9 +29,8 @@ with(obj_light) {
 	
 	shader_set(shd_light);
 	shader_set_uniform_f(_u_pos_light, x-view_x, y-view_y);
-	shader_set_uniform_f(_u_color_light, color[0], color[1], color[2]);
 	shader_set_uniform_f(_u_size_light, light_size);
-	draw_rectangle(0,0,camera_get_view_width(view_camera[0]),camera_get_view_height(view_camera[0]),0);
+	draw_rectangle_color(0,0,camera_get_view_width(view_camera[0]),camera_get_view_height(view_camera[0]),light_color,light_color,light_color,light_color,0);
 	
 }
 

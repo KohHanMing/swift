@@ -6,6 +6,6 @@
 function create_following_light(_inst,_color,_light_size){
 	var light = instance_create_layer(x, y, "Instances", obj_light);
 	light.owner = _inst;
-	light.color = _color;
+	light.light_color = _color;
 	light.light_size = _light_size;
 }

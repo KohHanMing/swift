@@ -1,7 +1,7 @@
 /// @description Initialize
 
 // Color
-color = [1,1,0]; // R, G, B from 0 to 1.
+light_color = $FF00FFFF;
 
 // Size
 light_size = 64;
