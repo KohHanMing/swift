@@ -23,9 +23,8 @@ equipped_ranged_weapon = obj_honey_badger;
 update_equipped_weapons(); // Run Update Equipped Weapons event.
 
 // Lighting Engine (in order of rendering)
-instance_create_depth(0,0,50,obj_lighting_engine_floor); // Floor Lighting
+instance_create_depth(0,0,50,obj_lighting_engine); // Lighting Engine
 instance_create_depth(0,0,-9000,obj_silhouette); // Create Silhouette Drawer
-instance_create_depth(0,0,-10000,obj_lighting_engine_wall); // Wall Lighting
 
 // Set Ambient Darkness
 ambient_darkness = 0.75; // 0.0 (Full Bright) - 1.0 (Full Dark)
