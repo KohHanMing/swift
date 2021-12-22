@@ -1,7 +1,6 @@
-gpu_set_blendmode_ext(bm_dest_alpha,bm_inv_dest_alpha);
-gpu_set_alphatestenable(true);
+gpu_set_blendmode_ext(bm_dest_alpha,bm_inv_dest_alpha); // Set Blend Mode
+gpu_set_alphatestenable(true); // Draw only on A = 1
 
-// Draw Silhouettes
 surface_set_target(silhouette_surface); // Draw on Silhouette Surface
 
 function draw_self_offset() {
