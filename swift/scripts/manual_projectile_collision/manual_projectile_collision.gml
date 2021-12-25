@@ -28,6 +28,9 @@ function manual_breakable_collision(_inst){
 	
 	if ds_list_find_index(p_hit_list,_inst) != -1 return;
 	
+	collision_target = _inst; // Save _inst into collision_target of damaging if needed.
+	event_user(0); // Manual Projectile Collision Event
+	
 	with(_inst) event_user(0); // Make obj_breakable run breaking code
 	
 	if P_PIERCING {
