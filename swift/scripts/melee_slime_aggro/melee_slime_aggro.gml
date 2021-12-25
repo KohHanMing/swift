@@ -10,10 +10,10 @@ function melee_slime_aggro(){
 		goal_y = PLAYER.sprite_y - sin(dir*pi/180) * (ATTACK_RANGE);
 		
 		// If path exists
-		if (mp_grid_path(global.grid, path, sprite_x, sprite_y, goal_x, goal_y, 1)) {
+		if (mp_grid_path(global.grid_ground, path, sprite_x, sprite_y, goal_x, goal_y, 1)) {
 			// Start pathing to the next node towards player
 			phy_follow_path(id, SPEED_PX_PER_FRAME, path);
-		} else if (mp_grid_path(global.grid, path, sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y, 1)) {
+		} else if (mp_grid_path(global.grid_ground, path, sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y, 1)) {
 			// Start pathing to the next node towards player
 			phy_follow_path(id, SPEED_PX_PER_FRAME, path);
 		}
