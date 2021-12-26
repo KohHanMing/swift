@@ -261,6 +261,7 @@
     {"id":{"name":"enemy_attack","path":"scripts/enemy_attack/enemy_attack.yy",},"order":1,},
     {"id":{"name":"rm_tutorial_1_movement","path":"rooms/rm_tutorial_1_movement/rm_tutorial_1_movement.yy",},"order":0,},
     {"id":{"name":"manual_projectile_collision","path":"scripts/manual_projectile_collision/manual_projectile_collision.yy",},"order":4,},
+    {"id":{"name":"load_level_defaults","path":"scripts/load_level_defaults/load_level_defaults.yy",},"order":6,},
     {"id":{"name":"melee_slime_aggro","path":"scripts/melee_slime_aggro/melee_slime_aggro.yy",},"order":0,},
     {"id":{"name":"melee_slime_attack","path":"scripts/melee_slime_attack/melee_slime_attack.yy",},"order":1,},
     {"id":{"name":"phy_follow_path","path":"scripts/phy_follow_path/phy_follow_path.yy",},"order":6,},

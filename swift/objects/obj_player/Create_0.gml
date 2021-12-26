@@ -7,12 +7,6 @@ event_inherited();
 // Create Weapon Object
 instance_create_layer(x, y, "Instances", obj_game.equipped_melee_weapon);
 
-// Create Light
-create_following_light(id,$FFAAFFAA,16);
-
-
-HEALTH = 100;
-
 // Constants
 ACCELERATION_PX_PER_FRAME = 2.5;
 MAX_SPEED_PX_PER_FRAME = 4;
@@ -23,8 +17,6 @@ DASH_UNIT = 100;
 DASH_RECHARGE_RATE = DASH_UNIT / (room_speed * 0.75); //Recharges every 1/2 second
 CURR_DASH = DASH_UNIT * 3;
 MAX_DASH = DASH_UNIT * 3;
-
-phy_fixed_rotation = true;
 
 CURR_HEALTH = 100;
 MAX_HEALTH = 100;
@@ -43,7 +35,7 @@ w_key_pressed = false;
 a_key_pressed = false;
 s_key_pressed = false;
 d_key_pressed = false;
-state = "normal";
+state = "normal"
 
 // Hole
 res_x = 0; // Respawn coordinate after falling into hole
