@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "player",
-    "path": "folders/Scripts/player.yy",
+    "name": "level",
+    "path": "folders/Scripts/level.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spawn_player_melee_hitbox",
+  "name": "load_level_defaults",
   "tags": [],
   "resourceType": "GMScript",
 }

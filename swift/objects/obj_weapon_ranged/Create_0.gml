@@ -1,14 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-//Inherit from parent
+// Inherit from parent
 event_inherited();
 
-//weapon pivot point is -5 from player centre
-//this -5 ensures weapon centre is aligned to player
-X_OFFSET_FROM_PLAYER_CENTRE = -5; 
-Y_OFFSET_FROM_PLAYER_CENTRE = -14; 
-ATTACK_COOLDOWN = room_speed / 4; //Fires 4 times per second
+// Offset Weapon Based on Weapon Angle
+WEAPON_OFFSET_FORWARD = 0; // Forward is Positive
+WEAPON_OFFSET_SIDE = 0; // Right is Positive
+
+ATTACK_COOLDOWN = room_speed / 4; // Fires 4 times per second
 
 SPR_WEAPON_IDLE_SIDE = spr_weapon_ranged_idle_side;
 SPR_WEAPON_FIRE_SIDE = spr_weapon_ranged_fire_side;
@@ -23,3 +20,4 @@ SFX_WEAPON = sfx_player_ranged;
 
 WEAPON_PROJECTILE = obj_weapon_ranged_projectile;
 PROJECTILE_OFFSET_FORWARD = 20;
+PROJECTILE_OFFSET_SIDE = 0;

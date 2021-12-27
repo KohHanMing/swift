@@ -5,7 +5,7 @@ if (CURR_HEALTH <= 0) {
 	// Basic handle death
 	if (object_index == obj_player) {
 		obj_soundtrack_manager.is_mid_level = false;
-		room_restart();
+		event_user(0); // Player Death
 	} else {
 		instance_destroy(id);
 	}

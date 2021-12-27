@@ -1,2 +1,3 @@
-/// @description Swap Weapon Event
-instance_destroy();
+/// @description Weapon Swapped In
+
+cooldown = 0;
