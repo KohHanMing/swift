@@ -17,3 +17,4 @@ var has_hole_above = place_meeting(x,y-1,obj_hole);
 if has_hole_above sprite_index = spr_hole_black;
 
 shadow.has_shadow_top = !has_hole_above;
+shadow.OWNER = id;

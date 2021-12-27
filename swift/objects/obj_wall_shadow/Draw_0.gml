@@ -1,5 +1,7 @@
 /// @description Draw Shadows
 
+if !within_view(OWNER) exit;
+
 gpu_set_blendmode_ext(bm_dest_colour, bm_zero);
 if (has_floor_shadow_below) {
 	draw_sprite_stretched(spr_shadow_on_floor_below,0,x,y,wall_width,32);

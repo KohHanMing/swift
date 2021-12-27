@@ -5,34 +5,35 @@ event_inherited();
 //Static Wall
 depth = -y;
 
-//shadow = instance_create_depth(x,y,depth-1,obj_wall_shadow);
+shadow = instance_create_depth(x,y,depth-1,obj_wall_shadow);
 
-//var has_wall_above = false;
-//var has_wall_below = false;
+var has_wall_above = false;
+var has_wall_below = false;
 
-//with obj_wall {
+with obj_wall {
 
-//	if !object_is_ancestor(object_index,obj_door) && id != other.id {
-//		with other if place_meeting(x,y-1,other.id) has_wall_above = true;
-//		with other if place_meeting(x,y+1,other.id) has_wall_below = true;
-//	}
-//}
+	if !object_is_ancestor(object_index,obj_door) && id != other.id {
+		with other if place_meeting(x,y-1,other.id) has_wall_above = true;
+		with other if place_meeting(x,y+1,other.id) has_wall_below = true;
+	}
+}
 
-//shadow.wall_width = sprite_width;
-//shadow.wall_height = sprite_height;
+shadow.wall_width = sprite_width;
+shadow.wall_height = sprite_height;
 
-//if (!has_wall_below) {
-//	shadow.has_wall_shadow = true;
-//	shadow.has_floor_shadow_below = true;
+if (!has_wall_below) {
+	shadow.has_wall_shadow = true;
+	shadow.has_floor_shadow_below = true;
 	
-//} else {
-//	shadow.has_wall_shadow = false;
-//	shadow.has_floor_shadow_below = false;
-//}
+} else {
+	shadow.has_wall_shadow = false;
+	shadow.has_floor_shadow_below = false;
+}
 
-//if (!has_wall_above) {
-//	shadow.has_floor_shadow_above = true;
-//} else {
-//	shadow.has_floor_shadow_above = false;
-//}
+if (!has_wall_above) {
+	shadow.has_floor_shadow_above = true;
+} else {
+	shadow.has_floor_shadow_above = false;
+}
 
+shadow.OWNER = id;
