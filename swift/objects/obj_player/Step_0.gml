@@ -12,6 +12,9 @@ else if (weapon_angle > 45 && weapon_angle < 135) sprite_index = spr_player_idle
 else if (weapon_angle >= 135 && weapon_angle <= 225) sprite_index = spr_player_idle_left;
 else sprite_index = spr_player_idle_right;
 
+// Weapon Cooldowns
+if melee_weapon_id.cooldown > 0 melee_weapon_id.cooldown -= 1;
+if ranged_weapon_id.cooldown > 0 ranged_weapon_id.cooldown -= 1;
 
 // Damage Tint
 damage_tint_scale = 0;
