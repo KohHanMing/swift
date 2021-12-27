@@ -35,8 +35,8 @@ MAX_ENERGY = 10;
 alarm[2] = ENERGY_RECHARGE_RATE; // Start recharging infinitely
 
 SWAP_COOLDOWN = room_speed/2;
-INSTANT_SWAP_MIN = room_speed/8; // Minimum time required for instant swap to work (in frames).
-INSTANT_SWAP_RANGE = room_speed/4; // Length of instant swap window (in frames).
+INSTANT_SWAP_MIN = room_speed/12; // Minimum time required for instant swap to work (in frames).
+INSTANT_SWAP_RANGE = room_speed/3; // Length of instant swap window (in frames).
 
 // Variables
 
