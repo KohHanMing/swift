@@ -31,7 +31,6 @@ draw_clear_alpha(c_black,0);
 gpu_set_blendenable(false);
 gpu_set_colorwriteenable(false,false,false,true);
 
-
 // Sort Silhouette Array by Depth, then ID
 array_sort(silhouette_array, function(a, b) {
 	return a.depth != b.depth ? b.depth - a.depth : b.id - a.id;
