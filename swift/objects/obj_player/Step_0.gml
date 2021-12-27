@@ -1,7 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
 switch (state) {
 	case "normal": player_normal(); break;
 	case "falling": player_falling(); break;
@@ -9,20 +5,15 @@ switch (state) {
 
 move_wrap(true, true, sprite_width/2);
 
-var weapon_angle;
-if (instance_exists(obj_weapon_ranged)) {
-	weapon_angle = obj_weapon_ranged.weapon_angle;
-} else {
-	weapon_angle = obj_weapon_melee.weapon_angle;	
-}
-
+// Face Direction based on Weapon Angle
+var weapon_angle = equipped_weapon_id.weapon_angle;
 if (weapon_angle > 225 && weapon_angle < 315) sprite_index = spr_player_idle_down;
 else if (weapon_angle > 45 && weapon_angle < 135) sprite_index = spr_player_idle_up;
 else if (weapon_angle >= 135 && weapon_angle <= 225) sprite_index = spr_player_idle_left;
 else sprite_index = spr_player_idle_right;
 
 
-//damage tint
+// Damage Tint
 damage_tint_scale = 0;
 if damage_tint_time > 0 {
 	damage_tint_scale = damage_tint_time/damage_tint_time_start;

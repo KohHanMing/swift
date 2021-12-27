@@ -5,11 +5,12 @@
 event_inherited();
 
 // Initialize Weapons
+equipped_weapon = "melee";
 equipped_melee_weapon = obj_blade;
 equipped_ranged_weapon = obj_honey_badger;
-equipped_weapon = "melee";
-melee_weapon_id = instance_create_layer(x,y,"Instances",equipped_melee_weapon);
-ranged_weapon_id = instance_create_layer(x,y,"Instances",equipped_ranged_weapon);
+equipped_weapon_id = noone; // ID of Current Weapon
+melee_weapon_id = instance_create_layer(x,y,"Instances",equipped_melee_weapon); // ID of Melee Weapon
+ranged_weapon_id = instance_create_layer(x,y,"Instances",equipped_ranged_weapon); // ID of Ranged Weapon
 update_equipped_weapons(); // Run Update Equipped Weapons event.
 
 // Constants
@@ -31,7 +32,7 @@ ENERGY_INCREMENT = 1;
 ENERGY_RECHARGE_RATE = room_speed * 1.5
 CURR_ENERGY = 10;
 MAX_ENERGY = 10;
-alarm[2] = ENERGY_RECHARGE_RATE; //Start recharging infinitely
+alarm[2] = ENERGY_RECHARGE_RATE; // Start recharging infinitely
 
 // Movement
 moving = false;
