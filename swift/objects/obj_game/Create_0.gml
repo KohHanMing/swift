@@ -6,6 +6,9 @@ global.gui_width = display_get_gui_width();
 global.gui_height = display_get_gui_height();
 surface_resize(application_surface, global.gui_width, global.gui_height)
 
+// Remove Cursor
+window_set_cursor(cr_none)
+
 game_management_layer = layer_create(-12000,"Game Management");
 instance_create_layer(0,0,game_management_layer,obj_ui);
 instance_create_layer(0,0,game_management_layer,obj_level_manager);
@@ -17,10 +20,8 @@ go_to_next_tutorial();
 paused_surf = -1;
 paused = false;
 
-// Initialize Weapons
-equipped_melee_weapon = obj_blade;
-equipped_ranged_weapon = obj_honey_badger;
-update_equipped_weapons(); // Run Update Equipped Weapons event.
+// Initialize Player
+instance_create_layer(0,0,"Instances",obj_player);
 
 // Lighting Engine (in order of rendering)
 instance_create_depth(0,0,50,obj_lighting_engine); // Lighting Engine

@@ -51,8 +51,8 @@ gpu_set_blendmode(bm_normal);
 // Weapon Display
 draw_sprite(spr_weapon_display,0,MELEE_WEAPON_DISPLAY_ANCHOR[0],MELEE_WEAPON_DISPLAY_ANCHOR[1]);
 var display_center = [MELEE_WEAPON_DISPLAY_ANCHOR[0]+128,MELEE_WEAPON_DISPLAY_ANCHOR[1]+64];
-weapon_display(obj_game.equipped_melee_weapon_display,display_center);
+weapon_display(obj_player.equipped_melee_weapon_display,display_center);
 
 draw_sprite(spr_weapon_display,0,RANGED_WEAPON_DISPLAY_ANCHOR[0],RANGED_WEAPON_DISPLAY_ANCHOR[1]);
 var display_center = [RANGED_WEAPON_DISPLAY_ANCHOR[0]+128,RANGED_WEAPON_DISPLAY_ANCHOR[1]+64];
-weapon_display(obj_game.equipped_ranged_weapon_display,display_center);
+weapon_display(obj_player.equipped_ranged_weapon_display,display_center);
