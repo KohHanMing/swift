@@ -22,10 +22,8 @@ with(obj_wall) {
 	if !within_view(id) continue; // Exit if out of view
 	
 	// Base of Wall
-	quad(_vb,x,y,x+base_x,y); // Top
-	quad(_vb,x,y-base_y,x+base_x,y-base_y); // Bottom
-	quad(_vb,x,y,x,y-base_y); // Left
-	quad(_vb,x+base_x,y,x+base_x,y-base_y); // Right
+	quad(_vb,x,y,x+base_x,y-base_y); // Bottom Left - Top Right
+	quad(_vb,x,y-base_y,x+base_x,y); // Top Left - Bottom Right
 }
 
 vertex_end(vb);
