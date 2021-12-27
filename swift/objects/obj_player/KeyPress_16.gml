@@ -2,7 +2,9 @@
 
 // Toggle equipped_weapon
 
-if swap_timer > 0 exit; // Exit if swap_timer is active.
+if swap_timer > 0 { // swap_timer is active.
+	exit; // Exit
+}
 
 swap_timer = SWAP_COOLDOWN;
 
