@@ -14,6 +14,7 @@ ENERGY_COST = 0; // Default is 0
 // Weapon Presets 
 SPR_WEAPON_IDLE_SIDE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_FIRE_SIDE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
+SPR_WEAPON_CROSSHAIR = spr_weapon_default_crosshair;
 SFX_WEAPON = -1;
 
 // Projectile Presets

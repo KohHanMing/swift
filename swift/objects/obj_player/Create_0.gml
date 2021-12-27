@@ -8,7 +8,7 @@ event_inherited();
 equipped_weapon = "melee";
 equipped_melee_weapon = obj_blade;
 equipped_ranged_weapon = obj_honey_badger;
-equipped_weapon_id = noone; // ID of Current Weapon
+current_weapon_id = noone; // ID of Current Weapon
 melee_weapon_id = instance_create_layer(x,y,"Instances",equipped_melee_weapon); // ID of Melee Weapon
 ranged_weapon_id = instance_create_layer(x,y,"Instances",equipped_ranged_weapon); // ID of Ranged Weapon
 update_equipped_weapons(); // Run Update Equipped Weapons event.
@@ -34,6 +34,12 @@ CURR_ENERGY = 10;
 MAX_ENERGY = 10;
 alarm[2] = ENERGY_RECHARGE_RATE; // Start recharging infinitely
 
+SWAP_COOLDOWN = room_speed/2;
+INSTANT_SWAP_MIN = room_speed/8; // Minimum time required for instant swap to work (in frames).
+INSTANT_SWAP_RANGE = room_speed/4; // Length of instant swap window (in frames).
+
+// Variables
+
 // Movement
 moving = false;
 dashing = false;
@@ -44,6 +50,9 @@ d_key_pressed = false;
 
 // Player State
 state = "normal"
+
+// Weapons
+swap_timer = 0;
 
 // Hole
 res_x = 0; // Respawn coordinate after falling into hole

@@ -19,6 +19,8 @@ SPR_WEAPON_FIRE_FRONT =spr_honey_badger_fire_front;
 SPR_WEAPON_IDLE_BACK= spr_honey_badger_idle_back;
 SPR_WEAPON_FIRE_BACK = spr_honey_badger_fire_back;
 
+SPR_WEAPON_CROSSHAIR = spr_honey_badger_crosshair;
+
 WEAPON_PROJECTILE = obj_honey_badger_projectile;
 PROJECTILE_OFFSET_FORWARD = 20;
 PROJECTILE_OFFSET_SIDE = 0;

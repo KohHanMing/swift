@@ -6,6 +6,9 @@ global.gui_width = display_get_gui_width();
 global.gui_height = display_get_gui_height();
 surface_resize(application_surface, global.gui_width, global.gui_height)
 
+// Remove Cursor
+window_set_cursor(cr_none)
+
 game_management_layer = layer_create(-12000,"Game Management");
 instance_create_layer(0,0,game_management_layer,obj_ui);
 instance_create_layer(0,0,game_management_layer,obj_level_manager);

@@ -12,6 +12,8 @@ ATTACK_COOLDOWN = room_speed // Attacks 1 time per second
 SPR_WEAPON_IDLE = spr_blade_idle;
 SPR_WEAPON_FIRE = spr_blade_fire;
 
+SPR_WEAPON_CROSSHAIR = spr_blade_crosshair;
+
 // Projectile presets
 WEAPON_PROJECTILE = obj_blade_melee_hitbox;
 PROJECTILE_OFFSET_FORWARD = 20;
