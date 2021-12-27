@@ -4,8 +4,13 @@
 // Inherit parent event
 event_inherited();
 
+// Initialize Weapons
+equipped_melee_weapon = obj_blade;
+equipped_ranged_weapon = obj_honey_badger;
+update_equipped_weapons(); // Run Update Equipped Weapons event.
+
 // Create Weapon Object
-instance_create_layer(x, y, "Instances", obj_game.equipped_melee_weapon);
+instance_create_layer(x, y, "Instances", obj_player.equipped_melee_weapon);
 
 // Constants
 ACCELERATION_PX_PER_FRAME = 2.5;
@@ -28,13 +33,15 @@ CURR_ENERGY = 10;
 MAX_ENERGY = 10;
 alarm[2] = ENERGY_RECHARGE_RATE; //Start recharging infinitely
 
-// Variables
+// Movement
 moving = false;
 dashing = false;
 w_key_pressed = false;
 a_key_pressed = false;
 s_key_pressed = false;
 d_key_pressed = false;
+
+// Player State
 state = "normal"
 
 // Hole

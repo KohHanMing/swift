@@ -3,19 +3,19 @@
 function update_equipped_weapons(){
 	switch(equipped_melee_weapon) {
 		case obj_weapon_melee:
-			obj_game.equipped_melee_weapon_display = spr_weapon_melee_idle;
+			obj_player.equipped_melee_weapon_display = spr_weapon_melee_idle;
 			break;
 		case obj_blade:
-			obj_game.equipped_melee_weapon_display = spr_blade_idle;
+			obj_player.equipped_melee_weapon_display = spr_blade_idle;
 			break;
 	}
 	
 	switch(equipped_ranged_weapon) {
 		case obj_weapon_ranged:
-			obj_game.equipped_ranged_weapon_display = spr_weapon_ranged_idle_side;
+			obj_player.equipped_ranged_weapon_display = spr_weapon_ranged_idle_side;
 			break;
 		case obj_honey_badger:
-			obj_game.equipped_ranged_weapon_display = spr_honey_badger_idle_side;
+			obj_player.equipped_ranged_weapon_display = spr_honey_badger_idle_side;
 			break;
 	}
 	
