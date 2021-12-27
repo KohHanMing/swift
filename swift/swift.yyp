@@ -73,7 +73,6 @@
     {"id":{"name":"floater_attack","path":"scripts/floater_attack/floater_attack.yy",},"order":1,},
     {"id":{"name":"spr_win","path":"sprites/spr_win/spr_win.yy",},"order":19,},
     {"id":{"name":"sfx_spawnpod_impact","path":"sounds/sfx_spawnpod_impact/sfx_spawnpod_impact.yy",},"order":8,},
-    {"id":{"name":"spawn_player_melee_hitbox","path":"scripts/spawn_player_melee_hitbox/spawn_player_melee_hitbox.yy",},"order":6,},
     {"id":{"name":"obj_particle","path":"objects/obj_particle/obj_particle.yy",},"order":0,},
     {"id":{"name":"obj_spawn_dummy","path":"objects/obj_spawn_dummy/obj_spawn_dummy.yy",},"order":4,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":8,},

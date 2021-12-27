@@ -1,2 +1,4 @@
-/// @description Swap Weapon Event
-instance_destroy();
+/// @description Weapon Swapped In
+
+// Quick Swap Animation Cancel
+alarm[0] = 1;

@@ -7,10 +7,10 @@ event_inherited();
 // Initialize Weapons
 equipped_melee_weapon = obj_blade;
 equipped_ranged_weapon = obj_honey_badger;
+equipped_weapon = "melee";
+melee_weapon_id = instance_create_layer(x,y,"Instances",equipped_melee_weapon);
+ranged_weapon_id = instance_create_layer(x,y,"Instances",equipped_ranged_weapon);
 update_equipped_weapons(); // Run Update Equipped Weapons event.
-
-// Create Weapon Object
-instance_create_layer(x, y, "Instances", obj_player.equipped_melee_weapon);
 
 // Constants
 ACCELERATION_PX_PER_FRAME = 2.5;
