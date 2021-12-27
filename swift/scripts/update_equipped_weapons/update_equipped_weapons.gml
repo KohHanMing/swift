@@ -23,13 +23,13 @@ function update_equipped_weapons(){
 		case "melee":
 			instance_deactivate_object(ranged_weapon_id);
 			instance_activate_object(melee_weapon_id);
-			with(melee_weapon_id) event_user(3); // Swap Weapon In Event
+			if current_weapon_id != melee_weapon_id with(melee_weapon_id) event_user(3); // Swap Weapon In Event
 			current_weapon_id = melee_weapon_id; // Update Current Weapon ID
 			break;
 		case "ranged":
 			instance_deactivate_object(melee_weapon_id);
 			instance_activate_object(ranged_weapon_id);
-			with(ranged_weapon_id) event_user(3); // Swap Weapon In Event
+			if current_weapon_id != ranged_weapon_id with(ranged_weapon_id) event_user(3); // Swap Weapon In Event
 			current_weapon_id = ranged_weapon_id; // Update Current Weapon ID
 			break;
 	}

@@ -8,6 +8,7 @@ if keyboard_check_pressed(vk_escape) {
 		alarm[0] = 1;
 		surface_free(paused_surf);
         paused_surf = -1;
+		with(obj_player) update_equipped_weapons();
     }
 }
 
