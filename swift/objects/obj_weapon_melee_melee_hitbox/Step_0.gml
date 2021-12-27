@@ -1,5 +1,5 @@
 // Inherit from parent
-event_inherited()
+event_inherited();
 
 // Align to Player
 phy_position_x = obj_player.sprite_x + OFFSET_X;

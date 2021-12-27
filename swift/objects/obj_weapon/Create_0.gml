@@ -26,4 +26,3 @@ PROJECTILE_OFFSET_SIDE = 0; // Right is Positive
 firing = false;
 weapon_angle = 0; // Weapon Angle in Degrees
 cooldown = 0 // Current Attack Cooldown (in Frames)
-
