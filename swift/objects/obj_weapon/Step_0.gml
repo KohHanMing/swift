@@ -5,4 +5,4 @@ speed = obj_player.speed;
 direction = obj_player.direction;
 
 // Rotate image with reference to mouse
-weapon_angle = point_direction(x, y, mouse_x, mouse_y);
+weapon_angle = point_direction(obj_player.sprite_x, obj_player.sprite_y, mouse_x, mouse_y); // In Degrees

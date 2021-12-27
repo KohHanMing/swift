@@ -1,4 +1,6 @@
-/// @description Initialize Constants
+/// @description Initialize Variables
+
+// Constants
 
 // Weapon pivot point differs from player centre. Offset accordingly
 WEAPON_OFFSET_FORWARD = 0; // Forward is Positive
@@ -19,7 +21,7 @@ WEAPON_PROJECTILE = obj_player_projectile; //MUST INITIALISE IN CHILD WEAPON
 PROJECTILE_OFFSET_FORWARD = 0; // Forward is Positive
 PROJECTILE_OFFSET_SIDE = 0; // Right is Positive
 
+// Variables
 firing = false;
-
-weapon_angle = point_direction(x, y, mouse_x, mouse_y); // In Degrees
+weapon_angle = 0; // Weapon Angle in Degrees
 
