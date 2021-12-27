@@ -6,7 +6,7 @@
     "path": "folders/Scripts/graphics.yy",
   },
   "resourceVersion": "1.0",
-  "name": "prepare_silhouette",
+  "name": "remove_from_silhouette_array",
   "tags": [],
   "resourceType": "GMScript",
 }
