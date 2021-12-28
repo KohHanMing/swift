@@ -31,14 +31,24 @@ draw_clear_alpha(c_black,0);
 gpu_set_blendenable(false);
 gpu_set_colorwriteenable(false,false,false,true);
 
+var length = array_length(silhouette_array);
+var sort_required = false;
+
+for (var i = 0; i < length; i += 1) { // Loop through Silhouette Array (Check if Sort is Needed)
+	with (silhouette_array[i]) {
+		if object_is_ancestor(object_index,obj_wall) break;	
+		if i > 0 and depth > other.silhouette_array[i-1].depth sort_required = true;
+		if i < length-1 and depth < other.silhouette_array[i+1].depth sort_required = true;
+	}
+}
+
 // Sort Silhouette Array by Depth, then ID
-array_sort(silhouette_array, function(a, b) {
+if sort_required array_sort(silhouette_array, function(a, b) {
 	return a.depth != b.depth ? b.depth - a.depth : b.id - a.id;
 });
 
 var _SCALE = SCALE; // To use in functions.
-var length = array_length(silhouette_array);
-for (var i = 0; i < length; i += 1) { // Loop through Silhouette Array
+for (var i = 0; i < length; i += 1) { // Loop through Silhouette Array (Rendering)
 	with (silhouette_array[i]) {
 		
 		if !within_view(id) continue;

@@ -1,4 +1,4 @@
-if !within_view(id) exit;
+//if !within_view(id) exit;
 
 draw_self();
 
