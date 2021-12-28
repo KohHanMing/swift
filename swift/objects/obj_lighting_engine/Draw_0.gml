@@ -20,8 +20,15 @@ if !surface_exists(shadow_surface_floor) shadow_surface_floor = surface_create(v
 if !surface_exists(shadow_surface_wall) shadow_surface_wall = surface_create(view_w,view_h);
 
 // Resize in case Viewport changes size
-surface_resize(shadow_surface_floor,view_w,view_h);
-surface_resize(shadow_surface_wall,view_w,view_h);
+
+function check_resize(_surface) {
+	if surface_get_width(_surface) != global.view_w or surface_get_height(_surface) != global.view_h {
+		surface_resize(_surface,global.view_w,global.view_h);
+	}
+}
+
+check_resize(shadow_surface_floor);
+check_resize(shadow_surface_wall);
 
 // Surface IDs
 var _shadow_surface_floor = shadow_surface_floor

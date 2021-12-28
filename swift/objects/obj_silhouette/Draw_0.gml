@@ -14,11 +14,13 @@ function draw_self_offset(_SCALE) {
 
 // Create Silhouette Surface if it does not exist
 if !surface_exists(silhouette_surface) {
-	silhouette_surface = surface_create(global.view_w,global.view_h);
+	silhouette_surface = surface_create(min(8192,SCALE*global.view_w),min(8192,SCALE*global.view_h));
 }
 
 // Resize Silhouette based on SCALE
-surface_resize(silhouette_surface,min(8192,SCALE*global.view_w),min(8192,SCALE*global.view_h));
+if surface_get_width(silhouette_surface) != min(8192,SCALE*global.view_w) or surface_get_height(silhouette_surface) != min(8192,SCALE*global.view_h) {
+	surface_resize(silhouette_surface,min(8192,SCALE*global.view_w),min(8192,SCALE*global.view_h));
+}
 
 
 // Draw on Silhouette Surface
