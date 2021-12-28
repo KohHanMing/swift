@@ -8,6 +8,7 @@ function player_normal(){
 	d_key_pressed = keyboard_check(ord("D"));
 
 	moving = false;
+	phy_linear_damping = 10;
 
 	if (w_key_pressed or a_key_pressed or s_key_pressed or d_key_pressed) {
 		// Decide on goal direction based on keyboard inputs
@@ -62,7 +63,7 @@ function player_normal(){
 			}
 		}
 	}
-
+	
 	move_wrap(true, true, sprite_width/2);
 	
 	// alarm[1] == 0 when just respawning from hole
@@ -71,7 +72,7 @@ function player_normal(){
 		if(!dashing) {
 			// Check collision with hole objects
 			hole = collision_point(x, y, obj_hole, false, true);
-			if (hole != noone) {
+			if (hole != noone and can_fall == true) {
 				pos_prev_hole = collision_point(phy_position_xprevious, phy_position_yprevious, obj_hole, false, true);
 				if (pos_prev_hole == noone) {
 					res_x = phy_position_xprevious;
@@ -82,12 +83,17 @@ function player_normal(){
 				phy_speed_x = 0;
 				phy_speed_y = 0;
 				phy_active = false;
-				alarm[1] = 60; //player falls for 1 seconds
+				alarm[1] = 60; // Player falls for 1 seconds
 				falling_factor = 0; // Initialize falling_factor
+				
 			} else {
 				res_x = x;
 				res_y = y;
 			}
 		}
 	}
+	
+	// Enable Falling after 1 Step
+	can_fall = true;
+	
 }

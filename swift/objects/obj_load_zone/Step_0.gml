@@ -32,7 +32,9 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 					"Instances", 
 					next[TYPE]
 				)
+			
 			instance_deactivate_object(curr_enemy);
+			curr_enemy.phy_active = false;
 			
 			// Spawn pod above desired coord
 			spawn_pod(spawn[spawnpoint,0],spawn[spawnpoint,1], curr_enemy);
@@ -46,7 +48,7 @@ if (!triggered && place_meeting(x, y, obj_player)) {
 				sector_number = counter % 8;
 				counter += 5;
 			}
-			with (obj_basic_melee) {
+			with (obj_swarmer) {
 				sector_number = counter % 8;
 				counter += 5;
 			}

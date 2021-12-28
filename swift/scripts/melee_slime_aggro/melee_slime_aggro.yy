@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Slime_Scripts",
-    "path": "folders/Scripts/Enemy_Scripts/Slime_Scripts.yy",
+    "name": "slime_scripts",
+    "path": "folders/Scripts/enemy_scripts/slime_scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "melee_slime_aggro",
