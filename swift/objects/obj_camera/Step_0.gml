@@ -40,3 +40,4 @@ if (instance_exists(obj_player)) {
 		camera_set_view_pos(CAMERA, x - cam_centre_offset_x, y - cam_centre_offset_y);
 	}
 }
+

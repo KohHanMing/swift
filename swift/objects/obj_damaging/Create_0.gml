@@ -13,3 +13,6 @@ P_PIERCING = false
 p_hit_list = ds_list_create();
 
 alarm[0] = 1;
+
+// Push Self to Silhouette Array
+array_push(obj_silhouette.silhouette_array, id);

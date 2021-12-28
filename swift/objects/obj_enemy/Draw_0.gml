@@ -16,5 +16,3 @@ if damage_tint_time > 0 {
 	gpu_set_blendmode(bm_normal);
 	damage_tint_time -= 1;
 }
-
-prepare_silhouette(); // Prepare silhouette
