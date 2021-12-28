@@ -21,7 +21,7 @@ paused_surf = -1;
 paused = false;
 
 // Lighting Engine (in order of rendering)
-instance_create_depth(0,0,50,obj_lighting_engine); // Lighting Engine
+//instance_create_depth(0,0,50,obj_lighting_engine); // Lighting Engine
 instance_create_depth(0,0,-9000,obj_silhouette); // Create Silhouette Drawer
 
 // Initialize Player
