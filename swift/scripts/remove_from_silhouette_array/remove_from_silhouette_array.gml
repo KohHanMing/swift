@@ -6,7 +6,6 @@ function remove_from_silhouette_array(_inst){
 			array_delete(obj_silhouette.silhouette_array, i, 1);
 			length--;
 			i--;
-			show_debug_message(id);
 		}
 	}
 }
