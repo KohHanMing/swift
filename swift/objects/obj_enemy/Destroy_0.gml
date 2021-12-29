@@ -15,6 +15,5 @@ if (instance_exists(obj_load_zone)) {
 	}
 }
 
-for (var i=0;i<50;i++) {
-	instance_create_layer(sprite_x+random_range(-10,10),sprite_y+random_range(-10,10),"Instances",obj_particle_enemy_death);
-}
+// Death Particle
+repeat(50) instance_create_layer(sprite_x+random_range(-10,10),sprite_y+random_range(-10,10),"Instances",obj_particle_enemy_death);
