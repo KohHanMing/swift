@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_wall",
-    "path": "objects/obj_wall/obj_wall.yy",
+    "name": "obj_wall_dynamic",
+    "path": "objects/obj_wall_dynamic/obj_wall_dynamic.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

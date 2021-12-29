@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_city_wall",
-    "path": "sprites/spr_city_wall/spr_city_wall.yy",
+    "name": "spr_city_wall_1x3",
+    "path": "sprites/spr_city_wall_1x3/spr_city_wall_1x3.yy",
   },
   "solid": false,
   "visible": true,
@@ -11,7 +11,7 @@
     "name": "obj_wall_static",
     "path": "objects/obj_wall_static/obj_wall_static.yy",
   },
-  "physicsObject": true,
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -23,13 +23,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":0.0,"y":32.0,},
-    {"x":32.0,"y":32.0,},
-    {"x":32.0,"y":64.0,},
-    {"x":0.0,"y":64.0,},
+    {"x":0.0,"y":96.0,},
+    {"x":32.0,"y":96.0,},
+    {"x":32.0,"y":128.0,},
+    {"x":0.0,"y":128.0,},
   ],
   "eventList": [
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -38,7 +38,7 @@
     "path": "folders/Objects/level/city.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_city_wall_static",
+  "name": "obj_city_wall_static_3h",
   "tags": [],
   "resourceType": "GMObject",
 }

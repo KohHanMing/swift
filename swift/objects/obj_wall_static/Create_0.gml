@@ -1,6 +1,8 @@
-/// @description Initialize
+// Push Self to Silhouette Array
+array_push(obj_silhouette.silhouette_array, id);
 
-event_inherited();
+// Height
+height = 0;
 
-//Static Wall
+// Depth
 depth = -y;

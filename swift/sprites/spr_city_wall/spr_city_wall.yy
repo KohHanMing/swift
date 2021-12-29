@@ -1,5 +1,5 @@
 {
-  "bboxMode": 2,
+  "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
   "origin": 6,
@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 31,
-  "bbox_top": 32,
+  "bbox_top": 0,
   "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
@@ -71,7 +71,7 @@
     "left": 0,
     "top": 0,
     "right": 0,
-    "bottom": 0,
+    "bottom": 32,
     "guideColour": [
       4294902015,
       4294902015,
@@ -85,7 +85,7 @@
       0,
       0,
       0,
-      0,
+      1,
       1,
     ],
     "resourceVersion": "1.0",
