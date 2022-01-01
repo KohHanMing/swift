@@ -1,3 +1,4 @@
-apply_vector(id,random_range(1,2),random_range(0,360));
-phy_angular_velocity = random_range(1,2);
-phy_linear_damping = 10;
+apply_vector(id,2,random_range(45,135));
+phy_linear_damping = 5;
+
+y_start = y;
