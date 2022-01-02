@@ -10,9 +10,8 @@ event_inherited();
 // weapon_angle = 180 -> image_angle = 45
 image_angle = 25/9000 * weapon_angle * (360 - weapon_angle) - 45 + ROTATION_OFFSET;
 
-if dcos(weapon_angle + ROTATION_OFFSET) > 0 {
-	image_xscale = 1;
-} else {
+if image_angle - ROTATION_OFFSET < 0 image_xscale = 1;
+else {
 	image_xscale = -1;
 	image_angle -= 2 * ROTATION_OFFSET;
 }
