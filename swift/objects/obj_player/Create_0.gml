@@ -25,9 +25,9 @@ CURR_ENERGY = 10;
 MAX_ENERGY = 10;
 alarm[2] = ENERGY_RECHARGE_RATE; // Start recharging infinitely
 
-SWAP_COOLDOWN = room_speed/2; // Swap Cooldown 
+SWAP_COOLDOWN = room_speed; // Swap Cooldown 
 INSTANT_SWAP_MIN = room_speed/4; // Minimum time required for instant swap to work (in frames).
-INSTANT_SWAP_RANGE = room_speed/3; // Length of instant swap window (in frames).
+INSTANT_SWAP_RANGE = room_speed/2; // Length of instant swap window (in frames).
 
 // Initialize Weapons
 equipped_weapon = "melee";
