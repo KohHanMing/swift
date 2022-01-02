@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player_move_right",
-    "path": "sprites/spr_player_move_right/spr_player_move_right.yy",
+    "name": "spr_player_attack_right",
+    "path": "sprites/spr_player_attack_right/spr_player_attack_right.yy",
   },
   "solid": false,
   "visible": true,
