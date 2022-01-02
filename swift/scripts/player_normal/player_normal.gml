@@ -48,8 +48,7 @@ function player_normal(){
 			
 			var center = find_sprite_center(id)
 			
-			instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_dash);
-			instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_dash);
+			repeat(2) instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_dash);
 			
 		}
 		

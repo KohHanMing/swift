@@ -1,6 +1,10 @@
-apply_vector(id,random_range(0,1),random_range(0,360));
-phy_angular_velocity = random_range(1,2);
-phy_linear_damping = 2;
+apply_vector(id,4,random_range(45,135));
+phy_linear_damping = 5;
 
-fading=false;
-alarm[0] = random_range(room_speed/2,room_speed)
+image_index = irandom(image_number-1);
+image_speed = 0;
+
+fading = false;
+alarm[0] = room_speed*random_range(1,5)
+
+y_start = y;
