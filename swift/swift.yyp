@@ -306,6 +306,7 @@
     {"id":{"name":"spr_start","path":"sprites/spr_start/spr_start.yy",},"order":16,},
     {"id":{"name":"spr_blade_crosshair","path":"sprites/spr_blade_crosshair/spr_blade_crosshair.yy",},"order":4,},
     {"id":{"name":"spr_suppressor_move_right","path":"sprites/spr_suppressor_move_right/spr_suppressor_move_right.yy",},"order":2,},
+    {"id":{"name":"spr_player_attack_up","path":"sprites/spr_player_attack_up/spr_player_attack_up.yy",},"order":11,},
     {"id":{"name":"sfx_pickup_collectible","path":"sounds/sfx_pickup_collectible/sfx_pickup_collectible.yy",},"order":1,},
     {"id":{"name":"spr_suppressor_move_up","path":"sprites/spr_suppressor_move_up/spr_suppressor_move_up.yy",},"order":3,},
     {"id":{"name":"spr_surpressor_turrent_idle_right","path":"sprites/spr_surpressor_turrent_idle_right/spr_surpressor_turrent_idle_right.yy",},"order":6,},
