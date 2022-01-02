@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_blade_melee_hitbox",
-    "path": "sprites/spr_blade_melee_hitbox/spr_blade_melee_hitbox.yy",
+    "name": "spr_axe_melee_hitbox",
+    "path": "sprites/spr_axe_melee_hitbox/spr_axe_melee_hitbox.yy",
   },
   "solid": false,
   "visible": true,
