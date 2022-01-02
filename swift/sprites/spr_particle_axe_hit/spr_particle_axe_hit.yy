@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "particle",
-    "path": "folders/Sprites/particle.yy",
+    "name": "axe",
+    "path": "folders/Sprites/weapon/axe.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_particle_axe_hit",

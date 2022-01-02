@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "particle",
-    "path": "folders/Sprites/particle.yy",
+    "name": "deadeye",
+    "path": "folders/Sprites/weapon/deadeye.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_particle_deadeye_trail",
