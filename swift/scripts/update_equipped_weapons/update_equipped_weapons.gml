@@ -20,6 +20,9 @@ function update_equipped_weapons(){
 		case obj_honey_badger:
 			obj_player.equipped_ranged_weapon_display = spr_honey_badger_idle_side;
 			break;
+		case obj_deadeye:
+			obj_player.equipped_ranged_weapon_display = spr_deadeye_idle_side;
+			break;
 	}
 	
 	switch(equipped_weapon) {
