@@ -2,6 +2,7 @@
 function manual_projectile_collision(_inst){
 	
 	if ds_list_find_index(p_hit_list,_inst) != -1 return; // Exit if collision target has already been hit
+	else if p_piercing_expired return; // Exit if piercing projectile has expired, but still visually exists
 	
 	if object_is_ancestor(object_index,obj_player_melee_hitbox) {
 		if collision_line(owner.x,owner.y,_inst.x,_inst.y,obj_wall,false,true) return;
@@ -20,6 +21,8 @@ function manual_projectile_collision(_inst){
 	
 	if P_PIERCING {
 		ds_list_add(p_hit_list,_inst); // Add collision target into hit list
+	} else if P_PIERCING_EXPIRE == false {
+		p_piercing_expired = true;
 	}
     else instance_destroy();
 }
@@ -27,15 +30,17 @@ function manual_projectile_collision(_inst){
 function manual_breakable_collision(_inst){
 	
 	if ds_list_find_index(p_hit_list,_inst) != -1 return;
+	else if p_piercing_expired return; // Exit if piercing projectile has expired, but still visually exists
 	
 	collision_target = _inst; // Save _inst into collision_target of damaging if needed.
 	event_user(0); // Manual Projectile Collision Event
 	
-	with(_inst) event_user(0); // Make obj_breakable run breaking code
+	repeat(DAMAGE) with(_inst) event_user(0); // Make obj_breakable run breaking code
 	
 	if P_PIERCING {
-		ds_list_add(p_hit_list,_inst);
+		ds_list_add(p_hit_list,_inst); // Add collision target into hit list
+	} else if P_PIERCING_EXPIRE == false {
+		p_piercing_expired = true;
 	}
-	
     else instance_destroy();
 }

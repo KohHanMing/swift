@@ -1,3 +1,3 @@
 /// @description Weapon Swapped In
 
-cooldown = 0;
+cooldown -= obj_player.SWAP_COOLDOWN;

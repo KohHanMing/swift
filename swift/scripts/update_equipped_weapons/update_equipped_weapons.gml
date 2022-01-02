@@ -8,6 +8,9 @@ function update_equipped_weapons(){
 		case obj_blade:
 			obj_player.equipped_melee_weapon_display = spr_blade_idle;
 			break;
+		case obj_axe:
+			obj_player.equipped_melee_weapon_display = spr_axe_idle;
+			break;
 	}
 	
 	switch(equipped_ranged_weapon) {

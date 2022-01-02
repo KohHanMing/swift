@@ -4,10 +4,11 @@
 event_inherited();
 
 // Constants
-DAMAGE = 1;
+DAMAGE = 3;
 LIFETIME_SECONDS = 1/5;
 image_speed = (image_number/sprite_get_speed(sprite_index))/(LIFETIME_SECONDS)
 P_SPEED = 0;
+P_RANGE = 200;
 
-P_PIERCING = true;
+P_PIERCING = false;
 P_PIERCING_EXPIRE = false;
