@@ -47,9 +47,11 @@ w_key_pressed = false;
 a_key_pressed = false;
 s_key_pressed = false;
 d_key_pressed = false;
+facing = "down";
 
 // Player State
-state = "normal"
+state = "normal";
+action = "idle";
 
 // Weapons
 swap_timer = 0;
