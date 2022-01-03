@@ -10,6 +10,4 @@ image_speed = (image_number/sprite_get_speed(sprite_index))/(LIFETIME_SECONDS)
 P_SPEED = 0;
 
 P_PIERCING = true;
-
-OFFSET_X = -1;
-OFFSET_Y = -1;
+P_PIERCING_EXPIRE = false;

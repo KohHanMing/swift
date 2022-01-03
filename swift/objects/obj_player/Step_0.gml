@@ -7,10 +7,13 @@ move_wrap(true, true, sprite_width/2);
 
 // Face Direction based on Weapon Angle
 var weapon_angle = current_weapon_id.weapon_angle;
-if (weapon_angle > 225 && weapon_angle < 315) sprite_index = spr_player_idle_down;
-else if (weapon_angle > 45 && weapon_angle < 135) sprite_index = spr_player_idle_up;
-else if (weapon_angle >= 135 && weapon_angle <= 225) sprite_index = spr_player_idle_left;
-else sprite_index = spr_player_idle_right;
+if (weapon_angle > 225 && weapon_angle < 315) facing = "down";
+else if (weapon_angle > 45 && weapon_angle < 135) facing = "up";
+else if (weapon_angle >= 135 && weapon_angle <= 225) facing = "left";
+else facing = "right";
+
+// Sprite Control
+sprite_index = asset_get_index("spr_player_" + action + "_" + facing);
 
 // Weapon Cooldowns
 if melee_weapon_id.cooldown > 0 melee_weapon_id.cooldown -= 1;

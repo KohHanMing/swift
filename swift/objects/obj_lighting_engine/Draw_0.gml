@@ -10,36 +10,36 @@ var _u_pos_shadow = u_pos_shadow;
 var _vb = vb;
 
 // Viewport Size
-var view_x = camera_get_view_x(view_camera[0]);
-var view_y = camera_get_view_y(view_camera[0]);
+var view_x = global.view_x;
+var view_y = global.view_y;
+var view_w = global.view_w;
+var view_h = global.view_h;
 
 // Create if it does not exist
-if !surface_exists(shadow_surface_floor) shadow_surface_floor = surface_create(camera_get_view_width(view_camera[0]),camera_get_view_height(view_camera[0]));
-if !surface_exists(shadow_surface_wall) shadow_surface_wall = surface_create(camera_get_view_width(view_camera[0]),camera_get_view_height(view_camera[0]));
+if !surface_exists(shadow_surface_floor) shadow_surface_floor = surface_create(view_w,view_h);
+if !surface_exists(shadow_surface_wall) shadow_surface_wall = surface_create(view_w,view_h);
 
 // Resize in case Viewport changes size
-surface_resize(shadow_surface_floor,camera_get_view_width(view_camera[0]),camera_get_view_height(view_camera[0]));
-surface_resize(shadow_surface_wall,camera_get_view_width(view_camera[0]),camera_get_view_height(view_camera[0]));
+
+function check_resize(_surface) {
+	if surface_get_width(_surface) != global.view_w or surface_get_height(_surface) != global.view_h {
+		surface_resize(_surface,global.view_w,global.view_h);
+	}
+}
+
+check_resize(shadow_surface_floor);
+check_resize(shadow_surface_wall);
 
 // Surface IDs
 var _shadow_surface_floor = shadow_surface_floor
 var _shadow_surface_wall = shadow_surface_wall
 
-// Clear Floor
-surface_set_target(shadow_surface_floor);
-draw_clear_alpha(c_black,0);
-surface_reset_target();
 
-// Clear Wall
-surface_set_target(shadow_surface_wall);
-draw_clear_alpha(c_black,0);
-surface_reset_target();
+// Draw Floor Lighting
+surface_set_target(_shadow_surface_floor);
+draw_clear_alpha(c_black,0); // Clear Floor
 
-
-with(obj_light) { // Loop through all Lights
-
-	// Draw Floor Lighting
-	surface_set_target(_shadow_surface_floor);
+with(obj_light) { // Loop through all Lights (Floor)
 	
 	// Set Shadow Areas to A = 1
 	gpu_set_blendmode_ext_sepalpha(bm_zero,bm_one,bm_one,bm_zero);
@@ -54,20 +54,25 @@ with(obj_light) { // Loop through all Lights
 	
 	shader_set_uniform_f(_u_pos_light, x-view_x, y-view_y); // Pass Relative Positions to Shader
 	shader_set_uniform_f(_u_size_light, light_size); // Pass Light Size to Shader
-	draw_rectangle_color(0,0,camera_get_view_width(view_camera[0]),camera_get_view_height(view_camera[0]),light_color,light_color,light_color,light_color,0); // Pass Color to Shader
+	draw_rectangle_color(0,0,view_w,view_h,light_color,light_color,light_color,light_color,0); // Pass Color to Shader
 	
-	surface_reset_target(); // GMS says we must reset the target surface before changing it.
-	
-	// Draw Wall Lighting
-	surface_set_target(_shadow_surface_wall);
+}
+
+surface_reset_target(); // GMS says we must reset the target surface before changing it.
+
+// Draw Wall Lighting
+surface_set_target(_shadow_surface_wall);
+draw_clear_alpha(c_black,0); // Clear Wall
+
+with(obj_light) { // Loop through all Lights (Wall)
 	
 	shader_set_uniform_f(_u_pos_light, x-view_x, y-view_y); // Pass Relative Positions to Shader
 	shader_set_uniform_f(_u_size_light, light_size); // Pass Light Size to Shader
-	draw_rectangle_color(0,0,camera_get_view_width(view_camera[0]),camera_get_view_height(view_camera[0]),light_color,light_color,light_color,light_color,0); // Pass Color to Shader
-	
-	surface_reset_target(); // GMS says we must reset the target surface before changing it.
+	draw_rectangle_color(0,0,view_w,view_h,light_color,light_color,light_color,light_color,0); // Pass Color to Shader
 	
 }
+
+surface_reset_target(); // GMS says we must reset the target surface before changing it.
 
 // Render Floor Lighting
 draw_lighting(shadow_surface_floor);

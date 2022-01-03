@@ -1,13 +1,10 @@
 /// @description Init & Function Declaration
 
 function draw_lighting(_surface) { // Draw Light Surface onto Application Surface
-	// Variables for Brevity
-	var view_x = camera_get_view_x(view_camera[0]);
-	var view_y = camera_get_view_y(view_camera[0]);
 	
 	gpu_set_blendmode_ext(bm_zero,bm_src_color); // Multiply Blend Mode
 	shader_set(shd_shadow_surface); // Use Shadow Surface Shader
-	draw_surface_ext(_surface,view_x,view_y,1,1,0,c_white,obj_game.ambient_darkness); // Draw Surface with Ambient Darkness
+	draw_surface_ext(_surface,global.view_x,global.view_y,1,1,0,c_white,obj_game.ambient_darkness); // Draw Surface with Ambient Darkness
 	gpu_set_blendmode(bm_normal); // Reset Blend Mode
 	shader_reset(); // Reset Shader
 }

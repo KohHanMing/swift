@@ -31,3 +31,6 @@ phy_set_vector(id, VECTOR_SPEED, VECTOR_DIRECTION);
 // Make this object not rotatable
 phy_rotation = 0;
 phy_fixed_rotation = true;
+
+// Push Self to Silhouette Array
+array_push(obj_silhouette.silhouette_array, id);

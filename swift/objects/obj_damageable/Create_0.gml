@@ -11,3 +11,6 @@ damage_tint_scale = 0;
 //-1 if object has no hit sfx
 HIT_SFX = -1;
 curr_idle_sfx = -1;
+
+// Push Self to Silhouette Array
+array_push(obj_silhouette.silhouette_array, id);

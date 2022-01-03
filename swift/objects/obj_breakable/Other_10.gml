@@ -2,7 +2,7 @@
 
 if (image_index == image_number-1) {
 	
-	destroy_wall(id);
+	instance_destroy();
 	
 }
 image_index += 1;

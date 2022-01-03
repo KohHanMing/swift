@@ -4,15 +4,6 @@
 // Inherit parent event
 event_inherited();
 
-// Initialize Weapons
-equipped_weapon = "melee";
-equipped_melee_weapon = obj_blade;
-equipped_ranged_weapon = obj_honey_badger;
-current_weapon_id = noone; // ID of Current Weapon
-melee_weapon_id = instance_create_layer(x,y,"Instances",equipped_melee_weapon); // ID of Melee Weapon
-ranged_weapon_id = instance_create_layer(x,y,"Instances",equipped_ranged_weapon); // ID of Ranged Weapon
-update_equipped_weapons(); // Run Update Equipped Weapons event.
-
 // Constants
 ACCELERATION_PX_PER_FRAME = 2.5;
 MAX_SPEED_PX_PER_FRAME = 4;
@@ -34,9 +25,18 @@ CURR_ENERGY = 10;
 MAX_ENERGY = 10;
 alarm[2] = ENERGY_RECHARGE_RATE; // Start recharging infinitely
 
-SWAP_COOLDOWN = room_speed/2;
+SWAP_COOLDOWN = room_speed; // Swap Cooldown 
 INSTANT_SWAP_MIN = room_speed/4; // Minimum time required for instant swap to work (in frames).
-INSTANT_SWAP_RANGE = room_speed/3; // Length of instant swap window (in frames).
+INSTANT_SWAP_RANGE = room_speed/2; // Length of instant swap window (in frames).
+
+// Initialize Weapons
+equipped_weapon = "melee";
+equipped_melee_weapon = obj_blade;
+equipped_ranged_weapon = obj_honey_badger;
+current_weapon_id = noone; // ID of Current Weapon
+melee_weapon_id = instance_create_layer(x,y,"Instances",equipped_melee_weapon); // ID of Melee Weapon
+ranged_weapon_id = instance_create_layer(x,y,"Instances",equipped_ranged_weapon); // ID of Ranged Weapon
+update_equipped_weapons(); // Run Update Equipped Weapons event.
 
 // Variables
 
@@ -47,9 +47,11 @@ w_key_pressed = false;
 a_key_pressed = false;
 s_key_pressed = false;
 d_key_pressed = false;
+facing = "down";
 
 // Player State
-state = "normal"
+state = "normal";
+action = "idle";
 
 // Weapons
 swap_timer = 0;

@@ -1,21 +1,8 @@
+if !within_view(id) exit;
+
 draw_self();
 
-// Silhouette
-surface_set_target(obj_silhouette.silhouette_surface); // Draw onto Silhouette Surface
-gpu_set_colorwriteenable(false,false,false,true); // Write to Alpha Channel only
-
-// Draw Sprite
-draw_sprite_ext(
-	sprite_index,
-	image_index,
-	obj_silhouette.SCALE*(x-camera_get_view_x(view_camera[0])), // Relative Position
-	obj_silhouette.SCALE*(y-camera_get_view_y(view_camera[0])), // Relative Position
-	obj_silhouette.SCALE*image_xscale, // Relative Scale
-	obj_silhouette.SCALE*image_yscale, // Relative Scale
-	image_angle,
-	c_white,
-	image_alpha
-);
-
-gpu_set_colorwriteenable(true,true,true,true); // Reset Channel Writing
-surface_reset_target();
+gpu_set_blendmode_ext(bm_dest_colour,bm_zero);
+draw_rectangle_colour(x,y,x+base_x-1,y-sprite_height+base_y,$FFFFFF,$FFFFFF,$333333,$333333,false);
+draw_rectangle_colour(x,y,x+base_x-1,y+(sprite_height-base_y)/2,$333333,$333333,$FFFFFF,$FFFFFF,false);
+gpu_set_blendmode(bm_normal);
