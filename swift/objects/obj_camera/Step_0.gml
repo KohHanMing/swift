@@ -4,7 +4,7 @@
 //show_debug_message(view_camera[0]);
 
 if (instance_exists(obj_player)) {
-	if (instance_exists(obj_honey_badger) and (mouse_check_button(mb_right))) {
+	if (instance_exists(obj_deadeye) and (mouse_check_button(mb_right))) {
 		if (lerp_amt < 0.5) {
 			lerp_amt += 0.03;
 		}

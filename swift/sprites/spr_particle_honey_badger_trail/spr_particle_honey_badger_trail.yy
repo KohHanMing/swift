@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "particle",
-    "path": "folders/Sprites/particle.yy",
+    "name": "honey_badger",
+    "path": "folders/Sprites/weapon/honey_badger.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_particle_honey_badger_trail",

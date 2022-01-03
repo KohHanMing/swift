@@ -4,6 +4,8 @@ event_inherited();
 // Offset Weapon Based on Weapon Angle
 WEAPON_OFFSET_FORWARD = 0; // Forward is Positive
 WEAPON_OFFSET_SIDE = 0; // Right is Positive
+recoil_offset = 0;
+recoiling = false;
 
 ATTACK_COOLDOWN = room_speed / 4; // Fires 4 times per second
 
