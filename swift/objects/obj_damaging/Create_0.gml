@@ -13,6 +13,7 @@ P_PIERCING = false;
 P_PIERCING_EXPIRE = true;
 p_hit_list = ds_list_create();
 p_piercing_expired = false;
+expired = false;
 
 alarm[0] = 1;
 

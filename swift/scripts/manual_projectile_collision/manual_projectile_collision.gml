@@ -24,7 +24,9 @@ function manual_projectile_collision(_inst){
 	} else if P_PIERCING_EXPIRE == false {
 		p_piercing_expired = true;
 	}
-    else instance_destroy();
+    else {
+		expired = true;
+	}
 }
 
 function manual_breakable_collision(_inst){
@@ -42,5 +44,5 @@ function manual_breakable_collision(_inst){
 	} else if P_PIERCING_EXPIRE == false {
 		p_piercing_expired = true;
 	}
-    else instance_destroy();
+    else expired = true;
 }

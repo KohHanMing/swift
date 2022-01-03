@@ -23,6 +23,9 @@ function update_equipped_weapons(){
 		case obj_deadeye:
 			obj_player.equipped_ranged_weapon_display = spr_deadeye_idle_side;
 			break;
+		case obj_honey_pot:
+			obj_player.equipped_ranged_weapon_display = spr_honey_pot_idle_side;
+			break;
 	}
 	
 	switch(equipped_weapon) {
