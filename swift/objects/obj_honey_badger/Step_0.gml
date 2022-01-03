@@ -1,8 +1,7 @@
 /// @description Override Rotate Weapon
 
-// Inherit Weapon Step
-// Bypass obj_weapon_ranged to avoid sprite overrides
-event_perform_object(obj_weapon,ev_step,ev_step_normal);
+// Inherit Weapon Ranged Step
+event_inherited();
 
 // Rotate Weapon, Adopt Sprites Accordingly
 if (weapon_angle >= 45 && weapon_angle <= 135) {
@@ -23,10 +22,3 @@ if (weapon_angle >= 45 && weapon_angle <= 135) {
 	
 if powering_down image_speed = (image_number/sprite_get_speed(sprite_index))/(ATTACK_COOLDOWN/room_speed);
 else image_speed = 1; // If not powering down, reset image_speed to 1
-
-// Use weapon angle to rotate the weapon accordingly
-image_angle = weapon_angle;
-
-// Flip Sprite Accordingly
-if (weapon_angle >= 90 && weapon_angle < 270) image_yscale = -1;
-else image_yscale = 1;
