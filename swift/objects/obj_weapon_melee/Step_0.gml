@@ -8,9 +8,15 @@ event_inherited();
 
 // weapon_angle = 0, 360 -> image_angle = -45
 // weapon_angle = 180 -> image_angle = 45
-image_angle = 25/9000 * weapon_angle * (360 - weapon_angle) - 45 + ROTATION_OFFSET;
 
-if image_angle - ROTATION_OFFSET < 0 image_xscale = 1;
+pointing_angle = -0.5 * abs(weapon_angle - 180) + 45;
+
+if instance_exists(previous_projectile) > 0 attack_rotation_offset = lerp(attack_rotation_offset, -45, 0.5);
+else attack_rotation_offset = lerp(attack_rotation_offset, 0, 0.5);
+
+image_angle = pointing_angle + ROTATION_OFFSET - sign(pointing_angle) * attack_rotation_offset;
+
+if pointing_angle < 0 image_xscale = 1;
 else {
 	image_xscale = -1;
 	image_angle -= 2 * ROTATION_OFFSET;
