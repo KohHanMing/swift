@@ -22,6 +22,12 @@ if ranged_weapon_id.cooldown > 0 ranged_weapon_id.cooldown -= 1;
 // Swaps
 swap_timer -= 1; // swap_timer is reduced by 1 per step.
 
+// Control Enabled
+if current_weapon_id.DISABLES_CONTROL and instance_exists(current_weapon_id.previous_projectile) {
+	control_enabled = false;
+} else control_enabled = true;
+
+
 // Damage Tint
 damage_tint_scale = 0;
 if damage_tint_time > 0 {

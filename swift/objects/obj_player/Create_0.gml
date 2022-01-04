@@ -31,7 +31,7 @@ INSTANT_SWAP_RANGE = room_speed/2; // Length of instant swap window (in frames).
 
 // Initialize Weapons
 equipped_weapon = "melee";
-equipped_melee_weapon = obj_axe;
+equipped_melee_weapon = obj_subwoofer;
 equipped_ranged_weapon = obj_honey_badger;
 current_weapon_id = noone; // ID of Current Weapon
 melee_weapon_id = instance_create_layer(x,y,"Instances",equipped_melee_weapon); // ID of Melee Weapon
@@ -48,6 +48,7 @@ a_key_pressed = false;
 s_key_pressed = false;
 d_key_pressed = false;
 facing = "down";
+control_enabled = true;
 
 // Player State
 state = "normal";

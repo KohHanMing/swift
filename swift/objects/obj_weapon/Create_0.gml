@@ -7,6 +7,7 @@ WEAPON_OFFSET_FORWARD = 0; // Forward is Positive
 WEAPON_OFFSET_SIDE = 0; // Right is Positive
 WEAPON_FLOAT_AMPLITUDE = 2;
 WEAPON_FLOAT_FREQUENCY = 1/4;
+ROTATES = true;
 
 ATTACK_COOLDOWN = room_speed // Attacks 1 time per second
 
@@ -18,6 +19,8 @@ SPR_WEAPON_IDLE_SIDE = spr_weapon_default; // MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_FIRE_SIDE = spr_weapon_default; // MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_CROSSHAIR = spr_weapon_default_crosshair;
 SFX_WEAPON = -1;
+
+DISABLES_CONTROL = false;
 
 // Projectile Presets
 WEAPON_PROJECTILE = obj_player_projectile; // MUST INITIALISE IN CHILD WEAPON
