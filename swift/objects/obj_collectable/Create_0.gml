@@ -1,5 +1,8 @@
 /// @description Initialize Variables
 
+// Event Enum
+COLLECT_ITEM = 0;
+
 is_collectable = false; // CONDITION NEEDS TO BE INITALISED IN CHILD
 
 // Determines how far from player item is before

@@ -1,5 +1,12 @@
 /// @description Initialize Variables
 
+// Event Enum
+COOLDOWN_NOT_READY = 0;
+NOT_ENOUGH_ENERGY = 1;
+FIRE_WEAPON = 2;
+WEAPON_SWAPPED_IN = 3;
+FINISH_FIRING = 4;
+
 // Constants
 
 // Weapon pivot point differs from player centre. Offset accordingly

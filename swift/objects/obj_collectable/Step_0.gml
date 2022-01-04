@@ -37,7 +37,7 @@ if (has_finished_spawning) {
 		
 			} else {
 				// Collect Item
-				event_user(0);
+				event_user(COLLECT_ITEM);
 			} 
 		}
 	} else {
