@@ -10,7 +10,8 @@ function player_normal(){
 	moving = false;
 	phy_linear_damping = 10;
 
-	if (w_key_pressed or a_key_pressed or s_key_pressed or d_key_pressed) {
+	if (w_key_pressed or a_key_pressed or s_key_pressed or d_key_pressed) and control_enabled {
+		
 		// Decide on goal direction based on keyboard inputs
 		var goal_direction_x = 0;
 		var goal_direction_y = 0;
@@ -48,8 +49,7 @@ function player_normal(){
 			
 			var center = find_sprite_center(id)
 			
-			instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_dash);
-			instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_dash);
+			repeat(2) instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_dash);
 			
 		}
 		

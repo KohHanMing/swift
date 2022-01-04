@@ -1,4 +1,4 @@
 /// @description Delete After Animation
 
-with(DUMMY_ID) event_user(0); // Turn dummy into real enemy
+with(DUMMY_ID) convert_to_enemy(); // Turn dummy into real enemy
 instance_destroy();

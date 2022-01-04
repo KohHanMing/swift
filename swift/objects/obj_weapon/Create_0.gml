@@ -1,10 +1,20 @@
 /// @description Initialize Variables
 
+// Event Enum
+COOLDOWN_NOT_READY = 0;
+NOT_ENOUGH_ENERGY = 1;
+FIRE_WEAPON = 2;
+WEAPON_SWAPPED_IN = 3;
+FINISH_FIRING = 4;
+
 // Constants
 
 // Weapon pivot point differs from player centre. Offset accordingly
 WEAPON_OFFSET_FORWARD = 0; // Forward is Positive
 WEAPON_OFFSET_SIDE = 0; // Right is Positive
+WEAPON_FLOAT_AMPLITUDE = 2;
+WEAPON_FLOAT_FREQUENCY = 1/4;
+ROTATES = true;
 
 ATTACK_COOLDOWN = room_speed // Attacks 1 time per second
 
@@ -12,13 +22,15 @@ ATTACK_COOLDOWN = room_speed // Attacks 1 time per second
 ENERGY_COST = 0; // Default is 0
 
 // Weapon Presets 
-SPR_WEAPON_IDLE_SIDE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
-SPR_WEAPON_FIRE_SIDE = spr_weapon_default; //MUST INITIALISE IN CHILD WEAPON
+SPR_WEAPON_IDLE_SIDE = spr_weapon_default; // MUST INITIALISE IN CHILD WEAPON
+SPR_WEAPON_FIRE_SIDE = spr_weapon_default; // MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_CROSSHAIR = spr_weapon_default_crosshair;
 SFX_WEAPON = -1;
 
+DISABLES_CONTROL = false;
+
 // Projectile Presets
-WEAPON_PROJECTILE = obj_player_projectile; //MUST INITIALISE IN CHILD WEAPON
+WEAPON_PROJECTILE = obj_player_projectile; // MUST INITIALISE IN CHILD WEAPON
 PROJECTILE_OFFSET_FORWARD = 0; // Forward is Positive
 PROJECTILE_OFFSET_SIDE = 0; // Right is Positive
 

@@ -2,7 +2,7 @@ if (!landed) { // If Pod has not landed
 	falling_speed += 1; // Increase Falling Speed
 	y += falling_speed; // Fall
 	if (y > TARGET_Y) {
-		event_user(0); // Pod Landed Event
+		event_user(POD_LANDED); // Pod Landed Event
 	}
 } else { // If Pod has landed
 	

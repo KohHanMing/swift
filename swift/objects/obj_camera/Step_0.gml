@@ -4,40 +4,38 @@
 //show_debug_message(view_camera[0]);
 
 if (instance_exists(obj_player)) {
-	if (instance_exists(obj_honey_badger) and (mouse_check_button(mb_right))) {
-		if (lerp_amt < 0.5) {
-			lerp_amt += 0.03;
-		}
+	if obj_player.current_weapon_id.object_index == obj_deadeye and mouse_check_button(mb_right) {
+		lerp_amt = lerp(lerp_amt, 0.5, 0.1);
 	} else {
-		if (lerp_amt > 0.1) {
-			lerp_amt -= 0.03;
-		}
+		lerp_amt = lerp(lerp_amt, 0.1, 0.1);
 	}
 	
-    x = lerp(obj_player.x, mouse_x, lerp_amt);
-    y = lerp(obj_player.y, mouse_y, lerp_amt);
+	var _x = obj_player.sprite_x;
+	var _y = obj_player.sprite_y;
+	var scope_direction = point_direction(_x, _y, mouse_x, mouse_y);
+	var scope_distance = min(point_distance(_x, _y, mouse_x, mouse_y), MAX_SCOPE)
 	
-	//if (instance_exists(obj_honey_badger) and (mouse_check_button(mb_right))) {
-	//	x = lerp(x, mouse_x, lerp_amt+0.4);
-	//	y = lerp(y, mouse_y, lerp_amt+0.4);
-	//}
-	
-	//show_debug_message("x: " + string(x))
-	//show_debug_message("y: " + string(y))
-	/*
-    if(point_distance(obj_player.x,obj_player.y,x,y) > max_distance) {
-        var dir = point_direction(obj_player.x,obj_player.y,x,y);
-        x = obj_player.x + lengthdir_x(max_distance, dir);
-        y = obj_player.y + lengthdir_y(max_distance, dir);
-    }*/
+    x = lerp(x, lerp(_x, _x + lengthdir_x(scope_distance, scope_direction), lerp_amt), 0.5);
+    y = lerp(y, lerp(_y, _y + lengthdir_y(scope_distance, scope_direction), lerp_amt), 0.5);
 	
 	var cam_centre_offset_x = camera_get_view_width(CAMERA) / 2;
 	var cam_centre_offset_y = camera_get_view_height(CAMERA) / 2;
 	
-	if (shaking) {
-		camera_set_view_pos(CAMERA, x - cam_centre_offset_x + random_range(-shake, shake), y - cam_centre_offset_y + random_range(-shake, shake));
-	} else {
-		camera_set_view_pos(CAMERA, x - cam_centre_offset_x, y - cam_centre_offset_y);
+	var size = ds_list_size(SHAKES); // Size of SHAKES list
+	var shake = 0 // Default shake is 0
+	
+	for (var i=0; i < size; i++) {
+		if SHAKES[|i][0] > shake shake = SHAKES[|i][0]; // Take Largest Shake
+		
+		SHAKES[|i][1] -= 1 // Reduce Duration by 1
+		if SHAKES[|i][1] == 0 { // Shake Expired
+			ds_list_delete(SHAKES, i);
+			i--; // Reduce counter by 1
+			size--; // Reduce list size by 1
+		}
 	}
+	
+	camera_set_view_pos(CAMERA, x - cam_centre_offset_x + random_range(-shake, shake), y - cam_centre_offset_y + random_range(-shake, shake));
+	
 }
 

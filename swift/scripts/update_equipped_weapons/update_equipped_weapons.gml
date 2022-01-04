@@ -8,6 +8,12 @@ function update_equipped_weapons(){
 		case obj_blade:
 			obj_player.equipped_melee_weapon_display = spr_blade_idle;
 			break;
+		case obj_axe:
+			obj_player.equipped_melee_weapon_display = spr_axe_idle;
+			break;
+		case obj_subwoofer:
+			obj_player.equipped_melee_weapon_display = spr_subwoofer_idle;
+			break;
 	}
 	
 	switch(equipped_ranged_weapon) {
@@ -17,19 +23,25 @@ function update_equipped_weapons(){
 		case obj_honey_badger:
 			obj_player.equipped_ranged_weapon_display = spr_honey_badger_idle_side;
 			break;
+		case obj_deadeye:
+			obj_player.equipped_ranged_weapon_display = spr_deadeye_idle_side;
+			break;
+		case obj_honey_pot:
+			obj_player.equipped_ranged_weapon_display = spr_honey_pot_idle_side;
+			break;
 	}
 	
 	switch(equipped_weapon) {
 		case "melee":
 			instance_deactivate_object(ranged_weapon_id);
 			instance_activate_object(melee_weapon_id);
-			if current_weapon_id != melee_weapon_id with(melee_weapon_id) event_user(3); // Swap Weapon In Event
+			if current_weapon_id != melee_weapon_id with(melee_weapon_id) event_user(WEAPON_SWAPPED_IN); // Swap Weapon In Event
 			current_weapon_id = melee_weapon_id; // Update Current Weapon ID
 			break;
 		case "ranged":
 			instance_deactivate_object(melee_weapon_id);
 			instance_activate_object(ranged_weapon_id);
-			if current_weapon_id != ranged_weapon_id with(ranged_weapon_id) event_user(3); // Swap Weapon In Event
+			if current_weapon_id != ranged_weapon_id with(ranged_weapon_id) event_user(WEAPON_SWAPPED_IN); // Swap Weapon In Event
 			current_weapon_id = ranged_weapon_id; // Update Current Weapon ID
 			break;
 	}

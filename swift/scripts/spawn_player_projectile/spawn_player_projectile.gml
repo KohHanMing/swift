@@ -15,7 +15,7 @@ function spawn_player_projectile(_projectile, _offset_forward, _offset_side, _an
 	with(projectile){
 		phy_speed_x = (P_SPEED)*dcos(_angle);
 		phy_speed_y = -(P_SPEED)*dsin(_angle);
-		phy_rotation = -_angle;
+		if P_ROTATES phy_rotation = -_angle;
 		OFFSET_X = offset_x_from_player;
 		OFFSET_Y = offset_y_from_player;
 		owner = obj_player.id;
