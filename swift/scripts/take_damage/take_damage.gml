@@ -9,8 +9,7 @@ function take_damage(_object, _damage){
 	_object.damage_tint_time = _object.damage_tint_time_start;
 	
 	if (_object.object_index == obj_player) {
-		obj_camera.shaking = true;
-		obj_camera.alarm[0] = room_speed/4;
+		add_camera_shake(3, 1/4);
 	}
 	
 	if object_is_ancestor(_object.object_index,obj_enemy) {

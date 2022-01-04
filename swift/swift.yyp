@@ -276,6 +276,7 @@
     {"id":{"name":"obj_spawn_pod_dropping","path":"objects/obj_spawn_pod_dropping/obj_spawn_pod_dropping.yy",},"order":3,},
     {"id":{"name":"player_falling","path":"scripts/player_falling/player_falling.yy",},"order":1,},
     {"id":{"name":"ranged_slime_aggro","path":"scripts/ranged_slime_aggro/ranged_slime_aggro.yy",},"order":2,},
+    {"id":{"name":"add_camera_shake","path":"scripts/add_camera_shake/add_camera_shake.yy",},"order":3,},
     {"id":{"name":"ranged_slime_attack","path":"scripts/ranged_slime_attack/ranged_slime_attack.yy",},"order":3,},
     {"id":{"name":"recharge_dash","path":"scripts/recharge_dash/recharge_dash.yy",},"order":4,},
     {"id":{"name":"init_swift","path":"scripts/init_swift/init_swift.yy",},"order":0,},
