@@ -5,7 +5,7 @@ event_inherited();
 
 // Constants
 DAMAGE = 1;
-LIFETIME_SECONDS = 1/2;
+LIFETIME_SECONDS = 1;
 image_speed = (image_number/sprite_get_speed(sprite_index))/(LIFETIME_SECONDS)
 P_SPEED = 0;
 P_ROTATES = false;
