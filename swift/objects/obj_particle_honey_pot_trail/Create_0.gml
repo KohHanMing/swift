@@ -1,1 +1,1 @@
-phy_angular_velocity = 720 * random_range(-1,1);
+// phy_angular_velocity = 720 * random_range(-1,1);

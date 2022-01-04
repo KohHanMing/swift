@@ -1,7 +1,7 @@
 /// @description Projectile Explodes
 
 // Spawn Particles
-repeat(10) instance_create_layer(x+random_range(-1,1),y+random_range(-1,1),"Instances",obj_particle_honey_pot_expire);
+repeat(20) instance_create_layer(x+random_range(-1,1),y+random_range(-1,1),"Instances",obj_particle_honey_pot_expire);
 instance_create_layer(x+random_range(-1,1),y+random_range(-1,1),"Instances",obj_particle_honey_pot_explosion);
 
 // Create FLash of Light
