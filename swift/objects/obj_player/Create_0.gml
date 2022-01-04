@@ -4,6 +4,10 @@
 // Inherit parent event
 event_inherited();
 
+// Event Enum
+DEATH = 0;
+FIRE_WEAPON = 2;
+
 // Constants
 ACCELERATION_PX_PER_FRAME = 2.5;
 MAX_SPEED_PX_PER_FRAME = 4;

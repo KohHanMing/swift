@@ -1,5 +1,8 @@
 /// @description Initiate constants before inheriting timer
 
+// Event Enum
+COLLISION = 0;
+
 // Declare default constants
 
 DAMAGE = 1;
