@@ -2,9 +2,14 @@
 
 // Toggle equipped_weapon
 
-if (swap_timer > 0) {
+// Swap Fail Conditions
+// Swap Timer not ready
+// Control Disabled
+
+if (swap_timer > 0 or !control_enabled) {
+	
 	audio_play_sound(sfx_swap_fail,99,false);
-	exit; // Exit if swap_timer is active.
+	exit; // Exit Event if Swap Fail
 }
 
 swap_timer = SWAP_COOLDOWN;
