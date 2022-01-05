@@ -1,4 +1,7 @@
 function draw_self_offset(_SCALE) {
+	
+	if SILHOUETTE_SKIP return;
+	
 	draw_sprite_ext(
 		sprite_index,
 		image_index,
@@ -58,7 +61,7 @@ for (var i = 0; i < length; i += 1) { // Loop through Silhouette Array (Renderin
 		var draw_alpha;
 		if object_is_ancestor(object_index,obj_wall) draw_alpha = 1; // Walls Cause Silhouettes
 		else draw_alpha = 0; // Others Cast Silhouettes
-
+		
 		draw_sprite_ext(
 			sprite_index,
 			image_index,
