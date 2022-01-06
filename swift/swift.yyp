@@ -143,6 +143,7 @@
     {"id":{"name":"sfx_enemy_idle2","path":"sounds/sfx_enemy_idle2/sfx_enemy_idle2.yy",},"order":3,},
     {"id":{"name":"obj_load_zone","path":"objects/obj_load_zone/obj_load_zone.yy",},"order":6,},
     {"id":{"name":"sfx_player_ranged","path":"sounds/sfx_player_ranged/sfx_player_ranged.yy",},"order":4,},
+    {"id":{"name":"spr_particle_honey_pot_trail153","path":"sprites/spr_particle_honey_pot_trail153/spr_particle_honey_pot_trail153.yy",},"order":2,},
     {"id":{"name":"sfx_player_melee","path":"sounds/sfx_player_melee/sfx_player_melee.yy",},"order":3,},
     {"id":{"name":"spr_hole","path":"sprites/spr_hole/spr_hole.yy",},"order":4,},
     {"id":{"name":"spr_tooltip_content","path":"sprites/spr_tooltip_content/spr_tooltip_content.yy",},"order":1,},
