@@ -26,6 +26,7 @@ instance_create_depth(0,0,-9000,obj_silhouette); // Create Silhouette Drawer
 
 // Initialize Player
 instance_create_layer(0,0,"Instances",obj_player);
+instance_create_layer(0,0,game_management_layer,obj_cursor);
 
 // Set Ambient Darkness
 ambient_darkness = 0.75; // 0.0 (Full Bright) - 1.0 (Full Dark)
