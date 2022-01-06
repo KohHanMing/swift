@@ -5,6 +5,35 @@ switch (state) {
 
 move_wrap(true, true, sprite_width/2);
 
+// Weapon Change
+
+switch keyboard_lastchar {
+	case "1":
+		equipped_melee_weapon = obj_blade;
+		update_equipped_weapons();
+		break;
+	case "2":
+		equipped_ranged_weapon = obj_honey_badger;
+		update_equipped_weapons();
+		break;
+	case "3":
+		equipped_melee_weapon = obj_axe;
+		update_equipped_weapons();
+		break;
+	case "4":
+		equipped_ranged_weapon = obj_deadeye;
+		update_equipped_weapons();
+		break;
+	case "5":
+		equipped_melee_weapon = obj_subwoofer;
+		update_equipped_weapons();
+		break;
+	case "6":
+		equipped_ranged_weapon = obj_honey_pot;
+		update_equipped_weapons();
+		break;
+}
+
 // Face Direction based on Weapon Angle
 var weapon_angle = current_weapon_id.weapon_angle;
 if (weapon_angle > 225 && weapon_angle < 315) facing = "down";
