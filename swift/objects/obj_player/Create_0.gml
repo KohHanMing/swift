@@ -1,5 +1,4 @@
 /// @description Initialize Player
-// You can write your code in this editor
 
 // Inherit parent event
 event_inherited();
