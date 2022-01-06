@@ -7,31 +7,8 @@ move_wrap(true, true, sprite_width/2);
 
 // Weapon Change
 
-switch keyboard_lastchar {
-	case "1":
-		equipped_melee_weapon = obj_blade;
-		update_equipped_weapons();
-		break;
-	case "2":
-		equipped_ranged_weapon = obj_honey_badger;
-		update_equipped_weapons();
-		break;
-	case "3":
-		equipped_melee_weapon = obj_axe;
-		update_equipped_weapons();
-		break;
-	case "4":
-		equipped_ranged_weapon = obj_deadeye;
-		update_equipped_weapons();
-		break;
-	case "5":
-		equipped_melee_weapon = obj_subwoofer;
-		update_equipped_weapons();
-		break;
-	case "6":
-		equipped_ranged_weapon = obj_honey_pot;
-		update_equipped_weapons();
-		break;
+if keyboard_check_pressed(ord("1")) or keyboard_check_pressed(ord("2 ")) or keyboard_check_pressed(ord("3")) or keyboard_check_pressed(ord("4")) or keyboard_check_pressed(ord("5")) or keyboard_check_pressed(ord("6")) {
+	change_weapon();	
 }
 
 // Face Direction based on Weapon Angle

@@ -1,6 +1,6 @@
 /// @description Attempt to Fire
 
-if (firing) {
+if (cooldown > 0) {
 	// Cooldown not ready
 	event_user(COOLDOWN_NOT_READY);
 }

@@ -33,13 +33,13 @@ function update_equipped_weapons(){
 	
 	if equipped_melee_weapon != melee_weapon_id.object_index {
 		instance_destroy(melee_weapon_id);
-		melee_weapon_id = instance_create_layer(x,y,"Instances",equipped_melee_weapon); // ID of Melee Weapon
+		melee_weapon_id = instance_create_layer(-512,-512,"Instances",equipped_melee_weapon); // ID of Melee Weapon
 		with(melee_weapon_id) event_perform(ev_step,ev_step_begin);
 	}
 	
 	if equipped_ranged_weapon != ranged_weapon_id.object_index {
 		instance_destroy(ranged_weapon_id);
-		ranged_weapon_id = instance_create_layer(x,y,"Instances",equipped_ranged_weapon); // ID of Ranged Weapon
+		ranged_weapon_id = instance_create_layer(-512,-512,"Instances",equipped_ranged_weapon); // ID of Ranged Weapon
 		with(ranged_weapon_id) event_perform(ev_step,ev_step_begin);
 	}
 	

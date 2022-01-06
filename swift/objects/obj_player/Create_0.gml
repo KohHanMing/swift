@@ -63,3 +63,56 @@ swap_timer = 0;
 // Hole
 res_x = 0; // Respawn coordinate after falling into hole
 res_y = 0; // Respawn coordinate after falling into hole
+
+// Methods
+function swap_failed() {
+	audio_play_sound(sfx_swap_fail,99,false);
+}
+
+function change_weapon() {
+	
+	if (swap_timer > 0 or !control_enabled) {
+		swap_failed();
+		return; // Exit Event if Swap Fail
+	}
+	
+	var _previous_melee_weapon_id = melee_weapon_id;
+	var _previous_ranged_weapon_id = ranged_weapon_id;
+	var _previous_weapon_id = current_weapon_id;
+	
+	switch keyboard_lastchar {		
+		
+	case "1":
+		equipped_melee_weapon = obj_blade;
+		equipped_weapon = "melee";
+		break;
+	case "2":
+		equipped_ranged_weapon = obj_honey_badger;
+		equipped_weapon = "ranged";
+		break;
+	case "3":
+		equipped_melee_weapon = obj_axe;
+		equipped_weapon = "melee";
+		break;
+	case "4":
+		equipped_ranged_weapon = obj_deadeye;
+		equipped_weapon = "ranged";
+		break;
+	case "5":
+		equipped_melee_weapon = obj_subwoofer;
+		equipped_weapon = "melee";
+		break;
+	case "6":
+		equipped_ranged_weapon = obj_honey_pot;
+		equipped_weapon = "ranged";
+		break;
+	}	
+	
+	swap_timer = SWAP_COOLDOWN;
+	update_equipped_weapons();
+	
+	if (current_weapon_id == _previous_melee_weapon_id or current_weapon_id == _previous_ranged_weapon_id) and current_weapon_id != _previous_weapon_id {
+		with(current_weapon_id) event_user(WEAPON_QUICKSWAPPED_IN);
+	}
+	
+}

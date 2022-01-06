@@ -1,3 +1,3 @@
-/// @description Weapon Swapped In
+/// @description Finish Firing
 
-cooldown = 0;
+firing = false;
