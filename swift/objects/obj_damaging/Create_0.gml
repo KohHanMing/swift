@@ -22,4 +22,4 @@ expired = false;
 alarm[0] = 1;
 
 // Push Self to Silhouette Array
-array_push(obj_silhouette.silhouette_array, id);
+add_to_silhouette_array(id);

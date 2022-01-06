@@ -351,6 +351,7 @@
     {"id":{"name":"spr_tutorial_two","path":"sprites/spr_tutorial_two/spr_tutorial_two.yy",},"order":18,},
     {"id":{"name":"shd_shadow","path":"shaders/shd_shadow/shd_shadow.yy",},"order":1,},
     {"id":{"name":"spr_weapon_ranged_fire_back","path":"sprites/spr_weapon_ranged_fire_back/spr_weapon_ranged_fire_back.yy",},"order":6,},
+    {"id":{"name":"add_to_silhouette_array","path":"scripts/add_to_silhouette_array/add_to_silhouette_array.yy",},"order":4,},
     {"id":{"name":"spr_player_attack_left","path":"sprites/spr_player_attack_left/spr_player_attack_left.yy",},"order":9,},
     {"id":{"name":"spr_ui_base","path":"sprites/spr_ui_base/spr_ui_base.yy",},"order":1,},
     {"id":{"name":"spr_ui_dash","path":"sprites/spr_ui_dash/spr_ui_dash.yy",},"order":3,},

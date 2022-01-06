@@ -12,3 +12,6 @@ P_ROTATES = false;
 
 P_PIERCING = true;
 KNOCKBACK_RANGE = 128;
+
+// Skip Silhouette
+remove_from_silhouette_array(id);

@@ -13,4 +13,4 @@ HIT_SFX = -1;
 curr_idle_sfx = -1;
 
 // Push Self to Silhouette Array
-array_push(obj_silhouette.silhouette_array, id);
+add_to_silhouette_array(id);

@@ -40,4 +40,4 @@ weapon_angle = 0; // Weapon Angle in Degrees
 cooldown = 0 // Current Attack Cooldown (in Frames)
 
 // Push Self to Silhouette Array
-array_push(obj_silhouette.silhouette_array, id);
+add_to_silhouette_array(id);
