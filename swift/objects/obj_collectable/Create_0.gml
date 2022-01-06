@@ -36,4 +36,4 @@ phy_rotation = 0;
 phy_fixed_rotation = true;
 
 // Push Self to Silhouette Array
-array_push(obj_silhouette.silhouette_array, id);
+add_to_silhouette_array(id);

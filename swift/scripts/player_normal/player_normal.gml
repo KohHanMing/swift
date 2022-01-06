@@ -72,7 +72,7 @@ function player_normal(){
 		if(!dashing) {
 			// Check collision with hole objects
 			hole = collision_point(x, y, obj_hole, false, true);
-			if (hole != noone and can_fall == true) {
+			if (hole != noone) {
 				pos_prev_hole = collision_point(phy_position_xprevious, phy_position_yprevious, obj_hole, false, true);
 				if (pos_prev_hole == noone) {
 					res_x = phy_position_xprevious;
@@ -92,8 +92,5 @@ function player_normal(){
 			}
 		}
 	}
-	
-	// Enable Falling after 1 Step
-	can_fall = true;
 	
 }

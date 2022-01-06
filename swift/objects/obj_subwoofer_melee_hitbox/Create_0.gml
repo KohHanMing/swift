@@ -14,3 +14,6 @@ P_PIERCING = true;
 KNOCKBACK_RANGE = 128;
 
 add_camera_shake(2,LIFETIME_SECONDS);
+
+// Skip Silhouette
+remove_from_silhouette_array(id);
