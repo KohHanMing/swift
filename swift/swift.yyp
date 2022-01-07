@@ -304,6 +304,7 @@
     {"id":{"name":"spr_honey_badger_power_down_back","path":"sprites/spr_honey_badger_power_down_back/spr_honey_badger_power_down_back.yy",},"order":8,},
     {"id":{"name":"spr_blade_melee_hitbox","path":"sprites/spr_blade_melee_hitbox/spr_blade_melee_hitbox.yy",},"order":1,},
     {"id":{"name":"sfx_enemy_ranged","path":"sounds/sfx_enemy_ranged/sfx_enemy_ranged.yy",},"order":7,},
+    {"id":{"name":"spr_enemy_indicator","path":"sprites/spr_enemy_indicator/spr_enemy_indicator.yy",},"order":22,},
     {"id":{"name":"sfx_deflect","path":"sounds/sfx_deflect/sfx_deflect.yy",},"order":0,},
     {"id":{"name":"sfx_player_dash","path":"sounds/sfx_player_dash/sfx_player_dash.yy",},"order":2,},
     {"id":{"name":"sfx_enemy_melee","path":"sounds/sfx_enemy_melee/sfx_enemy_melee.yy",},"order":6,},
