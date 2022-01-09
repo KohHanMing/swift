@@ -17,8 +17,9 @@ instance_create_layer(200,200,game_management_layer,obj_camera);
 go_to_next_tutorial();
 
 // Pause Init
-paused_surf = -1;
-paused = false;
+game_paused_surf = -1;
+game_paused = false;
+game_paused_instances = [];
 
 // Lighting Engine (in order of rendering)
 instance_create_depth(0,0,50,obj_lighting_engine); // Lighting Engine

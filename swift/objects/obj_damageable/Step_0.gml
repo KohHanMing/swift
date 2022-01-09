@@ -1,6 +1,7 @@
-/// @description Check and handle death
-// You can write your code in this editor
+// Inherit Event
+event_inherited();
 
+// Check and handle death
 if (CURR_HEALTH <= 0) {
 	// Basic handle death
 	if (object_index == obj_player) {

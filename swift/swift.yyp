@@ -70,6 +70,7 @@
     {"id":{"name":"spr_pod_rising","path":"sprites/spr_pod_rising/spr_pod_rising.yy",},"order":3,},
     {"id":{"name":"spr_particle_weapon_melee_hit","path":"sprites/spr_particle_weapon_melee_hit/spr_particle_weapon_melee_hit.yy",},"order":4,},
     {"id":{"name":"spr_rusher_move_down","path":"sprites/spr_rusher_move_down/spr_rusher_move_down.yy",},"order":0,},
+    {"id":{"name":"pause_behaviours","path":"scripts/pause_behaviours/pause_behaviours.yy",},"order":12,},
     {"id":{"name":"spr_subwoofer_idle","path":"sprites/spr_subwoofer_idle/spr_subwoofer_idle.yy",},"order":0,},
     {"id":{"name":"projectile_step","path":"scripts/projectile_step/projectile_step.yy",},"order":0,},
     {"id":{"name":"create_following_light","path":"scripts/create_following_light/create_following_light.yy",},"order":3,},

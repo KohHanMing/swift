@@ -1,5 +1,8 @@
 /// @description Set HEALTH of the Damageable, initialize damage_tint_time
 
+// Inherit Event
+event_inherited();
+
 //Initialization, all Damageables must set their HEALTH in Create
 CURR_HEALTH = 0;
 MAX_HEALTH = 0;
