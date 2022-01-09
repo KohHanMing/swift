@@ -24,9 +24,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
-    {"x":8.0,"y":0.0,},
-    {"x":8.0,"y":8.0,},
-    {"x":0.0,"y":8.0,},
+    {"x":96.0,"y":0.0,},
+    {"x":96.0,"y":96.0,},
+    {"x":0.0,"y":96.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
