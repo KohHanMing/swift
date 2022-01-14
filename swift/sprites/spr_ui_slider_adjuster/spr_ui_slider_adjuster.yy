@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"aa6bbe27-46a7-428d-8ac8-c53036c5c373","path":"sprites/spr_ui_slider_slider/spr_ui_slider_slider.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aa6bbe27-46a7-428d-8ac8-c53036c5c373","path":"sprites/spr_ui_slider_slider/spr_ui_slider_slider.yy",},"LayerId":{"name":"f0d85282-f1cb-4a63-ad27-d57a8a97d405","path":"sprites/spr_ui_slider_slider/spr_ui_slider_slider.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ui_slider_slider","path":"sprites/spr_ui_slider_slider/spr_ui_slider_slider.yy",},"resourceVersion":"1.0","name":"aa6bbe27-46a7-428d-8ac8-c53036c5c373","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"aa6bbe27-46a7-428d-8ac8-c53036c5c373","path":"sprites/spr_ui_slider_adjuster/spr_ui_slider_adjuster.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"aa6bbe27-46a7-428d-8ac8-c53036c5c373","path":"sprites/spr_ui_slider_adjuster/spr_ui_slider_adjuster.yy",},"LayerId":{"name":"f0d85282-f1cb-4a63-ad27-d57a8a97d405","path":"sprites/spr_ui_slider_adjuster/spr_ui_slider_adjuster.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ui_slider_adjuster","path":"sprites/spr_ui_slider_adjuster/spr_ui_slider_adjuster.yy",},"resourceVersion":"1.0","name":"aa6bbe27-46a7-428d-8ac8-c53036c5c373","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_ui_slider_slider","path":"sprites/spr_ui_slider_slider/spr_ui_slider_slider.yy",},
+    "spriteId": {"name":"spr_ui_slider_adjuster","path":"sprites/spr_ui_slider_adjuster/spr_ui_slider_adjuster.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3814244d-2814-473a-a45d-9c6f541b7444","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa6bbe27-46a7-428d-8ac8-c53036c5c373","path":"sprites/spr_ui_slider_slider/spr_ui_slider_slider.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3814244d-2814-473a-a45d-9c6f541b7444","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa6bbe27-46a7-428d-8ac8-c53036c5c373","path":"sprites/spr_ui_slider_adjuster/spr_ui_slider_adjuster.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_ui_slider_slider","path":"sprites/spr_ui_slider_slider/spr_ui_slider_slider.yy",},
+    "parent": {"name":"spr_ui_slider_adjuster","path":"sprites/spr_ui_slider_adjuster/spr_ui_slider_adjuster.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_ui_slider_slider",
+    "name": "spr_ui_slider_adjuster",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -97,7 +97,7 @@
     "path": "folders/Sprites/ui.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_ui_slider_slider",
+  "name": "spr_ui_slider_adjuster",
   "tags": [],
   "resourceType": "GMSprite",
 }
