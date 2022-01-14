@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_start",
-    "path": "sprites/spr_start/spr_start.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
-  "parentObjectId": {
-    "name": "obj_menu_button",
-    "path": "objects/obj_menu_button/obj_menu_button.yy",
-  },
+  "persistent": true,
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -33,7 +27,7 @@
     "path": "folders/Objects/game_management/menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_start_button",
+  "name": "obj_menu_element",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_controls_button",
-    "path": "sprites/spr_controls_button/spr_controls_button.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
-  "parentObjectId": {
-    "name": "obj_menu_button",
-    "path": "objects/obj_menu_button/obj_menu_button.yy",
-  },
+  "persistent": true,
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,6 +19,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +28,7 @@
     "path": "folders/Objects/game_management/menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_controls_button",
+  "name": "obj_menu_manager",
   "tags": [],
   "resourceType": "GMObject",
 }

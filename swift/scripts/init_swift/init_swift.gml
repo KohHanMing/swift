@@ -2,4 +2,5 @@
 
 function init_swift(){
 	instance_create_layer(0,0,"Instances",obj_soundtrack_manager); // Create Soundtrack Manager
+	instance_create_layer(0,0,"Instances",obj_menu_manager); // Create Menu Manager
 }

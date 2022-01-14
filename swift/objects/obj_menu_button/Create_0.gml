@@ -1,7 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+// Inherit the parent event
+event_inherited();
 
-//Constants
-IMAGE_SCALE_NOT_PRESSED = 1;
-IMAGE_SCALE_PRESSED = 0.8;
-NEXT_ROOM = rm_init_swift;
+text = "";
+text_offset = 0;
+on_click = "";
+pressed = false;

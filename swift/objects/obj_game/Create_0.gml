@@ -14,7 +14,8 @@ instance_create_layer(0,0,game_management_layer,obj_ui);
 instance_create_layer(0,0,game_management_layer,obj_level_manager);
 instance_create_layer(0,0,game_management_layer,obj_tutorial_manager);
 instance_create_layer(200,200,game_management_layer,obj_camera);
-go_to_next_tutorial();
+
+go_to_next_level(); // Start Game
 
 // Pause Init
 paused_surf = -1;

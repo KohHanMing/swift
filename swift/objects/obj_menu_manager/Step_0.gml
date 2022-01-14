@@ -1,0 +1,1 @@
+if menu_state_prev != menu_state create_menu(menu_state); // Draw Menu if it has been updated
