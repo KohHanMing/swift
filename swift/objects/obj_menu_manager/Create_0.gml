@@ -3,6 +3,9 @@
 /* Documentation
 		Button Object
 		["BUTTON", TEXT, FUNCTION, SIZE_PRESET]
+		
+		Slider Object
+		["SLIDER", TEXT, MIN, MAX]
 */
 
 // Menu List
@@ -27,6 +30,8 @@ ds_list_add(PAUSE_MENU, ["BUTTON", "UNPAUSE", "LAST_MENU"]);
 ds_list_add(PAUSE_MENU, ["BUTTON", "OPTIONS", "CHANGE_MENU", OPTIONS_MENU]);
 
 // Options 
+ds_list_add(OPTIONS_MENU, ["SLIDER", "MUSIC", 0, 100]);
+ds_list_add(OPTIONS_MENU, ["SLIDER", "SOUNDS", 0, 100]);
 ds_list_add(OPTIONS_MENU, ["BUTTON", "CONTROLS", "CHANGE_MENU", CONTROLS_MENU]);
 ds_list_add(OPTIONS_MENU, ["BUTTON", "BACK", "LAST_MENU"]);
 
@@ -74,6 +79,16 @@ function create_menu(_menu_state) {
 				
 				_new_element.image_xscale = 3;
 				break;
+				
+			case "SLIDER":
+				
+				var _new_element = instance_create_layer(0,vertical_offset,"Instances",obj_menu_slider);
+				_new_element.text = element[1];
+				_new_element.slider_min = element[2];
+				_new_element.slider_max = element[3];
+				
+				_new_element.image_xscale = 3;
+				break;
 	
 		}
 		
@@ -97,7 +112,7 @@ function create_menu(_menu_state) {
 		} 
 	}
 	
-	// Append Menu to List
+	// Append Current Menu to List
 	if ds_list_find_value(menu_list, ds_list_size(menu_list)-1) != menu_state ds_list_add(menu_list,menu_state);
 	
 }

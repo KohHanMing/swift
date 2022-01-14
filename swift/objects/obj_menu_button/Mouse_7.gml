@@ -10,8 +10,6 @@ if pressed {
 			with (obj_menu_manager) {
 				menu_state = ds_list_find_value(menu_list,ds_list_size(menu_list)-2);
 				ds_list_delete(menu_list,ds_list_size(menu_list)-1);
-				for (var i = 0; i < ds_list_size(menu_list);i++) show_debug_message(ds_list_find_value(menu_list,i));
-				show_debug_message("");
 			}
 			break;
 			
