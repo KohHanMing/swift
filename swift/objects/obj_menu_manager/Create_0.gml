@@ -5,21 +5,39 @@
 		["BUTTON", TEXT, FUNCTION, SIZE_PRESET]
 */
 
+// Menu List
+menu_list = ds_list_create();
+
 // No Menu
 NONE = ds_list_create();
 
-// Start Menu
 START_MENU = ds_list_create();
+PAUSE_MENU = ds_list_create();
+OPTIONS_MENU = ds_list_create();
+CONTROLS_MENU = ds_list_create();
+CREDITS = ds_list_create();
+
+// Start Menu
 ds_list_add(START_MENU, ["BUTTON", "START", "START_GAME"]);
-ds_list_add(START_MENU, ["BUTTON", "OPTIONS", "OPTIONS"]);
+ds_list_add(START_MENU, ["BUTTON", "OPTIONS", "CHANGE_MENU", OPTIONS_MENU]);
+ds_list_add(START_MENU, ["BUTTON", "CREDITS", "CHANGE_MENU", CREDITS]);
 
 // Pause Menu
-PAUSE_MENU = ds_list_create();
-ds_list_add(PAUSE_MENU, ["BUTTON", "UNPAUSE", "CLOSE_MENU"]);
-ds_list_add(PAUSE_MENU, ["BUTTON", "OPTIONS", "OPTIONS"]);
+ds_list_add(PAUSE_MENU, ["BUTTON", "UNPAUSE", "LAST_MENU"]);
+ds_list_add(PAUSE_MENU, ["BUTTON", "OPTIONS", "CHANGE_MENU", OPTIONS_MENU]);
+
+// Options 
+ds_list_add(OPTIONS_MENU, ["BUTTON", "CONTROLS", "CHANGE_MENU", CONTROLS_MENU]);
+ds_list_add(OPTIONS_MENU, ["BUTTON", "BACK", "LAST_MENU"]);
+
+// Controls Menu
+ds_list_add(CONTROLS_MENU, ["BUTTON", "BACK", "LAST_MENU"]);
+
+// Credits
+ds_list_add(CREDITS, ["BUTTON", "BACK", "LAST_MENU"]);
 
 menu_state = START_MENU; // Keeps track of current menu
-menu_state_prev = -1; // Keeps track of whether menu change has been done
+menu_state_prev = NONE; // Keeps track of whether menu change has been done
 
 
 // Initialize Variables
@@ -52,6 +70,8 @@ function create_menu(_menu_state) {
 				var _new_element = instance_create_layer(0,vertical_offset,"Instances",obj_menu_button);
 				_new_element.text = element[1];
 				_new_element.on_click = element[2];
+				if element[2] == "CHANGE_MENU" _new_element.target = element[3];
+				
 				_new_element.image_xscale = 3;
 				break;
 	
@@ -77,5 +97,7 @@ function create_menu(_menu_state) {
 		} 
 	}
 	
+	// Append Menu to List
+	if ds_list_find_value(menu_list, ds_list_size(menu_list)-1) != menu_state ds_list_add(menu_list,menu_state);
 	
 }
