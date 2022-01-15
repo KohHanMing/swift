@@ -20,5 +20,10 @@ function take_damage(_object, _damage){
 	}
 	
 	audio_stop_sound(_object.curr_idle_sfx);
-	play_sfx(_object.HIT_SFX,false);
+	if (_object.object_index == obj_player) {
+		var i = string(irandom_range(1, 2));
+		play_sfx(asset_get_index("sfx_player_hit"+i), false);
+	} else {
+		play_sfx(_object.HIT_SFX,false);
+	}
 }
