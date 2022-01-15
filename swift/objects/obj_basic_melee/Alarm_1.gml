@@ -3,7 +3,7 @@
 switch (attack_state) {
 	case ATTACK_WINDING_UP:
 		spawn_enemy_melee_hitbox(ATTACK_HIT_BOX, attack_distance, attack_direction);
-		audio_play_sound(ATTACK_SFX, 99, false);
+		play_sfx(ATTACK_SFX, false);
 		
 		attack_state = ATTACK_FOLLOW_THROUGH;
 		// Set follow through timer

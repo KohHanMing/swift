@@ -12,5 +12,5 @@ function take_damage(_object, _damage){
 		obj_camera.alarm[0] = room_speed/4;
 	}
 	audio_stop_sound(_object.curr_idle_sfx);
-	audio_play_sound_at(_object.HIT_SFX,x,y,0,falloff_ref_dist,falloff_max_dist,1,false,99);
+	play_sfx(_object.HIT_SFX,false);
 }

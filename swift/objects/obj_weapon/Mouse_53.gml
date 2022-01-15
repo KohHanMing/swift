@@ -8,7 +8,7 @@ if (firing) {
 else if (obj_player.CURR_ENERGY < ENERGY_COST) {
 	// Not enough energy
 	event_user(1);
-	audio_play_sound(sfx_noenergy,99,false);
+	play_sfx(sfx_noenergy,false);
 }
 
 else {

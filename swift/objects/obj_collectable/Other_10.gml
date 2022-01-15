@@ -1,5 +1,5 @@
 /// @description Item Collected
 
-audio_play_sound(sfx_pickup_collectible, 99, false);
+play_sfx(sfx_pickup_collectible, false);
 
 instance_destroy();

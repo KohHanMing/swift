@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.72,
   "preload": false,
@@ -18,6 +19,9 @@
   },
   "resourceVersion": "1.0",
   "name": "sfx_swap_ranged",
-  "tags": [],
+  "tags": [
+    "sound",
+    "sfx",
+  ],
   "resourceType": "GMSound",
 }

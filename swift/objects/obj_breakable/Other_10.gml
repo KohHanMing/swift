@@ -7,4 +7,4 @@ if (image_index == image_number-1) {
 }
 image_index += 1;
 
-audio_play_sound(sfx_wall_break, 99, false);
+play_sfx(sfx_wall_break, false);

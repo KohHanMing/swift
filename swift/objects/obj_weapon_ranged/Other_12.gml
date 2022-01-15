@@ -14,4 +14,4 @@ spawn_player_projectile(WEAPON_PROJECTILE, PROJECTILE_OFFSET_FORWARD, PROJECTILE
 	
 alarm[0] = ATTACK_COOLDOWN // Attacks 1 time per second
 	
-audio_play_sound(SFX_WEAPON, 99, false);
+play_sfx(SFX_WEAPON, false);

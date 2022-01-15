@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.85,
   "preload": false,
@@ -18,6 +19,9 @@
   },
   "resourceVersion": "1.0",
   "name": "sfx_noenergy",
-  "tags": [],
+  "tags": [
+    "sound",
+    "sfx",
+  ],
   "resourceType": "GMSound",
 }
