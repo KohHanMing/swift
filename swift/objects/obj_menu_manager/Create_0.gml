@@ -31,7 +31,7 @@ ds_list_add(PAUSE_MENU, ["BUTTON", "OPTIONS", "CHANGE_MENU", OPTIONS_MENU]);
 
 // Options 
 ds_list_add(OPTIONS_MENU, ["SLIDER", "MUSIC", 0, 1, "PERCENTAGE", "soundtrack_volume", "update_soundtrack_volume"]);
-ds_list_add(OPTIONS_MENU, ["SLIDER", "SOUNDS", 0, 1, "PERCENTAGE", "sfx_volume", "sfx_soundtrack_volume"]);
+ds_list_add(OPTIONS_MENU, ["SLIDER", "SOUNDS", 0, 1, "PERCENTAGE", "sfx_volume", "update_sfx_volume"]);
 ds_list_add(OPTIONS_MENU, ["BUTTON", "CONTROLS", "CHANGE_MENU", CONTROLS_MENU]);
 ds_list_add(OPTIONS_MENU, ["BUTTON", "BACK", "LAST_MENU"]);
 

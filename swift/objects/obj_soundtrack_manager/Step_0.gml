@@ -17,5 +17,3 @@ if (is_loaded) {
 		transition(curr_track_inst, get_curr_trackid());
 	}
 }
-
-show_debug_message(string(audio_sound_get_gain(curr_track_inst)));

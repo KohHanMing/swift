@@ -3,7 +3,7 @@
 // Toggle equipped_weapon
 
 if (swap_timer > 0) {
-	audio_play_sound(sfx_swap_fail,99,false);
+	play_sfx(sfx_swap_fail, false);
 	exit; // Exit if swap_timer is active.
 }
 

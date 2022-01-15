@@ -4,4 +4,4 @@
 event_inherited();
 
 // Sound
-audio_play_sound(sfx_swap_melee, 99, false);
+play_sfx(sfx_swap_melee, false);
