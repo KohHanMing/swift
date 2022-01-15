@@ -11,6 +11,7 @@ slider_max = 0;
 
 value = 0;
 variable_name = "";
+handler = "";
 
 adjusting = false; // Boolean for whether slider is currently being adjusted
 

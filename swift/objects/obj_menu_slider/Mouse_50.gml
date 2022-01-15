@@ -8,5 +8,6 @@ if adjusting { // Only change when adjustment is active
 	value = slider_min + (mouse_clamped_x-x-slider_padding)/slider_width * slider_range;
 	
 	variable_global_set(variable_name,value);
+	// slider_changed(handler);
 	
 }

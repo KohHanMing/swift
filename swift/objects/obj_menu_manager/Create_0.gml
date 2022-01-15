@@ -5,7 +5,7 @@
 		["BUTTON", TEXT, FUNCTION, SIZE_PRESET]
 		
 		Slider Object
-		["SLIDER", TEXT, MIN, MAX, DISPLAY_TYPE, VARIABLE]
+		["SLIDER", TEXT, MIN, MAX, DISPLAY_TYPE, VARIABLE, HANDLER]
 */
 
 // Menu List
@@ -30,8 +30,8 @@ ds_list_add(PAUSE_MENU, ["BUTTON", "UNPAUSE", "LAST_MENU"]);
 ds_list_add(PAUSE_MENU, ["BUTTON", "OPTIONS", "CHANGE_MENU", OPTIONS_MENU]);
 
 // Options 
-ds_list_add(OPTIONS_MENU, ["SLIDER", "MUSIC", 0, 1, "PERCENTAGE", "soundtrack_volume"]);
-ds_list_add(OPTIONS_MENU, ["SLIDER", "SOUNDS", 0, 1, "PERCENTAGE", "sfx_volume"]);
+ds_list_add(OPTIONS_MENU, ["SLIDER", "MUSIC", 0, 1, "PERCENTAGE", "soundtrack_volume", "update_soundtrack_volume"]);
+ds_list_add(OPTIONS_MENU, ["SLIDER", "SOUNDS", 0, 1, "PERCENTAGE", "sfx_volume", "sfx_soundtrack_volume"]);
 ds_list_add(OPTIONS_MENU, ["BUTTON", "CONTROLS", "CHANGE_MENU", CONTROLS_MENU]);
 ds_list_add(OPTIONS_MENU, ["BUTTON", "BACK", "LAST_MENU"]);
 
@@ -88,6 +88,7 @@ function create_menu(_menu_state) {
 				_new_element.slider_max = element[3];
 				_new_element.display_type = element[4];
 				_new_element.variable_name = element[5];
+				_new_element.handler = element[6];
 				
 				with(_new_element) update_slider_value();
 				
