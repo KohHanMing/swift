@@ -3,7 +3,19 @@ draw_self();
 draw_set_font(font_menu);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(x+sprite_width/2,y+sprite_height/2+text_offset,text + ": " + string(value));
+
+switch (display_type) {
+	
+	case "NORMAL":
+		draw_text(x+sprite_width/2,y+sprite_height/2+text_offset,text + ": " + string(value));
+		break;
+	
+	case "PERCENTAGE":
+		var percentage = round(value/(slider_max-slider_min) * 100);
+		draw_text(x+sprite_width/2,y+sprite_height/2+text_offset,text + ": " + string(percentage)+" %");
+		break;
+	
+}
 
 var proportion = value / (slider_max - slider_min); // Position of slider from 0.0 to 1.0
 var slider_adjuster_width = sprite_get_width(spr_ui_slider_adjuster) // Width of Slider Adjuster
