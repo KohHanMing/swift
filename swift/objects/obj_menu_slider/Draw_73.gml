@@ -6,11 +6,11 @@ draw_set_valign(fa_middle);
 
 switch (display_type) {
 	
-	case "NORMAL":
+	case "NORMAL": // Display Value
 		draw_text(x+sprite_width/2,y+sprite_height/2+text_offset,text + ": " + string(value));
 		break;
 	
-	case "PERCENTAGE":
+	case "PERCENTAGE": // Display as Percentage
 		var percentage = round(value/(slider_max-slider_min) * 100);
 		draw_text(x+sprite_width/2,y+sprite_height/2+text_offset,text + ": " + string(percentage)+" %");
 		break;
