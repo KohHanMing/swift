@@ -3,6 +3,6 @@
 function update_soundtrack_volume(){
 	var sound_assets = tag_get_asset_ids("soundtrack", asset_sound);
 	for (var i = 0; i < array_length(sound_assets); i++) {
-		audio_sound_gain(sound_assets[i], soundtrack_volume*ds_map_find_value(sound_vols, sound_assets[i]), 0);
+		audio_sound_gain(sound_assets[i], global.soundtrack_volume*ds_map_find_value(global.sound_vols, sound_assets[i]), 0);
 	}
 }

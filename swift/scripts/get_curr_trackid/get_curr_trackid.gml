@@ -2,10 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function get_curr_trackid(){
 	var trackname
-	if (curr_track == "main" or curr_track == "tutorial_combat" or curr_track == "ending") {
-		trackname = curr_track;
+	if (global.curr_track == "main" or global.curr_track == "tutorial_combat" or global.curr_track == "ending") {
+		trackname = global.curr_track;
 	} else {
-		trackname = curr_track+curr_env;
+		trackname = global.curr_track+global.curr_env;
 	}
 	return asset_get_index(trackname);
 }

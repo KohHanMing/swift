@@ -24,8 +24,8 @@ draw_text_transformed(32, 240, weapon_ranged_angle_firing, 1.5, 1.5, 0);
 var player_health = "Player Health " + string(obj_player.HEALTH);
 draw_text_transformed(32, 336, player_health, 1.5, 1.5, 0);
 
-var curr_track = "Current track " + string(audio_get_name(obj_soundtrack_manager.curr_track_inst));
-draw_text_transformed(32, 376, curr_track, 1.5, 1.5, 0);
+var global.curr_track = "Current track " + string(audio_get_name(obj_soundtrack_manager.global.curr_track_inst));
+draw_text_transformed(32, 376, global.curr_track, 1.5, 1.5, 0);
 
 var curr_volume = "Current volume " + string(obj_soundtrack_manager.curr_volume);
 draw_text_transformed(32, 416, curr_volume, 1.5, 1.5, 0);
