@@ -1,11 +1,5 @@
 /// @description Game Initialization
 
-// Window Size
-display_set_gui_size(2560,1440);
-global.gui_width = display_get_gui_width();
-global.gui_height = display_get_gui_height();
-surface_resize(application_surface, global.gui_width, global.gui_height)
-
 // Remove Cursor
 window_set_cursor(cr_none)
 
