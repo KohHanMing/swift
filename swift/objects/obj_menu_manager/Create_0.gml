@@ -26,7 +26,7 @@ ds_list_add(START_MENU, ["BUTTON", "OPTIONS", "CHANGE_MENU", OPTIONS_MENU]);
 ds_list_add(START_MENU, ["BUTTON", "CREDITS", "CHANGE_MENU", CREDITS]);
 
 // Pause Menu
-ds_list_add(PAUSE_MENU, ["BUTTON", "UNPAUSE", "LAST_MENU"]);
+ds_list_add(PAUSE_MENU, ["BUTTON", "UNPAUSE", "UNPAUSE"]);
 ds_list_add(PAUSE_MENU, ["BUTTON", "OPTIONS", "CHANGE_MENU", OPTIONS_MENU]);
 
 // Options 
@@ -72,7 +72,7 @@ function create_menu(_menu_state) {
 		switch(element[0]) {
 	
 			case "BUTTON":
-				var _new_element = instance_create_layer(0,vertical_offset,"Instances",obj_menu_button);
+				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_button);
 				_new_element.text = element[1];
 				_new_element.on_click = element[2];
 				if element[2] == "CHANGE_MENU" _new_element.target = element[3];
@@ -82,7 +82,7 @@ function create_menu(_menu_state) {
 				
 			case "SLIDER":
 				
-				var _new_element = instance_create_layer(0,vertical_offset,"Instances",obj_menu_slider);
+				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_slider);
 				_new_element.text = element[1];
 				_new_element.slider_min = element[2];
 				_new_element.slider_max = element[3];
@@ -100,7 +100,6 @@ function create_menu(_menu_state) {
 		total_width = max(total_width,_new_element.bbox_right); // Check for maximum width
 		vertical_offset += _new_element.sprite_height + PADDING; // Calculate where to draw next button
 		
-		
 	}
 	
 	var horizontal_align_adjustment = (camera_get_view_width(view_camera[0]) - total_width) / 2; // Horizontally center menu
@@ -112,12 +111,28 @@ function create_menu(_menu_state) {
 	var _size = ds_list_size(global.MENU_ELEMENTS);
 	for (var i=0;i<_size;i++) {
 		with(ds_list_find_value(global.MENU_ELEMENTS,i)) {
-			x += horizontal_align_adjustment + camera_get_view_x(view_camera[0]); // Adjust horizontal position
-			y += vertical_align_adjustment + camera_get_view_y(view_camera[0]); // Adjust vertical position
+			offset_x = x + horizontal_align_adjustment;
+			offset_y = y + vertical_align_adjustment;
+			update_position();
 		} 
 	}
 	
 	// Append Current Menu to List
-	if ds_list_find_value(menu_list, ds_list_size(menu_list)-1) != menu_state ds_list_add(menu_list,menu_state);
+	if menu_state == NONE ds_list_clear(menu_list);
+	else if ds_list_find_value(menu_list, ds_list_size(menu_list)-1) != menu_state ds_list_add(menu_list,menu_state);
+	
+}
+
+function return_to_previous_menu() { // Back Button
+	
+	if menu_state == NONE return;
+	else if menu_state == START_MENU return;
+	else if menu_state == PAUSE_MENU {
+		menu_state = NONE;
+		with (obj_game) unpause_game();
+		return;
+	}
+	menu_state = ds_list_find_value(menu_list,ds_list_size(menu_list)-2);
+	ds_list_delete(menu_list,ds_list_size(menu_list)-1);
 	
 }

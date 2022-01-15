@@ -8,8 +8,7 @@ if pressed { // Only execute if left press occured on this button without mouse 
 		
 		case "LAST_MENU": // Return to previous menu
 			with (obj_menu_manager) {
-				menu_state = ds_list_find_value(menu_list,ds_list_size(menu_list)-2);
-				ds_list_delete(menu_list,ds_list_size(menu_list)-1);
+				return_to_previous_menu();
 			}
 			break;
 			
@@ -24,6 +23,11 @@ if pressed { // Only execute if left press occured on this button without mouse 
 			with (obj_menu_manager) {
 				menu_state = NONE;
 			}
+			break;
+			
+		case "UNPAUSE": // Unpause Game
+			with (obj_menu_manager) menu_state = NONE;
+			with (obj_game) unpause_game();
 			break;
 			
 		case "CHANGE_MENU": // Change Menu to target
