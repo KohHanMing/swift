@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.73,
   "preload": false,
@@ -18,6 +19,9 @@
   },
   "resourceVersion": "1.0",
   "name": "sfx_enemy_idle4",
-  "tags": [],
+  "tags": [
+    "sound",
+    "sfx",
+  ],
   "resourceType": "GMSound",
 }

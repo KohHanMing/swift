@@ -1,13 +1,5 @@
 /// @description Choose soundtrack to play
 if (is_loaded) {
-	var trackname
-	if (curr_track == "main" or curr_track == "tutorial_combat" or curr_track == "ending") {
-		trackname = curr_track;
-	} else {
-		trackname = curr_track+curr_env;
-	}
-	var trackid = asset_get_index(trackname);
-
 	if (instance_exists(obj_load_zone)) {
 		if (obj_load_zone.triggered and curr_track == "ambient") {
 			curr_track = "combat";
@@ -21,7 +13,9 @@ if (is_loaded) {
 		}
 	}
 
-	if (!audio_is_playing(trackid)) {
-		transition(obj_soundtrack_manager.curr_track_inst, trackid);
+	if (!audio_is_playing(get_curr_trackid())) {
+		transition(curr_track_inst, get_curr_trackid());
 	}
 }
+
+show_debug_message(string(audio_sound_get_gain(curr_track_inst)));

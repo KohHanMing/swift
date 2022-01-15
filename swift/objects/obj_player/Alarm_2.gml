@@ -5,7 +5,7 @@ if (CURR_ENERGY >= MAX_ENERGY) {
 } else {
 	CURR_ENERGY += ENERGY_INCREMENT;
 	if (CURR_ENERGY >= MAX_ENERGY) {
-		audio_play_sound(sfx_fullenergy,99,false);
+		play_sfx(sfx_fullenergy,false);
 	}
 }
 
