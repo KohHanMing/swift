@@ -1,5 +1,8 @@
 /// @description Initiate constants before inheriting timer
 
+// Inherit Event
+event_inherited();
+
 // Event Enum
 COLLISION = 0;
 
@@ -12,7 +15,7 @@ P_RANGE = 200;
 P_MASS = 0.1;
 P_ROTATES = true;
 
-//Pierce
+// Pierce
 P_PIERCING = false;
 P_PIERCING_EXPIRE = true;
 p_hit_list = ds_list_create();
