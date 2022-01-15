@@ -102,17 +102,17 @@ function create_menu(_menu_state) {
 		
 	}
 	
-	var horizontal_align_adjustment = (480 - total_width) / 2; // Horizontally center menu
+	var horizontal_align_adjustment = (camera_get_view_width(view_camera[0]) - total_width) / 2; // Horizontally center menu
 	
 	var total_height = vertical_offset - PADDING; // Total menu height
-	var vertical_align_adjustment = (270 - total_height) / 2; // Vertically center menu
+	var vertical_align_adjustment = (camera_get_view_height(view_camera[0]) - total_height) / 2; // Vertically center menu
 	
 	// Offset Menu Elements accordingly
 	var _size = ds_list_size(global.MENU_ELEMENTS);
 	for (var i=0;i<_size;i++) {
 		with(ds_list_find_value(global.MENU_ELEMENTS,i)) {
-			x += horizontal_align_adjustment; // Adjust horizontal position
-			y += vertical_align_adjustment; // Adjust vertical position
+			x += horizontal_align_adjustment + camera_get_view_x(view_camera[0]); // Adjust horizontal position
+			y += vertical_align_adjustment + camera_get_view_y(view_camera[0]); // Adjust vertical position
 		} 
 	}
 	
