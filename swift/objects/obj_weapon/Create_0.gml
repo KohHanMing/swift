@@ -49,7 +49,7 @@ function attempt_to_fire() {
 	// Attempt to Fire
 	if !obj_player.control_enabled return;
 
-	if (firing) {
+	if cooldown > 0 {
 		// Cooldown not ready
 		event_user(COOLDOWN_NOT_READY);
 	}
