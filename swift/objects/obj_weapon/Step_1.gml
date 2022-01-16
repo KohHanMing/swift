@@ -1,6 +1,10 @@
 /// @description Post-Create
 
 if !variable_instance_exists(id,"POST_CREATE") {
+	
+	// Cooldown
+	cooldown = ATTACK_COOLDOWN;
+	
 	// Read Damage
 	dummy_projectile = instance_create_layer(-512,-512,"Instances",WEAPON_PROJECTILE);
 	WEAPON_DAMAGE = dummy_projectile.DAMAGE;
