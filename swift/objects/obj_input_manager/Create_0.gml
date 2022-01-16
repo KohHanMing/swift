@@ -33,7 +33,7 @@ for (var i = 0; i < array_length(key_list) ; i++) {
 }
 
 var l_c2s = ds_map_create();
-global.keyboard_key_to_name = l_c2s;
+global.key_to_name = l_c2s;
 var l_k, l_c, l_s, l_slq;
 
 l_c2s[?1] = "LMB";
@@ -128,7 +128,7 @@ for (l_k = 96; l_k < 106; l_k += 1) {
 l_c2s[?0] = "None";
 
 for (l_k = 1; l_k < 256; l_k += 1) {
-    l_s = "Key" + string(l_k);
+    l_s = "Button " + string(l_k);
     if (!ds_map_exists(l_c2s, l_k)) l_c2s[?l_k] = l_s;
     l_slq = string_lower(l_s);
 

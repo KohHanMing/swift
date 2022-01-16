@@ -1,4 +1,4 @@
-///@description Append SLIDER to _menu
+///@description Append TEXT to _menu
 ///@param _menu Menu ds_list
 ///@param _text Display Text
 

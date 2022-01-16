@@ -3,25 +3,25 @@ if rebinding {
 	image_blend = c_white;
 	sprite_index = spr_menu_button_highlight;
 	
-	if global.key_escape_pressed {
+	if global.key_escape_pressed { // Cancel binding
 		
 		rebinding = false;
-		with(obj_menu_element) disabled = false;
-		global.key_escape_pressed = false;
+		with(obj_menu_element) disabled = false; // Enable other menu elemnets
+		global.key_escape_pressed = false; // Override escape key
 		
-	} else if keyboard_check_pressed(vk_anykey) {
+	} else if keyboard_check_pressed(vk_anykey) { // Handle keyboard keybind
 		
-		variable_global_set(keybind,keyboard_lastkey);
-		variable_global_set(keybind_mode,"keyboard");
+		variable_global_set(keybind,keyboard_lastkey); // Store keybind
+		variable_global_set(keybind_mode,"keyboard"); // Keybind is a keyboard input
 		rebinding = false;
-		with(obj_menu_element) disabled = false;
+		with(obj_menu_element) disabled = false; // Enable other menu elements
 		
-	} else if mouse_check_button_pressed(mb_any) {
+	} else if mouse_check_button_pressed(mb_any) { // Handle mouse keybind
 		
-		variable_global_set(keybind,mouse_lastbutton);
-		variable_global_set(keybind_mode,"mouse");
+		variable_global_set(keybind,mouse_lastbutton); // Store keybind
+		variable_global_set(keybind_mode,"mouse"); // Keybind is a mouse input
 		rebinding = false;
-		with(obj_menu_element) disabled = false;
+		with(obj_menu_element) disabled = false; // Enable other menu elements
 	}
 	
 } else {
@@ -41,6 +41,7 @@ if rebinding {
 				with(obj_menu_keybind) rebinding = false;
 				with(obj_menu_element) disabled = true;
 				rebinding = true;
+				pressed = false;
 			}
 		}
 		
