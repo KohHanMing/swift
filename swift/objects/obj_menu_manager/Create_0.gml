@@ -21,7 +21,14 @@ function create_menu(_menu_state) {
 		var element = ds_list_find_value(_menu_state,i);
 		
 		switch(element[0]) {
-	
+			
+			case "TEXT":
+				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_text);
+				_new_element.text = element[1];
+				
+				show_debug_message(_new_element.sprite_height)
+				break;
+			
 			case "BUTTON":
 				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_button);
 				_new_element.text = element[1];
@@ -62,7 +69,7 @@ function create_menu(_menu_state) {
 	var _size = ds_list_size(global.MENU_ELEMENTS);
 	for (var i=0;i<_size;i++) {
 		with(ds_list_find_value(global.MENU_ELEMENTS,i)) {
-			offset_x = x + horizontal_align_adjustment;
+			offset_x = x + horizontal_align_adjustment + (total_width-sprite_width)/2; // Horizontally center self
 			offset_y = y + vertical_align_adjustment;
 			update_position();
 		} 
@@ -101,24 +108,29 @@ CONTROLS_MENU = ds_list_create();
 CREDITS = ds_list_create();
 
 // Start Menu
+menu_add_text(START_MENU, "SWIFT");
 menu_add_button(START_MENU, "START", "START_GAME");
 menu_add_button(START_MENU, "OPTIONS", "CHANGE_MENU", OPTIONS_MENU);
 menu_add_button(START_MENU, "CREDITS", "CHANGE_MENU", CREDITS);
 
 // Pause Menu
+menu_add_text(PAUSE_MENU, "GAME PAUSED");
 menu_add_button(PAUSE_MENU, "UNPAUSE", "UNPAUSE");
 menu_add_button(PAUSE_MENU, "OPTIONS", "CHANGE_MENU", OPTIONS_MENU);
 
 // Options 
+menu_add_text(OPTIONS_MENU, "OPTIONS");
 menu_add_slider(OPTIONS_MENU, "MUSIC", 0, 1, "PERCENTAGE", "soundtrack_volume", "update_soundtrack_volume");
 menu_add_slider(OPTIONS_MENU, "SOUNDS", 0, 1, "PERCENTAGE", "sfx_volume", "update_sfx_volume");
 menu_add_button(OPTIONS_MENU, "CONTROLS", "CHANGE_MENU", CONTROLS_MENU);
 menu_add_button(OPTIONS_MENU, "BACK", "LAST_MENU");
 
 // Controls Menu
+menu_add_text(CONTROLS_MENU, "CONTROLS");
 menu_add_button(CONTROLS_MENU, "BACK", "LAST_MENU");
 
 // Credits
+menu_add_text(CREDITS, "CREDITS");
 menu_add_button(CREDITS, "BACK", "LAST_MENU");
 
 menu_state = START_MENU; // Keeps track of current menu

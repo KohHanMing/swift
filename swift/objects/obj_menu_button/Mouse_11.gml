@@ -1,4 +1,4 @@
-sprite_index = spr_ui_button; // Reset
+sprite_index = spr_menu_button; // Reset
 text_offset = 0; // Reset
 image_blend = c_white; // Lighten
 
