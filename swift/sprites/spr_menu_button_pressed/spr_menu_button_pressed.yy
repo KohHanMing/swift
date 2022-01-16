@@ -69,9 +69,9 @@
   ],
   "nineSlice": {
     "left": 5,
-    "top": 16,
+    "top": 7,
     "right": 5,
-    "bottom": 15,
+    "bottom": 5,
     "guideColour": [
       4294902015,
       4294902015,
