@@ -45,6 +45,7 @@ add_to_silhouette_array(id);
 
 // Methods
 function attempt_to_fire() {
+	
 	// Attempt to Fire
 	if !obj_player.control_enabled return;
 

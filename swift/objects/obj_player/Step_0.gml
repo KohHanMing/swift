@@ -8,13 +8,16 @@ switch (state) {
 move_wrap(true, true, sprite_width/2);
 
 // Weapon Change
-
-if keyboard_check_pressed(ord("1")) or keyboard_check_pressed(ord("2 ")) or keyboard_check_pressed(ord("3")) or keyboard_check_pressed(ord("4")) or keyboard_check_pressed(ord("5")) or keyboard_check_pressed(ord("6")) {
+if keyboard_check_pressed(ord("1"))
+ or keyboard_check_pressed(ord("2"))
+ or keyboard_check_pressed(ord("3"))
+ or keyboard_check_pressed(ord("4"))
+ or keyboard_check_pressed(ord("5"))
+ or keyboard_check_pressed(ord("6")) {
 	change_weapon();	
 }
 
 // Face Direction based on Weapon Angle
-var weapon_angle = current_weapon_id.weapon_angle;
 if (weapon_angle > 225 && weapon_angle < 315) facing = "down";
 else if (weapon_angle > 45 && weapon_angle < 135) facing = "up";
 else if (weapon_angle >= 135 && weapon_angle <= 225) facing = "left";
@@ -42,7 +45,7 @@ if ranged_weapon_id.cooldown > 0 ranged_weapon_id.cooldown -= 1;
 
 // Swaps
 swap_timer -= 1; // swap_timer is reduced by 1 per step.
-if global.key_quickswap_pressed attempt_quickswap();
+if global.key_quickswap_pressed attempt_quickswap(); // Attempt Quickswap
 
 // Damage Tint
 damage_tint_scale = 0;
