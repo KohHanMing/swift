@@ -2,7 +2,7 @@
 event_inherited();
 
 // Alpha
-image_alpha = lerp(image_alpha,0,0.05);
+if !game_paused image_alpha = lerp(image_alpha,0,0.05);
 
 // Push Enemies Away
 var _x = x;

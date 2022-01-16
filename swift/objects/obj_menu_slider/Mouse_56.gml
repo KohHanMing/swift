@@ -1,0 +1,1 @@
+adjusting = false; // Stop adjusting when mouse is released

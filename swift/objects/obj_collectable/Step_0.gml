@@ -1,5 +1,8 @@
 /// @description Movement and Animation
 
+// Inherit Event
+event_inherited();
+
 if (has_finished_spawning) {
 	
 	// Warning Flash

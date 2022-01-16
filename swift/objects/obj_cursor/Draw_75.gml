@@ -2,7 +2,12 @@ var _x = device_mouse_x_to_gui(0);
 var _y = device_mouse_y_to_gui(0);
 var _scale = global.gui_height / global.view_h;
 
-
+if obj_game.game_paused {
+	window_set_cursor(cr_default); // Enable normal cursor
+	exit;
+} else {
+	window_set_cursor(cr_none); // Disable normal cursor
+}
 
 with(obj_player) {
 	

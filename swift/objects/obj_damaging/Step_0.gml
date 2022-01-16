@@ -1,5 +1,8 @@
 /// @description Manual Breakable Check
 
+// Inherit Event
+event_inherited();
+
 // Manual Breakable + Pod Collision Check
 var _list = ds_list_create();
 var _num = instance_place_list(x, y, obj_breakable, _list, false);

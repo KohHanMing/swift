@@ -1,3 +1,5 @@
+event_inherited();
+
 switch (state) {
 	case "normal": player_normal(); break;
 	case "falling": player_falling(); break;
@@ -21,18 +23,25 @@ else facing = "right";
 // Sprite Control
 sprite_index = asset_get_index("spr_player_" + action + "_" + facing);
 
+// Control Enabled
+if current_weapon_id.DISABLES_CONTROL and instance_exists(current_weapon_id.previous_projectile) {
+	control_enabled = false;
+} else if obj_game.game_paused {
+	control_enabled = false;
+} else control_enabled = true;
+
+// Exit if Game Paused
+if game_paused exit;
+
+
+// ######## CODE BEYOND THIS LINE DOES NOT EXECUTE ON PAUSE ######## //
+
 // Weapon Cooldowns
 if melee_weapon_id.cooldown > 0 melee_weapon_id.cooldown -= 1;
 if ranged_weapon_id.cooldown > 0 ranged_weapon_id.cooldown -= 1;
 
 // Swaps
 swap_timer -= 1; // swap_timer is reduced by 1 per step.
-
-// Control Enabled
-if current_weapon_id.DISABLES_CONTROL and instance_exists(current_weapon_id.previous_projectile) {
-	control_enabled = false;
-} else control_enabled = true;
-
 
 // Damage Tint
 damage_tint_scale = 0;
@@ -44,7 +53,5 @@ if damage_tint_time > 0 {
 }
 
 recharge_dash();
-
-event_inherited();
 
 audio_listener_position(x,y,0);

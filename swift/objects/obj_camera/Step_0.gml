@@ -3,7 +3,7 @@
 
 //show_debug_message(view_camera[0]);
 
-if (instance_exists(obj_player)) {
+if (instance_exists(obj_player) and !obj_game.game_paused) {
 	if obj_player.current_weapon_id.object_index == obj_deadeye and mouse_check_button(mb_right) {
 		lerp_amt = lerp(lerp_amt, 0.5, 0.1);
 	} else {

@@ -1,6 +1,7 @@
 {
+  "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.8,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 48000,
@@ -18,6 +19,9 @@
   },
   "resourceVersion": "1.0",
   "name": "combat1",
-  "tags": [],
+  "tags": [
+    "sound",
+    "soundtrack",
+  ],
   "resourceType": "GMSound",
 }

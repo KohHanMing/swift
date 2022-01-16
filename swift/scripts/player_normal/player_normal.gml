@@ -36,9 +36,9 @@ function player_normal(){
 				dashing = true;
 				alarm[0] = DASH_TIME;
 				CURR_DASH -= DASH_UNIT;
-				audio_play_sound(sfx_player_dash, 99, false);
+				play_sfx(sfx_player_dash, false);
 			} else {
-				audio_play_sound(sfx_noenergy, 99, false);
+				play_sfx(sfx_noenergy, false);
 			}
 		}
 		

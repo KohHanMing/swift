@@ -1,5 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+if obj_game.game_paused {
+	exit;
+}
+
 if (!triggered && place_meeting(x, y, obj_player)) {
 	if (trigger_doors) {
 		with (obj_hdoor) closed = true;

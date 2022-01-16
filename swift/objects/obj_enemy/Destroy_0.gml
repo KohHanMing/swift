@@ -1,7 +1,7 @@
 /// @description Tick down spawner if one exists
 // You can write your code in this editor
 audio_stop_sound(curr_idle_sfx);
-audio_play_sound_at(DEATH_SFX,x,y,0,falloff_ref_dist,falloff_max_dist,1,false,99);
+play_sfx(DEATH_SFX,true);
 
 if (instance_exists(obj_load_zone)) {
 	with (obj_load_zone) {

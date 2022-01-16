@@ -1,5 +1,8 @@
 /// @description Initialize Variables
 
+// Inherit Event
+event_inherited();
+
 // Event Enum
 COLLECT_ITEM = 0;
 

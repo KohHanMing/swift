@@ -1,5 +1,7 @@
 /// @description Attempt to Fire
 
+if !obj_player.control_enabled exit;
+
 if (cooldown > 0) {
 	// Cooldown not ready
 	event_user(COOLDOWN_NOT_READY);

@@ -9,7 +9,7 @@ if (dist_to_player <= RETREAT_RANGE && canAttack) {
 		canAttack = false;
 		// Do attack
 		enemy_attack(id);
-		audio_play_sound(ATTACK_SFX, 99, false);
+		play_sfx(ATTACK_SFX, false);
 		// Reset canAttack
 		alarm[ATTACK_ALARM] = room_speed * ATTACK_COOLDOWN_SECONDS;
 	}

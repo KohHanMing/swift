@@ -1,3 +1,7 @@
+event_inherited(); // Inherit Event
+
+if obj_game.game_paused exit;
+
 if (!landed) { // If Pod has not landed
 	falling_speed += 1; // Increase Falling Speed
 	y += falling_speed; // Fall

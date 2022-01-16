@@ -1,0 +1,2 @@
+if menu_state_prev != menu_state create_menu(menu_state); // Draw Menu if it has been updated
+else if keyboard_check_pressed(vk_escape) return_to_previous_menu(); // Otherwise, if escape is pressed, return to previous menu.
