@@ -13,5 +13,6 @@ if obj_game.game_paused {
 }
 
 draw_set_alpha(darkness_overlay_alpha);
-draw_rectangle_color(0,0,global.view_w,global.view_h,c_black,c_black,c_black,c_black,0);
+draw_rectangle_color(global.view_x,global.view_y,global.view_x+global.view_w,global.view_y+global.view_h,c_black,c_black,c_black,c_black,0);
+show_debug_message(global.view_x)
 draw_set_alpha(1);
