@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-CURR_HEALTH = 1;
+CURR_HEALTH = 10;

@@ -8,7 +8,7 @@ WEAPON_OFFSET_SIDE = 0; // Right is Positive
 ATTACK_COOLDOWN = 2 * room_speed; // Fires 1/2 time per second
 
 // Energy usage
-ENERGY_COST = 3;
+ENERGY_COST = 5;
 
 SPR_WEAPON_IDLE_SIDE = spr_deadeye_idle_side;
 SPR_WEAPON_FIRE_SIDE = spr_honey_badger_fire_side;

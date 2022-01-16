@@ -1,3 +1,2 @@
-/// @description Finish Firing
+/// @description Weapon Swapped In
 
-firing = false;

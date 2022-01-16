@@ -5,6 +5,12 @@ switch (state) {
 
 move_wrap(true, true, sprite_width/2);
 
+// Weapon Change
+
+if keyboard_check_pressed(ord("1")) or keyboard_check_pressed(ord("2 ")) or keyboard_check_pressed(ord("3")) or keyboard_check_pressed(ord("4")) or keyboard_check_pressed(ord("5")) or keyboard_check_pressed(ord("6")) {
+	change_weapon();	
+}
+
 // Face Direction based on Weapon Angle
 var weapon_angle = current_weapon_id.weapon_angle;
 if (weapon_angle > 225 && weapon_angle < 315) facing = "down";
