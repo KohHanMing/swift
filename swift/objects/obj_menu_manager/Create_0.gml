@@ -1,53 +1,4 @@
-// PROGRAM MENUS HERE
-
-/* Documentation
-		Button Object
-		["BUTTON", TEXT, FUNCTION, SIZE_PRESET]
-		
-		Slider Object
-		["SLIDER", TEXT, MIN, MAX, DISPLAY_TYPE, VARIABLE, HANDLER]
-*/
-
-// Menu List
-menu_list = ds_list_create();
-
-// No Menu
-NONE = ds_list_create();
-
-START_MENU = ds_list_create();
-PAUSE_MENU = ds_list_create();
-OPTIONS_MENU = ds_list_create();
-CONTROLS_MENU = ds_list_create();
-CREDITS = ds_list_create();
-
-// Start Menu
-ds_list_add(START_MENU, ["BUTTON", "START", "START_GAME"]);
-ds_list_add(START_MENU, ["BUTTON", "OPTIONS", "CHANGE_MENU", OPTIONS_MENU]);
-ds_list_add(START_MENU, ["BUTTON", "CREDITS", "CHANGE_MENU", CREDITS]);
-
-// Pause Menu
-ds_list_add(PAUSE_MENU, ["BUTTON", "UNPAUSE", "UNPAUSE"]);
-ds_list_add(PAUSE_MENU, ["BUTTON", "OPTIONS", "CHANGE_MENU", OPTIONS_MENU]);
-
-// Options 
-ds_list_add(OPTIONS_MENU, ["SLIDER", "MUSIC", 0, 1, "PERCENTAGE", "soundtrack_volume", "update_soundtrack_volume"]);
-ds_list_add(OPTIONS_MENU, ["SLIDER", "SOUNDS", 0, 1, "PERCENTAGE", "sfx_volume", "update_sfx_volume"]);
-ds_list_add(OPTIONS_MENU, ["BUTTON", "CONTROLS", "CHANGE_MENU", CONTROLS_MENU]);
-ds_list_add(OPTIONS_MENU, ["BUTTON", "BACK", "LAST_MENU"]);
-
-// Controls Menu
-ds_list_add(CONTROLS_MENU, ["BUTTON", "BACK", "LAST_MENU"]);
-
-// Credits
-ds_list_add(CREDITS, ["BUTTON", "BACK", "LAST_MENU"]);
-
-menu_state = START_MENU; // Keeps track of current menu
-menu_state_prev = NONE; // Keeps track of whether menu change has been done
-
-
-// Initialize Variables
-global.MENU_ELEMENTS = ds_list_create();
-PADDING = 0; // Vertical Padding Between Buttons
+// Methods
 
 function create_menu(_menu_state) {
 	
@@ -136,3 +87,43 @@ function return_to_previous_menu() { // Back Button
 	ds_list_delete(menu_list,ds_list_size(menu_list)-1);
 	
 }
+
+// Menu List
+menu_list = ds_list_create();
+
+// No Menu
+NONE = ds_list_create();
+
+START_MENU = ds_list_create();
+PAUSE_MENU = ds_list_create();
+OPTIONS_MENU = ds_list_create();
+CONTROLS_MENU = ds_list_create();
+CREDITS = ds_list_create();
+
+// Start Menu
+menu_add_button(START_MENU, "START", "START_GAME");
+menu_add_button(START_MENU, "OPTIONS", "CHANGE_MENU", OPTIONS_MENU);
+menu_add_button(START_MENU, "CREDITS", "CHANGE_MENU", CREDITS);
+
+// Pause Menu
+menu_add_button(PAUSE_MENU, "UNPAUSE", "UNPAUSE");
+menu_add_button(PAUSE_MENU, "OPTIONS", "CHANGE_MENU", OPTIONS_MENU);
+
+// Options 
+menu_add_slider(OPTIONS_MENU, "MUSIC", 0, 1, "PERCENTAGE", "soundtrack_volume", "update_soundtrack_volume");
+menu_add_slider(OPTIONS_MENU, "SOUNDS", 0, 1, "PERCENTAGE", "sfx_volume", "update_sfx_volume");
+menu_add_button(OPTIONS_MENU, "CONTROLS", "CHANGE_MENU", CONTROLS_MENU);
+menu_add_button(OPTIONS_MENU, "BACK", "LAST_MENU");
+
+// Controls Menu
+menu_add_button(CONTROLS_MENU, "BACK", "LAST_MENU");
+
+// Credits
+menu_add_button(CREDITS, "BACK", "LAST_MENU");
+
+menu_state = START_MENU; // Keeps track of current menu
+menu_state_prev = NONE; // Keeps track of whether menu change has been done
+
+// Initialize Variables
+global.MENU_ELEMENTS = ds_list_create();
+PADDING = 0; // Vertical Padding Between Buttons
