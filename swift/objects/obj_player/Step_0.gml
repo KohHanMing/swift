@@ -36,6 +36,7 @@ if ranged_weapon_id.cooldown > 0 ranged_weapon_id.cooldown -= 1;
 
 // Swaps
 swap_timer -= 1; // swap_timer is reduced by 1 per step.
+if global.key_quickswap_pressed attempt_quickswap();
 
 // Damage Tint
 damage_tint_scale = 0;

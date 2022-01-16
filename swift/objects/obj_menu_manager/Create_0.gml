@@ -25,8 +25,6 @@ function create_menu(_menu_state) {
 			case "TEXT":
 				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_text);
 				_new_element.text = element[1];
-				
-				show_debug_message(_new_element.sprite_height)
 				break;
 			
 			case "BUTTON":
@@ -52,7 +50,17 @@ function create_menu(_menu_state) {
 				
 				_new_element.image_xscale = 3;
 				break;
-	
+			
+			case "KEYBIND":
+				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_keybind);
+				_new_element.text = element[1];
+				_new_element.keybind = element[2];
+				_new_element.keybind_mode = element[2] + "_mode";
+				
+				_new_element.image_xscale = 3;
+				_new_element.image_yscale = 0.75;
+				break;
+			
 		}
 		
 		total_width = max(total_width,_new_element.bbox_right); // Check for maximum width
@@ -127,6 +135,13 @@ menu_add_button(OPTIONS_MENU, "BACK", "LAST_MENU");
 
 // Controls Menu
 menu_add_text(CONTROLS_MENU, "CONTROLS");
+menu_add_keybind(CONTROLS_MENU, "ATTACK", "key_attack");
+menu_add_keybind(CONTROLS_MENU, "MOVE UP", "key_move_up");
+menu_add_keybind(CONTROLS_MENU, "MOVE LEFT", "key_move_left");
+menu_add_keybind(CONTROLS_MENU, "MOVE DOWN", "key_move_down");
+menu_add_keybind(CONTROLS_MENU, "MOVE RIGHT", "key_move_right");
+menu_add_keybind(CONTROLS_MENU, "DASH", "key_dash");
+menu_add_keybind(CONTROLS_MENU, "QUICKSWAP", "key_quickswap");
 menu_add_button(CONTROLS_MENU, "BACK", "LAST_MENU");
 
 // Credits

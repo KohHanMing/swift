@@ -16,3 +16,7 @@ weapon_angle = point_direction(obj_player.sprite_x, obj_player.sprite_y, mouse_x
 
 // Weapon Cooldown
 if firing and cooldown <= 0 event_user(FINISH_FIRING) // Finish Firing
+
+if global.key_attack_pressed {
+	attempt_to_fire();
+}

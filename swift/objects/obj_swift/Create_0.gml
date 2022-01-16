@@ -19,3 +19,4 @@ provide_global_viewport_values();
 	
 instance_create_layer(0,0,"Instances",obj_soundtrack_manager); // Create Soundtrack Manager
 instance_create_layer(0,0,"Instances",obj_menu_manager); // Create Menu Manager
+instance_create_layer(0,0,"Instances",obj_input_manager); // Create Input Manager
