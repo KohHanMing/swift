@@ -19,6 +19,11 @@ function spawn_player_projectile(_projectile, _offset_forward, _offset_side, _an
 		OFFSET_X = offset_x_from_player;
 		OFFSET_Y = offset_y_from_player;
 		owner = obj_player.id;
+		
+		if object_is_ancestor(_projectile, obj_player_melee_hitbox) and dcos(phy_rotation) > 0 {
+			image_yscale *= -1;
+		}
+		
 	}
 	
 	return projectile;

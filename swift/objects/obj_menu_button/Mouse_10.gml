@@ -1,1 +1,1 @@
-image_blend = c_gray; // Darken
+if !disabled image_blend = c_gray; // Darken

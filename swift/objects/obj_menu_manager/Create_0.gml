@@ -22,25 +22,34 @@ function create_menu(_menu_state) {
 		
 		switch(element[0]) {
 			
-			case "TEXT":
+			case "TEXT":	
 				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_text);
+				
 				_new_element.text = element[1];
 				
-				show_debug_message(_new_element.sprite_height)
+				break;
+				
+			case "SPACER":
+				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_spacer);
+				
+				_new_element.image_yscale = element[1];
+				
 				break;
 			
 			case "BUTTON":
 				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_button);
+				
 				_new_element.text = element[1];
 				_new_element.on_click = element[2];
 				if element[2] == "CHANGE_MENU" _new_element.target = element[3];
 				
 				_new_element.image_xscale = 3;
+				
 				break;
 				
 			case "SLIDER":
-				
 				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_slider);
+				
 				_new_element.text = element[1];
 				_new_element.slider_min = element[2];
 				_new_element.slider_max = element[3];
@@ -50,9 +59,22 @@ function create_menu(_menu_state) {
 				
 				with(_new_element) update_slider_value();
 				
-				_new_element.image_xscale = 3;
+				_new_element.image_xscale = 5;
+				
 				break;
-	
+			
+			case "KEYBIND":
+				var _new_element = instance_create_depth(0,vertical_offset,-12000,obj_menu_keybind);
+				
+				_new_element.text = element[1];
+				_new_element.keybind = element[2];
+				_new_element.keybind_mode = element[2] + "_mode";
+				
+				_new_element.image_xscale = 5;
+				_new_element.image_yscale = 0.75;
+				
+				break;
+			
 		}
 		
 		total_width = max(total_width,_new_element.bbox_right); // Check for maximum width
@@ -122,11 +144,20 @@ menu_add_button(PAUSE_MENU, "OPTIONS", "CHANGE_MENU", OPTIONS_MENU);
 menu_add_text(OPTIONS_MENU, "OPTIONS");
 menu_add_slider(OPTIONS_MENU, "MUSIC", 0, 1, "PERCENTAGE", "soundtrack_volume", "update_soundtrack_volume");
 menu_add_slider(OPTIONS_MENU, "SOUNDS", 0, 1, "PERCENTAGE", "sfx_volume", "update_sfx_volume");
+menu_add_spacer(OPTIONS_MENU, 8);
 menu_add_button(OPTIONS_MENU, "CONTROLS", "CHANGE_MENU", CONTROLS_MENU);
 menu_add_button(OPTIONS_MENU, "BACK", "LAST_MENU");
 
 // Controls Menu
 menu_add_text(CONTROLS_MENU, "CONTROLS");
+menu_add_keybind(CONTROLS_MENU, "ATTACK", "key_attack");
+menu_add_keybind(CONTROLS_MENU, "MOVE UP", "key_move_up");
+menu_add_keybind(CONTROLS_MENU, "MOVE LEFT", "key_move_left");
+menu_add_keybind(CONTROLS_MENU, "MOVE DOWN", "key_move_down");
+menu_add_keybind(CONTROLS_MENU, "MOVE RIGHT", "key_move_right");
+menu_add_keybind(CONTROLS_MENU, "DASH", "key_dash");
+menu_add_keybind(CONTROLS_MENU, "QUICKSWAP", "key_quickswap");
+menu_add_spacer(CONTROLS_MENU, 8);
 menu_add_button(CONTROLS_MENU, "BACK", "LAST_MENU");
 
 // Credits
