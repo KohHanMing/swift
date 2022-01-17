@@ -1,4 +1,4 @@
-var border_width = 8 // Minimap border width
+var border_width = 16 // Minimap border width
 
 draw_sprite_stretched(
 	spr_minimap_border,

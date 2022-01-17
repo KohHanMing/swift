@@ -6,8 +6,8 @@ Y_OFFSET = 0; // Offset to draw minimap elements outside of room
 			  
 MINIMAP_CAM = camera_create_view(0, Y_OFFSET, VIEW_W, VIEW_H); // Create minimap camera
 
-MINIMAP_W = 270; // Width of minimap on GUI layer
-MINIMAP_H = 270; // Height of minimap on GUI layer
+MINIMAP_W = 360; // Width of minimap on GUI layer
+MINIMAP_H = 360; // Height of minimap on GUI layer
 
 MINIMAP_X = global.gui_width - obj_ui.PADDING - MINIMAP_W; // Top left position of minimap on GUI layer
 MINIMAP_Y = obj_ui.PADDING; // Top left position of minimap on GUI layer
