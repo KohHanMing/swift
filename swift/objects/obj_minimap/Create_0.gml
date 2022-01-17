@@ -1,23 +1,24 @@
-/// @description Insert description here
-// You can write your code in this editor
+VIEW_W = 960; // View Width of Minimap
+VIEW_H = 960; // View Width of Minimap
 
-VIEW_W = 960;
-VIEW_H = 540;
-Y_OFFSET = 0; //change this based on room_height
-MINIMAP_CAM = camera_create_view(0, Y_OFFSET, VIEW_W, VIEW_H);
+Y_OFFSET = 0; // Offset to draw minimap elements outside of room
+			  // Change based on room height
+			  
+MINIMAP_CAM = camera_create_view(0, Y_OFFSET, VIEW_W, VIEW_H); // Create minimap camera
 
-MINIMAP_X = window_get_width()*0.85;
-MINIMAP_Y = window_get_height()*0.05;
+MINIMAP_W = 270; // Width of minimap on GUI layer
+MINIMAP_H = 270; // Height of minimap on GUI layer
 
-MINIMAP_W = 180;
-MINIMAP_H = 180;
+MINIMAP_X = global.gui_width - obj_ui.PADDING - MINIMAP_W; // Top left position of minimap on GUI layer
+MINIMAP_Y = obj_ui.PADDING; // Top left position of minimap on GUI layer
 
-var i;
+var scale = window_get_width() / global.gui_width; // Scale to adjust positioning from GUI layer to window size
 var levels = obj_level_manager.level_sequence_list;
-
-for (i = 0; i < ds_list_size(levels); i++) {
-	var rm = ds_list_find_value(levels, i);
+for (var i = 0; i < ds_list_size(levels); i++) { // Iterate through levels
+	var rm = levels[|i]; // Current working room
 	if (rm != rm_win) {
-		room_set_viewport(rm, 1, true, MINIMAP_X, MINIMAP_Y, MINIMAP_W, MINIMAP_H);
+		// Place viewport on top right corner
+		// Positioning is based on window
+		room_set_viewport(rm, 1, true, MINIMAP_X * scale, MINIMAP_Y * scale, MINIMAP_W * scale, MINIMAP_H * scale);
 	}
 }

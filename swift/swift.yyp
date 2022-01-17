@@ -185,6 +185,7 @@
     {"id":{"name":"spr_weapon_ranged_fire_front","path":"sprites/spr_weapon_ranged_fire_front/spr_weapon_ranged_fire_front.yy",},"order":0,},
     {"id":{"name":"obj_particle_axe_hit","path":"objects/obj_particle_axe_hit/obj_particle_axe_hit.yy",},"order":2,},
     {"id":{"name":"sfx_swap_ranged","path":"sounds/sfx_swap_ranged/sfx_swap_ranged.yy",},"order":6,},
+    {"id":{"name":"spr_minimap_border","path":"sprites/spr_minimap_border/spr_minimap_border.yy",},"order":28,},
     {"id":{"name":"spr_honey_pot_explosion","path":"sprites/spr_honey_pot_explosion/spr_honey_pot_explosion.yy",},"order":4,},
     {"id":{"name":"spr_honey_pot_crosshair","path":"sprites/spr_honey_pot_crosshair/spr_honey_pot_crosshair.yy",},"order":2,},
     {"id":{"name":"obj_weapon_ranged","path":"objects/obj_weapon_ranged/obj_weapon_ranged.yy",},"order":0,},
