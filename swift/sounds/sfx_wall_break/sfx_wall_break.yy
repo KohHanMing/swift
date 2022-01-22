@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.7,
   "preload": false,
@@ -18,6 +19,9 @@
   },
   "resourceVersion": "1.0",
   "name": "sfx_wall_break",
-  "tags": [],
+  "tags": [
+    "sound",
+    "sfx",
+  ],
   "resourceType": "GMSound",
 }

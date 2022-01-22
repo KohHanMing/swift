@@ -4,7 +4,7 @@ function draw_lighting(_surface) { // Draw Light Surface onto Application Surfac
 	
 	gpu_set_blendmode_ext(bm_zero,bm_src_color); // Multiply Blend Mode
 	shader_set(shd_shadow_surface); // Use Shadow Surface Shader
-	draw_surface_ext(_surface,global.view_x,global.view_y,1,1,0,c_white,obj_game.ambient_darkness); // Draw Surface with Ambient Darkness
+	draw_surface_ext(_surface,global.view_x,global.view_y,1,1,0,c_white,obj_game.ambient_darkness * darkness_multiplier); // Draw Surface with Ambient Darkness
 	gpu_set_blendmode(bm_normal); // Reset Blend Mode
 	shader_reset(); // Reset Shader
 }
@@ -24,3 +24,7 @@ vb = vertex_create_buffer();
 // Initialize Shadow Surface
 shadow_surface_floor = noone;
 shadow_surface_wall = noone;
+
+// Variables
+darkness_multiplier = 1; // Controls Overall Lighting
+darkness_overlay_alpha = 0;

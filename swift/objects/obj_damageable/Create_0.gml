@@ -1,5 +1,8 @@
 /// @description Set HEALTH of the Damageable, initialize damage_tint_time
 
+// Inherit Event
+event_inherited();
+
 //Initialization, all Damageables must set their HEALTH in Create
 CURR_HEALTH = 0;
 MAX_HEALTH = 0;
@@ -13,4 +16,4 @@ HIT_SFX = -1;
 curr_idle_sfx = -1;
 
 // Push Self to Silhouette Array
-array_push(obj_silhouette.silhouette_array, id);
+add_to_silhouette_array(id);

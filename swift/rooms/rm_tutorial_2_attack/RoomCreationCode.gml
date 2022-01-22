@@ -6,5 +6,3 @@ with(obj_player) {
 	ENERGY_INCREMENT = 0;
 	CURR_ENERGY = 0;
 }
-
-obj_soundtrack_manager.curr_track = "tutorial_combat";

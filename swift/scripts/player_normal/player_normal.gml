@@ -1,25 +1,21 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_normal(){
-	// Check keyboard inputs once per frame
-	w_key_pressed = keyboard_check(ord("W"));
-	a_key_pressed = keyboard_check(ord("A"));
-	s_key_pressed = keyboard_check(ord("S"));
-	d_key_pressed = keyboard_check(ord("D"));
 
 	moving = false;
 	phy_linear_damping = 10;
 
-	if (w_key_pressed or a_key_pressed or s_key_pressed or d_key_pressed) {
+	if (global.key_move_up_down or global.key_move_left_down or global.key_move_down_down or global.key_move_right_down) and control_enabled {
+		
 		// Decide on goal direction based on keyboard inputs
 		var goal_direction_x = 0;
 		var goal_direction_y = 0;
 		goal_direction = 0;
 	
-		if w_key_pressed goal_direction_y += 1;
-		if a_key_pressed goal_direction_x -= 1;
-		if s_key_pressed goal_direction_y -= 1;
-		if d_key_pressed goal_direction_x += 1;
+		if global.key_move_up_down goal_direction_y += 1;
+		if global.key_move_left_down goal_direction_x -= 1;
+		if global.key_move_down_down goal_direction_y -= 1;
+		if global.key_move_right_down goal_direction_x += 1;
 	
 		if (goal_direction_y != 0 || goal_direction_x != 0) {
 			moving = true;
@@ -30,14 +26,14 @@ function player_normal(){
 			apply_vector(id, ACCELERATION_PX_PER_FRAME, goal_direction);
 		}
 	
-		if (keyboard_check_pressed(vk_space) and !dashing) {
+		if (global.key_dash_pressed and !dashing) {
 			if (CURR_DASH >= DASH_UNIT) {
 				dashing = true;
 				alarm[0] = DASH_TIME;
 				CURR_DASH -= DASH_UNIT;
-				audio_play_sound(sfx_player_dash, 99, false);
+				play_sfx(sfx_player_dash, false);
 			} else {
-				audio_play_sound(sfx_noenergy, 99, false);
+				play_sfx(sfx_noenergy, false);
 			}
 		}
 		
@@ -71,7 +67,7 @@ function player_normal(){
 		if(!dashing) {
 			// Check collision with hole objects
 			hole = collision_point(x, y, obj_hole, false, true);
-			if (hole != noone and can_fall == true) {
+			if (hole != noone) {
 				pos_prev_hole = collision_point(phy_position_xprevious, phy_position_yprevious, obj_hole, false, true);
 				if (pos_prev_hole == noone) {
 					res_x = phy_position_xprevious;
@@ -91,8 +87,5 @@ function player_normal(){
 			}
 		}
 	}
-	
-	// Enable Falling after 1 Step
-	can_fall = true;
 	
 }

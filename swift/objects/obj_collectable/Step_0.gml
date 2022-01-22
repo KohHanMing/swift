@@ -1,5 +1,8 @@
 /// @description Movement and Animation
 
+// Inherit Event
+event_inherited();
+
 if (has_finished_spawning) {
 	
 	// Warning Flash
@@ -37,7 +40,7 @@ if (has_finished_spawning) {
 		
 			} else {
 				// Collect Item
-				event_user(0);
+				event_user(COLLECT_ITEM);
 			} 
 		}
 	} else {

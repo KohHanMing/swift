@@ -3,7 +3,7 @@
 
 if swap_timer < SWAP_COOLDOWN - INSTANT_SWAP_MIN and swap_timer > SWAP_COOLDOWN - INSTANT_SWAP_MIN - INSTANT_SWAP_RANGE {
 	swap_timer = 0;
-	//audio_play_sound(sfx_swap_success,99,false);
+	//play_sfx(sfx_swap_success, false);
 }
 
 action = "attack";

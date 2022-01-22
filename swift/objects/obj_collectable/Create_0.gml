@@ -1,5 +1,11 @@
 /// @description Initialize Variables
 
+// Inherit Event
+event_inherited();
+
+// Event Enum
+COLLECT_ITEM = 0;
+
 is_collectable = false; // CONDITION NEEDS TO BE INITALISED IN CHILD
 
 // Determines how far from player item is before
@@ -33,4 +39,4 @@ phy_rotation = 0;
 phy_fixed_rotation = true;
 
 // Push Self to Silhouette Array
-array_push(obj_silhouette.silhouette_array, id);
+add_to_silhouette_array(id);

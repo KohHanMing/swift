@@ -1,0 +1,1 @@
+if !disabled adjusting = true; // Begin adjusting only when slider is clicked
