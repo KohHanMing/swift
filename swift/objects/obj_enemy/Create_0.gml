@@ -65,8 +65,8 @@ wander_anchor_y = sprite_y;
 node_index = 1;
 dist_to_player = 0;
 dir_to_player = 0;
-res_x = 0;
-res_y = 0;
+respawn_x = 0;
+respawn_y = 0;
 falling_time = 0;
 
 phy_fixed_rotation = true;

@@ -1,4 +1,4 @@
-function player_normal(){
+function player_normal() {
 
 	moving = false;
 	phy_linear_damping = 10;
@@ -57,17 +57,20 @@ function player_normal(){
 		}
 	}
 	
-	move_wrap(true, true, sprite_width/2);
-	
-	if(!dashing and falling_time == 0) {
-		
+	if (!dashing and falling_time == 0) {
 		// If not dashing, i.e. enable dashing over holes
 		// Check collision with hole objects
-		
-		if !hole_collision_check() { // If collision with holes did not occur, update respawn position.
-			res_x = x;
-			res_y = y;
-		} 
-		
+		hole_collision_check()
 	}
+	
+	// Grid-Center-Aligned Respawn Position
+	var aligned_x = x - x % 32 + 16;
+	var aligned_y = y - y % 32 + 16;
+		
+	// Attempt to update respawn position.
+	if !collision_point(aligned_x, aligned_y, obj_hole, false, false) {
+		respawn_x = aligned_x;
+		respawn_y = aligned_y;
+	} 
+	
 }

@@ -5,4 +5,4 @@ phy_position_y = -512;
 x = -512;
 y = -512;
 
-take_damage(id, MAX_HEALTH);
+instance_destroy();

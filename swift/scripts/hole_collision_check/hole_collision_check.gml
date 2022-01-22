@@ -5,8 +5,6 @@
 function hole_collision_check(){
 	hole = collision_point(x, y, obj_hole, false, true);
 	if (hole != noone) {
-		res_x = phy_position_xprevious;
-		res_y = phy_position_yprevious;
 		phy_speed_x = 0;
 		phy_speed_y = 0;
 		phy_active = false;

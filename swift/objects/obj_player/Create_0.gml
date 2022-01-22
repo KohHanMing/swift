@@ -65,8 +65,8 @@ action = "idle";
 swap_timer = 0;
 
 // Hole
-res_x = 0; // Respawn coordinate after falling into hole
-res_y = 0; // Respawn coordinate after falling into hole
+respawn_x = 0; // Respawn coordinate after falling into hole
+respawn_y = 0; // Respawn coordinate after falling into hole
 
 // Methods
 function swap_failed() {
