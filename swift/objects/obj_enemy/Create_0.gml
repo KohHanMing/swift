@@ -9,14 +9,16 @@ DISABLE_ALARM = -1;
 BEHAVIOUR_ALARM = 0;
 ATTACK_ALARM = 1;
 WANDER_ALARM = 2;
-FALLING_ALARM = 3;
 IDLE_SFX_ALARM = 4;
+
+// Event Enum
+END_FALL = 1;
 
 // Constants
 AGGRO_RANGE = 0;
 CURR_HEALTH = 0;
 MAX_HEALTH = 0;
-FALL_DAMAGE = 0;
+FALL_TIME = room_speed;
 PLAYER = obj_player;
 RETREAT_RANGE = 0;
 SPEED_PX_PER_FRAME = 0;
@@ -65,6 +67,7 @@ dist_to_player = 0;
 dir_to_player = 0;
 res_x = 0;
 res_y = 0;
+falling_time = 0;
 
 phy_fixed_rotation = true;
 

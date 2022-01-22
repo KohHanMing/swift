@@ -6,7 +6,7 @@
     "path": "folders/Scripts/primitive.yy",
   },
   "resourceVersion": "1.0",
-  "name": "resolve_fall",
+  "name": "falling",
   "tags": [],
   "resourceType": "GMScript",
 }

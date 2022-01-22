@@ -5,6 +5,7 @@ event_inherited();
 
 // Event Enum
 DEATH = 0;
+END_FALL = 1;
 FIRE_WEAPON = 2;
 
 // Constants
@@ -21,6 +22,7 @@ MAX_DASH = DASH_UNIT * 3;
 CURR_HEALTH = 100;
 MAX_HEALTH = 100;
 FALL_DAMAGE = 20;
+FALL_TIME = room_speed;
 
 ENERGY_INCREMENT = 1;
 ENERGY_RECHARGE_RATE = room_speed * 1.5
@@ -53,10 +55,10 @@ a_key_pressed = false;
 s_key_pressed = false;
 d_key_pressed = false;
 facing = "down";
+falling_time = 0;
 control_enabled = true;
 
 // Player State
-state = "normal";
 action = "idle";
 
 // Weapons

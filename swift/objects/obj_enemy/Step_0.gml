@@ -16,26 +16,11 @@ sprite_y = sprite_center[1]
 
 move_wrap(true, true, sprite_width/2);
 
-// if falling
-if (alarm[FALLING_ALARM] > -1) {
-	falling_animation();
-}
+// Call Falling Script as required
+if (falling_time > 0) falling();
 
-if (!flying) {
-	// if not falling
-	if (alarm[FALLING_ALARM] == -1) {
-		// check collision with hole objects
-		hole = collision_point(x, bbox_bottom, obj_hole, false, true);
-		if (hole != noone) {
-			res_x = phy_position_xprevious;
-			res_y = phy_position_yprevious;
-			phy_speed_x = 0;
-			phy_speed_y = 0;
-			phy_active = false;
-			alarm[FALLING_ALARM] = 60; // fall duration 1 second
-			falling_factor = 0; // Initialize falling_factor
-		}
-	}
+if (!flying and falling_time == 0) { // If not flying and not falling
+	hole_collision_check(); // Check collisions with hole
 }
 
 if (alarm[IDLE_SFX_ALARM] == -1) {
