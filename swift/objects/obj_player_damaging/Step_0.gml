@@ -18,6 +18,7 @@ if _num > 0 {
 	
 	for (var i = 0; i < _num; i++) {
 		if expired break;
+		else if _array[i].falling_time > 0 continue; // Do not collide with falling enemies
 		manual_projectile_collision(_array[i]);
 	}
 }
