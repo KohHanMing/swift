@@ -5,4 +5,4 @@ MINIMAP_X = global.gui_width - obj_ui.PADDING - MINIMAP_W; // Top left position 
 MINIMAP_Y = obj_ui.PADDING; // Top left position of minimap on GUI layer
 
 MINIMAP_SCALE = 1/2; // Scale of minimap
-ENTITY_SIZE = 4; // Size of entities on minimap
+ENTITY_SIZE = 8; // Size of entities on minimap
