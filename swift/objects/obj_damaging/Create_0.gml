@@ -5,6 +5,7 @@ event_inherited();
 
 // Event Enum
 COLLISION = 0;
+DEFLECTED = 1;
 
 // Declare default constants
 
