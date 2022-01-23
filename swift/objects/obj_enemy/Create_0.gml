@@ -19,6 +19,7 @@ AGGRO_RANGE = 0;
 CURR_HEALTH = 0;
 MAX_HEALTH = 0;
 FALL_TIME = room_speed;
+FALL_IMMUNITY_TIME = 0;
 PLAYER = obj_player;
 RETREAT_RANGE = 0;
 SPEED_PX_PER_FRAME = 0;
@@ -67,7 +68,8 @@ dist_to_player = 0;
 dir_to_player = 0;
 respawn_x = 0;
 respawn_y = 0;
-falling_time = 0;
+falling_time = 0; // Keeps track of when the enemy finishes falling
+hole_collision_time = 0; // Keeps track of how long the enemy has been standing on a hole
 
 phy_fixed_rotation = true;
 

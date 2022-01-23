@@ -15,13 +15,14 @@ DASH_ACCELERATION_INCREASE = 0.4;
 DASH_TIME = room_speed/5; // Dash lasts 1/5 of a second
 
 DASH_UNIT = 100;
-DASH_RECHARGE_RATE = DASH_UNIT / (room_speed * 0.75); //Recharges every 1/2 second
+DASH_RECHARGE_RATE = DASH_UNIT / (room_speed * 0.75); // Recharges every 1/2 second
 CURR_DASH = DASH_UNIT * 3;
 MAX_DASH = DASH_UNIT * 3;
 
 CURR_HEALTH = 100;
 MAX_HEALTH = 100;
 FALL_DAMAGE = 20;
+FALL_IMMUNITY_TIME = room_speed / 10; // Amount of time on hole until falling starts
 FALL_TIME = room_speed;
 
 ENERGY_INCREMENT = 1;
@@ -55,7 +56,8 @@ a_key_pressed = false;
 s_key_pressed = false;
 d_key_pressed = false;
 facing = "down";
-falling_time = 0;
+falling_time = 0; // Keeps track of when the player finishes falling
+hole_collision_time = 0; // Keeps track of how long the player has been standing on a hole
 control_enabled = true;
 
 // Player State

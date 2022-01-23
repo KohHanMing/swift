@@ -35,13 +35,12 @@ function player_normal() {
 			}
 		}
 		
-		if(dashing) {
+		if (dashing) {
 			// Dashing temporarily increases acceleration
 			apply_vector(id, DASH_ACCELERATION_INCREASE, goal_direction);
-			//Particles
 			
+			// Particles
 			var center = find_sprite_center(id)
-			
 			repeat(2) instance_create_layer(center[0]+random_range(-10,10),center[1]+random_range(-10,10),"Instances",obj_particle_dash);
 			
 		}
@@ -60,7 +59,7 @@ function player_normal() {
 	if (!dashing and falling_time == 0) {
 		// If not dashing, i.e. enable dashing over holes
 		// Check collision with hole objects
-		hole_collision_check()
+		hole_collision_check();
 	}
 	
 	// Grid-Center-Aligned Respawn Position
