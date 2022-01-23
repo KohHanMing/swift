@@ -4,6 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-if (dist_to_player <= ATTACK_RANGE && !canAttack) {
+if (dist_to_player <= ATTACK_RANGE && !can_attack) {
 	enemy_aggro(id);
 }

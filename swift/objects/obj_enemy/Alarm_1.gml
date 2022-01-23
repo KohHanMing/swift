@@ -1,4 +1,6 @@
-/// @description Attack related
+/// @description Attacking
 
-// Reset canAttack
-canAttack = true;
+if (not can_attack) {
+	alarm[ATTACK_ALARM] = BEHAVIOUR_UPDATE_SECONDS;
+	exit;
+}
