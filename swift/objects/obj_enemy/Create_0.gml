@@ -65,5 +65,6 @@ phy_fixed_rotation = true;
 
 curr_idle_sfx = -1;
 
-alarm[MOVEMENT_ALARM] = 1; // Start managing behaviour from spawn. 
+alarm[MOVEMENT_ALARM] = 1; // Start moving from spawn. 
+alarm[ATTACK_ALARM] = 1; // Start attacking from spawn. 
 BEHAVIOUR_UPDATE_SECONDS = room_speed / 4;
