@@ -1,7 +1,7 @@
 /// @description Update Behaviour
 
 // If not falling
-if (alarm[FALLING_ALARM] == -1) {
+if (falling_time == 0) {
 	
 	// Check path last to save path computation
 	// Retreat, Attack, Aggro and Wander are to be abstracted to scripts eventually

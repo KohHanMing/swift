@@ -6,7 +6,7 @@
     "path": "folders/Scripts/primitive.yy",
   },
   "resourceVersion": "1.0",
-  "name": "falling_animation",
+  "name": "hole_collision_check",
   "tags": [],
   "resourceType": "GMScript",
 }
