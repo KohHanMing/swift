@@ -61,15 +61,12 @@ can_move = true;
 path = path_add();
 dist_to_player = 0;
 dir_to_player = 0;
-<<<<<<< HEAD
+
+// Falling
 respawn_x = 0;
 respawn_y = 0;
 falling_time = 0; // Keeps track of when the enemy finishes falling
 hole_collision_time = 0; // Keeps track of how long the enemy has been standing on a hole
-=======
-res_x = 0; // Falling respawn point
-res_y = 0;
->>>>>>> enemy_ver_6
 
 phy_fixed_rotation = true;
 
