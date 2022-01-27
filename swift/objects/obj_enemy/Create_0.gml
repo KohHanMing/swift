@@ -6,9 +6,9 @@ event_inherited();
 
 // Alarm Enum
 DISABLE_ALARM = -1;
-BEHAVIOUR_ALARM = 0;
+MOVEMENT_ALARM = 0;
 ATTACK_ALARM = 1;
-WANDER_ALARM = 2;
+FALLING_ALARM = 3;
 IDLE_SFX_ALARM = 4;
 
 // Event Enum
@@ -23,8 +23,6 @@ FALL_IMMUNITY_TIME = 0;
 PLAYER = obj_player;
 RETREAT_RANGE = 0;
 SPEED_PX_PER_FRAME = 0;
-WANDER_RADIUS = 0;
-WANDER_COOLDOWN_SECONDS = 0;
 DEATH_SFX = sfx_enemy_death;
 
 
@@ -35,6 +33,7 @@ ATTACK_WINDING_UP = 1;
 ATTACK_FOLLOW_THROUGH = 2;
 ATTACK_ON_COOLDOWN = 3;
 
+attack_state = ATTACK_CAN_ATTACK;
 ATTACK_RANGE = 0;
 ATTACK_WINDUP_SECONDS = 0;
 ATTACK_FOLLOW_THROUGH_SECONDS = 0;
@@ -42,8 +41,6 @@ ATTACK_COOLDOWN_SECONDS = 0;
 ATTACK_OFFSET_FORWARD = 0;
 ATTACK_OFFSET_SIDE = 0;
 ATTACK_SFX = -1;
-
-attack_state = ATTACK_CAN_ATTACK;
 attack_distance = 0;
 attack_direction = 0;
 
@@ -53,24 +50,31 @@ sprite_x = sprite_center[0]
 sprite_y = sprite_center[1]
 
 // Boolean flags
-canAttack = true;
-wandering = false;
 flying = false;
 has_line_of_sight = false;
 
+// Blockers, to be used for status effects
+can_attack = true;
+can_move = true;
+
 // Navigation
 path = path_add();
-alarm[BEHAVIOUR_ALARM] = 1; // Start managing bihaviour from spawn. 
-wander_anchor_x = sprite_x; // Wander around spawn point
-wander_anchor_y = sprite_y;
-node_index = 1;
 dist_to_player = 0;
 dir_to_player = 0;
+<<<<<<< HEAD
 respawn_x = 0;
 respawn_y = 0;
 falling_time = 0; // Keeps track of when the enemy finishes falling
 hole_collision_time = 0; // Keeps track of how long the enemy has been standing on a hole
+=======
+res_x = 0; // Falling respawn point
+res_y = 0;
+>>>>>>> enemy_ver_6
 
 phy_fixed_rotation = true;
 
 curr_idle_sfx = -1;
+
+alarm[MOVEMENT_ALARM] = 1; // Start moving from spawn. 
+alarm[ATTACK_ALARM] = 1; // Start attacking from spawn. 
+BEHAVIOUR_UPDATE_SECONDS = room_speed / 4;

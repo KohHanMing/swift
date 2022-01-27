@@ -9,6 +9,12 @@ if (CURR_HEALTH <= 0) {
 	exit;
 }
 
+// Update referenced variables
+dist_to_player = point_distance(sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y);
+dir_to_player = point_direction(sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y);
+dist_to_wall = range_finder(sprite_x,sprite_y,dir_to_player,ATTACK_RANGE,obj_wall);
+has_line_of_sight = dist_to_wall == -1 || (dist_to_wall > 0 && dist_to_player < dist_to_wall);
+
 // Update sprite center
 sprite_center = find_sprite_center(id)
 sprite_x = sprite_center[0]
