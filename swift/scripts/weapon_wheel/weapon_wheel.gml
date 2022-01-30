@@ -6,12 +6,13 @@ function weapon_wheel_position(_distance, _angle) {
 
 function weapon_wheel_selected(_weapon_info, _angle) {
 	var _weapon_display = _weapon_info[? "weapon_display"]; // Get weapon_display of current weapon
-	var _position = weapon_wheel_position(WEAPON_WHEEL_DISTANCE, _angle);
-	weapon_wheel_display(_weapon_display, 1.25, _position);
+	var _position = weapon_wheel_position(WEAPON_WHEEL_DISTANCE, _angle); // Get position of sprite
+	weapon_wheel_display(_weapon_display, 1.25, _position); // Draw the sprite
 	
-	weapon_selector_angle -= angle_difference(weapon_selector_angle, _angle) * 0.25;
-	weapon_wheel_weapon = _weapon_info[? "weapon"];
+	weapon_selector_angle -= angle_difference(weapon_selector_angle, _angle) * 0.25 // Lerp the selector
+	weapon_wheel_weapon = _weapon_info[? "weapon"]; // Write the selected weapon for equipping later
 	
+	// Display Weapon Name
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_top);
 	draw_set_font(font_menu);
@@ -28,6 +29,6 @@ function weapon_wheel_selected(_weapon_info, _angle) {
 
 function weapon_wheel_unselected(_weapon_info, _angle) {
 	var _weapon_display = _weapon_info[? "weapon_display"]; // Get weapon_display of current weapon
-	var _position = weapon_wheel_position(WEAPON_WHEEL_DISTANCE, _angle);
-	weapon_wheel_display(_weapon_display, 1, _position);
+	var _position = weapon_wheel_position(WEAPON_WHEEL_DISTANCE, _angle); // Get position of sprite
+	weapon_wheel_display(_weapon_display, 1, _position); // Draw the sprite
 }

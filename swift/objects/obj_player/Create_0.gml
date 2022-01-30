@@ -40,11 +40,10 @@ INSTANT_SWAP_RANGE = room_speed/2; // Length of instant swap window (in frames).
 // Initialize Weapons
 
 /*
-
 Terminology:
+- Unlocked: Able to be equipped
 - Equipped: One of the weapons in quickswap
 - Current: The weapon in the hand now
-
 */
 
 unlocked_melee_weapons = ds_list_create();

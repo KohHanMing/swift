@@ -66,10 +66,9 @@ Any code past this point is ignored when game is paused
 
 // Weapon Wheel
 if (global.key_change_weapon_down) {
-	// draw_sprite_ext(spr_weapon_wheel_base, 0, global.gui_width/2, global.gui_height/2, global.gui_factor, global.gui_factor, 0, c_white, 1);
 	
-	var _melee_weapons = obj_player.unlocked_melee_weapons;
-	var _size = ds_list_size(_melee_weapons);
+	var _melee_weapons = obj_player.unlocked_melee_weapons; // Retrieve reference to unlocked melee weapons
+	var _size = ds_list_size(_melee_weapons); // Number of unlocked melee weapons
 	var _sector_width = 180/_size;
 	
 	for (var i = 0; i < _size; i++) { // Loop through unlocked melee weapons
@@ -81,8 +80,8 @@ if (global.key_change_weapon_down) {
 		}
 	}
 	
-	var _ranged_weapons = obj_player.unlocked_ranged_weapons;
-	var _size = ds_list_size(_ranged_weapons);
+	var _ranged_weapons = obj_player.unlocked_ranged_weapons; // Retrieve reference to unlocked ranged weapons
+	var _size = ds_list_size(_ranged_weapons); // Number of unlocked ranged weapons
 	var _sector_width = 180/_size;
 	
 	for (var i = 0; i < _size; i++) { // Loop through unlocked ranged weapons
