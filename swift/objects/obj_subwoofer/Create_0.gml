@@ -1,6 +1,8 @@
 // Inherit from parent
 event_inherited();
 
+WEAPON_NAME = "Subwoofer";
+
 // Offset Weapon Based on Weapon Angle
 WEAPON_OFFSET_FORWARD = 20; // Forward is Positive
 WEAPON_OFFSET_SIDE = 0; // Right is Positive
@@ -14,6 +16,8 @@ SPR_WEAPON_IDLE = spr_subwoofer_idle;
 SPR_WEAPON_FIRE = spr_subwoofer_fire;
 
 SPR_WEAPON_CROSSHAIR = spr_subwoofer_crosshair;
+SPR_WEAPON_DISPLAY = spr_subwoofer_idle;
+
 DISABLES_CONTROL = true;
 
 // Projectile presets

@@ -1,6 +1,8 @@
 // Inherit from parent
 event_inherited();
 
+WEAPON_NAME = "Ranged Weapon";
+
 // Offset Weapon Based on Weapon Angle
 WEAPON_OFFSET_FORWARD = 0; // Forward is Positive
 WEAPON_OFFSET_SIDE = 0; // Right is Positive

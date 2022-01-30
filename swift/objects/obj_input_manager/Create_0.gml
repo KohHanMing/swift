@@ -7,6 +7,7 @@ key_list = [
 	"move_right",
 	"dash",
 	"quickswap",
+	"change_weapon",
 	"escape"
 ];
 
@@ -24,6 +25,8 @@ global.key_dash = vk_space;
 global.key_dash_mode = "keyboard";
 global.key_quickswap = vk_shift;
 global.key_quickswap_mode = "keyboard";
+global.key_change_weapon = ord("R");
+global.key_change_weapon_mode = "keyboard";
 global.key_escape = vk_escape;
 global.key_escape_mode = "keyboard";
 

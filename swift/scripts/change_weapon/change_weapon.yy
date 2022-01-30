@@ -6,7 +6,7 @@
     "path": "folders/Scripts/player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "update_equipped_weapons",
+  "name": "change_weapon",
   "tags": [],
   "resourceType": "GMScript",
 }

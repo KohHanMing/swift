@@ -1,6 +1,8 @@
 // Inherit from parent
 event_inherited();
 
+WEAPON_NAME = "Deadeye";
+
 // Offset Weapon Based on Weapon Angle
 WEAPON_OFFSET_FORWARD = 10; // Forward is Positive
 WEAPON_OFFSET_SIDE = 0; // Right is Positive
@@ -20,6 +22,7 @@ SPR_WEAPON_IDLE_BACK= spr_honey_badger_idle_back;
 SPR_WEAPON_FIRE_BACK = spr_honey_badger_fire_back;
 
 SPR_WEAPON_CROSSHAIR = spr_deadeye_crosshair;
+SPR_WEAPON_DISPLAY = spr_deadeye_idle_side;
 
 WEAPON_PROJECTILE = obj_deadeye_projectile;
 PROJECTILE_OFFSET_FORWARD = 30;

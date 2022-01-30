@@ -5,4 +5,6 @@ phy_fixed_rotation = true;
 create_following_light(id,$FFAAFFAA,16);
 
 // Deactivate Weapons Accordingly
-update_equipped_weapons();
+var _current_weapon = current_weapon;
+current_weapon = -1;
+change_weapon(_current_weapon);

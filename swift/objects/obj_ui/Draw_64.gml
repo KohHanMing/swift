@@ -1,5 +1,7 @@
 /// @description Draw GUI
 
+var scale = global.gui_height/global.view_h;
+
 if !instance_exists(obj_player) exit;
 
 // Vignette
@@ -51,8 +53,13 @@ gpu_set_blendmode(bm_normal);
 // Weapon Display
 draw_sprite(spr_weapon_display,0,MELEE_WEAPON_DISPLAY_ANCHOR[0],MELEE_WEAPON_DISPLAY_ANCHOR[1]);
 var display_center = [MELEE_WEAPON_DISPLAY_ANCHOR[0]+128,MELEE_WEAPON_DISPLAY_ANCHOR[1]+64];
-weapon_display(obj_player.equipped_melee_weapon_display,display_center);
+weapon_display(obj_player.equipped_melee_weapon_info[? "weapon_display"],display_center);
 
 draw_sprite(spr_weapon_display,0,RANGED_WEAPON_DISPLAY_ANCHOR[0],RANGED_WEAPON_DISPLAY_ANCHOR[1]);
 var display_center = [RANGED_WEAPON_DISPLAY_ANCHOR[0]+128,RANGED_WEAPON_DISPLAY_ANCHOR[1]+64];
-weapon_display(obj_player.equipped_ranged_weapon_display,display_center);
+weapon_display(obj_player.equipped_ranged_weapon_info[? "weapon_display"],display_center);
+
+// Weapon Wheel
+if (global.key_change_weapon_down) {
+	draw_sprite_ext(spr_weapon_wheel_base, 0, global.gui_width/2, global.gui_height/2, scale, scale, 0, c_white, 1);
+}

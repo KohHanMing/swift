@@ -35,32 +35,50 @@ INSTANT_SWAP_RANGE = room_speed/2; // Length of instant swap window (in frames).
 //HIT_SFX = sfx_player_hit;
 
 // Initialize Weapons
-equipped_weapon = "melee";
-equipped_melee_weapon = obj_blade;
-equipped_ranged_weapon = obj_honey_badger;
+
+/*
+
+Terminology:
+- Equipped: One of the weapons in quickswap
+- Current: The weapon in the hand now
+
+*/
+
+unlocked_melee_weapons = ds_list_create();
+unlocked_ranged_weapons = ds_list_create();
+
+unlock_weapon(obj_blade);
+unlock_weapon(obj_axe);
+unlock_weapon(obj_subwoofer);
+
+unlock_weapon(obj_honey_badger);
+unlock_weapon(obj_deadeye);
+unlock_weapon(obj_honey_pot);
+
+current_weapon = -1;
+equipped_melee_weapon = -1;
+equipped_ranged_weapon = -1;
 current_weapon_id = noone; // ID of Current Weapon
-melee_weapon_id = instance_create_layer(x,y,"Instances",equipped_melee_weapon); // ID of Melee Weapon
-ranged_weapon_id = instance_create_layer(x,y,"Instances",equipped_ranged_weapon); // ID of Ranged Weapon
-update_equipped_weapons(); // Run Update Equipped Weapons event.
+equipped_melee_weapon_id = noone; // ID of Melee Weapon
+equipped_ranged_weapon_id = noone; // ID of Ranged Weapon
+
+equip_weapon(obj_blade);
+equip_weapon(obj_honey_badger);
+change_weapon(equipped_melee_weapon);
+
+swap_timer = 0;
 
 // Variables
 
 // Movement
 moving = false;
 dashing = false;
-w_key_pressed = false;
-a_key_pressed = false;
-s_key_pressed = false;
-d_key_pressed = false;
 facing = "down";
 control_enabled = true;
 
 // Player State
 state = "normal";
 action = "idle";
-
-// Weapons
-swap_timer = 0;
 
 // Hole
 res_x = 0; // Respawn coordinate after falling into hole
@@ -71,51 +89,36 @@ function swap_failed() {
 	audio_play_sound(sfx_swap_fail,99,false);
 }
 
-function change_weapon() {
+function equip_other_weapon() {
 	
 	if (swap_timer > 0 or !control_enabled) {
 		swap_failed();
 		return; // Exit Event if Swap Fail
 	}
 	
-	var _previous_melee_weapon_id = melee_weapon_id;
-	var _previous_ranged_weapon_id = ranged_weapon_id;
-	var _previous_weapon_id = current_weapon_id;
-	
 	switch keyboard_lastchar {		
 		
 	case "1":
-		equipped_melee_weapon = obj_blade;
-		equipped_weapon = "melee";
+		change_weapon(obj_blade);
 		break;
 	case "2":
-		equipped_ranged_weapon = obj_honey_badger;
-		equipped_weapon = "ranged";
+		change_weapon(obj_honey_badger);
 		break;
 	case "3":
-		equipped_melee_weapon = obj_axe;
-		equipped_weapon = "melee";
+		change_weapon(obj_axe);
 		break;
 	case "4":
-		equipped_ranged_weapon = obj_deadeye;
-		equipped_weapon = "ranged";
+		change_weapon(obj_deadeye);
 		break;
 	case "5":
-		equipped_melee_weapon = obj_subwoofer;
-		equipped_weapon = "melee";
+		change_weapon(obj_subwoofer);
 		break;
 	case "6":
-		equipped_ranged_weapon = obj_honey_pot;
-		equipped_weapon = "ranged";
+		change_weapon(obj_honey_pot);
 		break;
 	}	
 	
 	swap_timer = SWAP_COOLDOWN;
-	update_equipped_weapons();
-	
-	if (current_weapon_id == _previous_melee_weapon_id or current_weapon_id == _previous_ranged_weapon_id) and current_weapon_id != _previous_weapon_id {
-		with(current_weapon_id) event_user(WEAPON_QUICKSWAPPED_IN);
-	}
 	
 }
 
@@ -127,12 +130,15 @@ function attempt_quickswap(){
 		return; // Exit if swap_timer is active.
 	}
 
+	switch (current_weapon_type) {
+		case "melee":
+			change_weapon(equipped_ranged_weapon);
+			break;
+		case "ranged":
+			change_weapon(equipped_melee_weapon);
+			break;
+	}
+	
 	swap_timer = SWAP_COOLDOWN;
-
-	if equipped_weapon == "melee" equipped_weapon = "ranged";
-	else equipped_weapon = "melee"
-
-	update_equipped_weapons();
-	with(current_weapon_id) event_user(WEAPON_QUICKSWAPPED_IN);
 	
 }

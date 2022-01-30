@@ -157,6 +157,7 @@ menu_add_keybind(CONTROLS_MENU, "MOVE DOWN", "key_move_down");
 menu_add_keybind(CONTROLS_MENU, "MOVE RIGHT", "key_move_right");
 menu_add_keybind(CONTROLS_MENU, "DASH", "key_dash");
 menu_add_keybind(CONTROLS_MENU, "QUICKSWAP", "key_quickswap");
+menu_add_keybind(CONTROLS_MENU, "CHANGE WEAPON", "key_change_weapon");
 menu_add_spacer(CONTROLS_MENU, 8);
 menu_add_button(CONTROLS_MENU, "BACK", "LAST_MENU");
 

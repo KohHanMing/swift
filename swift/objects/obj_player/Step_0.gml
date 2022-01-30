@@ -14,7 +14,7 @@ if keyboard_check_pressed(ord("1"))
  or keyboard_check_pressed(ord("4"))
  or keyboard_check_pressed(ord("5"))
  or keyboard_check_pressed(ord("6")) {
-	change_weapon();	
+	equip_other_weapon();	
 }
 
 // Face Direction based on Weapon Angle
@@ -40,8 +40,8 @@ if game_paused exit;
 // ######## CODE BEYOND THIS LINE DOES NOT EXECUTE ON PAUSE ######## //
 
 // Weapon Cooldowns
-if melee_weapon_id.cooldown > 0 melee_weapon_id.cooldown -= 1;
-if ranged_weapon_id.cooldown > 0 ranged_weapon_id.cooldown -= 1;
+if equipped_melee_weapon_id.cooldown > 0 equipped_melee_weapon_id.cooldown -= 1;
+if equipped_ranged_weapon_id.cooldown > 0 equipped_ranged_weapon_id.cooldown -= 1;
 
 // Swaps
 swap_timer -= 1; // swap_timer is reduced by 1 per step.

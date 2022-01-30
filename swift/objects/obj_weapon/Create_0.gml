@@ -10,6 +10,8 @@ WEAPON_QUICKSWAPPED_IN = 5;
 
 // Constants
 
+WEAPON_NAME = "Weapon";
+
 // Weapon pivot point differs from player centre. Offset accordingly
 WEAPON_OFFSET_FORWARD = 0; // Forward is Positive
 WEAPON_OFFSET_SIDE = 0; // Right is Positive
