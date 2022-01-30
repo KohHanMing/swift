@@ -15,7 +15,12 @@ switch (room) {
 		global.curr_env = "1";
 		break;
 	case rm_melee_basic:
+		global.curr_track = "ambient";
+		global.curr_env = "2";
+		break;
 	case rm_ranged_basic:
+		global.curr_track = "boss1";
+		break;
 	case rm_melee_and_ranged:
 		global.curr_track = "ambient";
 		global.curr_env = "2";

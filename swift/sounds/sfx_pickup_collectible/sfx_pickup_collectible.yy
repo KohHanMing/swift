@@ -14,8 +14,8 @@
   "soundFile": "sfx_pickup_collectible.wav",
   "duration": 0.736236,
   "parent": {
-    "name": "misc",
-    "path": "folders/Sounds/sfx/misc.yy",
+    "name": "player",
+    "path": "folders/Sounds/sfx/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_pickup_collectible",

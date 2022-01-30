@@ -14,8 +14,8 @@
   "soundFile": "sfx_swap_fail.wav",
   "duration": 0.557279,
   "parent": {
-    "name": "misc",
-    "path": "folders/Sounds/sfx/misc.yy",
+    "name": "player",
+    "path": "folders/Sounds/sfx/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_swap_fail",

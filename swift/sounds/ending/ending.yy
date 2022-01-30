@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.8,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,8 +11,8 @@
     "name": "music",
     "path": "audiogroups/music",
   },
-  "soundFile": "ending.wav",
-  "duration": 60.0,
+  "soundFile": "ending.mp3",
+  "duration": 211.18187,
   "parent": {
     "name": "soundtracks",
     "path": "folders/Sounds/soundtracks.yy",
