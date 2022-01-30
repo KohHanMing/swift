@@ -1,9 +1,7 @@
 event_inherited();
 
-switch (state) {
-	case "normal": player_normal(); break;
-	case "falling": player_falling(); break;
-}
+if control_enabled player_normal();
+if falling_time > 0 falling();
 
 move_wrap(true, true, sprite_width/2);
 

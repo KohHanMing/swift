@@ -9,6 +9,12 @@ if (CURR_HEALTH <= 0) {
 	exit;
 }
 
+// Update referenced variables
+dist_to_player = point_distance(sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y);
+dir_to_player = point_direction(sprite_x, sprite_y, PLAYER.sprite_x, PLAYER.sprite_y);
+dist_to_wall = range_finder(sprite_x,sprite_y,dir_to_player,ATTACK_RANGE,obj_wall);
+has_line_of_sight = dist_to_wall == -1 || (dist_to_wall > 0 && dist_to_player < dist_to_wall);
+
 // Update sprite center
 sprite_center = find_sprite_center(id)
 sprite_x = sprite_center[0]
@@ -16,26 +22,11 @@ sprite_y = sprite_center[1]
 
 move_wrap(true, true, sprite_width/2);
 
-// if falling
-if (alarm[FALLING_ALARM] > -1) {
-	falling_animation();
-}
+// Call Falling Script as required
+if (falling_time > 0) falling();
 
-if (!flying) {
-	// if not falling
-	if (alarm[FALLING_ALARM] == -1) {
-		// check collision with hole objects
-		hole = collision_point(x, bbox_bottom, obj_hole, false, true);
-		if (hole != noone) {
-			res_x = phy_position_xprevious;
-			res_y = phy_position_yprevious;
-			phy_speed_x = 0;
-			phy_speed_y = 0;
-			phy_active = false;
-			alarm[FALLING_ALARM] = 60; // fall duration 1 second
-			falling_factor = 0; // Initialize falling_factor
-		}
-	}
+if (!flying and falling_time == 0) { // If not flying and not falling
+	hole_collision_check(); // Check collisions with hole
 }
 
 if (alarm[IDLE_SFX_ALARM] == -1) {

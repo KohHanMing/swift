@@ -7,11 +7,8 @@ event_inherited();
 AGGRO_RANGE = 800;
 CURR_HEALTH = 40;
 MAX_HEALTH = 40;
-FALL_DAMAGE = MAX_HEALTH;
 RETREAT_RANGE = 0;
 SPEED_PX_PER_FRAME = 5;
-WANDER_RADIUS = 32;
-WANDER_COOLDOWN_SECONDS = 3;
 
 // Attack utilities
 ATTACK_HIT_BOX = obj_swarmer_hitbox;
@@ -21,9 +18,8 @@ ATTACK_FOLLOW_THROUGH_SECONDS = 0.167;
 ATTACK_COOLDOWN_SECONDS = 2;
 ATTACK_OFFSET_FORWARD = 0;
 ATTACK_OFFSET_SIDE = 0;
-ATTACK_SFX = -1;
+ATTACK_SFX = sfx_enemy_melee;
+
+HIT_SFX = sfx_enemy_hit;
 
 sector_number = irandom_range(0,7);
-
-ATTACK_SFX = sfx_enemy_melee;
-HIT_SFX = sfx_enemy_hit;
