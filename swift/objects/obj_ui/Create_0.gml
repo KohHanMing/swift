@@ -20,6 +20,7 @@ DASH_BAR_END_LENGTH = 12;
 DASH_BAR_LENGTH = sprite_get_width(spr_ui_dash) - ENERGY_BAR_END_LENGTH;
 
 WEAPON_WHEEL_DISTANCE = 360;
+weapon_selector_angle = 0;
 weapon_wheel_weapon = -1;
 
 health_display = 0;

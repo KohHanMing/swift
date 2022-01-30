@@ -66,7 +66,7 @@ Any code past this point is ignored when game is paused
 
 // Weapon Wheel
 if (global.key_change_weapon_down) {
-	draw_sprite_ext(spr_weapon_wheel_base, 0, global.gui_width/2, global.gui_height/2, global.gui_factor, global.gui_factor, 0, c_white, 1);
+	// draw_sprite_ext(spr_weapon_wheel_base, 0, global.gui_width/2, global.gui_height/2, global.gui_factor, global.gui_factor, 0, c_white, 1);
 	
 	var _melee_weapons = obj_player.unlocked_melee_weapons;
 	var _size = ds_list_size(_melee_weapons);
@@ -93,5 +93,18 @@ if (global.key_change_weapon_down) {
 			weapon_wheel_unselected(_ranged_weapons[|i], _angle);
 		}
 	}
+	
+	var _selector_position = weapon_wheel_position(40 * global.gui_factor, weapon_selector_angle);
+	draw_sprite_ext(
+		spr_weapon_wheel_selector,
+		0,
+		_selector_position[0],
+		_selector_position[1],
+		global.gui_factor,
+		global.gui_factor,
+		weapon_selector_angle,
+		c_white,
+		1
+	);
 	
 }

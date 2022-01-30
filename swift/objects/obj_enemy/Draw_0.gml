@@ -5,7 +5,7 @@ draw_set_alpha(1);
 draw_self();
 
 var center = find_sprite_center(id);
-if (CURR_HEALTH <= obj_player.melee_weapon_id.WEAPON_DAMAGE and falling_time == 0) {
+if (CURR_HEALTH <= obj_player.equipped_melee_weapon_id.WEAPON_DAMAGE and falling_time == 0) {
 	draw_sprite(spr_health_low,(current_time/500)%2,center[0],center[1]-sprite_height/2-4);
 }
 

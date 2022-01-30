@@ -9,20 +9,20 @@ function weapon_wheel_selected(_weapon_info, _angle) {
 	var _position = weapon_wheel_position(WEAPON_WHEEL_DISTANCE, _angle);
 	weapon_wheel_display(_weapon_display, 1.25, _position);
 	
-	var _selector_position = weapon_wheel_position(40 * global.gui_factor, _angle);
-	draw_sprite_ext(
-		spr_weapon_wheel_selector,
-		0,
-		_selector_position[0],
-		_selector_position[1],
-		global.gui_factor,
-		global.gui_factor,
-		_angle,
-		c_white,
-		1
-	);
-	
+	weapon_selector_angle -= angle_difference(weapon_selector_angle, _angle) * 0.25;
 	weapon_wheel_weapon = _weapon_info[? "weapon"];
+	
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_top);
+	draw_set_font(font_menu);
+	draw_text_transformed(
+		global.gui_width/2,
+		PADDING,
+		_weapon_info[? "weapon_name"],
+		global.gui_factor,
+		global.gui_factor,
+		0
+	);
 	
 }
 
