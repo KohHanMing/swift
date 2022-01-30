@@ -15,6 +15,7 @@ function change_weapon(_weapon){
 	show_debug_message(_weapon_type);
 	current_weapon_type = _weapon_type;
 	current_weapon = _weapon;
+	swap_timer = SWAP_COOLDOWN;
 	
 	switch(_weapon_type) {
 		

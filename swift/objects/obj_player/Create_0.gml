@@ -117,9 +117,6 @@ function equip_other_weapon() {
 		change_weapon(obj_honey_pot);
 		break;
 	}	
-	
-	swap_timer = SWAP_COOLDOWN;
-	
 }
 
 function attempt_quickswap(){
@@ -138,7 +135,4 @@ function attempt_quickswap(){
 			change_weapon(equipped_melee_weapon);
 			break;
 	}
-	
-	swap_timer = SWAP_COOLDOWN;
-	
 }

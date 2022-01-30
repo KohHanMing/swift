@@ -19,6 +19,9 @@ DASH_BAR_ANCHOR = [UI_BASE_ANCHOR[0]+48,UI_BASE_ANCHOR[1]+112];
 DASH_BAR_END_LENGTH = 12;
 DASH_BAR_LENGTH = sprite_get_width(spr_ui_dash) - ENERGY_BAR_END_LENGTH;
 
+WEAPON_WHEEL_DISTANCE = 360;
+weapon_wheel_weapon = -1;
+
 health_display = 0;
 energy_display = 0;
 dash_display = 0;

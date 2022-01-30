@@ -1,6 +1,8 @@
 /// @description Draw GUI
 
-var scale = global.gui_height/global.view_h;
+global.gui_factor = global.gui_height/global.view_h;
+
+var _mouse_angle = point_direction(global.gui_width/2, global.gui_height/2, device_mouse_x_to_gui(0), device_mouse_y_to_gui(0));
 
 if !instance_exists(obj_player) exit;
 
@@ -53,13 +55,50 @@ gpu_set_blendmode(bm_normal);
 // Weapon Display
 draw_sprite(spr_weapon_display,0,MELEE_WEAPON_DISPLAY_ANCHOR[0],MELEE_WEAPON_DISPLAY_ANCHOR[1]);
 var display_center = [MELEE_WEAPON_DISPLAY_ANCHOR[0]+128,MELEE_WEAPON_DISPLAY_ANCHOR[1]+64];
-weapon_display(obj_player.equipped_melee_weapon_info[? "weapon_display"],display_center);
+weapon_display(obj_player.equipped_melee_weapon_info[? "weapon_display"], 1, display_center);
 
 draw_sprite(spr_weapon_display,0,RANGED_WEAPON_DISPLAY_ANCHOR[0],RANGED_WEAPON_DISPLAY_ANCHOR[1]);
 var display_center = [RANGED_WEAPON_DISPLAY_ANCHOR[0]+128,RANGED_WEAPON_DISPLAY_ANCHOR[1]+64];
-weapon_display(obj_player.equipped_ranged_weapon_info[? "weapon_display"],display_center);
+weapon_display(obj_player.equipped_ranged_weapon_info[? "weapon_display"], 1, display_center);
+
+if (obj_game.game_paused) {
+	exit;
+}
+
+/*
+
+Any code past this point is ignored when game is paused
+
+*/
 
 // Weapon Wheel
 if (global.key_change_weapon_down) {
-	draw_sprite_ext(spr_weapon_wheel_base, 0, global.gui_width/2, global.gui_height/2, scale, scale, 0, c_white, 1);
+	draw_sprite_ext(spr_weapon_wheel_base, 0, global.gui_width/2, global.gui_height/2, global.gui_factor, global.gui_factor, 0, c_white, 1);
+	
+	var _melee_weapons = obj_player.unlocked_melee_weapons;
+	var _size = ds_list_size(_melee_weapons);
+	var _sector_width = 180/_size;
+	
+	for (var i = 0; i < _size; i++) { // Loop through unlocked melee weapons
+		var _angle = 90 - _sector_width * (i + 0.5); // Get angular position of current weapon
+		if (abs(angle_difference(_mouse_angle, _angle)) < _sector_width/2) { // If mouse is within selection sector
+			weapon_wheel_selected(_melee_weapons[|i], _angle);
+		} else {
+			weapon_wheel_unselected(_melee_weapons[|i], _angle);
+		}
+	}
+	
+	var _ranged_weapons = obj_player.unlocked_ranged_weapons;
+	var _size = ds_list_size(_ranged_weapons);
+	var _sector_width = 180/_size;
+	
+	for (var i = 0; i < _size; i++) { // Loop through unlocked ranged weapons
+		var _angle = 90 + _sector_width * (i + 0.5); // Get angular position of current weapon
+		if (abs(angle_difference(_mouse_angle, _angle)) < _sector_width/2) { // If mouse is within selection sector
+			weapon_wheel_selected(_ranged_weapons[|i], _angle);
+		} else {
+			weapon_wheel_unselected(_ranged_weapons[|i], _angle);
+		}
+	}
+	
 }
