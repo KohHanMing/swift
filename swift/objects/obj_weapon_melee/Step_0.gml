@@ -9,10 +9,18 @@ event_inherited();
 // weapon_angle = 90, 270 -> pointing_angle = 0
 // weapon_angle = 180 -> pointing_angle = 45
 
-pointing_angle = -0.5 * abs(weapon_angle - 180) + 45; // Pointing Angle is the angle that a straight weapon should point
+pointing_angle = -0.5 * abs(weapon_angle - 180) + 45; // Pointing Angle is the angle that a straight weapon should point, where 0 is vertical.
 
-if instance_exists(previous_projectile) > 0 attack_rotation_offset = lerp(attack_rotation_offset, -45, 0.5); // Slice Animation
-else attack_rotation_offset = lerp(attack_rotation_offset, 0, 0.5); // Return to Normal Position
+if instance_exists(previous_projectile) {
+	var _projectile_angle = previous_projectile.phy_rotation;
+	if (_projectile_angle < 0 and _projectile_angle > -180) {
+		attack_rotation_offset = lerp(attack_rotation_offset, -45, 0.5); // Slice Animation
+	} else {
+		attack_rotation_offset = lerp(attack_rotation_offset, -90, 0.5); // Slice Animation
+	}
+} else {
+	attack_rotation_offset = lerp(attack_rotation_offset, 0, 0.5); // Return to Normal Position
+}
 
 if ROTATES image_angle = pointing_angle + ROTATION_OFFSET - sign(pointing_angle) * attack_rotation_offset; // Set Image Angle
 else image_angle = ROTATION_OFFSET;
