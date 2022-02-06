@@ -20,7 +20,7 @@ SPR_WEAPON_FIRE_FRONT = spr_weapon_ranged_fire_front;
 SPR_WEAPON_IDLE_BACK = spr_weapon_ranged_idle_back;
 SPR_WEAPON_FIRE_BACK = spr_weapon_ranged_fire_back;
 
-SFX_WEAPON = sfx_player_ranged;
+SFX_WEAPON_FIRE = sfx_player_ranged;
 SFX_WEAPON_SWAPPED_IN = sfx_swap_ranged;
 
 WEAPON_PROJECTILE = obj_weapon_ranged_projectile;

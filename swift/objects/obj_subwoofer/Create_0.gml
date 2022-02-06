@@ -24,3 +24,6 @@ DISABLES_CONTROL = true;
 WEAPON_PROJECTILE = obj_subwoofer_melee_hitbox;
 PROJECTILE_OFFSET_FORWARD = 0;
 PROJECTILE_OFFSET_SIDE = 0;
+
+// Weapon Variables
+attack_animation_loop = 0; // Counter for number of animation loops.

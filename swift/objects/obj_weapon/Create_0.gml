@@ -28,7 +28,7 @@ ENERGY_COST = 0; // Default is 0
 SPR_WEAPON_IDLE_SIDE = spr_weapon_default; // MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_FIRE_SIDE = spr_weapon_default; // MUST INITIALISE IN CHILD WEAPON
 SPR_WEAPON_CROSSHAIR = spr_weapon_default_crosshair;
-SFX_WEAPON = -1;
+SFX_WEAPON_FIRE = -1;
 
 DISABLES_CONTROL = false;
 

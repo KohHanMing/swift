@@ -31,8 +31,3 @@ else {
 	image_xscale = -1;
 	image_angle -= 2 * ROTATION_OFFSET;
 }
-
-// Idle Sprite
-if (not firing) {
-	sprite_index = SPR_WEAPON_IDLE;
-}
