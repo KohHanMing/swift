@@ -14,11 +14,11 @@ else recoil_offset = lerp(recoil_offset, 0, 0.5);
 x += recoil_offset*dcos(weapon_angle)
 y -= recoil_offset*dsin(weapon_angle)
 
-// Rotate Weapon, Adopt Sprites Accordingly
-if object_index == obj_weapon_ranged and (not firing) {
-	if (weapon_angle >= 45 && weapon_angle <= 135) {
-		sprite_index = SPR_WEAPON_IDLE_BACK;
-	} else if (weapon_angle >= 225 && weapon_angle <= 315) {
-		sprite_index = SPR_WEAPON_IDLE_FRONT;
-	} else sprite_index = SPR_WEAPON_IDLE_SIDE;
+// Adopt Sprite Direction Accordingly
+if (weapon_angle >= 45 && weapon_angle <= 135) {
+	sprite_direction = "back";
+} else if (weapon_angle >= 225 && weapon_angle <= 315) {
+	sprite_direction = "front";
+} else {
+	sprite_direction = "side";
 }

@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b3e205d3-f579-44ef-9f6d-1ea216dbdd1d","path":"sprites/spr_honey_badger_idle_front/spr_honey_badger_idle_front.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b3e205d3-f579-44ef-9f6d-1ea216dbdd1d","path":"sprites/spr_honey_badger_idle_front/spr_honey_badger_idle_front.yy",},"LayerId":{"name":"946fd7ff-f1db-4340-a0d4-f0d7df967699","path":"sprites/spr_honey_badger_idle_front/spr_honey_badger_idle_front.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_honey_badger_idle_front","path":"sprites/spr_honey_badger_idle_front/spr_honey_badger_idle_front.yy",},"resourceVersion":"1.0","name":"b3e205d3-f579-44ef-9f6d-1ea216dbdd1d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6557fefe-b74a-4b55-bb6e-781edffdc1fc","path":"sprites/spr_honey_pot_idle_back/spr_honey_pot_idle_back.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6557fefe-b74a-4b55-bb6e-781edffdc1fc","path":"sprites/spr_honey_pot_idle_back/spr_honey_pot_idle_back.yy",},"LayerId":{"name":"946fd7ff-f1db-4340-a0d4-f0d7df967699","path":"sprites/spr_honey_pot_idle_back/spr_honey_pot_idle_back.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_honey_pot_idle_back","path":"sprites/spr_honey_pot_idle_back/spr_honey_pot_idle_back.yy",},"resourceVersion":"1.0","name":"6557fefe-b74a-4b55-bb6e-781edffdc1fc","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_honey_badger_idle_front","path":"sprites/spr_honey_badger_idle_front/spr_honey_badger_idle_front.yy",},
+    "spriteId": {"name":"spr_honey_pot_idle_back","path":"sprites/spr_honey_pot_idle_back/spr_honey_pot_idle_back.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a674452b-32c7-48e1-8c52-daf66cd7c5fe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b3e205d3-f579-44ef-9f6d-1ea216dbdd1d","path":"sprites/spr_honey_badger_idle_front/spr_honey_badger_idle_front.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1af245cc-3b24-42ee-a9ce-33f60a105bc3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6557fefe-b74a-4b55-bb6e-781edffdc1fc","path":"sprites/spr_honey_pot_idle_back/spr_honey_pot_idle_back.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_honey_badger_idle_front","path":"sprites/spr_honey_badger_idle_front/spr_honey_badger_idle_front.yy",},
+    "parent": {"name":"spr_honey_pot_idle_back","path":"sprites/spr_honey_pot_idle_back/spr_honey_pot_idle_back.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_honey_badger_idle_front",
+    "name": "spr_honey_pot_idle_back",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "honey_badger",
-    "path": "folders/Sprites/weapon/honey_badger.yy",
+    "name": "honey_pot",
+    "path": "folders/Sprites/weapon/honey_pot.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_honey_badger_idle_front",
+  "name": "spr_honey_pot_idle_back",
   "tags": [],
   "resourceType": "GMSprite",
 }

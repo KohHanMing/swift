@@ -3,17 +3,14 @@
 // Inherit Weapon Ranged Step
 event_inherited();
 
-// Rotate Weapon, Adopt Sprites Accordingly
-if (weapon_angle >= 45 && weapon_angle <= 135) {
-	if not firing sprite_index = SPR_WEAPON_IDLE_BACK;
-	else if powering_down sprite_index = spr_honey_badger_power_down_back
-} else if (weapon_angle >= 225 && weapon_angle <= 315) {
-	if not firing sprite_index = SPR_WEAPON_IDLE_FRONT;
-	else if powering_down sprite_index = spr_honey_badger_power_down_front;
-} else {
-	if not firing sprite_index = SPR_WEAPON_IDLE_SIDE;
-	else if powering_down sprite_index = spr_honey_badger_power_down_side;
+// Adopt Sprite Action Accordingly
+if (not firing) {
+	sprite_action = "idle";
+} else if (powering_down) {
+	sprite_action = "power_down";
 }
+
+sprite_index = asset_get_index("spr_" + WEAPON_ID + "_" + sprite_action + "_" + sprite_direction);
 
 /*	Scale Powering Down speed to fit cooldown and animation playback speed.
 	image_speed is factor to modify playback time.
