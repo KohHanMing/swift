@@ -22,3 +22,6 @@ if (weapon_angle >= 45 && weapon_angle <= 135) {
 } else {
 	sprite_direction = "side";
 }
+
+// Generate Sprite Index
+generate_sprite_index();

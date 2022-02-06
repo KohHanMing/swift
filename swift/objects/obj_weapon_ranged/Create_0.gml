@@ -27,3 +27,8 @@ SFX_WEAPON_SWAPPED_IN = sfx_swap_ranged;
 WEAPON_PROJECTILE = obj_weapon_ranged_projectile;
 PROJECTILE_OFFSET_FORWARD = 20;
 PROJECTILE_OFFSET_SIDE = 0;
+
+// Generate Sprite Index Method
+function generate_sprite_index() {
+	sprite_index = asset_get_index("spr_" + WEAPON_ID + "_" + sprite_action + "_" + sprite_direction);
+}

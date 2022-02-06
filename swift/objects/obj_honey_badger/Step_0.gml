@@ -10,7 +10,8 @@ if (not firing) {
 	sprite_action = "power_down";
 }
 
-sprite_index = asset_get_index("spr_" + WEAPON_ID + "_" + sprite_action + "_" + sprite_direction);
+// Re-Generate Sprite Index
+generate_sprite_index();
 
 /*	Scale Powering Down speed to fit cooldown and animation playback speed.
 	image_speed is factor to modify playback time.
